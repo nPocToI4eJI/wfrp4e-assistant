@@ -1,0 +1,55 @@
+{
+	"id": "wfrp4e-assistant",
+    "title": "WFRP4e - Assistant",
+    "description": "A module that will help the Master conduct games in many aspects.",
+	"version": "13.1.0",
+	"compatibility": {
+		"minimum": "13",
+		"verified": "13"
+	},
+	"authors": [
+		{
+			"name": "nPocTo_4eJI",
+			"url": "https://www.youtube.com/@nPocTo_4eJI",
+			"discord": "npocto_4eji"
+		}
+	],
+	"languages": [
+        {"lang": "en", "name": "English", "path": "lang/en.json"},
+        {"lang": "ru", "name": "Русский", "path": "lang/ru.json"}
+	],
+    "styles": [
+		"styles/selectLore.css",
+		"styles/booksTitle.css"
+	],
+	"esmodules": [
+		"scripts/systemFix.js",
+		"assistant.js"
+	],
+	"packs": [
+		{
+			"name": "items",
+			"label": "Предметы",
+			"system": "wfrp4e",
+			"path": "packs/items",
+			"type": "Item"
+		},
+		{
+			"name": "macros",
+			"label": "Макросы",
+			"system": "wfrp4e",
+			"path": "packs/macros",
+			"type": "Macro"
+		},
+		{
+			"name": "rolltables",
+			"label": "Таблицы",
+			"system": "wfrp4e",
+			"path": "packs/rolltables",
+			"type": "RollTable"
+		}
+	],
+	"url": "https://github.com/nPocToI4eJI/wfrp4e-assistant",
+	"manifest": "https://github.com/nPocToI4eJI/wfrp4e-assistant/releases/download/13.1.0/module.json",
+	"download": "https://github.com/nPocToI4eJI/wfrp4e-assistant/releases/download/13.1.0/wfrp4e-assistant.zip"
+}

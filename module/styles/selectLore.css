@@ -1,0 +1,55 @@
+.dialog-content:has(>.systemFix) {
+    padding: 1rem;
+}
+
+.systemFix option[value="rand"] {
+    color: #000000;
+}
+.systemFix option[value="petty"] {
+    color: #7A7666;
+}
+.systemFix option[value="arcane"] {
+    color: #646B63;
+}
+.systemFix option[value="beasts"] {
+    color: darkorange;
+}
+.systemFix option[value="death"] {
+    color: darkmagenta;
+}
+.systemFix option[value="fire"] {
+    color: darkred;
+}
+.systemFix option[value="heavens"] {
+    color: darkblue;
+}
+.systemFix option[value="metal"] {
+    color: darkgoldenrod;
+}
+.systemFix option[value="life"] {
+    color: darkgreen;
+}
+.systemFix option[value="light"] {
+    color: darkcyan;
+}
+.systemFix option[value="shadow"] {
+    color: darkgray;
+}
+.systemFix option[value="hedgecraft"] {
+    color: #c8942d;
+}
+.systemFix option[value="witchcraft"] {
+    color: #976b93;
+}
+.systemFix option[value="daemonology"] {
+    color: #ffa500;
+}
+.systemFix option[value="necromancy"] {
+    color: #0e070f;
+}
+.systemFix option[value="greatMaw"] {
+    color: brown;
+}
+.systemFix option[value="undivided"] {
+    color: #000000;
+}

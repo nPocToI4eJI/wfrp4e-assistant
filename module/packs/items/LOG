@@ -1,0 +1,8 @@
+2025/10/08-01:45:40.067 6cec Recovering log #36
+2025/10/08-01:45:40.071 6cec Delete type=0 #36
+2025/10/08-01:45:40.073 6cec Delete type=3 #34
+2025/10/08-01:54:09.899 5fa0 Level-0 table #42: started
+2025/10/08-01:54:09.899 5fa0 Level-0 table #42: 0 bytes OK
+2025/10/08-01:54:09.900 5fa0 Delete type=0 #40
+2025/10/08-01:54:09.901 5fa0 Manual compaction at level-0 from '!folders!pRSDikXxuapjPRrB' @ 72057594037927935 : 1 .. '!items.effects!oDGAc0u2WJ04SEwb.feXAT3KjdOOkkj2s' @ 0 : 0; will stop at (end)
+2025/10/08-01:54:09.901 5fa0 Manual compaction at level-1 from '!folders!pRSDikXxuapjPRrB' @ 72057594037927935 : 1 .. '!items.effects!oDGAc0u2WJ04SEwb.feXAT3KjdOOkkj2s' @ 0 : 0; will stop at (end)
