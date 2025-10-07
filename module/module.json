@@ -1,11 +1,20 @@
 {
-	"id": "wfrp4e-assistant",
-    "title": "WFRP4e - Assistant",
-    "description": "A module that will help the Master conduct games in many aspects.",
-	"version": "13.1.0",
+	"id": "wfrp4e-looting",
+	"title": "WFRP4e - Looting",
+	"description": "A QoL module that uses house rules for searching and looting bodies, chests, and rooms.",
+	"version": "13.2.0",
 	"compatibility": {
 		"minimum": "13",
 		"verified": "13"
+	},
+	"relationships": {
+		"systems": [
+			{
+				"id": "wfrp4e",
+				"type": "system",
+				"manifest": "https://github.com/moo-man/WFRP4e-FoundryVTT/releases/latest/download/system.json"
+			}
+		]
 	},
 	"authors": [
 		{
@@ -14,42 +23,38 @@
 			"discord": "npocto_4eji"
 		}
 	],
-	"languages": [
-        {"lang": "en", "name": "English", "path": "lang/en.json"},
-        {"lang": "ru", "name": "Русский", "path": "lang/ru.json"}
-	],
-    "styles": [
-		"styles/selectLore.css",
-		"styles/booksTitle.css"
-	],
 	"esmodules": [
-		"scripts/systemFix.js",
-		"assistant.js"
+		"/looting.js"
+	],
+	"languages": [
+		{
+			"lang": "en",
+			"name": "English",
+			"path": "lang/en.json"
+		},
+		{
+			"lang": "ru",
+			"name": "Russian",
+			"path": "lang/ru.json"
+		}
 	],
 	"packs": [
 		{
-			"name": "items",
-			"label": "Предметы",
+			"name": "looting",
+			"label": "Looting",
 			"system": "wfrp4e",
-			"path": "packs/items",
-			"type": "Item"
-		},
-		{
-			"name": "macros",
-			"label": "Макросы",
-			"system": "wfrp4e",
-			"path": "packs/macros",
-			"type": "Macro"
-		},
-		{
-			"name": "rolltables",
-			"label": "Таблицы",
-			"system": "wfrp4e",
-			"path": "packs/rolltables",
-			"type": "RollTable"
+			"path": "packs/looting",
+			"type": "RollTable",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
 		}
 	],
-	"url": "https://github.com/nPocToI4eJI/wfrp4e-assistant",
-	"manifest": "https://github.com/nPocToI4eJI/wfrp4e-assistant/releases/download/13.1.0/module.json",
-	"download": "https://github.com/nPocToI4eJI/wfrp4e-assistant/releases/download/13.1.0/wfrp4e-assistant.zip"
+	"styles": [
+		{"src": "css/styles.css"}
+	],
+	"url": "https://github.com/nPocToI4eJI/wfrp4e-looting",
+	"manifest": "https://github.com/nPocToI4eJI/wfrp4e-looting/releases/download/13.2.0/module.json",
+	"download": "https://github.com/nPocToI4eJI/wfrp4e-looting/releases/download/13.2.0/wfrp4e-looting.zip"
 }
