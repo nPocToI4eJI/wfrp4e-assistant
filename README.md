@@ -2,7 +2,18 @@
 Этот модуль поможет Мастеру проводить игры комфортно. В него включены исправления ошибок и недоработок системы и официальных модулей, а также собственные и адаптированные инструментыю
 
 ## Содержание
-[TOC]
+- [Исправления](#Исправления)
+  - [Warhammer Library](#Warhammer-Library)
+  - [Winds of Magic](#Winds-of-Magic)
+  - [Archives of the Empire: II](#Archives-of-the-Empire-II)
+- [Методы](#Методы)
+  - [getMagicLoreKey](#getMagicLoreKey(lore))
+  - [findAllSpells](#findAllSpells(lore-includeArcane))
+  - [generateBookTitle](#generateBookTitle(type))
+- [Макросы](#Макросы)
+  - [Придумать ругательство](#Придумать-ругательство)
+  - [Название книги](#Название-книги)
+- [Черты-помощники](#Черты-помощники)
   - _В процессе написания_
 
 ## Исправления
