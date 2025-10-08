@@ -7,9 +7,9 @@
   - [Winds of Magic](#Winds-of-Magic)
   - [Archives of the Empire: II](#Archives-of-the-Empire-II)
 - [Методы](#Методы)
-  - [getMagicLoreKey](#getMagicLoreKey(lore))
-  - [findAllSpells](#findAllSpells(lore-includeArcane))
-  - [generateBookTitle](#generateBookTitle(type))
+  - [getMagicLoreKey](#getMagicLoreKeylore)
+  - [findAllSpells](#findAllSpellslore-includeArcane)
+  - [generateBookTitle](#generateBookTitletype)
 - [Макросы](#Макросы)
   - [Придумать ругательство](#Придумать-ругательство)
   - [Название книги](#Название-книги)
@@ -135,3 +135,5 @@ _Этот макрос использует метод [generateBookTitle](#gene
 - _Комплексные справки про битву на Перевале Чёрного Огня._
 - _Основные лекции о реальных опасностях неизученных трав._
 - _Насущные заметки о чудесах Зоологии._
+
+## Черты-помощники
