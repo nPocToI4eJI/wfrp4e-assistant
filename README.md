@@ -57,7 +57,7 @@ _Добавлены новые скрипты на генерацию случа
 - [X] Archives of the Empire: Vol II.
 - [X] Winds of Magic
 - [ ] The Horned Rat
-- [ ] Salzenmund: City of Salt and Silver*
+- [ ] Tribes and Tribulations*
 
 _*Данные модули у меня отсутствуют._
 
