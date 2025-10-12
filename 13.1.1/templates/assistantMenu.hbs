@@ -1,0 +1,53 @@
+<div data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.GenerateName.Hint'}}">
+    <span>{{localize "WFRP4E.Assistant.Helpers.GenerateName.Label"}}</span>
+    <div>
+        <input id="generateNameStatus" type="checkbox" {{#if params.generateName.status}}checked{{/if}}>
+        <input id="generateNameSpecies" type="text" value="{{params.generateName.species}}" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.GenerateName.Species'}}">
+        <input id="generateNameKeys" type="text" value="{{params.generateName.keys}}" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.GenerateName.Keys'}}">
+    </div>
+</div>
+<br>
+<div data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.RandomCharacteristics.Hint'}}">
+    <span>{{localize "WFRP4E.Assistant.Helpers.RandomCharacteristics.Label"}}</span>
+    <input id="randomCharacteristics" type="checkbox" {{#if params.randomCharacteristics}}checked{{/if}}>
+</div>
+<br>
+<div data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.AddCharacteristics.Hint'}}">
+    <span>{{localize "WFRP4E.Assistant.Helpers.AddCharacteristics.Label"}}</span>
+    <input id="addCharacteristics" type="number" step="1" value="{{params.addCharacteristics}}">
+</div>
+<br>
+<div data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.DeathTint.Hint'}}">
+    <span>{{localize "WFRP4E.Assistant.Helpers.DeathTint.Label"}}</span>
+    <input id="deathTint" type="color" value="{{params.deathTint.color}}" placeholder="{{params.deathTint.defaultColor}}">
+</div>
+<br>
+<div data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.GenerateSpells.Hint'}}">
+    <span>{{localize "WFRP4E.Assistant.Helpers.GenerateSpells.Label"}}</span>
+    <div>
+        <input id="generateSpellsStatus" type="checkbox" {{#if params.generateSpells.status}}checked{{/if}}>
+        <select id="generateSpellsLore" value="{{params.generateSpells.lore}}" data-tooltip="{{localize 'Lore'}}">
+            {{#each lore}}
+                <option value="{{this.value}}" {{#if (eq ../params.generateSpells.lore this.value)}}selected{{/if}}>{{this.label}}</option>
+            {{/each}}
+        </select>
+        <input id="generateSpellsCount" type="number" step="1" min="1" value="{{params.generateSpells.count}}" data-tooltip="{{localize 'Quantity'}}">
+        <input id="generateSpellsArcane" type="checkbox" {{#if params.generateSpells.arcane}}checked{{/if}} data-tooltip="{{localize 'WFRP4E.Assistant.systemFix.Settings.enableArcane.Name'}}<br>{{localize 'WFRP4E.Assistant.systemFix.Settings.enableArcane.Hint'}}">
+    </div>
+</div>
+<br>
+<div style="display: none;" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.Resize.Hint'}}">
+    <span>{{localize "WFRP4E.Assistant.Helpers.Resize.Label"}}</span>
+    <div>
+        <select id="resizeCurrent" disabled value="{{params.resize.current}}" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.Resize.Current'}}">
+            {{#each sizes}}
+                <option value="{{this.value}}" {{#if (eq ../params.resize.current this.value)}}selected{{/if}}>{{this.label}}</option>
+            {{/each}}
+        </select>
+        <select id="resizeDefault" disabled value="{{params.resize.default}}" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.Resize.Default'}}">
+            {{#each sizes}}
+                <option value="{{this.value}}" {{#if (eq ../params.resize.default this.value)}}selected{{/if}}>{{this.label}}</option>
+            {{/each}}
+        </select>
+    </div>
+</div>
