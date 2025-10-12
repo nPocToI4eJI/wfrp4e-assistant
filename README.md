@@ -45,8 +45,8 @@ _Здесь перечислены исправления и доработки 
 
 Магические Школы:
 - [X] Core Rulebook
-- [X] Archives of the Empire: Vol II.
 - [X] Winds of Magic
+- [X] Archives of the Empire: Vol II.
 - [X] The Horned Rat
 - [X] Tribes & Tribulations
 
