@@ -1,0 +1,28 @@
+#WFRP4E_Assistant .dialog-content {
+    margin-bottom: 1rem;
+}
+#WFRP4E_Assistant .dialog-content>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#WFRP4E_Assistant .dialog-content>div>div {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1%;
+}
+#WFRP4E_Assistant .dialog-content>div input[type="checkbox"] {
+    max-width: 10%;
+}
+#WFRP4E_Assistant .dialog-content>div>input[type="number"],
+#WFRP4E_Assistant .dialog-content>div>input[type="color"] {
+    width: 10%;
+}
+#WFRP4E_Assistant .dialog-content>div>input[type="text"],
+#WFRP4E_Assistant .dialog-content>div>select {
+    width: 25%;
+}

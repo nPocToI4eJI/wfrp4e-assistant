@@ -1,0 +1,76 @@
+{{#params.generateName}}
+    <div data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.GenerateName.Hint'}}">
+        <span>{{localize "WFRP4E.Assistant.Helpers.GenerateName.Label"}}</span>
+        <div>
+            <input id="generateNameStatus" type="checkbox" {{#if this.status}}checked{{/if}}>
+            <input id="generateNameSpecies" type="text" value="{{this.species}}" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.GenerateName.Species'}}">
+            <input id="generateNameKeys" type="text" value="{{this.keys}}" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.GenerateName.Keys'}}">
+        </div>
+    </div>
+{{/params.generateName}}
+{{#params.randomCharacteristics}}
+    <div data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.RandomCharacteristics.Hint'}}">
+        <span>{{localize "WFRP4E.Assistant.Helpers.RandomCharacteristics.Label"}}</span>
+        <input id="randomCharacteristics" type="checkbox" {{#if this.status}}checked{{/if}}>
+    </div>
+{{/params.randomCharacteristics}}
+{{#params.addCharacteristics}}
+    <div style="display: none;" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.AddCharacteristics.Hint'}}">
+        <span>{{localize "WFRP4E.Assistant.Helpers.AddCharacteristics.Label"}}</span>
+        <input id="addCharacteristics" type="number" step="1" value="{{this.value}}">
+    </div>
+{{/params.addCharacteristics}}
+{{#params.deathTint}}
+    <div data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.DeathTint.Hint'}}">
+        <span>{{localize "WFRP4E.Assistant.Helpers.DeathTint.Label"}}</span>
+        <div>
+            <input id="deathTint" type="color" value="{{this.color}}" placeholder="{{this.defaultColor}}">
+            <input id="deathTintDefault" type="color" value="{{this.defaultColor}}" placeholder="{{this.defaultColor}}" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.DeathTint.Default'}}">
+        </div>
+    </div>
+{{/params.deathTint}}
+{{#params.generateSpells}}
+    <div data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.GenerateSpells.Hint'}}">
+        <span>{{localize "WFRP4E.Assistant.Helpers.GenerateSpells.Label"}}</span>
+        <div>
+            <input id="generateSpellsStatus" type="checkbox" {{#if this.status}}checked{{/if}}>
+            <select id="generateSpellsLore" value="{{this.lore}}" data-tooltip="{{localize 'Lore'}}">
+                {{#each ../lores as |lore|}}
+                    <option value="{{lore.value}}" {{#if (eq ../this.lore lore.value)}}selected{{/if}}>{{lore.label}}</option>
+                {{/each}}
+            </select>
+            <input id="generateSpellsCount" type="number" step="1" min="1" value="{{this.count}}" data-tooltip="{{localize 'Quantity'}}">
+            <input id="generateSpellsArcane" type="checkbox" {{#if this.arcane}}checked{{/if}} data-tooltip="{{localize 'WFRP4E.Assistant.systemFix.Settings.enableArcane.Name'}}<br>{{localize 'WFRP4E.Assistant.systemFix.Settings.enableArcane.Hint'}}">
+        </div>
+    </div>
+{{/params.generateSpells}}
+{{#params.disposition}}
+    <div data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.Disposition.Hint'}}">
+        <span>{{localize "WFRP4E.Assistant.Helpers.Disposition.Label"}}</span>
+        <select id="disposition" value="{{this}}">
+            <option value="3" {{#if (eq this "3")}}selected{{/if}}>{{localize "WFRP4E.Assistant.Helpers.Disposition.None"}}</option>
+            <option value="4" {{#if (eq this "4")}}selected{{/if}}>{{localize "WFRP4E.Assistant.Helpers.Disposition.Call"}}</option>
+            <option value="0" {{#if (eq this "0")}}selected{{/if}}>{{localize "TOKEN.DISPOSITION.NEUTRAL"}}</option>
+            <option value="1" {{#if (eq this "1")}}selected{{/if}}>{{localize "TOKEN.DISPOSITION.FRIENDLY"}}</option>
+            <option value="-1" {{#if (eq this "-1")}}selected{{/if}}>{{localize "TOKEN.DISPOSITION.HOSTILE"}}</option>
+            <option value="-2" {{#if (eq this "-2")}}selected{{/if}}>{{localize "TOKEN.DISPOSITION.SECRET"}}</option>
+        </select>
+    </div>
+{{/params.disposition}}
+{{#params.resize}}
+    <div data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.Resize.Hint'}}">
+        <span>{{localize "WFRP4E.Assistant.Helpers.Resize.Label"}}</span>
+        <div>
+            <select id="resizeCurrent" value="{{this.current}}" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.Resize.Current'}}">
+                {{#each ../sizes as |size|}}
+                    <option value="{{size.value}}" {{#if (eq ../this.current size.value)}}selected{{/if}}>{{size.label}}</option>
+                {{/each}}
+            </select>
+            <select id="resizeDefault" value="{{this.default}}" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.Resize.Default'}}">
+                {{#each ../sizes as |size|}}
+                    <option value="{{size.value}}" {{#if (eq ../this.default size.value)}}selected{{/if}}>{{size.label}}</option>
+                {{/each}}
+            </select>
+        </div>
+    </div>
+{{/params.resize}}
