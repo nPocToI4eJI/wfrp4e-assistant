@@ -71,7 +71,7 @@ _Здесь перечислены исправления и доработки 
 ```
 
 #### Уход в защиту
-Во вкладке **"Бой"** добавлена кнопка для управления состоянием **"Уход в защиту"**:\
+Во вкладке **"Бой"** добавлена кнопка для управления состоянием **"Уход в защиту"**:
 <p align="center">
   <img width="130" height="30" alt="image" src="https://github.com/user-attachments/assets/cfba184f-932d-4a5a-a8e8-10655a54fd34"/> <img width="130" height="30" alt="image" src="https://github.com/user-attachments/assets/666698c6-05cd-4818-9d4c-803b17532288"/>
 </p>
