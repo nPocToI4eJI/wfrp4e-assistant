@@ -66,7 +66,7 @@ Hooks.on("renderActorSheetV2", (app, html, sheet) => {
 			default: iconSpells = "<i class='fas fa-list'></i>"; break;
 		};
 		//Создание кнопки
-		html.querySelector("section[data-tab='magic']>.sheet-list.spells>.list-header>.list-name").insertAdjacentHTML("afterbegin", `<a class="list-button" data-action="spellsFilter" data-tooltip="<h6 style='text-align: center;'>${game.settings.get('wfrp4e-spellsFilter', 'spellsFilter')}</h6>${game.i18n.localize("WFRP4E.Assistant.spellsFilter.Hint")}">${iconSpells}</a>`);
+		html.querySelector("section[data-tab='magic']>.sheet-list.spells>.list-header>.list-name").insertAdjacentHTML("afterbegin", `<a class="list-button" data-action="spellsFilter" data-tooltip="<h6 style='text-align: center;'>${game.settings.get('wfrp4e-assistant', 'spellsFilter')}</h6>${game.i18n.localize("WFRP4E.Assistant.spellsFilter.Hint")}">${iconSpells}</a>`);
 		//Обновление отображения Заклинаний
 		updateSpells(sheet.document.id);
 
@@ -133,7 +133,7 @@ Hooks.on("renderActorSheetV2", (app, html, sheet) => {
 		if (game.settings.get("wfrp4e-assistant", "hidePetty")) {iconPetty = "<i class='fas fa-eye'></i>"}
 		else {iconPetty = "<i class='fas fa-eye-slash'></i>"};
 		//Создание кнопки
-		html.querySelector("section[data-tab='magic']>.sheet-list.petty>.list-header>.list-name").insertAdjacentHTML("afterbegin", `<a class="list-button" data-action="hidePetty" data-tooltip="<h6 style='text-align: center;'>${game.settings.get('wfrp4e-spellsFilter', 'hidePetty') ? game.i18n.localize("WFRP4E.Assistant.spellsFilter.hidePetty.Show") : game.i18n.localize("WFRP4E.Assistant.spellsFilter.hidePetty.Hide")}</h6>">${iconPetty}</a>`);
+		html.querySelector("section[data-tab='magic']>.sheet-list.petty>.list-header>.list-name").insertAdjacentHTML("afterbegin", `<a class="list-button" data-action="hidePetty" data-tooltip="<h6 style='text-align: center;'>${game.settings.get('wfrp4e-assistant', 'hidePetty') ? game.i18n.localize("WFRP4E.Assistant.spellsFilter.hidePetty.Show") : game.i18n.localize("WFRP4E.Assistant.spellsFilter.hidePetty.Hide")}</h6>">${iconPetty}</a>`);
 		//Обновление отображения Простейших
 		updatePetty();
 		
