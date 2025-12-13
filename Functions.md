@@ -4,7 +4,7 @@ _В модуле присутствуют новые методы, которы�
 ## Содержание
 - [generateBookTitle](#generateBookTitletype)
 - [getActorFromUUID](#getActorFromUUIDuuid)
-- [getReaction](#getReaction)
+- [getReaction](#getReactionactor,-opponent,-action)
 
 ### generateBookTitle(type)
 _Этот метод генерирует случайное название для книги в стилистике сеттинга. Варианты названий взяты у [Paco's Miscellaneous Stuff](https://pacomiscelaneousstuff.blogspot.com/2020/02/wfrp4-random-book-generator.html) и переведены мной на русский._
