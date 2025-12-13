@@ -50,8 +50,8 @@ _Этот метод используется для определения и �
   - **species** _(String)_: ключ Народа, для которого будут определяться реакции. Реакции находятся по следующему пути локализации: _WFRP4E.Assistant.Helpers.Reactions.List["actor.species"]_.
   - **tokens** _(Array)_: массив, содержащий Токены выбранного Актёра.
   - **to** _(String)_: ключ конечности, для попадания по которой будут определяться реакции. Реакции находятся по следующему пути локализации: _WFRP4E.Assistant.Helpers.Reactions.List["actor.species"].takeDamage.To["actor.to"]_.
-- **opponent** _(Object)_: данные противника _(необязательный параметр)_.
-  - **species** _(String)_: ключ Народа, для которого будут определяться реакции. Реакции находятся по следующему пути локализации: _WFRP4E.Assistant.Helpers.Reactions.List["actor.species"]."action".Opponent["opponent.species"]_.
+- **opponent** _(Object)_: данные противника _(необязательный параметр)_. Оставьте пустым, для использования только Общих реакций, не привязанных к конкретным Народам.
+  - **species** _(String)_: ключ Народа, для которого будут определяться реакции. Реакции находятся по следующему пути локализации: _WFRP4E.Assistant.Helpers.Reactions.List["actor.species"]["action"].Opponent["opponent.species"]_.
   - **to** _(String)_: ключ конечности, для попадания по которой будут определяться реакции. Реакции находятся по следующему пути локализации: _WFRP4E.Assistant.Helpers.Reactions.List["actor.species"].applyDamage.To["opponent.to"]_.
 - **action** _(String)_: ключ действия. Реакции находятся по следующему пути локализации: _WFRP4E.Assistant.Helpers.Reactions.List["actor.species"]["action"]_.
 
