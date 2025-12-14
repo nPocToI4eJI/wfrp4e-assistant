@@ -1,6 +1,7 @@
 {
 	"WFRP4E.Assistant.Helpers.Reactions": {
 		"Species": {
+			"Not": "Без привязки",
 			"Human": "Человек",
 			"Goblin": "Гоблин",
 			"Beast": "Зверь"
@@ -1018,7 +1019,7 @@
 					}
 				}
 			},
-			"Empty": {
+			"Not": {
 				"takeDamage": {
 					"All": {
 					},
