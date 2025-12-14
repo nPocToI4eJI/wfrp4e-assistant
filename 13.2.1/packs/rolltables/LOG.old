@@ -1,0 +1,8 @@
+2025/12/14-13:01:23.324 2b10 Recovering log #485
+2025/12/14-13:01:23.328 2b10 Delete type=0 #485
+2025/12/14-13:01:23.328 2b10 Delete type=3 #483
+2025/12/14-13:02:48.590 f14 Level-0 table #490: started
+2025/12/14-13:02:48.590 f14 Level-0 table #490: 0 bytes OK
+2025/12/14-13:02:48.591 f14 Delete type=0 #488
+2025/12/14-13:02:48.591 f14 Manual compaction at level-0 from '!folders!PR4jl8YIBMSvWH53' @ 72057594037927935 : 1 .. '!tables.results!swUP2rbWOJeukPEi.tYcZswwpsZMjbvG1' @ 0 : 0; will stop at (end)
+2025/12/14-13:02:48.591 f14 Manual compaction at level-1 from '!folders!PR4jl8YIBMSvWH53' @ 72057594037927935 : 1 .. '!tables.results!swUP2rbWOJeukPEi.tYcZswwpsZMjbvG1' @ 0 : 0; will stop at (end)
