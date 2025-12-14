@@ -523,7 +523,7 @@ Hooks.on("ready", function () {
 });
 
 //Списки заклинаний
-function spellsFilter(html, effect) {
+function spellsFilter(html, effect, actor) {
 	//Функция обновления отображения Заклинаний
 	function updateSpells(button) {
 		//Изменение кнопки
@@ -564,7 +564,7 @@ function spellsFilter(html, effect) {
 	spellsButton.addEventListener("contextmenu", async function() {
 		if (effect.flags.assistant.spellsFilter.page != -1) {
 			//Выбор Заклинаний для фильтра
-			let spellsLists = sheet.document.itemTypes.spell.filter(s => s.lore.value != "petty").map(s => ({name: s.name, img: s.img, uuid: s.uuid}));
+			let spellsLists = actor.itemTypes.spell.filter(s => s.lore.value != "petty").map(s => ({name: s.name, img: s.img, uuid: s.uuid}));
 			let choice = (await ItemDialog.create(spellsLists, spellsLists.length, {text: game.i18n.format("WFRP4E.Assistant.spellsFilter.Description", {name: effect.flags.assistant.spellsFilter.list[effect.flags.assistant.spellsFilter.page].name}), title: effect.flags.assistant.spellsFilter.list[effect.flags.assistant.spellsFilter.page].name})).map(s => s.uuid);
 			//Обновление сохранённых параметров
 			let result = effect.flags.assistant.spellsFilter.list;
@@ -933,7 +933,7 @@ async function getEffect(actor, html) {
 	};
 
 	//Списки заклинаний
-	if (html && actor.hasSpells) {spellsFilter(html, effect)};
+	if (html && actor.hasSpells) {spellsFilter(html, effect, actor)};
 
 	if (game.settings.get("wfrp4e-assistant", "hideHelpersTrait")) {
 		let element = actor.sheet.form.querySelector(`section[data-tab="effects"]>.effect-lists>.sheet-list>.list-content>div[data-uuid="${effect.uuid}"]`) || false;
