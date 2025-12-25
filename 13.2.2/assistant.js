@@ -417,7 +417,7 @@ Hooks.on("ready", function () {
 				};
 			} else {
 				color = this.actor?.prototypeToken.texture.tint || "#FFFFFF"
-				if (game.modules.get("healthEstimate") && game.healthEstimate?.NPCsJustDie && this.actor.type != "character" && this.actor.hasCondition("dead")) {
+				if (this.actor.hasCondition("dead")) {
 					await this.actor.removeCondition("dead");
 				};
 			};
