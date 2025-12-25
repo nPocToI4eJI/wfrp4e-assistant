@@ -1,16 +1,23 @@
-# WFRP4e - Assistant
+# <p align="center">WFRP4e - Assistant</p>
+<p align="center">
+  <a href="https://foundryvtt.com/packages/wfrp4e-assistant" rel="nofollow"><img src="https://img.shields.io/badge/WFRP4e%20--%20Assistant-FoundryVTT-orange?labelColor=darkred" alt="FoundryVTT"></a>
+  <a href="https://foundryvtt.com/" rel="nofollow"><img src="https://img.shields.io/badge/V13-Совместимо-darkgreen?labelColor=orange" alt="Совместимость"></a>
+  <a href="https://github.com/nPocToI4eJI/wfrp4e-assistant/releases" rel="nofollow"><img src="https://img.shields.io/github/v/release/nPocToI4eJI/wfrp4e-assistant?display_name=release&label=Latest%20Version" alt="Последняя версия"></a>
+  <a href="https://github.com/nPocToI4eJI/wfrp4e-assistant/releases/latest" rel="nofollow"><img src="https://img.shields.io/github/downloads/nPocToI4eJI/wfrp4e-assistant/latest/total?color=darkgreen&label=Скачиваний&labelColor=blue" alt="Скачивания"></a>
+  <a href="https://github.com/nPocToI4eJI/wfrp4e-assistant/releases" rel="nofollow"><img src="https://img.shields.io/github/downloads/nPocToI4eJI/wfrp4e-assistant/total?color=darkgreen&label=Всего&labelColor=blue" alt="Скачиваний всего"></a>
+</p>
 Этот модуль поможет Мастеру проводить с комфортом. В него включены исправления ошибок и недоработок системы и официальных модулей, а также собственные и адаптированные инструменты.
 
 ## Содержание
 - [Помощник](#Помощник)
-  - [Случайное имя](#1Случайное-имя)
-  - [Изменение характеристик](#2Изменение-характеристик)
-  - [Случайные характеристики](#3Случайные-характеристики)
-  - [Окраска токена при смерти](#4Окраска-токена-при-смерти)
-  - [Случайные заклинания](#5Случайные-заклинания)
-  - [Отношение токена](#6Отношение-токена)
-  - [Реакции](#7Реакции)
-  - [Экспортировать актёра](#8Экспортировать-актёра)
+  - [Случайное имя](#1-Случайное-имя)
+  - [Изменение характеристик](#2-Изменение-характеристик)
+  - [Случайные характеристики](#3-Случайные-характеристики)
+  - [Окраска токена при смерти](#4-Окраска-токена-при-смерти)
+  - [Случайные заклинания](#5-Случайные-заклинания)
+  - [Отношение токена](#6-Отношение-токена)
+  - [Реакции](#7-Реакции)
+  - [Экспортировать актёра](#Экспортировать-актёра)
 - [Исправления и улучшения](#Исправления-и-улучшения)
   - [Core Rulebook](#Core-Rulebook)
   - [Winds of Magic](#Winds-of-Magic)
@@ -31,11 +38,13 @@ _Это универсальный инструмент по индивидуа�
 <img width="250" height="300" alt="Вкладка Переключения управления" src="https://github.com/user-attachments/assets/15430723-b666-4787-b1fe-9c3d1ff987de"/>
 
 Интерфейс:\
-<img width="600" height="450" alt="Интерфейс Помощника" src=""/>
+<img width="600" height="450" alt="Интерфейс Помощника" src="https://github.com/user-attachments/assets/94b5390e-aa91-4b9d-8712-66b142a5bc8d"/>
 
-
-#### Случайное имя
-_Если включено, при переносе токена на сцену, для него будет сгенерировано случайное имя._
+#### 1. Случайное имя
+- _Триггер: перенос токена на сцену._
+- _Действие: присвоение случайного имени._
+- _Активация:_
+В выпадающем меню
 
 Имеющиеся имена находятся напрямую в файлах перевода. Существующие Народы можно найти по пути **"WFRP4E.Assistant.Helpers.GenerateName.List"**. Нужный ключ указывется в первом окне ввода. Во втором, через запятую, указываются необходимые для генерации имени выбранного Актёра ключи, находящиеся внутри ключа Народа.
 
