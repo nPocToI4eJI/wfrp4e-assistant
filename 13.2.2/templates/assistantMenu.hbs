@@ -99,14 +99,14 @@
 	<div id="reactions" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.Reactions.Hint'}}">
 		<span>{{localize "WFRP4E.Assistant.Helpers.Reactions.Label"}}</span>
 		<div>
-			<input id="reactionsStatus" onchange="checkSubSpecies(document.querySelector('#WFRP4E_Assistant #reactionsSpecies').value)" type="checkbox" {{#if this.status}}checked{{/if}}>
-			<select id="reactionsSpecies" onchange="checkSubSpecies(this.value)" value="{{this.species}}" data-tooltip="{{localize 'Species'}}">
+			<input id="reactionsStatus" onchange="checkSubspecies(document.querySelector('#WFRP4E_Assistant #reactionsSpecies').value)" type="checkbox" {{#if this.status}}checked{{/if}}>
+			<select id="reactionsSpecies" onchange="checkSubspecies(this.value)" value="{{this.species}}" data-tooltip="{{localize 'Species'}}">
 				<option hidden disabled selected value>{{localize 'Species'}}</option>
 				{{#each ../reactions}}
 				<option value="{{this.value}}" {{#if (eq ../this.species this.value)}}selected{{/if}}>{{this.name}}</option>
 				{{/each}}
 			</select>
-			<select id="reactionsSubSpecies" value="{{this.subspecies}}" data-tooltip="{{localize 'Subspecies'}}<br><br><em>* {{localize 'WFRP4E.Assistant.Helpers.Reactions.Empty'}}.</em>">
+			<select id="reactionsSubspecies" value="{{this.subspecies}}" data-tooltip="{{localize 'Subspecies'}}<br><br><em>* {{localize 'WFRP4E.Assistant.Helpers.Reactions.Empty'}}.</em>">
 				<option hidden disabled selected value="">{{localize 'WFRP4E.Assistant.Helpers.Reactions.Species.Not.Name'}}</option>
 				{{#each ../reactions}}
 				{{#each this.subspecies}}
@@ -123,9 +123,9 @@
 		</div>
 	</div>
 	<script>
-		checkSubSpecies(document.querySelector("#WFRP4E_Assistant #reactionsSpecies").value);
-		function checkSubSpecies(value) {
-			element = document.querySelector("#WFRP4E_Assistant #reactionsSubSpecies");
+		checkSubspecies(document.querySelector("#WFRP4E_Assistant #reactionsSpecies").value);
+		function checkSubspecies(value) {
+			element = document.querySelector("#WFRP4E_Assistant #reactionsSubspecies");
 			element.querySelectorAll("option").forEach(o => {
 				if (o.dataset.id != value) {
 					if (o.dataset.id && o.selected) {o.selected = false};

@@ -1068,7 +1068,7 @@ async function assistantMenu(actor) {
 					newParams.generateName = {
 						status: element.querySelector("#generateNameStatus").checked,
 						species: species,
-						subspecies: element.querySelector("#reactionsSubSpecies").value || "",
+						subspecies: element.querySelector("#reactionsSubspecies").value || "",
 						keys: element.querySelector("#generateNameKeys").value.split(",").filter(v => Object.keys(game.i18n.translations.WFRP4E.Assistant.Helpers.GenerateName.Keys[species]).includes(v)).join(",")
 					};
 				} else {
@@ -1113,7 +1113,7 @@ async function assistantMenu(actor) {
 				newParams.reactions = {
 					status: element.querySelector("#reactionsStatus").checked,
 					species: species,
-					subspecies: Object.keys(game.i18n.translations.WFRP4E.Assistant.Helpers.Reactions.Species[species].SubSpecies).includes(element.querySelector("#reactionsSubSpecies").value) ? element.querySelector("#reactionsSubSpecies").value : "None",
+					subspecies: species ? Object.keys(game.i18n.translations.WFRP4E.Assistant.Helpers.Reactions.Species[species].Subspecies).includes(element.querySelector("#reactionsSubspecies").value) ? element.querySelector("#reactionsSubspecies").value : "None" : element.querySelector("#reactionsSubspecies").value,
 					frequency: element.querySelector("#reactionsFrequency").value
 				};
 			};
@@ -1130,9 +1130,9 @@ async function assistantMenu(actor) {
 	let reactions = Object.keys(game.i18n.translations.WFRP4E.Assistant.Helpers.Reactions.Species).map(s => ({
 		value: s,
 		name: game.i18n.translations.WFRP4E.Assistant.Helpers.Reactions.Species[s].Name,
-		subspecies: Object.keys(game.i18n.translations.WFRP4E.Assistant.Helpers.Reactions.Species[s].SubSpecies || false).map(sub => ({
+		subspecies: Object.keys(game.i18n.translations.WFRP4E.Assistant.Helpers.Reactions.Species[s].Subspecies || false).map(sub => ({
 			value: sub,
-			name: game.i18n.translations.WFRP4E.Assistant.Helpers.Reactions.Species[s].SubSpecies[sub]
+			name: game.i18n.translations.WFRP4E.Assistant.Helpers.Reactions.Species[s].Subspecies[sub]
 		}))
 	}));
 	new Dialog({

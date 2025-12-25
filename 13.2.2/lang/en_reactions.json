@@ -3,13 +3,13 @@
 		"Species": {
 			"Not": {
 				"Name": "No reference",
-				"SubSpecies": {
+				"Subspecies": {
 					"None": "No reference"
 				}
 			},
 			"Human": {
 				"Name": "Human",
-				"SubSpecies": {
+				"Subspecies": {
 					"None": "No reference",
 					"Empire": "Empire",
 					"Bretonnian": "Bretonnian*",
@@ -18,7 +18,7 @@
 			},
 			"Greenskin": {
 				"Name": "Greenskin",
-				"SubSpecies": {
+				"Subspecies": {
 					"None": "No reference",
 					"Ork": "Ork*",
 					"Goblin": "Goblin"
@@ -26,7 +26,7 @@
 			},
 			"Beast": {
 				"Name": "Beast",
-					"SubSpecies": {
+					"Subspecies": {
 						"None": "No reference",
 						"Wolf": "Wolf",
 						"Rat": "Rat*",
