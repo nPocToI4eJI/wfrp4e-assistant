@@ -1,0 +1,142 @@
+{{#params.generateName}}
+	<div id="generateName" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.GenerateName.Hint'}}">
+		<span>{{localize "WFRP4E.Assistant.Helpers.GenerateName.Label"}}</span>
+		<div>
+			<input id="generateNameStatus" onchange="updateKeys(document.querySelector('#WFRP4E_Assistant #generateNameKeys'))" type="checkbox" {{#if this.status}}checked{{/if}}>
+			<select id="generateNameSpecies" onchange="updateSpecies(this)" value="{{this.species}}" data-tooltip="{{localize 'Species'}}">
+				<option hidden disabled selected value>{{localize 'Species'}}</option>
+				{{#each ../species}}
+				<option value="{{this.species.value}}" {{#if (eq ../this.species this.species.value)}}selected{{/if}}>{{this.species.name}}</option>
+				{{/each}}
+			</select>
+			<input id="generateNameKeys" onchange="updateKeys(this)" type="text" value="{{this.keys}}" data-tooltip="">
+		</div>
+	</div>
+	<script>
+		//Определение существующих народов и их ключей
+		species = {};
+		{{#each ../species}}
+		species["{{this.species.value}}"] = "{{{this.species.keys}}}";
+		{{/each}}
+		//Определение текущего ключа
+		currentSpecies = "{{this.species}}";
+		//Проверка указанных ключей на наличии в выбранном народе
+		updateKeys(document.querySelector("#WFRP4E_Assistant #generateNameKeys"));
+		//Функция обновления описания для ключей при смене народа
+		function updateSpecies(select) {
+			currentSpecies = select.value;
+			select.nextElementSibling.dataset.tooltip = `${game.i18n.localize("WFRP4E.Assistant.Helpers.GenerateName.Keys.Value")}<ul>${species[currentSpecies]}</ul>${game.i18n.localize("WFRP4E.Assistant.Helpers.GenerateName.Keys.Hint")}`;
+			//Проверка указанных ключей на наличии в выбранном народе
+			updateKeys(document.querySelector("#WFRP4E_Assistant #generateNameKeys"));
+		};
+		//Функция проверки указанных ключей на наличие в выбранном народе
+		function updateKeys(input) {
+			let keys = input.value.split(",");
+
+			let errors = [];
+			keys.forEach(w => {
+				if (!Object.keys(game.i18n.translations.WFRP4E.Assistant.Helpers.GenerateName.Keys[currentSpecies] || false).some(k => k == w)) {errors.push(`<li><strong>${w}</strong></li>`)};
+			});
+
+			if (errors.length) {
+				input.dataset.tooltip = `<span>${game.i18n.localize("WFRP4E.Assistant.Helpers.GenerateName.Keys.Error")}<ul>${errors.join("")}</ul></span>${game.i18n.localize("WFRP4E.Assistant.Helpers.GenerateName.Keys.Value")}<ul>${species[currentSpecies] || "<li><strong>" + game.i18n.localize("No") + "</li></strong>"}</ul>${game.i18n.localize("WFRP4E.Assistant.Helpers.GenerateName.Keys.Hint")}`;
+				if (document.querySelector("#WFRP4E_Assistant #generateNameStatus").checked) {input.classList.add("error")}
+				else {input.classList.remove("error")};
+			} else {
+				input.dataset.tooltip = `${game.i18n.localize("WFRP4E.Assistant.Helpers.GenerateName.Keys.Value")}<ul>${species[currentSpecies]}</ul>${game.i18n.localize("WFRP4E.Assistant.Helpers.GenerateName.Keys.Hint")}`;
+				input.classList.remove("error");
+			};
+		};
+	</script>
+{{/params.generateName}}
+{{#params.changeCharacteristics}}
+	<div id="changeCharacteristics" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.ChangeCharacteristics.Hint'}}">
+		<span>{{localize "WFRP4E.Assistant.Helpers.ChangeCharacteristics.Label"}}</span>
+		<input id="changeCharacteristicsValue" type="number" step="1" value="{{this.value}}" data-tooltip="{{localize 'Value'}}">
+	</div>
+{{/params.changeCharacteristics}}
+{{#params.randomCharacteristics}}
+	<div id="randomCharacteristics" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.RandomCharacteristics.Hint'}}">
+		<span>{{localize "WFRP4E.Assistant.Helpers.RandomCharacteristics.Label"}}</span>
+		<input id="randomCharacteristicsStatus" type="checkbox" {{#if this.status}}checked{{/if}}>
+	</div>
+{{/params.randomCharacteristics}}
+{{#params.deathTint}}
+	<div id="deathTint" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.DeathTint.Hint'}}">
+		<span>{{localize "WFRP4E.Assistant.Helpers.DeathTint.Label"}}</span>
+		<input id="deathTintValue" type="color" value="{{this.color}}">
+	</div>
+{{/params.deathTint}}
+{{#params.generateSpells}}
+	<div id="generateSpells" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.GenerateSpells.Hint'}}">
+		<span>{{localize "WFRP4E.Assistant.Helpers.GenerateSpells.Label"}}</span>
+		<div>
+			<input id="generateSpellsStatus" type="checkbox" {{#if this.status}}checked{{/if}}>
+			<select id="generateSpellsLore" value="{{this.lore}}" data-tooltip="{{localize 'Lore'}}">
+				{{#each ../lores as |lore|}}
+				<option value="{{lore.value}}" {{#if (eq ../this.lore lore.value)}}selected{{/if}}>{{lore.label}}</option>
+				{{/each}}
+			</select>
+			<input id="generateSpellsCount" type="number" step="1" min="1" value="{{this.count}}" data-tooltip="{{localize 'Quantity'}}">
+			<input id="generateSpellsArcane" type="checkbox" {{#if this.arcane}}checked{{/if}} data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.GenerateSpells.Arcane'}}">
+		</div>
+	</div>
+{{/params.generateSpells}}
+{{#params.disposition}}
+	<div id="disposition" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.Disposition.Hint'}}">
+		<span>{{localize "WFRP4E.Assistant.Helpers.Disposition.Label"}}</span>
+		<select id="dispositionValue" value="{{this.value}}">
+			<option value="3" {{#if (eq this "3")}}selected{{/if}}>{{localize "WFRP4E.Assistant.Helpers.Disposition.None"}}</option>
+			<option value="4" {{#if (eq this "4")}}selected{{/if}}>{{localize "WFRP4E.Assistant.Helpers.Disposition.Call"}}</option>
+			<option value="0" {{#if (eq this "0")}}selected{{/if}}>{{localize "TOKEN.DISPOSITION.NEUTRAL"}}</option>
+			<option value="1" {{#if (eq this "1")}}selected{{/if}}>{{localize "TOKEN.DISPOSITION.FRIENDLY"}}</option>
+			<option value="-1" {{#if (eq this "-1")}}selected{{/if}}>{{localize "TOKEN.DISPOSITION.HOSTILE"}}</option>
+			<option value="-2" {{#if (eq this "-2")}}selected{{/if}}>{{localize "TOKEN.DISPOSITION.SECRET"}}</option>
+		</select>
+	</div>
+{{/params.disposition}}
+{{#params.reactions}}
+	<div id="reactions" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.Reactions.Hint'}}">
+		<span>{{localize "WFRP4E.Assistant.Helpers.Reactions.Label"}}</span>
+		<div>
+			<input id="reactionsStatus" onchange="checkSubSpecies(document.querySelector('#WFRP4E_Assistant #reactionsSpecies').value)" type="checkbox" {{#if this.status}}checked{{/if}}>
+			<select id="reactionsSpecies" onchange="checkSubSpecies(this.value)" value="{{this.species}}" data-tooltip="{{localize 'Species'}}">
+				<option hidden disabled selected value>{{localize 'Species'}}</option>
+				{{#each ../reactions}}
+				<option value="{{this.value}}" {{#if (eq ../this.species this.value)}}selected{{/if}}>{{this.name}}</option>
+				{{/each}}
+			</select>
+			<select id="reactionsSubSpecies" value="{{this.subspecies}}" data-tooltip="{{localize 'Subspecies'}}<br><br><em>* {{localize 'WFRP4E.Assistant.Helpers.Reactions.Empty'}}.</em>">
+				<option hidden disabled selected value="">{{localize 'WFRP4E.Assistant.Helpers.Reactions.Species.Not.Name'}}</option>
+				{{#each ../reactions}}
+				{{#each this.subspecies}}
+				<option value="{{this.value}}" data-id="{{../this.value}}" {{#if (eq ../../this.subspecies this.value)}}selected{{/if}}>{{this.name}}</option>
+				{{/each}}
+				{{/each}}
+			</select>
+			<select id="reactionsFrequency" value="{{this.frequency}}" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.Reactions.Frequency'}}">
+				<option value="100" {{#if (eq this.frequency "100")}}selected{{/if}}>100%</option>
+				<option value="75" {{#if (eq this.frequency "75")}}selected{{/if}}>75%</option>
+				<option value="50" {{#if (eq this.frequency "50")}}selected{{/if}}>50%</option>
+				<option value="25" {{#if (eq this.frequency "25")}}selected{{/if}}>25%</option>
+			</select>
+		</div>
+	</div>
+	<script>
+		checkSubSpecies(document.querySelector("#WFRP4E_Assistant #reactionsSpecies").value);
+		function checkSubSpecies(value) {
+			element = document.querySelector("#WFRP4E_Assistant #reactionsSubSpecies");
+			element.querySelectorAll("option").forEach(o => {
+				if (o.dataset.id != value) {
+					if (o.dataset.id && o.selected) {o.selected = false};
+					o.disabled = true;
+					o.hidden = true;
+				} else {
+					o.disabled = false;
+					o.hidden = false;
+					if (element.value == "" && o.value == "") {o.selected = true};
+				};
+			});
+		};
+	</script>
+{{/params.reactions}}
