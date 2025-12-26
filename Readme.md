@@ -4,7 +4,7 @@
   <a href="https://foundryvtt.com/" rel="nofollow"><img src="https://img.shields.io/badge/V13-Совместимо-darkgreen?labelColor=orange" alt="Совместимость"></a>
   <a href="https://github.com/nPocToI4eJI/wfrp4e-assistant/releases" rel="nofollow"><img src="https://img.shields.io/github/v/release/nPocToI4eJI/wfrp4e-assistant?display_name=release&label=Latest%20Version" alt="Последняя версия"></a>
   <a href="https://github.com/nPocToI4eJI/wfrp4e-assistant/releases/latest" rel="nofollow"><img src="https://img.shields.io/github/downloads/nPocToI4eJI/wfrp4e-assistant/latest/total?label=%D0%A1%D0%BA%D0%B0%D1%87%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B9&color=darkgreen&labelColor=blue" alt="Скачивания"></a>
-  <a href="https://github.com/nPocToI4eJI/wfrp4e-assistant/releases" rel="nofollow"><img src="https://img.shields.io/github/downloads/nPocToI4eJI/wfrp4e-assistant/total?color=green&label=%D0%92%D1%81%D0%B5%D0%B3%D0%BE&labelColor=darkblue" alt="Скачиваний всего"></a>
+  <a href="https://github.com/nPocToI4eJI/wfrp4e-assistant/releases" rel="nofollow"><img src="https://img.shields.io/github/downloads/nPocToI4eJI/wfrp4e-assistant/wfrp4e-assistant.zip?displayAssetName=false&label=%D0%92%D1%81%D0%B5%D0%B3%D0%BE&labelColor=darkblue&color=green" alt="Скачиваний всего"></a>
 </p>
 Этот модуль поможет Мастеру проводить игры с комфортом. В него включены исправления ошибок и недоработок системы и официальных модулей, а также собственные и адаптированные инструменты.
 
