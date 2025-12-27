@@ -247,7 +247,7 @@ _Тут перечислены баги и недоработки, о котор
 <a href="https://github.com/nPocToI4eJI/wfrp4e-assistant/wiki" rel="nofollow"><img src="https://img.shields.io/badge/WFRP4e%20--%20Assistant-Wiki-blue?labelColor=darkred" alt="Информация для разработчиков"></a>
 </details>
 
-This module will help the Master to hold games with comfort. It includes corrections of errors and shortcomings of the system and official modules, as well as own and adapted tools.
+This module will help the Game Master to hold games with comfort. It includes corrections of bugs and shortcomings of the system and official modules, as well as own and adapted tools.
 <br>
 <details>
   <summary>Description</summary>
