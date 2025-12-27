@@ -7,7 +7,11 @@
   <a href="https://github.com/nPocToI4eJI/wfrp4e-assistant/releases" rel="nofollow"><img src="https://img.shields.io/github/downloads/nPocToI4eJI/wfrp4e-assistant/wfrp4e-assistant.zip?displayAssetName=false&label=%D0%92%D1%81%D0%B5%D0%B3%D0%BE&labelColor=darkgreen&color=darkred" alt="Скачиваний всего"></a>
 </p>
 Этот модуль поможет Мастеру проводить игры с комфортом. В него включены исправления ошибок и недоработок системы и официальных модулей, а также собственные и адаптированные инструменты.
-
+<br>
+<br>
+<details>
+  <summary>Описание</summary>
+  
 ## Содержание
 - [Помощник](#Помощник)
   - [Случайное имя](#1-Случайное-имя)
@@ -241,3 +245,13 @@ _Тут перечислены баги и недоработки, о котор
 
 ## Информация для разработчиков
 <a href="https://github.com/nPocToI4eJI/wfrp4e-assistant/wiki" rel="nofollow"><img src="https://img.shields.io/badge/WFRP4e%20--%20Assistant-Wiki-blue?labelColor=darkred" alt="Информация для разработчиков"></a>
+</details>
+
+This module will help the Master to hold games with comfort. It includes corrections of errors and shortcomings of the system and official modules, as well as own and adapted tools.
+<br>
+<br>
+<details>
+  <summary>Description</summary>
+
+_IN PROGRESS_
+</details>
