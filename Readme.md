@@ -237,4 +237,4 @@ _Тут перечислены баги и недоработки, о котор
 - [ ] Найденные ошибки можете присылать [сюда](https://github.com/nPocToI4eJI/wfrp4e-assistant/issues/2).
 
 ## Информация для разработчиков
-<a href="https://github.com/nPocToI4eJI/wfrp4e-assistant.wiki.git" rel="nofollow"><img src="https://img.shields.io/badge/WFRP4e%20--%20Assistant-Wiki-blue?labelColor=darkred" alt="Информация для разработчиков"></a>
+<a href="https://github.com/nPocToI4eJI/wfrp4e-assistant/wiki" rel="nofollow"><img src="https://img.shields.io/badge/WFRP4e%20--%20Assistant-Wiki-blue?labelColor=darkred" alt="Информация для разработчиков"></a>
