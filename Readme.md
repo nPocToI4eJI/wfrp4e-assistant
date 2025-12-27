@@ -249,7 +249,6 @@ _Тут перечислены баги и недоработки, о котор
 
 This module will help the Master to hold games with comfort. It includes corrections of errors and shortcomings of the system and official modules, as well as own and adapted tools.
 <br>
-<br>
 <details>
   <summary>Description</summary>
 
