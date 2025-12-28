@@ -195,20 +195,20 @@ _Здесь перечислены исправления и доработки 
 1. Добавлены ключи локализации для Школы Магии и Ветра Магии "Великой Пасти".
 
 Ключи локализации:
-- `WFRP4E.MagicLores.greatMaw` - название Магической Школы Великой Пасти.
-- `WFRP4E.MagicWind.greatMaw` - название Ветра Магии Великой Пасти.
-- `WFRP4E.greatMaw.descriptions` - описание эффекта Магической Школы Великой Пасти.
+- `WFRP4E.MagicLores.greatMaw` - название Магической Школы "Великой Пасти".
+- `WFRP4E.MagicWind.greatMaw` - название Ветра Магии "Великой Пасти".
+- `WFRP4E.greatMaw.descriptions` - описание эффекта Магической Школы "Великой Пасти".
 
 #### Tribes & Tribulations
 1. Добавлены ключи локализации для Школ Магии и Ветров Магии "Вааагх!".
 
 Ключи локализации:
-- `WFRP4E.MagicLores.little-waaagh` - название Магической Школы Малого Вааагх.
-- `WFRP4E.MagicWind.little-waaagh` - название Ветра Магии Малого Вааагх.
-- `WFRP4E.little-waaagh.descriptions` - описание эффекта Магической Школы Малого Вааагх.
-- `WFRP4E.MagicLores.big-waaagh` - название Магической Школы Большого Вааагх.
-- `WFRP4E.MagicWind.big-waaagh` - название Ветра Магии Большого Вааагх.
-- `WFRP4E.big-waaagh.descriptions` - описание эффекта Магической Школы Большого Вааагх.
+- `WFRP4E.MagicLores.little-waaagh` - название Магической Школы "Малого Вааагх".
+- `WFRP4E.MagicWind.little-waaagh` - название Ветра Магии "Малого Вааагх".
+- `WFRP4E.little-waaagh.descriptions` - описание эффекта Магической Школы "Малого Вааагх".
+- `WFRP4E.MagicLores.big-waaagh` - название Магической Школы "Большого Вааагх".
+- `WFRP4E.MagicWind.big-waaagh` - название Ветра Магии "Большого Вааагх".
+- `WFRP4E.big-waaagh.descriptions` - описание эффекта Магической Школы "Большого Вааагх".
 
 ## Макросы
 _Модуль добавляет несколько собственных макросов для оптимизации игрового процесса._
@@ -270,7 +270,7 @@ This module will help the Game Master to hold games with comfort. It includes co
   - [Archives of the Empire: II](#Archives-of-the-Empire-II)
   - [Tribes & Tribulations](#Tribes-&-Tribulations)
 - [Macros](#Macros)
-  - [Come Up with a Curse](#Come-Up-with-a-Curse)
+  - [Invent a Curse](#Invent-a-Curse)
   - [Book Title](#Book-Title)
 - [Plans](#Plans)
 - [Known Issues](#Known-Issues)
@@ -416,15 +416,15 @@ This enhancement allows you to group spells into custom categories and display o
 - **Left‑click** again shows all Petty Spells.
 
 #### Core Rulebook
-1. Исправлены скрипты эффектов.
-  - Новый скрипт Зачарованного посоха позволяет использовать переведённые названия Магических Школ.
-  - Новый скрипт магических Одеяний позволяет использовать переведённые названия Магических Школ.
+1. Effect scripts have been fixed.
+  - The new Enchanted Staff script now supports translated names of Magic Lores.
+  - The new Magical Robes script now supports translated names of Magic Lores.
 
 #### Winds of Magic
-1. Добавлены новые скрипты на генерацию случайных гримуаров и свитков заклинаний.\
-Макросы позволяют генерировать заклинания как случайных Магических Школ, так и выбранных пользователем. Он включает в себя настройки, которые позволят ещё больше оптимизировать процесс использования макросов.
+1. New scripts for generating random grimoires and spell scrolls have been added.\
+The macros allow generating spells from both random Magic Lores and those selected by the user. They include settings that will further optimize the process of using the macros.
 
-Магические Школы:
+Magic Lores:
 - [X] Core Rulebook
 - [X] Winds of Magic
 - [X] Archives of the Empire: Vol II.
@@ -432,57 +432,57 @@ This enhancement allows you to group spells into custom categories and display o
 - [X] Tribes & Tribulations
 
 #### Archives of the Empire: II
-1. Добавлены ключи локализации для Школы Магии и Ветра Магии "Великой Пасти".
+1. Localization keys have been added for the Magic Lores and the Wind of Magic of the "Great Maw".
 
-Ключи локализации:
-- `WFRP4E.MagicLores.greatMaw` - название Магической Школы Великой Пасти.
-- `WFRP4E.MagicWind.greatMaw` - название Ветра Магии Великой Пасти.
-- `WFRP4E.greatMaw.descriptions` - описание эффекта Магической Школы Великой Пасти.
+Localization keys:
+- `WFRP4E.MagicLores.greatMaw` - the name of the "Great Maw" Magic Lores.
+- `WFRP4E.MagicWind.greatMaw` - the name of the "Great Maw" Wind of Magic.
+- `WFRP4E.greatMaw.descriptions` - the description of the effect of the "Great Maw" Magic Lores.
 
 #### Tribes & Tribulations
-1. Добавлены ключи локализации для Школ Магии и Ветров Магии "Вааагх!".
+1. Localization keys have been added for the Magic Lores and the Wind of Magic of the "Waaagh!".
 
-Ключи локализации:
-- `WFRP4E.MagicLores.little-waaagh` - название Магической Школы Малого Вааагх.
-- `WFRP4E.MagicWind.little-waaagh` - название Ветра Магии Малого Вааагх.
-- `WFRP4E.little-waaagh.descriptions` - описание эффекта Магической Школы Малого Вааагх.
-- `WFRP4E.MagicLores.big-waaagh` - название Магической Школы Большого Вааагх.
-- `WFRP4E.MagicWind.big-waaagh` - название Ветра Магии Большого Вааагх.
-- `WFRP4E.big-waaagh.descriptions` - описание эффекта Магической Школы Большого Вааагх.
+Localization keys:
+- `WFRP4E.MagicLores.little-waaagh` - the name of the "Little Waaagh!" Magic Lores.
+- `WFRP4E.MagicWind.little-waaagh` - the name of the "Little Waaagh!" Wind of Magic.
+- `WFRP4E.little-waaagh.descriptions` - the description of the effect of the "Little Waaagh!" Magic Lores.
+- `WFRP4E.MagicLores.big-waaagh` - the name of the "Big Waaagh!" Magic Lores.
+- `WFRP4E.MagicWind.big-waaagh` - the name of the "Big Waaagh!" Wind of Magic.
+- `WFRP4E.big-waaagh.descriptions` - the description of the effect of the "Big Waaagh!" Magic Lores.
 
-## Макросы
-_Модуль добавляет несколько собственных макросов для оптимизации игрового процесса._
+## Macros
+_The module adds several custom macros to optimize gameplay._
 
-#### Придумать ругательство
-_Этот макрос генерирует оскорбления в фэнтезийном стиле. Хотя, они больше подходят для персонажей-гномов, найти им применение можно везде._
+#### Invent a Curse
+_This macro generates fantasy‑style insults. While they’re particularly suited for dwarf characters, they can be used in any context._
 
-Примеры:
+Examples (ru):
 - _Невнятный, гоблинский, плакса._
 - _Слащавый, предательский, дикарь._
 - _Вонючий, с рвотой вместо мозгов, проходимец._
 
-#### Название книги
-_Этот макрос использует метод [generateBookTitle](https://github.com/nPocToI4eJI/wfrp4e-assistant/blob/main/For%20developers.md#generateBookTitletype), представляя удобный интерфейс для взаимодействия и выводя результат в чат._
+#### Book Title
+_This macro uses the [generateBookTitle](https://github.com/nPocToI4eJI/wfrp4e-assistant/blob/main/For%20developers.md#generateBookTitletype) method, providing a user‑friendly interface for interaction and outputting the result to the chat._
 
-Примеры:
-- _Комплексные справки про битву на Перевале Чёрного Огня._
-- _Основные лекции о реальных опасностях неизученных трав._
-- _Насущные заметки о чудесах Зоологии._
+Examples:
+- _Finest lessons on the Dwarven Runes in Heraldy._
+- _Accumulated studies on the Uglu: the Grey Wind of Illusion._
+- _Essential conceptions on the Cross & Skull on Pirate Flags._
 
-## Планы
-_Дальнейшие планы по обновлению модуля._
+## Plans
+_Upcoming plans for module updates._
 
-- [ ] Починить выбор Народа при создании персонажа с таблицей "Archives of the Empire: II".
-- [ ] Починить остальные макросы из "Winds of Magic".
-- [ ] Добавить возможность изменения стандартных шаблонов Помощника.
-- [ ] Свои предложения по улучшению модуля можете присылать [сюда](https://github.com/nPocToI4eJI/wfrp4e-assistant/issues/1).
+- [ ] Fix the selection of Species when creating a character using the "Archives of the Empire: II".
+- [ ] Fix the remaining macros from "Winds of Magic".
+- [ ] Add the ability to modify the Assistant’s default templates.
+- [ ] You can submit your suggestions for improving the module [here](https://github.com/nPocToI4eJI/wfrp4e-assistant/issues/1).
 
-## Известные ошибки
-_Тут перечислены баги и недоработки, о которых уже известно._
+## Known Issues
+_This section lists bugs and shortcomings that are already known._
 
-- [ ] Двойная реакция для ситуации "Встречная проверка: Защитник", если был выбран вариант "Не встречная". Проблема со стороны системы.
-- [ ] Найденные ошибки можете присылать [сюда](https://github.com/nPocToI4eJI/wfrp4e-assistant/issues/2).
+- [ ] Double reaction for the "Opposed Test: Defender" situation when the "Not Opposed" option was selected. This is a system‑side issue.
+- [ ] You can report any bugs you find [here](https://github.com/nPocToI4eJI/wfrp4e-assistant/issues/2).
 
-## Информация для разработчиков
-<a href="https://github.com/nPocToI4eJI/wfrp4e-assistant/wiki" rel="nofollow"><img src="https://img.shields.io/badge/WFRP4e%20--%20Assistant-Wiki-blue?labelColor=darkred" alt="Информация для разработчиков"></a>
+## Developer Information
+<a href="https://github.com/nPocToI4eJI/wfrp4e-assistant/wiki" rel="nofollow"><img src="https://img.shields.io/badge/WFRP4e%20--%20Assistant-Wiki-blue?labelColor=darkred" alt="Developer Information"></a>
 </details>
