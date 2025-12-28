@@ -484,5 +484,5 @@ _This section lists bugs and shortcomings that are already known._
 - [ ] You can report any bugs you find [here](https://github.com/nPocToI4eJI/wfrp4e-assistant/issues/2).
 
 ## Developer Information
-<a href="https://github.com/nPocToI4eJI/wfrp4e-assistant/wiki" rel="nofollow"><img src="https://img.shields.io/badge/WFRP4e%20--%20Assistant-Wiki-blue?labelColor=darkred" alt="Developer Information"></a>
+<a href="https://github.com/nPocToI4eJI/wfrp4e-assistant/wiki" rel="nofollow"><img src="https://img.shields.io/badge/WFRP4e%20--%20Assistant-Wiki%20(ru)-blue?labelColor=darkred" alt="Developer Information (ru)"></a>
 </details>
