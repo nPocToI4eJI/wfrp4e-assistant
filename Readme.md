@@ -251,6 +251,238 @@ This module will help the Game Master to hold games with comfort. It includes co
 <br>
 <details>
   <summary>Description</summary>
+ 
+## Contents
+- [Assistant](#Assistant)
+  - [Random name](#1-Random-name)
+  - [Change characteristics](#2-Change-characteristics)
+  - [Random characteristics](#3-Random-characteristics)
+  - [Token coloration on death](#4-Token-coloration-on-death)
+  - [Random spells](#5-Random-spells)
+  - [Token disposition](#6-Token-disposition)
+  - [Reactions](#7-Reactions)
+  - [Export actor](#Export-actor)
+- [Fixes and Improvements](#Fixes-and-Improvements)
+  - [On The Defensive](#On-The-Defensive)
+  - [Spell Filter](#Spell-Filter)
+  - [Core Rulebook](#Core-Rulebook)
+  - [Winds of Magic](#Winds-of-Magic)
+  - [Archives of the Empire: II](#Archives-of-the-Empire-II)
+  - [Tribes & Tribulations](#Tribes-&-Tribulations)
+- [Macros](#Macros)
+  - [Come Up with a Curse](#Come-Up-with-a-Curse)
+  - [Book Title](#Book-Title)
+- [Plans](#Plans)
+- [Known Issues](#Known-Issues)
+- [Developer Information](#Developer-Information)
 
-_IN PROGRESS_
+## Assistant
+_This is a universal tool for customizing your NPCs and Creatures._
+
+You can access the Assistant via the **Control Switching"** tab:
+<p align="center"><img width="250" height="300" alt="Control Switching Tab" src="https://github.com/user-attachments/assets/15430723-b666-4787-b1fe-9c3d1ff987de"/></p>
+
+###### <p align="center">Interface</p>
+
+<p align="center"><img width="600" height="450" alt="Assistant Interface" src="https://github.com/user-attachments/assets/94b5390e-aa91-4b9d-8712-66b142a5bc8d"/></p>
+
+#### 1. Random name
+- _Availability: NPCs and Creatures._
+- _Trigger: moving the token onto the scene._
+- _Action: assigning a random name._
+- _Setup:_
+  - Check the corresponding option in the Assistant.
+  - In the Species dropdown menu, select one of the predefined options.
+  - In the parameters field, enter the required values separated by commas. You can view a list and brief description of available parameters for the selected Species by hovering over the field.
+    - If the specified parameters are not available for the selected Species , you will see a notification about this. If you save the settings, such parameters will not be retained.
+
+You can learn how to add names and parameters for existing and custom Species in [this instruction (ru)](https://github.com/nPocToI4eJI/wfrp4e-assistant/wiki/%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8%D0%BC%D1%91%D0%BD-%D0%B8-%D1%80%D0%B5%D0%B0%D0%BA%D1%86%D0%B8%D0%B9#1-%D0%98%D0%BC%D0%B5%D0%BD%D0%B0).
+
+#### 2. Change characteristics
+- _Availability: NPCs and Creatures._
+- _Trigger: when saving Assistant settings._
+- _Action: modifying the actor’s characteristics._
+- _Setup:_
+  - Enter the value by which you would like to modify the actor’s characteristics in the input field.
+
+#### 3. Random characteristics
+- _Availability: NPCs and Creatures._
+- _Trigger: moving the token onto the scene._
+- _Action: randomizing the actor’s characteristics._
+- _Setup:_
+  - Check the corresponding option in the Assistant.
+
+The characteristics are randomized according to the rule described in the Rulebook:
+> If you wish to randomly create Characteristics, subtract –10, then add 2d10. So, a Characteristic of 30 translates to 2d10+20. If a Characteristic starts at 5, roll just 1d10 to randomise it.
+
+#### 4. Token coloration on death
+- _Availability: Characters, NPCs, and Creatures._
+- _Trigger: reducing wounds to 0._
+- _Action: coloring the token._
+- _Setup:_
+  - Specify the color to which the token should be colored.
+- _Operation principle:_
+  - When the actor’s wound parameter is reduced to 0, their token (or all their tokens) is colored in the specified color.
+    - If the [Health Estimate](https://foundryvtt.com/packages/healthEstimate) module is installed, the "NPCs die instantly" option is enabled in its settings, the "Do not mark as dead" option is not enabled in the token settings, and the actor is an NPC or Creature, their token will receive the "Dead" status.
+  - If the wound parameter becomes greater than 0, the color of their token (or all their tokens) will change to the one specified in the actor’s Token Prototype.
+    - If the actor has the "Dead" status, they will lose it.
+
+#### 5. Random spells
+- _Availability: NPCs and Creatures._
+- _Trigger: moving the token onto the scene._
+- _Action: granting random spells according to the specified settings._
+- _Setup:_
+  - Check the corresponding option in the Assistant.
+  - In the Lore dropdown menu, select one of the Magic Lores whose spells will be generated.
+  - Specify the number of spells to be generated.
+  - If you want spells that are not tied to Magic Lores to be included in the spell list, check the corresponding option.
+
+#### 6. Token disposition
+- _Availability: NPCs and Creatures._
+- _Trigger: moving the token onto the scene._
+- _Action: redefining the token’s disposition._
+- _Setup:_
+  - Select the required value from the dropdown menu:
+    - Do not change.\
+    _Apply the Token Prototype settings._
+    - Prompt.\
+    _Each time the token is moved, a new value will be requested._
+    - Neutral.
+    - Friendly.
+    - Hostile.
+    - Secret.
+
+#### 7. Reactions
+- _Availability: Characters, NPCs, and Creatures._
+- _Trigger: various events, primarily during combat._
+- _Action: generating and creating random phrases appropriate to the situation._
+- _Setup:_
+  - Check the corresponding option in the Assistant.
+  - In the Species dropdown menu, select one of the predefined options.
+  - In the Subspecies dropdown menu, select one of the predefined options.
+  - In the Chance dropdown menu, select how often the actor will react to events.
+
+If you do not want the Actor to produce reactions, it is still recommended to configure the Species and Subspecies options so that other actors can target their lines toward this one.
+
+You can learn how to add reactions for existing or custom Species in [this instruction (ru)](https://github.com/nPocToI4eJI/wfrp4e-assistant/wiki/%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D0%B2%D0%BE%D0%B8%D1%85-%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%D0%BE%D0%B2#2-%D1%80%D0%B5%D0%B0%D0%BA%D1%86%D0%B8%D0%B8).
+
+#### Export actor
+_Allows you to save an actor currently on the scene as a separate sheet._
+
+If an actor is on the scene and their token data is not linked to the original sheet, the Export Sheet button will appear in the Assistant window.\
+You may notice that many Assistant events trigger when an actor is moved to the scene, without affecting the original sheet. If such a _randomly modified_ actor turns out to be so appealing that you’d like to keep them, the Export Actor feature will help.\
+The exported actor may require some further adjustments, but all values generated by the Assistant will be preserved.
+
+## Fixes and Improvements
+_This section lists corrections and enhancements to the system and official modules._
+
+#### On The Defensive
+A button for managing the **"On The Defensive"** state has been added to the **"Combat"** tab:
+<p align="center"><img width="130" height="30" alt="image" src="https://github.com/user-attachments/assets/cfba184f-932d-4a5a-a8e8-10655a54fd34"/> <img width="130" height="30" alt="image" src="https://github.com/user-attachments/assets/666698c6-05cd-4818-9d4c-803b17532288"/></p>
+
+The **"On The Defensive"** state is also accessible via the **Status Selection** menu. The skills displayed for this action can be customized in the module’s settings.
+
+#### Spell Filter
+This enhancement allows you to group spells into custom categories and display only the ones you need in the list.
+
+###### <p align="center">Spell Display Control Element</p>
+
+<p align="center"><img width="700" height="30" alt="image" src="https://github.com/user-attachments/assets/70c949ef-b0c4-43dd-8ffa-05eb96a1771f"/></p>
+
+- When the **All** category is enabled:
+  - **Left‑click** switches the lists to the next category.
+  - **Right‑click** opens the category settings menu:
+    - The first column of each item shows an icon from [Font Awesome](https://fontawesome.com/).
+    - The second column of each item shows the category name.
+    - Existing categories are highlighted in yellow, new ones are highlighted in green.
+- When any other category is enabled:
+  - **Left‑click** switches the lists to the next category.
+  - **Right‑click** opens the spell selection menu for the category:
+    - To select spells to be displayed in the category, click them and confirm your selection.
+
+###### <p align="center">Category Settings Menu</p>
+
+<p align="center"><img width="400" height="375" alt="image" src="https://github.com/user-attachments/assets/732403ba-7b85-4be6-8b86-c1a8dd8230b4"/></p>
+
+###### <p align="center">Spell Selection Menu</p>
+
+<p align="center"><img width="375" height="800" alt="image" src="https://github.com/user-attachments/assets/026a62c2-19cc-475c-989d-3f64c47f943a"/></p>
+
+###### <p align="center">Control Element for Displayed Basic Spells</p>
+
+<p align="center"><img width="700" height="30" alt="image" src="https://github.com/user-attachments/assets/10c258f8-9a5c-4df6-b5a7-ad2e39629430"/></p>
+
+- **Left‑click** hides all Petty Spells.  
+- **Left‑click** again shows all Petty Spells.
+
+#### Core Rulebook
+1. Исправлены скрипты эффектов.
+  - Новый скрипт Зачарованного посоха позволяет использовать переведённые названия Магических Школ.
+  - Новый скрипт магических Одеяний позволяет использовать переведённые названия Магических Школ.
+
+#### Winds of Magic
+1. Добавлены новые скрипты на генерацию случайных гримуаров и свитков заклинаний.\
+Макросы позволяют генерировать заклинания как случайных Магических Школ, так и выбранных пользователем. Он включает в себя настройки, которые позволят ещё больше оптимизировать процесс использования макросов.
+
+Магические Школы:
+- [X] Core Rulebook
+- [X] Winds of Magic
+- [X] Archives of the Empire: Vol II.
+- [X] The Horned Rat
+- [X] Tribes & Tribulations
+
+#### Archives of the Empire: II
+1. Добавлены ключи локализации для Школы Магии и Ветра Магии "Великой Пасти".
+
+Ключи локализации:
+- `WFRP4E.MagicLores.greatMaw` - название Магической Школы Великой Пасти.
+- `WFRP4E.MagicWind.greatMaw` - название Ветра Магии Великой Пасти.
+- `WFRP4E.greatMaw.descriptions` - описание эффекта Магической Школы Великой Пасти.
+
+#### Tribes & Tribulations
+1. Добавлены ключи локализации для Школ Магии и Ветров Магии "Вааагх!".
+
+Ключи локализации:
+- `WFRP4E.MagicLores.little-waaagh` - название Магической Школы Малого Вааагх.
+- `WFRP4E.MagicWind.little-waaagh` - название Ветра Магии Малого Вааагх.
+- `WFRP4E.little-waaagh.descriptions` - описание эффекта Магической Школы Малого Вааагх.
+- `WFRP4E.MagicLores.big-waaagh` - название Магической Школы Большого Вааагх.
+- `WFRP4E.MagicWind.big-waaagh` - название Ветра Магии Большого Вааагх.
+- `WFRP4E.big-waaagh.descriptions` - описание эффекта Магической Школы Большого Вааагх.
+
+## Макросы
+_Модуль добавляет несколько собственных макросов для оптимизации игрового процесса._
+
+#### Придумать ругательство
+_Этот макрос генерирует оскорбления в фэнтезийном стиле. Хотя, они больше подходят для персонажей-гномов, найти им применение можно везде._
+
+Примеры:
+- _Невнятный, гоблинский, плакса._
+- _Слащавый, предательский, дикарь._
+- _Вонючий, с рвотой вместо мозгов, проходимец._
+
+#### Название книги
+_Этот макрос использует метод [generateBookTitle](https://github.com/nPocToI4eJI/wfrp4e-assistant/blob/main/For%20developers.md#generateBookTitletype), представляя удобный интерфейс для взаимодействия и выводя результат в чат._
+
+Примеры:
+- _Комплексные справки про битву на Перевале Чёрного Огня._
+- _Основные лекции о реальных опасностях неизученных трав._
+- _Насущные заметки о чудесах Зоологии._
+
+## Планы
+_Дальнейшие планы по обновлению модуля._
+
+- [ ] Починить выбор Народа при создании персонажа с таблицей "Archives of the Empire: II".
+- [ ] Починить остальные макросы из "Winds of Magic".
+- [ ] Добавить возможность изменения стандартных шаблонов Помощника.
+- [ ] Свои предложения по улучшению модуля можете присылать [сюда](https://github.com/nPocToI4eJI/wfrp4e-assistant/issues/1).
+
+## Известные ошибки
+_Тут перечислены баги и недоработки, о которых уже известно._
+
+- [ ] Двойная реакция для ситуации "Встречная проверка: Защитник", если был выбран вариант "Не встречная". Проблема со стороны системы.
+- [ ] Найденные ошибки можете присылать [сюда](https://github.com/nPocToI4eJI/wfrp4e-assistant/issues/2).
+
+## Информация для разработчиков
+<a href="https://github.com/nPocToI4eJI/wfrp4e-assistant/wiki" rel="nofollow"><img src="https://img.shields.io/badge/WFRP4e%20--%20Assistant-Wiki-blue?labelColor=darkred" alt="Информация для разработчиков"></a>
 </details>
