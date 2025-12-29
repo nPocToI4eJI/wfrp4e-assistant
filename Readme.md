@@ -41,6 +41,7 @@
 - [Планы](#Планы)
 - [Известные ошибки](#Известные-ошибки)
 - [Информация для разработчиков](#Информация-для-разработчиков)
+- [Особые благодарности](#Особые-благодарности)
 
 ## Помощник
 _Это универсальный инструмент по индивидуализации Ваших НИП и Существ._
@@ -251,7 +252,13 @@ _Тут перечислены баги и недоработки, о котор
 
 ## Информация для разработчиков
 <a href="https://github.com/nPocToI4eJI/wfrp4e-assistant/wiki" rel="nofollow"><img src="https://img.shields.io/badge/WFRP4e%20--%20Assistant-Wiki-blue?labelColor=darkred" alt="Информация для разработчиков"></a>
+
+## Особые благодарности
+- **Александр** _(kotofeilove)_, за придумывание реакция для гоблинов. Они цепляют прямо за душу.
+- **Bossga**, за тестирование первых версий модулей.
+
 </details>
+
 
 This module will help the Game Master to hold games with comfort. It includes corrections of bugs and shortcomings of the system and official modules, as well as own and adapted tools.
 <br>
@@ -281,6 +288,7 @@ This module will help the Game Master to hold games with comfort. It includes co
 - [Plans](#Plans)
 - [Known Issues](#Known-Issues)
 - [Developer Information](#Developer-Information)
+- [Special thanks](#Special-thanks)
 
 ## Assistant
 _This is a universal tool for customizing your NPCs and Creatures._
@@ -491,4 +499,9 @@ _This section lists bugs and shortcomings that are already known._
 
 ## Developer Information
 <a href="https://github.com/nPocToI4eJI/wfrp4e-assistant/wiki" rel="nofollow"><img src="https://img.shields.io/badge/WFRP4e%20--%20Assistant-Wiki%20(ru)-blue?labelColor=darkred" alt="Developer Information (ru)"></a>
+
+## Special thanks
+- **Alexander** _(kotofeilove)_ for coming up with the goblins’ reactions. They really touch the heart.
+- **Bossga** for testing the early versions of the modules.
+
 </details>
