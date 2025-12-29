@@ -258,8 +258,7 @@ _Тут перечислены баги и недоработки, о котор
 - **Bossga**, за тестирование первых версий модулей.
 
 </details>
-
-
+<hr>
 This module will help the Game Master to hold games with comfort. It includes corrections of bugs and shortcomings of the system and official modules, as well as own and adapted tools.
 <br>
 <details>
