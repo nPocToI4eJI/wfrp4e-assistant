@@ -254,7 +254,7 @@ _Тут перечислены баги и недоработки, о котор
 <a href="https://github.com/nPocToI4eJI/wfrp4e-assistant/wiki" rel="nofollow"><img src="https://img.shields.io/badge/WFRP4e%20--%20Assistant-Wiki-blue?labelColor=darkred" alt="Информация для разработчиков"></a>
 
 ## Особые благодарности
-- **Александр** _(kotofeilove)_, за придумывание реакция для гоблинов. Они цепляют прямо за душу.
+- **Александр** _(kotofeilove)_, за придумывание реакций для гоблинов. Они цепляют прямо за душу.
 - **Bossga**, за тестирование первых версий модулей.
 
 </details>
