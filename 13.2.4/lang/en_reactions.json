@@ -1,0 +1,1385 @@
+{
+	"WFRP4E.Assistant.Helpers.Reactions": {
+		"Species": {
+			"Not": {
+				"Name": "No reference",
+				"Subspecies": {
+					"None": "No reference"
+				}
+			},
+			"Human": {
+				"Name": "Human",
+				"Subspecies": {
+					"None": "No reference",
+					"Empire": "Empire",
+					"Bretonnian": "Bretonnian*",
+					"Cultist": "Cultist*"
+				}
+			},
+			"Greenskin": {
+				"Name": "Greenskin",
+				"Subspecies": {
+					"None": "No reference",
+					"Ork": "Ork*",
+					"Goblin": "Goblin"
+				}
+			},
+			"Beast": {
+				"Name": "Beast",
+					"Subspecies": {
+						"None": "No reference",
+						"Wolf": "Wolf",
+						"Rat": "Rat*",
+						"Bird": "Bird*"
+					}
+				}
+		},
+		"List": {
+			"Common": {
+				"takeDamage": {
+					"0": "Aaaa!",
+					"1": "Ouch!",
+					"2": "Ow!",
+					"3": "Aaah! That was… painful!"
+				}
+			},
+			"Human": {
+				"takeDamage": {
+					"All": {
+						"c0": "#Common.takeDamage.0",
+						"c1": "#Common.takeDamage.1",
+						"c2": "#Common.takeDamage.2",
+						"c3": "#Common.takeDamage.3",
+						"0": "Ow, that hurts!",
+						"1": "Damn!",
+						"2": "Damn it!",
+						"3": "Shit!",
+						"4": "It hurts, but I’m not dead yet. For now."
+					},
+					"Opponent": {
+						"All": {
+							"All": {
+								"0": "Ugh, you bastard!",
+								"1": "You’ll pay for this!",
+								"2": "Bloody scoundrel!",
+								"3": "You’ll get what’s coming to you!",
+								"4": "I’ll repay you!",
+								"5": "Is that really all you’ve got?",
+								"6": "You scratched me? Seriously? Is that really all you can do?",
+								"7": "I’m still breathing — so it’s not over yet!",
+								"8": "Blood again? How many times can this happen!",
+								"9": "Blood! Damn it, that hurts!",
+								"10": "Blood is flowing! I need help!",
+								"11": "Get off me!"
+							},
+							"Human": {
+								"All": {
+									"0": "If only you were human!",
+									"1": "Why?! We’re from the same tribe!",
+									"2": "Not a bad hit, but I’m still standing!",
+									"3": "Why are you doing this to me?!"
+								}
+							},
+							"Greenskin": {
+								"All": {
+									"0": "Even a rat bites harder!",
+									"1": "This vile creature got me?! Unbelievable!",
+									"2": "Aaaa! You… you beast!"
+								},
+								"Goblin": {
+									"0": "You’ll regret this, worm!",
+									"1": "A goblin?! A goblin hurt me?! Ha-ha… what a day!",
+									"2": "Did you spit at me?! Disgusting!"
+								}
+							},
+							"Beast": {
+								"All": {
+									"0": "If I survive, I’ll burn this forest to the ground!"
+								},
+								"Wolf": {
+									"0": "Do you think your pathetic bites can stop me?",
+									"1": "Shut up and die, you stinking monster!"
+								}
+							}
+						}
+					},
+					"To": {
+						"Head": {
+							"All": {
+							"0": "My head…",
+							"1": "Right in the forehead!",
+							"2": "Why did you hit me in the head?!",
+							"3": "My face! You blinded me!"
+							}
+						},
+						"Body": {
+							"All": {
+							"0": "Ugh! My stomach…",
+							"1": "Breath… knocked out…",
+							"2": "I just ate!",
+							"3": "You broke my rib, you scoundrel!"
+							}
+						},
+						"Arm": {
+							"All": {
+							"0": "My arm…",
+							"1": "I can’t feel my arm anymore!",
+							"2": "Why hit me on the elbow?!",
+							"3": "My arm… I can’t hold my weapon anymore!"
+							}
+						},
+						"Leg": {
+							"All": {
+							"0": "My leg…",
+							"1": "Right in the knee!",
+							"2": "I hope my leg is still intact.",
+							"3": "My leg! I can’t walk!",
+							"4": "My leg! I’ll tear you to pieces!"
+							}
+						}
+					}
+				},
+				"applyDamage": {
+					"Opponent": {
+						"All": {
+							"All": {
+								"0": "Die!",
+								"1": "Here's one for every scar I have!",
+								"2": "May your heart stop!",
+								"3": "Death to enemies!",
+								"4": "Die!",
+								"5": "Here's one for your insolence!",
+								"6": "Take that!",
+								"7": "Have another!",
+								"8": "Does it hurt?!",
+								"9": "This isn't over yet!",
+								"10": "More to come!",
+								"11": "I've got you!",
+								"12": "I'll grind you into dust!",
+								"13": "I'll destroy you!",
+								"14": "And now, another one!",
+								"15": "Take this, big guy!",
+								"16": "Don't die… just yet!",
+								"17": "Today is your last day!",
+								"18": "Looks like your luck has run out.",
+								"19": "I hope your death will be painful.",
+								"20": "Your bones will turn to dust!",
+								"21": "Let your end serve as a lesson to others!",
+								"22": "Your death will cleanse the world!",
+								"23": "Your life is nothing!",
+								"24": "Shut up and die, bastard!",
+								"25": "Oops, looks like I hurt you. Awkward.",
+								"26": "Maybe you should beg for mercy?",
+								"27": "Your life hangs by a thread now!",
+								"28": "Think that hurts? Wait, the real pain is coming!"
+							},
+							"Human": {
+								"All": {
+									"0": "Inside, you're just like me!",
+									"1": "Don't worry, I'll make it quick. Probably.",
+									"2": "Your soul will burn in eternal flame!",
+									"3": "You'll regret being born!",
+									"4": "I'll tear you apart, you bastard!",
+									"5": "Take it, you beast! And another one!",
+									"6": "I'll break every bone in your body!"
+								}
+							},
+							"Greenskin": {
+								"All": {
+									"0": "Get out, vile creature!",
+									"1": "Die, greenskin!",
+									"2": "This is for all those you've killed!"
+								},
+								"Goblin": {
+									"0": "You're nothing but dirt under my boots.",
+									"1": "Not worth the effort to waste my strength on you.",
+									"2": "You're as weak as you are disgusting.",
+									"3": "They said you were scary…",
+									"4": "Here's one for your greed!"
+								}
+							},
+							"Beast": {
+								"All": {
+									"0": "Now you'll think twice before attacking!"
+								},
+								"Wolf": {
+									"0": "Take this, beast!",
+									"1": "This is for everything!",
+									"2": "Blood for blood!"
+								}
+							}
+						}
+					},
+					"To": {
+						"Head": {
+							"All": {
+								"0": "Head off!",
+								"1": "Right in the brain!",
+								"2": "May your eyes be gouged out!",
+								"3": "Your stupid head!",
+								"4": "Smile!",
+								"5": "Your head is useless now!"
+							}
+						},
+						"Body": {
+							"All": {
+								"0": "Pierced you!",
+								"1": "Right in the side!",
+								"2": "May your insides spill out!",
+								"3": "Your skin won't hold!",
+								"4": "Right in the lungs!",
+								"5": "Guts out!",
+								"6": "Enjoy your meal!"
+							}
+						},
+						"Arm": {
+							"All": {
+								"0": "I hope you're not too attached to your limbs.",
+								"1": "Weapon out of your hands!",
+								"2": "The arm won't be of any use to you now!",
+								"3": "Lost your grip, huh?",
+								"4": "You won't be able to hold a sword anymore!"
+							}
+						},
+						"Leg": {
+							"All": {
+								"0": "I hope you're not too attached to your limbs.",
+								"1": "You won't be running anymore!",
+								"2": "Keep your legs!",
+								"3": "Now you're lame!",
+								"4": "May your legs fall off!",
+								"5": "You won't be running anymore!",
+								"6": "Now you'll be crawling!"
+							}
+						}
+					}
+				},
+				"die": {
+					"All": {
+						"0": "My family…",
+						"1": "I didn't want…",
+						"2": "Finally…",
+						"3": "This is the end…",
+						"4": "I'm tired…",
+						"5": "So be it…",
+						"6": "I never thought I'd die from… this.",
+						"7": "Died… like a fool. Like all of us, essentially.",
+						"8": "No one warned me that the end would be like this.",
+						"9": "I wanted more. But got… this.",
+						"10": "So this is what the last minute is like.",
+						"11": "Foolish. So foolish.",
+						"12": "Well, that's it. Everything."
+					},
+					"Opponent": {
+						"All": {
+							"All": {
+								"0": "You… you couldn't…",
+								"1": "You'll regret this…",
+								"2": "You'll pay for this!",
+								"3": "Die like a dog!",
+								"4": "One swing — and it's over. Foolish…",
+								"5": "No!",
+								"6": "Why?!",
+								"7": "Damn it…",
+								"8": "Too… quickly…",
+								"9": "Darkness…"
+							},
+							"Human": {
+								"All": {
+									"0": "May your soul rot!",
+									"1": "You took life, but not honor.",
+									"2": "May the gods judge you…",
+									"3": "I'll find you in the afterlife!"
+								}
+							},
+							"Greenskin": {
+								"All": {
+									"0": "Creature!"
+								},
+								"Goblin": {
+									"0": "Even a rat would be ashamed to kill like this.",
+									"1": "Died… at the claws of this vile creature…",
+									"2": "A goblin… killed me. Ha! What a disgrace!",
+									"3": "This is how a hero ends — by a cowardly skinflint's knife.",
+									"4": "I was falling… and he was laughing.",
+									"5": "A goblin brought me down… Madness."
+								}
+							},
+							"Beast": {
+								"All": {
+									"0": "This is how one dies in the wilderness — without glory, without song.",
+									"1": "The forest took its toll."
+								},
+								"Wolf": {
+									"0": "Fangs… and darkness.",
+									"1": "The beast knows no honor. Only hunger.",
+									"2": "I thought it was a wolf. But it's… something else.",
+									"3": "The wild creature… didn't deserve my blood.",
+									"4": "This is how the journey ends — in the monster's jaws.",
+									"5": "No cross, no stone. Only claw marks."
+								}
+							}
+						},
+						"Empire": {
+							"Human": {
+								"Empire": {
+									"0": "For what…?",
+									"1": "I'm not your enemy!",
+									"2": "May Sigmar judge you…"
+								}
+							}
+						}
+					}
+				},
+				"kill": {
+					"Opponent": {
+						"All": {
+							"All": {
+								"0": "You don't even know how to die!",
+								"1": "Another shadow vanished into the darkness.",
+								"2": "To the grave!",
+								"3": "Disappear!",
+								"4": "Another one!",
+								"5": "No one will remember you!",
+								"6": "I'm already tired of you!",
+								"7": "For everything you've done!",
+								"8": "I hate all of you!",
+								"9": "You don't deserve to breathe the air of this world.",
+								"10": "Let this serve as a lesson to the rest."
+							},
+							"Human": {
+								"All": {
+									"0": "This is how traitors die.",
+									"1": "Say goodbye to life!",
+									"2": "May your soul find peace… or not!",
+									"3": "You deserved this!",
+									"4": "You'll regret being born!",
+									"5": "This is the end of your adventures.",
+									"6": "I hope you had good final thoughts."
+								}
+							},
+							"Greenskin": {
+								"All": {
+									"0": "The darkness takes another creature…",
+									"1": "The world will be cleaner without you."
+								},
+								"Goblin": {
+									"0": "Death spares not even the vilest.",
+									"1": "Disappear, wretched goblin!",
+									"2": "Disappear, lowly worm!",
+									"3": "Another worm crushed.",
+									"4": "I hate this little thing.",
+									"5": "Shut up, squealer!"
+								}
+							},
+							"Beast": {
+								"All": {
+									"0": "Die, creature!",
+									"1": "Die, beast!",
+									"2": "I'll tear you to pieces!",
+									"3": "Not a bad catch today."
+								},
+								"Wolf": {
+									"0": "Die, monster!",
+									"1": "For those you mutilated!"
+								}
+							},
+							"Empire": {
+								"Human": {
+									"Empire": {
+										"0": "I hope you find peace."
+									}
+								}
+							}
+						}
+					}
+				},
+				"opposedDefenderSuccess": {
+					"Opponent": {
+						"All": {
+							"All": {
+								"0": "Away!",
+								"1": "Get out!",
+								"2": "Come on! Show me what you've got!",
+								"3": "Didn't expect that, did you?",
+								"4": "Did you forget how to fight?",
+								"5": "Breathe deeper!",
+								"6": "We'll have to celebrate this!"
+							},
+							"Human": {
+								"All": {
+									"0": "Don't just stand there!",
+									"1": "Looks like you're not very good at fighting.",
+									"2": "Be careful with the blade, or you'll lose your head!",
+									"3": "You fight like a drunken laundress!"
+								}
+							},
+							"Greenskin": {
+								"All": {
+									"0": "Away, vile creature!",
+									"1": "Get out of my sight!"
+								}
+							},
+							"Beast": {
+								"All": {
+									"0": "Away, beast!"
+								}
+							},
+							"Empire": {
+								"All": {
+									"0": "Sigmar protected me!"
+								}
+							}
+						}
+					}
+				},
+				"opposedDefenderFailure": {
+					"Opponent": {
+						"All": {
+							"All": {
+								"0": "Damnation!",
+								"1": "Damn!",
+								"2": "Bastard!",
+								"3": "Damn it!",
+								"4": "Shit!",
+								"5": "What a blow!",
+								"6": "I'm still alive, so keep going — we'll see who falls first!",
+								"7": "One more hit like that and I'll get angry!",
+								"8": "Ha! Didn't even stagger me!",
+								"9": "One more hit and I'll get really angry!",
+								"10": "I can't stop him!",
+								"11": "Help! Someone help!"
+							},
+							"Human": {
+								"All": {
+									"0": "You'll pay for this, bastard!"
+								}
+							},
+							"Greenskin": {
+								"Goblin": {
+									"0": "I thought you could only steal, not fight!",
+									"1": "One hit and you're already celebrating? Wait until I get up…",
+									"2": "Don't dare touch me, dirty goblin!"
+								}
+							},
+							"Beast": {
+								"All": {
+									"0": "Someone forgot to mention there were such creatures here!"
+								},
+								"Wolf": {
+									"0": "Damnation! This creature will tear me apart!",
+									"1": "Fangs… and blood. Here we go again!",
+									"2": "Beast! Leave me alone or I'll skin you!",
+									"3": "Aaah! This monster is gnawing at me!",
+									"4": "He's got me! Let go, carrion!",
+									"5": "Oh gods! This monster!"
+								}
+							}
+						}
+					}
+				},
+				"opposedAttackerSuccess": {
+					"Opponent": {
+						"All": {
+							"All": {
+								"0": "Don't waste my time.",
+								"1": "Ah, and I was hoping for a worthy opponent…",
+								"2": "Take that!",
+								"3": "Didn't think it would end like this, did you?",
+								"4": "You won't get mercy!",
+								"5": "Here you go!",
+								"6": "Let this be a lesson to you!",
+								"7": "Just die already!"
+							},
+							"Human": {
+								"All": {
+									"0": "Damnation! Hold on, I'm not finished yet!"
+								}
+							},
+							"Greenskin": {
+								"All": {
+									"0": "Cursed creatures!",
+									"1": "I'll finish you off, you monster!"
+								},
+								"Goblin": {
+									"0": "Get away, vile worm!",
+									"1": "I'll crush you like an insect!"
+								}
+							},
+							"Beast": {
+								"Wolf": {
+									"0": "This is the end for you, beast!"
+								}
+							},
+							"Empire": {
+								"All": {
+									"0": "For the glory of Sigmar!",
+									"1": "Sigmar guided my hand!"
+								}
+							}
+						}
+					}
+				},
+				"opposedAttackerFailure": {
+					"Opponent": {
+						"All": {
+							"All": {
+								"0": "Damnation!",
+								"1": "Damn!",
+								"2": "Bastard!",
+								"3": "Damn it!",
+								"4": "Shit!",
+								"5": "Damn it, what a mess!",
+								"6": "Do you think that will stop me?!"
+							},
+							"Human": {
+								"All": {
+									"0": "Do you think that will stop me? Fool!"
+								}
+							},
+							"Greenskin": {
+								"All": {
+									"0": "Ew, how disgusting! You stink!"
+								},
+								"Goblin": {
+									"0": "Now, you skinflint, you'll see what it means to anger a human!",
+									"1": "Ah, you little scum!",
+									"2": "You've angered me, you little bastard!"
+								}
+							},
+							"Beast": {
+								"All": {
+									"0": "What a nimble beast!"
+								}
+							}
+						}
+					}
+				}
+			},
+			"Greenskin": {
+				"takeDamage": {
+					"All": {
+						"c0": "#Common.takeDamage.0",
+						"c1": "#Common.takeDamage.1",
+						"c2": "#Common.takeDamage.2",
+						"c3": "#Common.takeDamage.3",
+						"0": "Ouch! That hurts!",
+						"1": "Cough… Cough…"
+					},
+					"Goblin": {
+						"0": "Ow-ow-ow!",
+						"1": "Ow-ow-ow! How it hurts!",
+						"2": "Still alive! Still alive! Aahaha!",
+						"3": "Squig's feces, how it hurts!",
+						"4": "Oof"
+					},
+					"Opponent": {
+						"All": {
+							"All": {
+								"0": "I'll stab you!",
+								"1": "Lads, cut them!",
+								"2": "I'll gouge out your eyes!",
+								"3": "Pray, scumbag!",
+								"4": "Zog, how it hurts!",
+								"5": "I'll give you a taste of Zog!",
+								"6": "You'll pay for this!",
+								"7": "I'll tear off your ears!"
+							},
+							"Human": {
+								"All": {
+									"0": "Surrender, human!",
+									"1": "I'll chop off your fat nose!",
+									"2": "Your fat ears will be my trophy!",
+									"3": "Lads, stab this human!",
+									"4": "Filthy humans!",
+									"5": "I'll stab you slowly, human!",
+									"6": "You'll die slowly, human!"
+								}
+							},
+							"Greenskin": {
+								"All": {
+									"0": "I'll bleed you, garbage-eater!",
+									"1": "We're supposed to be together!",
+									"2": "You'll eat garbage!",
+									"3": "I'll feed you to my wolf!",
+									"4": "Massacre, lads! Massacre!",
+									"5": "You stabbed me?!",
+									"6": "Don't hit me!",
+									"7": "Hit someone else!"
+								},
+								"Goblin": {
+									"0": "Who are you stabbing, runt!",
+									"1": "Stab the runts!",
+									"2": "I'll gut you, short-nosed!",
+									"3": "Your last day, runt!",
+									"4": "Filthy sneak!",
+									"5": "Stinking runt!"
+								}
+							},
+							"Beast": {
+								"All": {
+									"0": "Filthy creature!",
+									"1": "Brainless beast!",
+									"2": "I'll cut you for meat!",
+									"3": "Aah! It bit me!",
+									"4": "Your eyes will go into the soup!",
+									"5": "I'll cut off your tongue!"
+								},
+								"Wolf": {
+									"0": "Ah you dog!",
+									"1": "I'll skin you!",
+									"2": "I'll stab you, beast!",
+									"3": "Aagh, hairy scumbag!"
+								}
+							}
+						},
+						"Goblin": {
+							"All": {
+								"0": "Get ready, stinker…",
+								"1": "We'll cut you soon!",
+								"2": "We'll cut off your fingers!",
+								"3": "We'll feed you to squigs!",
+								"4": "I'll make another hole in you!",
+								"5": "Filthy scumbag!",
+								"6": "I'll stab you, stinker!",
+								"7": "Get off me!",
+								"8": "Oh-oh, why so hard?"
+							},
+							"Human": {
+								"All": {
+									"0": "Stinky runt!",
+									"1": "I'll bite off your skinny fingers!",
+									"2": "Lads, beat the runts!",
+									"3": "Ow! We'll cut the runt!",
+									"4": "Aagh, you sneak!",
+									"5": "We'll gut you like a squig!",
+									"6": "Filthy Git!"
+								}
+							},
+							"Beast": {
+								"All": {
+									"0": "Don't eat me!"
+								},
+								"Wolf": {
+									"0": "Get off me, hairy stinker!",
+									"1": "Get off! Get off me!"
+								}
+							}
+						}
+					},
+					"To": {
+						"Head": {
+							"All": {
+								"0": "Ouch… Zog…",
+								"1": "Everything is spinning…",
+								"2": "Ugh… Zog, right on the head!",
+								"3": "Ugh… My head is splitting!",
+								"4": "You'll pay for this bump!",
+								"5": "I'm not feeling well…",
+								"6": "Ugh! Right on the head!",
+								"7": "Aaaay… My head!"
+							},
+							"Goblin": {
+								"0": "Oww… My little head!",
+								"1": "Stinky git! Ugh… Why hit the head?!",
+								"2": "Ow! Do you realize how crazy this is?… Ugh, seems to have passed."
+							}
+						},
+						"Body": {
+							"All": {
+								"0": "Ugh… The mushrooms are coming out.",
+								"1": "I'll show you how to hit the stomach!",
+								"2": "What a big hole…",
+								"3": "Ugh… It hurts inside.",
+								"4": "Yaaagh! You'll pay for this blood, garbage-eater!",
+								"5": "Ugh… My stomach…"
+							},
+							"Goblin": {
+								"0": "Ugh… You seem to have broken my ribs!",
+								"1": "Stinker! Why hit the belly?",
+								"2": "Bleh… Oh, that's where I lost that shiny thing."
+							}
+						},
+						"Arm": {
+							"All": {
+								"0": "I'll stab you with one hand, runt!",
+								"1": "Zog… Something seems to have cracked.",
+								"2": "Seems like something broke…",
+								"3": "Arrgh! Right on the arm!",
+								"4": "My arm is going numb."
+							},
+							"Goblin": {
+								"0": "Ow-ow-ow, my arm!",
+								"1": "That was my favorite arm!",
+								"2": "No problem, I have a spare!",
+								"3": "Ugh… Hurts to move!",
+								"4": "Stinker, you hit my arm!"
+							}
+						},
+						"Leg": {
+							"All": {
+								"0": "Aargh! Stinky runt, right on the leg!",
+								"1": "Ugh… You'll pay for the leg, scumbag!",
+								"2": "Ow-ow-ow! Leg!",
+								"3": "Hurt my favorite leg!",
+								"4": "Rraagh! My leg!",
+								"5": "Ohhh… Zog, that's not good…",
+								"6": "Zog… What's wrong with my leg?!",
+								"7": "Stinky git! I'll show you how to hit legs!"
+							},
+							"Goblin": {
+								"0": "What's sticking out of my leg?",
+								"1": "It hurts in the leg! Zog, how it hurts! Aaaargh!"
+							}
+						}
+					}
+				},
+				"applyDamage": {
+					"Opponent": {
+						"All": {
+							"All": {
+								"0": "Get it! AHAHAH!",
+								"1": "Take it! Take it!",
+								"2": "Aha-ha-ha! Take it!",
+								"3": "Got you?! Want another stab?",
+								"4": "Now you'll get it!",
+								"5": "Yes! Yes! Scream louder!",
+								"6": "A-a-a, scream louder — it's fun for me!"
+							},
+							"Human": {
+								"All": {
+									"0": "Ha! Now you're thinner — I took a piece of meat!",
+									"1": "Blood on the ground — pretty, isn't it? Ha-ha!",
+									"2": "Blood is flowing! Ha-ha!",
+									"3": "I scratched you — you're shaking!",
+									"4": "One more time — and you'll fall!",
+									"5": "One more drop of blood — and you're mine!"
+								}
+							},
+							"Greenskin": {
+								"All": {
+									"0": "You asked for it! Shouldn't have come!",
+									"1": "Ha! Now you know who's stronger!",
+									"2": "Don't touch mine! You'll get more!",
+									"3": "You'll remember how to argue with me!",
+									"4": "One more time — and I'll finish you!",
+									"5": "Shouldn't have pushed!",
+									"6": "This is for yesterday!",
+									"7": "You'll remember this hit!"
+								}
+							},
+							"Beast": {
+								"All": {
+									"0": "Felt my strength?",
+									"1": "Get a poke in the face!"
+								},
+								"Wolf": {
+									"0": "You'll make a great hat!",
+									"1": "Growl-growl — now it hurts!",
+									"2": "You're whimpering — I'm happy!",
+									"3": "Your pelt is my prize!"
+								}
+							}
+						},
+						"Goblin": {
+							"All": {
+								"0": "Here! Take it, stinker!",
+								"1": "How does it taste?!",
+								"2": "I made a hole in you — now you're leaky!",
+								"3": "Ouch-ouch, does it hurt?",
+								"4": "Now it's my turn to laugh!"
+							}
+						}
+					},
+					"To": {
+						"Head": {
+							"All": {
+								"0": "Heheh. How's the ringing? Your last brains flew away.",
+								"1": "Take it in your stinky face!",
+								"2": "Hahahaha! Your head's a great target, runt!",
+								"3": "Seems like your head's a bit broken!",
+								"4": "Now at least your face isn't so ugly. Oh, wait, it is."
+							},
+							"Goblin": {
+								"0": "Hee-hee-hee, did it ring in your stupid head?",
+								"1": "Thought I couldn't reach?!",
+								"2": "How's the taste, stinker? Want more?",
+								"3": "Take it in the face, runt!",
+								"4": "Got you! Right in the bullseye! AHAHAHAHA!"
+							}
+						},
+						"Body": {
+							"All": {
+								"0": "Got you in the liver! AHAHAHAHA!",
+								"1": "Stabbed you in the belly!",
+								"2": "How's your belly, does it hurt? AHAHAHAHA!",
+								"3": "How are your bones, do they hurt?",
+								"4": "Uhahaha! Got you right on target!",
+								"5": "That was too easy!"
+							},
+							"Goblin": {
+								"0": "Didn't dodge! Didn't dodge! La-la-la!",
+								"1": "Get stabbed in the gut, stinker!",
+								"2": "Got you in the butt?"
+							}
+						},
+						"Arm": {
+							"All": {
+								"0": "Ha-ha! Got you right in the arm!",
+								"1": "You won't be able to swing that stump anymore!",
+								"2": "Ow-ow-ow! Does your arm hurt?",
+								"3": "Say goodbye to your arm!",
+								"4": "Does your arm hurt?",
+								"5": "Go ahead, cry!",
+								"6": "Crippled your claw!",
+								"7": "How hard is it to hold your weapon now?",
+								"8": "Let's see how you stab now!"
+							}
+						},
+						"Leg": {
+							"All": {
+								"0": "You'll crawl like a worm now!",
+								"1": "Ha-haa! Try moving now!",
+								"2": "Let's get the other one, I'll stab that too!",
+								"3": "Does it hurt? Try jumping now!",
+								"4": "Not so agile now, are you, runt?",
+								"5": "Soft, tasty legs…",
+								"6": "Got you! Got you! Clumsy butt-ugly bug!"
+							},
+							"Goblin": {
+								"0": "Get hit in your legs!",
+								"1": "Ha-ha-ha, ran into the stab, stinker!",
+								"2": "Right in your legs, you good-for-nothing!"
+							}
+						}
+					}
+				},
+				"die": {
+					"All": {
+						"0": "How… like this…",
+						"1": "Cough… Cough…",
+						"2": "No… I don't want to die!",
+						"3": "So… painful…",
+						"4": "My… shiny things…",
+						"5": "Argh… I…",
+						"6": "But… I could have become… a boss…",
+						"7": "Want… to live…",
+						"8": "Not like this…"
+					},
+					"Opponent": {
+						"All": {
+							"All": {
+								"0": "Got… a bullet…",
+								"1": "Stabbed me… Ohhh…",
+								"2": "Where did this hole come from?",
+								"3": "Got me, git…",
+								"4": "Didn't work out…",
+								"5": "I was going to dodge…",
+								"6": "Stab… one last time…",
+								"7": "Remember me…",
+								"8": "I'm going, Morka…",
+								"9": "Died like a git…",
+								"10": "Good fight…",
+								"11": "My brothers will avenge!",
+								"12": "Zogged bastards…",
+								"13": "Should have taken a bigger stabber…"
+							},
+							"Human": {
+								"All": {
+									"0": "By a human… how?!",
+									"1": "Foul little runt…",
+									"2": "Got me, oh well…",
+									"3": "Stinky… human!",
+									"4": "Human… Go to Zog!",
+									"5": "Zog… Why, human?",
+									"6": "Human… fast."
+								}
+							},
+							"Greenskin": {
+								"All": {
+									"0": "Ah you, vile gobbie…",
+									"1": "Stabbed me well, git.",
+									"2": "Green-butt…",
+									"3": "By your own…",
+									"4": "May squigs devour you…",
+									"5": "You… garbage-eater…",
+									"6": "Stabbing your own…",
+									"7": "Only in the back you can…"
+								},
+								"Goblin": {
+									"0": "Et tu, runt?"
+								}
+							},
+							"Beast": {
+								"All": {
+									"0": "Stinky creature…",
+									"1": "Stupid… animal.",
+									"2": "Cough… may you choke, beast.",
+									"3": "No! Don't eat me! AAAAA!"
+								},
+								"Wolf": {
+									"0": "I just wanted your skin…",
+									"1": "No! Don't eat…",
+									"2": "Those claws…",
+									"3": "Noo! Get your mouth away!"
+								}
+							}
+						},
+						"Goblin": {
+							"All": {
+								"0": "Foul… stinker.",
+								"1": "I just wanted to loot…",
+								"2": "Noo… I just wanted…"
+							}
+						}
+					}
+				},
+				"kill": {
+					"Opponent": {
+						"All": {
+							"All": {
+								"0": "Hehe! Meat!",
+								"1": "Blood! Lots of blood!",
+								"2": "We won!",
+								"3": "Ha! Die!",
+								"4": "We'll eat you!",
+								"5": "Ha! Done!",
+								"6": "One more!",
+								"7": "We got you!",
+								"8": "Not moving anymore!",
+								"9": "You're food now!",
+								"10": "You lost — I get to eat!",
+								"11": "I struck first — means I'm right!",
+								"12": "You asked for it, didn't you?",
+								"13": "I scared him — he died!"
+							},
+							"Human": {
+								"All": {
+									"0": "Stupid human!",
+									"1": "Now you're ours!",
+									"2": "Funny human!",
+									"3": "Human… stinky human! We'll eat you, ha-ha!",
+									"4": "Human, you're slow! We're fast — you're dead now!",
+									"5": "We'll catch you — and rip you apart!"
+								}
+							},
+							"Greenskin": {
+								"All": {
+									"0": "Ha! You're weak — I'm strong!",
+									"1": "Won't push anymore!",
+									"2": "I'm in charge now! Got it?",
+									"3": "Didn't steal our food — would still be alive!",
+									"4": "Can't fight! Ha!"
+								}
+							},
+							"Beast": {
+								"All": {
+									"0": "Beast is dead — we're full!",
+									"1": "Doesn't bite anymore!"
+								},
+								"Wolf": {
+									"0": "Big beast — easy prey!",
+									"1": "He growled, I struck!",
+									"2": "Pelt's mine now!",
+									"3": "I'm stronger than the beast! See?",
+									"4": "Won't growl anymore!"
+								}
+							}
+						}
+					}
+				},
+				"opposedDefenderSuccess": {
+					"Opponent": {
+						"All": {
+							"All": {
+								"0": "I beat you! Ha!",
+								"1": "Ha! Didn't reach!",
+								"2": "Missed!",
+								"3": "Won't get me!",
+								"4": "Try again! Ha-ha!",
+								"5": "Missed again, didn't you?",
+								"6": "Won't reach! Ha!",
+								"7": "Won't take me!",
+								"8": "Won't reach, ha-ha!",
+								"9": "Didn't get me! Try again!"
+							},
+							"Human": {
+								"All": {
+									"0": "Do you want to live? We want to eat! Who will win?",
+									"1": "You're slow, human!",
+									"2": "Oh, you swing poorly!",
+									"3": "You're slow like a snail!",
+									"4": "Oh, you swing like a drunk troll!",
+									"5": "Missed again, fool!"
+								}
+							},
+							"Greenskin": {
+								"All": {
+									"0": "Ha! Didn't reach, fool!",
+									"1": "Missed — now it's my turn!",
+									"2": "Try again, weakling!"
+								},
+								"Goblin": {
+									"0": "Gobba won't catch me!"
+								}
+							},
+							"Beast": {
+								"All": {
+									"0": "Ha! Didn't bite!",
+									"1": "Oh, you jump poorly!"
+								},
+								"Wolf": {
+									"0": "Growl-growl, but won't reach!",
+									"1": "You bite, I laugh!",
+									"2": "Missed again, hairy one!"
+								}
+							}
+						},
+						"Goblin": {
+							"Human": {
+								"All": {
+									"0": "Won't catch gobbah!"
+								}
+							},
+							"Beast": {
+								"All": {
+									"0": "Beast is stupid — goblin is smart!"
+								}
+							}
+						}
+					}
+				},
+				"opposedDefenderFailure": {
+					"Opponent": {
+						"All": {
+							"All": {
+								"0": "I'll bite your knees off!",
+								"1": "You shouldn't have done that!",
+								"2": "I just got distracted!"
+							},
+							"Human": {
+								"All": {
+									"0": "He's cunning… didn't expect that!",
+									"1": "Ugh, nasty human!",
+									"2": "Next time it'll be me!"
+								}
+							},
+							"Greenskin": {
+								"All": {
+									"0": "That's not fair — you snuck up!",
+									"1": "That was an accident, right?"
+								}
+							},
+							"Beast": {
+								"All": {
+									"0": "The beast is cunning… didn't expect that!"
+								},
+								"Wolf": {
+									"1": "Ugh, hairy scoundrel!",
+									"2": "Didn't see his paw!"
+								}
+							}
+						},
+						"Goblin": {
+							"All": {
+								"0": "That's not fair!",
+								"1": "That was an accident!",
+								"2": "I was just tired…",
+								"3": "I'll be smarter next time!",
+								"4": "I almost dodged…",
+								"5": "I just wasn't looking!",
+								"6": "I got distracted, honestly!",
+								"7": "I almost dodged…",
+								"8": "I just got distracted by a bug!",
+								"9": "I'll be smarter next time — I'll hide!"
+							},
+							"Human": {
+								"All": {
+									"0": "He's big — I'm small!",
+									"1": "I didn't see the hit!",
+									"2": "Sneaky human! That's not how you fight!",
+									"3": "He tricked me!"
+								}
+							},
+							"Greenskin": {
+								"Goblin": {
+									"0": "You're cheating! That's not how you fight!",
+									"1": "You're not fighting goblin-style!",
+									"2": "I didn't expect that from my own!",
+									"3": "You're not fighting by the rules, are you?"
+								}
+							},
+							"Beast": {
+								"Wolf": {
+									"0": "Aaaa! Someone, help me against this!",
+									"1": "He's not biting by the rules!",
+									"2": "That's not fair — he's big!",
+									"3": "He tricked me with his growl!"
+								}
+							}
+						}
+					}
+				},
+				"opposedAttackerSuccess": {
+					"Opponent": {
+						"All": {
+							"All": {
+								"0": "Want more? AHAHAHAHA!",
+								"1": "You'll make tasty stew when you're dead! AHAHAHAHA!",
+								"2": "Here's a bullet!",
+								"3": "When you're dead, I'll chop off your fingers!",
+								"4": "More coming!",
+								"5": "Got you, runt?!",
+								"6": "HAHAHAHA! Take that, sneak!",
+								"7": "I'll make a new drum out of you. When you're dead!",
+								"8": "Here you go! AHAHAHAHA!",
+								"9": "Then I'll eat your tasty little fingers.",
+								"10": "Ah… bones crunching!",
+								"11": "That bullet went in well! AHAHAHA!",
+								"12": "HAHAHAHAHA! Must've hurt, right?!",
+								"13": "PHAHA! Useless! AHAHA!",
+								"14": "Don't worry, I won't cut you too badly!",
+								"15": "I want to stab! Again! AGAIN!",
+								"16": "Ahaa… Caught the stabber!",
+								"17": "I got you! Got you!",
+								"18": "Good stabber, specially greased with poop.",
+								"19": "Sharpened the stabber well."
+							},
+							"Human": {
+								"All": {
+									"0": "HA-HA! Take that, stinky human!",
+									"1": "How was it? Did you like it, human?",
+									"2": "I'll feast on human tonight!",
+									"3": "Not so confident now, are you, runt?",
+									"4": "Your head, human, will be my trophy!",
+									"5": "Don't move, human, I'll stab you again.",
+									"6": "I think your soul will soon meet your god. Say hi!",
+									"7": "Filthy stinky human, just die already!",
+									"8": "Weak human! Weak! HAHAAAAA!",
+									"9": "Useless human! PHAHAHA!",
+									"10": "You're a weak human. Even cave butt-slugs are more dangerous!"
+								}
+							},
+							"Greenskin": {
+								"All": {
+									"0": "Take that, cave runt!",
+									"1": "I'll gut you, squig-eating garbage-eater!",
+									"2": "Your stinky remains will be mixed with poop, sneak!",
+									"3": "We'll feed you to wolves alive, sneak!",
+									"4": "Take the stab, sneak!",
+									"5": "I'll cut your green butt into strips!",
+									"6": "You wanted to trick me, git?! No way!",
+									"7": "I'll cut off your nose, garbage-eater!",
+									"8": "Take that, green-butt!",
+									"9": "I'll cut off your head, squig-poop lover!",
+									"10": "Take a bullet, poop-face!",
+									"11": "I'll cut you now, little sneak!"
+								},
+								"Goblin": {
+									"0": "Now I'll show you, short-nose!",
+									"1": "You shouldn't have messed with me, stinky short-nose!"
+								}
+							},
+							"Beast": {
+								"All": {
+									"0": "Take that, animal!",
+									"1": "Stab the beast!",
+									"2": "Take it in the face!",
+									"3": "Cut the animal!",
+									"4": "I'll make a tasty soup out of you.",
+									"5": "Brainless animal!",
+									"6": "Stupid-mouthed creature!",
+									"7": "Stop struggling, stupid animal.",
+									"8": "You're done for, beast!",
+									"9": "Take it in the face, Zog!",
+									"10": "We'll have a tasty meal today.",
+									"11": "Bad luck for you, little animal.",
+									"12": "Foul, stinky animal, die!"
+								},
+								"Wolf": {
+									"0": "Main thing is not to damage the pelt… it's strong.",
+									"1": "Now you'll whimper for me"
+								}
+							}
+						},
+						"Goblin": {
+							"All": {
+								"0": "I'll loot your shiny things!",
+								"1": "Got you! You won't last long, runt!",
+								"2": "Loser! Loser! AHAHAHAHA!",
+								"3": "You messed with the wrong gobbah, sneak!",
+								"4": "Not your day, stinky one!",
+								"5": "Gobbas are the best!",
+								"6": "HA-HA-HA, nya-nya-nya!",
+								"7": "Ihihihi, and that stab was deep.",
+								"8": "UHAHAHAHA!",
+								"9": "AAHAHAHA! Didn't work! Didn't defend!"
+							},
+							"Human": {
+								"All": {
+									"0": "You picked the wrong gobbah to mess with, stupid human!"
+								}
+							}
+						}
+					}
+				},
+				"opposedAttackerFailure": {
+					"Opponent": {
+						"All": {
+							"All": {
+								"0": "Vile scoundrel!",
+								"1": "Bastard!",
+								"2": "Next time I'll catch you — I swear!"
+							},
+							"Beast": {
+								"All": {
+									"0": "Wow, fast beast!",
+									"1": "It's jumping like crazy!"
+								}
+							}
+						},
+						"Goblin": {
+							"All": {
+								"0": "Oh! Almost got you!",
+								"1": "You stinky one!",
+								"2": "He's slippery like an eel!",
+								"3": "I'll hit you next time!",
+								"4": "The wind is to blame — blew off the hit!",
+								"5": "I was just warming up!",
+								"6": "Oops, my leg twisted…",
+								"7": "That's not a miss, that's… a trick!",
+								"8": "I was aiming at a different spot!",
+								"9": "That was just a test hit!",
+								"10": "I wanted to scare you, not hit you!",
+								"11": "The sun was shining in my eyes!",
+								"12": "That was a test hit — now comes the real one!",
+								"13": "That's not a miss — that's plan B!"
+							},
+							"Human": {
+								"All": {
+									"0": "You're sneaky — don't stand still!",
+									"1": "I was just checking if you're scared!",
+									"2": "Almost got you — I'll finish you tomorrow!",
+									"3": "You're too slippery — that's not fair!",
+									"4": "I was aiming not at you, but at your shadow!",
+									"5": "You confused me with your face!"
+								}
+							},
+							"Greenskin": {
+								"All": {
+									"0": "Hey! You deliberately dodged!",
+									"1": "You're moving like a drunk troll!",
+									"2": "My arm got tired from your stupidity!",
+									"3": "That's not a miss — that's a deception tactic!"
+								}
+							},
+							"Beast": {
+								"All": {
+									"0": "I was just scaring him, not hitting!"
+								},
+								"Wolf": {
+									"0": "I was aiming at the tail, but he ran away!",
+									"1": "The beast confused me with his growl!"
+								}
+							}
+						}
+					}
+				}
+			},
+			"Beast": {
+				"takeDamage": {
+					"All": {},
+					"Wolf": {
+						"0": "I-i-i-i!",
+						"1": "RRRAAAAA!",
+						"2": "Uff… uff…",
+						"3": "Yyyy-rrr!"
+					}
+				},
+				"applyDamage": {
+					"Opponent": {
+						"All": {},
+						"Wolf": {
+							"All": {
+								"0": "Gr-r-r… gr-r-r…",
+								"1": "Ryyyy-gr-r!",
+								"2": "Rrr-r-r…",
+								"3": "RRRR-RRRAAA!"
+							}
+						}
+					}
+				},
+				"die": {
+					"All": {},
+					"Wolf": {
+						"0": "Uff… uff…",
+						"1": "Hr-hr-hr…",
+						"2": "Ghh-ghh-ghh…"
+					}
+				},
+				"kill": {
+					"Opponent": {
+						"All": {},
+						"Wolf": {
+							"All": {
+								"0": "U-u-u-u-u…",
+								"1": "Ryyyy-gr-r!",
+								"2": "RRRAAAAA!"
+							}
+						}
+					}
+				},
+				"opposedDefenderSuccess": {
+					"Opponent": {
+						"All": {},
+						"Wolf": {
+							"All": {
+								"0": "U-u-u-u-u…",
+								"1": "Gr-r-r… gr-r-r…",
+								"2": "Ryyyy-gr-r!",
+								"3": "Rrr-r-r…"
+							}
+						}
+					}
+				},
+				"opposedDefenderFailure": {
+					"Opponent": {
+						"All": {},
+						"Wolf": {
+							"All": {
+								"0": "I-i-i-i!",
+								"1": "Hrr-hr-hr…",
+								"2": "Yyyy-rrr!"
+							}
+						}
+					}
+				},
+				"opposedAttackerSuccess": {
+					"Opponent": {
+						"All": {},
+						"Wolf": {
+							"All": {
+								"0": "U-u-u-u-u…",
+								"1": "Gr-r-r… gr-r-r…",
+								"2": "Ryyyy-gr-r!",
+								"3": "Rrr-r-r…"
+							}
+						}
+					}
+				},
+				"opposedAttackerFailure": {
+					"Opponent": {
+						"All": {},
+						"Wolf": {
+							"All": {
+								"0": "I-i-i-i!",
+								"1": "Hrr-hr-hr…",
+								"2": "Yyyy-rrr!"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
