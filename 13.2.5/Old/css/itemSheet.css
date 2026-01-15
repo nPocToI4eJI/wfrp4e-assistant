@@ -1,0 +1,12 @@
+.window-app .window-header .giveItem {
+	color: #00e5ff00;
+	text-align: center;
+	height: 30px;
+	width: 30px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.app.window-app .window-header .giveItem {
+	background: url(../ui/button-giveItem.webp);
+}

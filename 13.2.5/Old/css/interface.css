@@ -1,0 +1,21 @@
+:root {
+	--controlstop: 15px;
+}
+
+#interface #ui-left #controls {
+	overflow-y: auto;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+#interface #ui-left #controls::-webkit-scrollbar {
+	display: none;
+}
+
+#interface #ui-left #controls ol.control-tools.sub-controls {
+	flex-wrap: nowrap;
+}
+
+#sidebar.collapsed #sidebar-tabs {
+	top: calc(50% - 40px);
+}
