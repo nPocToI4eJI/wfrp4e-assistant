@@ -1,0 +1,196 @@
+{
+	"WFRP4E.Assistant": {
+		"Label": "Assistant",
+		"Export": "Export Actor",
+		"AI": "This language was translated using AI and may contain errors",
+		"Helpers": {
+			"GenerateName": {
+				"Label": "Random name",
+				"Hint": "If enabled, a random name will be generated for the token when moved to the scene.",
+				"Keys": {
+					"Value": "Available parameters for the selected species:",
+					"Hint": "To generate a multi-word name, list parameters separated by commas (no spaces), e.g.: \"Male,Surnames\".",
+					"Error": "The following parameters are not available for the selected species or ethnicity:"
+				}
+			},
+			"ChangeCharacteristics": {
+				"Label": "Modify characteristics",
+				"Hint": "Allows changing all actor characteristics to the specified value."
+			},
+			"RandomCharacteristics": {
+				"Label": "Random characteristics",
+				"Hint": "If enabled, when moving the token to the scene, random characteristics will be generated according to the Rulebook.<br><br>Generates random characteristic values by subtracting 10 points from the specified value and then adding 2d10 points. Thus, a characteristic value of 30 will become random, equal to 20 + 2d10. If the characteristic is 5, it simply rolls 1d10 and uses the result as the new characteristic value."
+			},
+			"DeathTint": {
+				"Label": "Token tint on death",
+				"Hint": "If the actor's wounds drop to 0, the token will be colored with the specified color.",
+				"Default": "Base color the token will be tinted if wounds are greater than 0."
+			},
+			"GenerateSpells": {
+				"Label": "Random spells",
+				"Hint": "If enabled, when moving the token to the scene, it will be given the specified number of random spells from the selected Magic School.",
+				"Arcane": "If enabled, common spells will be added to the search pool."
+			},
+			"Disposition": {
+				"Label": "Token disposition",
+				"Hint": "Changes the disposition of the token when moved to the scene.",
+				"Tooltip": "Select the disposition the moved token will have.",
+				"None": "Do not change",
+				"Call": "Request"
+			},
+			"Reactions": {
+				"Label": "Reactions",
+				"Hint": "If enabled, the actor will respond with random phrases to various events.",
+				"Frequency": {
+					"Title": "Chance the actor will respond to events.",
+					"Always": "Always",
+					"Often": "Often",
+					"Usually": "Usually",
+					"Sometimes": "Sometimes",
+					"Never": "Never"
+				},
+				"Not": "Any"
+			},
+			"Scripts": {
+				"Create": "On token creation",
+				"Update": "On data update",
+				"TDamage": "When taking damage from another Actor",
+				"ADamage": "When dealing damage to another Actor",
+				"OpposedA": "On attack",
+				"OpposedD": "On defense",
+				"Error": "The {name} module is disabled or missing.\\nTo use these scripts, you must install the module. You can find it at the following links:\\n- https://foundryvtt.com/packages/wfrp4e-assistant\\n- https://github.com/nPocToI4eJI/wfrp4e-assistant"
+			},
+			"Settings": {
+				"enableHelpers": {
+					"Name": "Assistant. Enable",
+					"Hint": "If enabled, the actor sheets will have an Assistant setting to help optimize your actors."
+				},
+				"hideHelpersTrait": {
+					"Name": "Assistant. Hide effect",
+					"Hint": "If enabled, the Assistant effect will not be displayed in the actor sheet.\nOnly the display is removed, the effect will still be present in the actor.\nRe-open the actor sheet to see changes."
+				},
+				"reactionsSend": {
+					"Name": "Assistant. The way reactions are displayed",
+					"Hint": "Determine how the reactions will be displayed.",
+					"Both": "Both options",
+					"Bubble": "Chat Bubble",
+					"Chat": "Message to the chat"
+				}
+			},
+			"Debug": {
+				"Duplicates": "{name}.\nDuplicate effect removed.",
+				"Create": "{name}.\nThe effect has been created.",
+				"Update": "{name}.\nThe effect scripts have been updated.",
+				"Effect": "{name}.\nThe effect was not found. Make sure that the \"Enable Assistant\" setting is enabled.\nIf the issue persists:\n- Close the actor sheet.\n- Open the developer console (Ctrl + Shift + I).\n- Enter \"game.wfrp4e.assistant.updateEffect = true\".\n- Open the actor sheet."
+			},
+			"Disable": "Turn off"
+		},
+		"systemFix": {
+			"Random": {
+				"Label": "Random",
+				"Table": "Random (table)",
+				"Hint": "The roll is made using the table from 'Winds of Magic', which includes not all Magic Schools."
+			},
+			"RandomizeTable": "Random (table)",
+			"Randomize": "Random",
+			"Search": "Item search:",
+			"Generate": {
+				"Title": "Create {name}",
+				"Scroll": "Spell Scroll",
+				"Grimoire": "Grimoire",
+				"ScrollError": "Failed to find a {lore} school spell with a casting threshold of {cn} or lower to create a spell scroll.<br><br>And we tried again."
+			},
+			"Grimoire": {
+				"Appearance": "Appearance",
+				"Spells": "Spells",
+				"Features": "Features"
+			},
+			"Defensive": {
+				"Label": "Skill Selection",
+				"Hint": "Choose which Skill to use for Defensive Stance",
+				"Undefined": "No Skills found for Defensive Stance. Perhaps your filters are misconfigured, or the Sheet's Skills are not translated into the world's language.",
+				"Description": "What if your character wants to prepare to dodge or parry a barrage of enemy attacks, take a defensive position in a doorway, or use their LANGUAGE (magical) SKILL to dispel a cloud of enemy SPELLS aimed at them? You can choose a SKILL, use an ACTION, and gain a +20 modifier to DEFENSE checks using the chosen SKILL until the start of your next TURN."
+			},
+			"Load": "Spell Loading",
+			"Settings": {
+				"defensiveRemove": {
+					"Name": "SF. Remove Defensive Stance at start of turn",
+					"Hint": "If enabled, the Defensive Stance status will be removed at the start of the Actor's turn."
+				},
+				"defensiveList": {
+					"Name": "SF. Skills for Defensive Stance",
+					"Hint": "Select which Skills will be offered for Defensive Stance.",
+					"Combat": "Combat (Dodge and Melee)",
+					"All": "All",
+					"Custom": {
+						"Name": "Custom",
+						"Label": "Skill Selection",
+						"Hint": "Specify which Skills to display in the Defensive Stance selection window.\nSkills not possessed by the Actor will not be displayed.\nIf only one Skill is specified, it will be automatically selected for Defensive Stance.",
+						"Confirm": {
+							"Label": "Change settings?",
+							"Hint": "A custom Skill filter is already set. Do you want to change it?"
+						}
+					}
+				},
+				"translateImportedActors": {
+					"Name": "SF. Translate Actor data on import",
+					"Hint": "If enabled, when importing an Actor from the Library, you will be prompted to translate its data.\nRequires the \"Babele\" module."
+				},
+				"grimoiresRandName": {
+					"Name": "SF. Random names for Grimoires",
+					"Hint": "If enabled, generated Grimoires will be assigned a random name."
+				},
+				"grimoiresFolder": {
+					"Name": "SF. Grimoires folder UUID",
+					"Hint": "Specify the UUID for the folder where generated Grimoires will be added.\nIf left blank, Grimoires will be added to the root Items folder.\nTo find a folder's UUID, right-click on it, select 'Edit Folder', and click 'Copy UUID'.",
+					"Error": "Folder with specified UUID does not exist!"
+				},
+				"scrollsFolder": {
+					"Name": "SF. Spell Scrolls folder UUID",
+					"Hint": "Specify the UUID for the folder where generated Spell Scrolls will be added.\nIf left blank, Spell Scrolls will be added to the root Items folder.\nTo find a folder's UUID, right-click on it, select 'Edit Folder', and click 'Copy UUID'.",
+					"Error": "Folder with specified UUID does not exist!"
+				}
+			}
+		},
+		"spellsFilter": {
+			"Categories": {
+				"All": "All",
+				"Title": "Manage categories",
+				"Add": "Add category",
+				"Remove": "Remove category",
+				"RemoveConfirm": "Are you sure you want to delete category \"{name}\"?",
+				"Icon": "Font Awesome icon for the category.<br>For example: &quot;fas fa-ellipsis&quot;"
+			},
+			"Description": "Specify which spells will be included in the \"{name}\" category:",
+			"Hint": {
+				"LMB": "LMB: toggle.",
+				"RMB1": "RMB: configure categories.",
+				"RMB2": "RMB: specify spells."
+			}
+		},
+		"BooksTitle": {
+			"Title": "Book title",
+			"Quantity": "Number of rolls",
+			"Type": {
+				"Title": "Book type",
+				"Random": "Random"
+			},
+			"Roll": "Generate",
+			"Flavor": "Came up with a book title"
+		},
+		"Swearing": {
+			"Flavor": "Came up with an insult"
+		}
+	},
+	"WFRP4E.Conditions.Dead": "The character is dead.",
+	"WFRP4E.MagicLores.arcane": "Arcane magic",
+	"WFRP4E.MagicLores.greatMaw": "Great Maw",
+	"WFRP4E.MagicWind.greatMaw": "Great Maw",
+	"WFRP4E.greatMaw.descriptions": "<p>Whenever an Ogre Butcher successfully casts a spell from the Lore of The Great Maw, the offering they consume may restore their own health. Roll [[/r 1d10]]. If the result is a 10, or if it is equal to or higher than the CN of the spell being cast, unmodified by Channeling or the use of a Grimoire, the Butcher recovers Wounds equal to the unmodified CN of the spell.</p>",
+	"WFRP4E.MagicLores.little-waaagh": "Little Waaagh!",
+	"WFRP4E.MagicWind.little-waaagh": "Little Waaagh!",
+	"WFRP4E.little-waaagh.descriptions": "<p>The spells of Goblin (and some Hobgoblin) Shamans tend to manifest the Waaagh! as spiteful tricks and hexes. Goblin Shamans grow in confidence as their spells work. If they generate any SL on their Casting Tests, they may spend it on Overcasting or may use it to buy a single Fortune Point. Fortune Points earned in this way can take the Shaman’s normal Fortune above it’s maximum, but must be spent by the end of the encounter, or are lost.</p>",
+	"WFRP4E.MagicLores.big-waaagh": "Big Waaagh!",
+	"WFRP4E.MagicWind.big-waaagh": "Big Waaagh!",
+	"WFRP4E.big-waaagh.descriptions": "<p>Orc and some Hobgoblin Shamans know an array of crude Orc magic. A selection of their repertoire is provided here. Spells of the Big Waaagh! act as conduits for massive ammounts of Waaagh! energy, and its release emboldens the hearts of nearby Orcs, Goblins, and Hobgoblins. Whenever a Character casts a spell of the Big Waaagh! any Orcs, Hobgoblins, or Goblins within Willpower yards lose any @Condition[Broken] Conditions.</p>"
+}
