@@ -37,7 +37,7 @@ class assistantUtility {
 	//Этот метод принимает полный UUID и возвращает актёра. Принимает UUID в формате "Scene.*id*.Token.*id*.Actor.*id*" или "Actor.*id*"
 	//https://github.com/nPocToI4eJI/wfrp4e-assistant/blob/main/README.md#getReaction
 	static async getReaction(actor, opponent, action, location) {
-		if (actor.tokens.length && actor.species != "Disabled" && !game.wfrp4e.assistant.bubbles.includes(actor.id)) {
+		if (!game.wfrp4e.assistant.bubbles.includes(actor.id) && game.wfrp4e.assistant.reactions) {
 			let phrases = game.i18n.translations.WFRP4E.Assistant.Helpers.Reactions.List[actor.species][action];
 
 			let debug = [{Species: actor.species}];
@@ -593,7 +593,8 @@ Hooks.once("init", function () {
 		"YRJEOMjZZ7iinnPx": "if (!this.actor.inCompendium && game.settings.get('wfrp4e-assistant', 'enableHelpers')) {"
 			+ "\n\tif (args.created) {"
 			+ "\n\t\tlet params = this.effect.flags.assistant;"
-			+ "\n\t\tif (this.actor.type != 'character' && params.generateName?.species != 'Disabled' && !this.actor.prototypeToken.actorLink) {"
+			+ "\n\t\tgame.wfrp4e.assistant.bubbles.push(args.actor.uuid);"
+			+ "\n\t\tif (params.generateName?.species != 'Disabled' && !this.actor.prototypeToken.actorLink) {"
 			+ "\n\t\t\tlet name = [];"
 			+ "\n\t\t\tlet speciesKeys = params.generateName.keys.split(',');"
 			+ "\n\t\t\tspeciesKeys.forEach(k => {"
@@ -605,7 +606,7 @@ Hooks.once("init", function () {
 			+ "\n\t\t\targs.update({'name': name[0]});"
 			+ "\n\t\t\tparams.generateName.species = 'Disabled';"
 			+ "\n\t\t};"
-			+ "\n\t\tif (this.actor.type != 'character' && params.randomCharacteristics?.status) {"
+			+ "\n\t\tif (params.randomCharacteristics?.status) {"
 			+ "\n\t\t\tthis.actor.update({"
 			+ "\n\t\t\t\t'system.characteristics.ws.initial': this.actor.system.characteristics.ws.initial == 5 ? (await new Roll('1d10').roll()).total : this.actor.system.characteristics.ws.initial - 10 + (await new Roll('2d10').roll()).total,"
 			+ "\n\t\t\t\t'system.characteristics.bs.initial': this.actor.system.characteristics.bs.initial == 5 ? (await new Roll('1d10').roll()).total : this.actor.system.characteristics.bs.initial - 10 + (await new Roll('2d10').roll()).total,"
@@ -620,7 +621,7 @@ Hooks.once("init", function () {
 			+ "\n\t\t\t});"
 			+ "\n\t\t\tparams.randomCharacteristics.status = false;"
 			+ "\n\t\t};"
-			+ "\n\t\tif (this.actor.type != 'character' && params.generateSpells?.lore != 'Disabled') {"
+			+ "\n\t\tif (params.generateSpells && params.generateSpells?.lore != 'Disabled') {"
 			+ "\n\t\t\tlet spells = await warhammer.utility.findAllItems('spell', game.i18n.localize('WFRP4E.Assistant.systemFix.Search'), true, ['uuid', 'system.lore.value']);"
 			+ "\n\t\t\tspells = spells.filter(s => s.system.lore.value == params.generateSpells.lore || (params.generateSpells.arcane && s.system.lore.value == ''));"
 			+ "\n\t\t\tlet resultSpells = [];"
@@ -646,7 +647,6 @@ Hooks.once("init", function () {
 			+ "\n\t\t\t\tcase '-2': args.update({'disposition': -2}); break;"
 			+ "\n\t\t\t};"
 			+ "\n\t\t};"
-			+ "\n\t\tgame.wfrp4e.assistant.bubbles.push(args.actor.uuid);"
 			+ "\n\t\tsetTimeout(() => {"
 			+ "\n\t\t\tlet index = game.wfrp4e.assistant.bubbles.indexOf(args.actor.uuid);"
 			+ "\n\t\t\tif (index > -1) {game.wfrp4e.assistant.bubbles.splice(index, 1)};"
@@ -656,7 +656,7 @@ Hooks.once("init", function () {
 			+ "\n};",
 		//Обновление данных актёра
 		"BJmxXK4ESSTuenLd": "if (!this.actor.inCompendium) {"
-			+ "\n\tif (game.settings.get('wfrp4e-assistant', 'enableHelpers')) {"
+			+ "\n\tif (game.settings.get('wfrp4e-assistant', 'enableHelpers') && args.user == game.user.id) {"
 			+ "\n\t\tlet params = this.effect.flags.assistant;"
 			+ "\n\t\tif (args.data?.system?.status?.wounds) {"
 			+ "\n\t\t\tlet color;"
@@ -696,15 +696,15 @@ Hooks.once("init", function () {
 			+ "\n\t\t\t\t}, 2000);"
 			+ "\n\t\t\t});"
 			+ "\n\t\t};"
-			+ "\n\t\tif (params.reactions.species != 'Disabled' && parseInt(params.reactions.frequency) != 0 && args.user == game.user.id && this.actor.token) {"
+			+ "\n\t\tif (params.reactions.species != 'Disabled' && parseInt(params.reactions.frequency) != 0) {"
 			+ "\n\t\t\tif (parseInt(params.reactions.frequency) >= (await new Roll('1d100').roll()).result) {"
 			+ "\n\t\t\t\tif (args.options.deltaWounds < 0) {"
 			+ "\n\t\t\t\t\tlet actor = {name: this.actor.name, id: this.actor.uuid, species: params.reactions.species, subspecies: params.reactions.subspecies};"
-			+ "\n\t\t\t\t\tactor.tokens = [this.actor.token] || this.actor.getDependentTokens().filter(t => t.parent == game.scenes.current);"
+			+ "\n\t\t\t\t\tactor.tokens = this.actor.getDependentTokens().filter(t => t.parent == game.scenes.current) || [this.actor.token];"
 			+ "\n\t\t\t\t\tlet action;"
 			+ "\n\t\t\t\t\tif (this.actor.system.status.wounds.value <= 0) {action = 'die'}"
 			+ "\n\t\t\t\t\telse {action = 'takeDamage'};"
-			+ "\n\t\t\t\t\tawait game.wfrp4e.utility.getReaction(actor, false, action, false);"
+			+ "\n\t\t\t\t\tif (actor.tokens.length) {await game.wfrp4e.utility.getReaction(actor, false, action, false)};"
 			+ "\n\t\t\t\t};"
 			+ "\n\t\t\t};"
 			+ "\n\t\t};"
@@ -716,7 +716,7 @@ Hooks.once("init", function () {
 			+ "\n\tif (params.reactions.species != 'Disabled' && parseInt(params.reactions.frequency) != 0) {"
 			+ "\n\t\tif (parseInt(params.reactions.frequency) >= (await new Roll('1d100').roll()).result) {"
 			+ "\n\t\t\tlet actor = {name: this.actor.name, id: this.actor.uuid, species: params.reactions.species, subspecies: params.reactions.subspecies};"
-			+ "\n\t\t\tactor.tokens = [this.actor.token] || this.actor.getDependentTokens().filter(t => t.parent == game.scenes.current);"
+			+ "\n\t\t\tactor.tokens = this.actor.getDependentTokens().filter(t => t.parent == game.scenes.current) || [this.actor.token];"
 			+ "\n\t\t\tlet attacker = {species: '', subspecies: ''};"
 			+ "\n\t\t\tlet attackerEffect = args.attacker.effects.find(e => e.flags.assistant);"
 			+ "\n\t\t\tif (attackerEffect) {"
@@ -734,7 +734,7 @@ Hooks.once("init", function () {
 			+ "\n\t\t\t\telse if (hitLoc.includes('leg')) {location = 'Leg'};"
 			+ "\n\t\t\t\taction = 'takeDamage';"
 			+ "\n\t\t\t};"
-			+ "\n\t\t\tawait game.wfrp4e.utility.getReaction(actor, attacker, action, location);"
+			+ "\n\t\t\tif (actor.tokens.length) {await game.wfrp4e.utility.getReaction(actor, attacker, action, location)};"
 			+ "\n\t\t};"
 			+ "\n\t};"
 			+ "\n};",
@@ -744,7 +744,7 @@ Hooks.once("init", function () {
 			+ "\n\tif (params.reactions.species != 'Disabled' && parseInt(params.reactions.frequency) != 0) {"
 			+ "\n\t\tif (parseInt(params.reactions.frequency) >= (await new Roll('1d100').roll()).result) {"
 			+ "\n\t\t\tlet actor = {name: this.actor.name, id: this.actor.uuid, species: params.reactions.species, subspecies: params.reactions.subspecies};"
-			+ "\n\t\t\tactor.tokens = [this.actor.token] || this.actor.getDependentTokens().filter(t => t.parent == game.scenes.current);"
+			+ "\n\t\t\tactor.tokens = this.actor.getDependentTokens().filter(t => t.parent == game.scenes.current) || [this.actor.token];"
 			+ "\n\t\t\tlet target = {species: '', subspecies: ''};"
 			+ "\n\t\t\tlet targetEffect = args.actor.effects.find(e => e.flags.assistant);"
 			+ "\n\t\t\tif (targetEffect) {"
@@ -762,7 +762,7 @@ Hooks.once("init", function () {
 			+ "\n\t\t\t\telse if (hitLoc.includes('leg')) {location = 'Leg'};"
 			+ "\n\t\t\t\taction = 'applyDamage';"
 			+ "\n\t\t\t};"
-			+ "\n\t\t\tawait game.wfrp4e.utility.getReaction(actor, target, action, location);"
+			+ "\n\t\t\tif (actor.tokens.length) {await game.wfrp4e.utility.getReaction(actor, target, action, location)};"
 			+ "\n\t\t};"
 			+ "\n\t};"
 			+ "\n};",
@@ -772,7 +772,7 @@ Hooks.once("init", function () {
 			+ "\n\tif (params.reactions.species != 'Disabled' && parseInt(params.reactions.frequency) != 0) {"
 			+ "\n\t\tif (parseInt(params.reactions.frequency) >= (await new Roll('1d100').roll()).result) {"
 			+ "\n\t\t\tlet actor = {name: this.actor.name, id: this.actor.uuid, species: params.reactions.species, subspecies: params.reactions.subspecies};"
-			+ "\n\t\t\tactor.tokens = [this.actor.token] || this.actor.getDependentTokens().filter(t => t.parent == game.scenes.current);"
+			+ "\n\t\t\tactor.tokens = this.actor.getDependentTokens().filter(t => t.parent == game.scenes.current) || [this.actor.token];"
 			+ "\n\t\t\tlet target = {species: '', subspecies: ''};"
 			+ "\n\t\t\tlet targetEffect = args.opposedTest.attacker.effects.find(e => e.flags.assistant);"
 			+ "\n\t\t\tif (targetEffect) {"
@@ -782,7 +782,7 @@ Hooks.once("init", function () {
 			+ "\n\t\t\tlet action;"
 			+ "\n\t\t\tif (args.opposedTest.result.winner == 'defender') {action = 'opposedDefenderSuccess'}"
 			+ "\n\t\t\telse {action = 'opposedDefenderFailure'};"
-			+ "\n\t\t\tawait game.wfrp4e.utility.getReaction(actor, target, action, false);"
+			+ "\n\t\t\tif (actor.tokens.length) {await game.wfrp4e.utility.getReaction(actor, target, action, false)};"
 			+ "\n\t\t};"
 			+ "\n\t};"
 			+ "\n};",
@@ -792,7 +792,7 @@ Hooks.once("init", function () {
 			+ "\n\tif (params.reactions.species != 'Disabled' && parseInt(params.reactions.frequency) != 0) {"
 			+ "\n\t\tif (parseInt(params.reactions.frequency) >= (await new Roll('1d100').roll()).result) {"
 			+ "\n\t\t\tlet actor = {name: this.actor.name, id: this.actor.uuid, species: params.reactions.species, subspecies: params.reactions.subspecies};"
-			+ "\n\t\t\tactor.tokens = [this.actor.token] || this.actor.getDependentTokens().filter(t => t.parent == game.scenes.current);"
+			+ "\n\t\t\tactor.tokens = this.actor.getDependentTokens().filter(t => t.parent == game.scenes.current) || [this.actor.token];"
 			+ "\n\t\t\tlet target = {species: '', subspecies: ''};"
 			+ "\n\t\t\tlet targetEffect = args.opposedTest.defender.effects.find(e => e.flags.assistant);"
 			+ "\n\t\t\tif (targetEffect) {"
@@ -802,7 +802,7 @@ Hooks.once("init", function () {
 			+ "\n\t\t\tlet action;"
 			+ "\n\t\t\tif (args.opposedTest.result.winner == 'attacker') {action = 'opposedAttackerSuccess'}"
 			+ "\n\t\t\telse {action = 'opposedAttackerFailure'};"
-			+ "\n\t\t\tawait game.wfrp4e.utility.getReaction(actor, target, action, false);"
+			+ "\n\t\t\tif (actor.tokens.length) {await game.wfrp4e.utility.getReaction(actor, target, action, false)};"
 			+ "\n\t\t};"
 			+ "\n\t};"
 			+ "\n};"
@@ -817,6 +817,7 @@ Hooks.once("ready", () => {
 		bubbles: [],
 		updateScripts: true,
 		updateEffect: false,
+		reactions: true,
 		reactionsDebugMessage: false
 	};
 });
@@ -1333,5 +1334,24 @@ Hooks.on("getHeaderControlsActorSheetV2", (sheet, controls) => {
 				};
 			},
 		});
+	};
+});
+
+Hooks.on("getSceneControlButtons", (controls) => {
+	controls.tokens.tools.toggleAssistantReactions = {
+		name: "toggleAssistantReactions",
+		title: game.i18n.localize("WFRP4E.Assistant.Helpers.Reactions.Button.Title"),
+		icon: "fas fa-thought-bubble",
+		button: true,
+		visible: game.user.isGM,
+		onChange: () => {
+			if (game.wfrp4e.assistant.reactions) {
+				game.wfrp4e.assistant.reactions = false;
+				ui.notifications.notify(game.i18n.localize("WFRP4E.Assistant.Helpers.Reactions.Button.Off"));
+			} else {
+				game.wfrp4e.assistant.reactions = true;
+				ui.notifications.notify(game.i18n.localize("WFRP4E.Assistant.Helpers.Reactions.Button.On"));
+			};
+		}
 	};
 });

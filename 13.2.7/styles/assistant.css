@@ -1,0 +1,42 @@
+.WFRP4e_Assistant {
+	width: 750px;
+	resize: both;
+}
+.WFRP4e_Assistant .dialog-content .body {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 30px;
+    overflow: hidden;
+}
+.WFRP4e_Assistant .dialog-content .body input,
+.WFRP4e_Assistant .dialog-content .body select {
+	text-align: center;
+}
+.WFRP4e_Assistant .dialog-content .body > div:first-child {
+	display: flex;
+	align-items: center;
+	flex: 1;
+	width: 30%;
+	font-size: 14px;
+    font-weight: bold;
+	white-space: nowrap;
+}
+.WFRP4e_Assistant .dialog-content .body > div:last-child {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	flex: 2;
+	gap: 1%;
+}
+.WFRP4e_Assistant .dialog-content .body > div:last-child > input[type="number"] {
+	flex: 1;
+}
+.WFRP4e_Assistant .dialog-content .body > div:last-child > input[type="text"],
+.WFRP4e_Assistant .dialog-content .body > div:last-child > select {
+	flex: 2;
+}
+.WFRP4e_Assistant .dialog-content .body > div:last-child > .error {
+    box-shadow: 0 0 5px darkred;
+    border-color: darkred;
+}

@@ -1,0 +1,112 @@
+<ul>
+	{{#params.generateName}}
+	<li>
+		<div class="body" id="generateName" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.GenerateName.Hint'}}">
+			<div>{{localize "WFRP4E.Assistant.Helpers.GenerateName.Label"}}</div>
+			<div>
+				<select id="generateNameSpecies" value="{{this.species}}" data-tooltip="{{localize 'Species'}}">
+					<option value="Disabled" {{#if (eq this.species "Disabled")}}selected{{/if}}>{{localize 'WFRP4E.Assistant.Helpers.Disable'}}</option>
+					{{#each ../species}}
+					<option value="{{this.species.value}}" {{#if (eq ../this.species this.species.value)}}selected{{/if}}>{{this.species.name}}</option>
+					{{/each}}
+				</select>
+				<input id="generateNameKeys" type="text" value="{{this.keys}}" data-tooltip="">
+			</div>
+		</div>
+	</li>
+	{{/params.generateName}}
+	{{#params.changeCharacteristics}}
+	<li>
+		<div class="body" id="changeCharacteristics" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.ChangeCharacteristics.Hint'}}">
+			<div>{{localize "WFRP4E.Assistant.Helpers.ChangeCharacteristics.Label"}}</div>
+			<div>
+				<input id="changeCharacteristicsValue" type="number" step="1" value="{{this.value}}" data-tooltip="{{localize 'Value'}}">
+			</div>
+		</div>
+	</li>
+	{{/params.changeCharacteristics}}
+	{{#params.randomCharacteristics}}
+	<li>
+		<div class="body" id="randomCharacteristics" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.RandomCharacteristics.Hint'}}">
+			<div>{{localize "WFRP4E.Assistant.Helpers.RandomCharacteristics.Label"}}</div>
+			<div>
+				<input id="randomCharacteristicsStatus" type="checkbox" {{#if this.status}}checked{{/if}}>
+			</div>
+		</div>
+	</li>
+	{{/params.randomCharacteristics}}
+	{{#params.deathTint}}
+	<li>
+		<div class="body" id="deathTint" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.DeathTint.Hint'}}">
+			<div>{{localize "WFRP4E.Assistant.Helpers.DeathTint.Label"}}</div>
+			<div>
+				<input id="deathTintValue" type="color" value="{{this.color}}">
+			</div>
+		</div>
+	</li>
+	{{/params.deathTint}}
+	{{#params.generateSpells}}
+	<li>
+		<div class="body" id="generateSpells" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.GenerateSpells.Hint'}}">
+			<div>{{localize "WFRP4E.Assistant.Helpers.GenerateSpells.Label"}}</div>
+			<div>
+				<select id="generateSpellsLore" value="{{this.lore}}" data-tooltip="{{localize 'Lore'}}">
+					<option value="Disabled" {{#if (eq this.lore "Disabled")}}selected{{/if}}>{{localize 'WFRP4E.Assistant.Helpers.Disable'}}</option>
+					{{#each ../lores as |lore|}}
+					<option value="{{lore.value}}" {{#if (eq ../this.lore lore.value)}}selected{{/if}}>{{lore.label}}</option>
+					{{/each}}
+				</select>
+				<input id="generateSpellsCount" type="number" step="1" min="1" value="{{this.count}}" data-tooltip="{{localize 'Quantity'}}">
+				<input id="generateSpellsArcane" type="checkbox" {{#if this.arcane}}checked{{/if}} data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.GenerateSpells.Arcane'}}">
+			</div>
+		</div>
+	</li>
+	{{/params.generateSpells}}
+	{{#params.disposition}}
+	<li>
+		<div class="body" id="disposition" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.Disposition.Hint'}}">
+			<div>{{localize "WFRP4E.Assistant.Helpers.Disposition.Label"}}</div>
+			<div>
+				<select id="dispositionValue" value="{{this.value}}">
+					<option value="3" {{#if (eq this "3")}}selected{{/if}}>{{localize "WFRP4E.Assistant.Helpers.Disposition.None"}}</option>
+					<option value="4" {{#if (eq this "4")}}selected{{/if}}>{{localize "WFRP4E.Assistant.Helpers.Disposition.Call"}}</option>
+					<option value="0" {{#if (eq this "0")}}selected{{/if}}>{{localize "TOKEN.DISPOSITION.NEUTRAL"}}</option>
+					<option value="1" {{#if (eq this "1")}}selected{{/if}}>{{localize "TOKEN.DISPOSITION.FRIENDLY"}}</option>
+					<option value="-1" {{#if (eq this "-1")}}selected{{/if}}>{{localize "TOKEN.DISPOSITION.HOSTILE"}}</option>
+					<option value="-2" {{#if (eq this "-2")}}selected{{/if}}>{{localize "TOKEN.DISPOSITION.SECRET"}}</option>
+				</select>
+			</div>
+		</div>
+	</li>
+	{{/params.disposition}}
+	{{#params.reactions}}
+	<li>
+		<div class="body" id="reactions" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.Reactions.Hint'}}">
+			<div>{{localize "WFRP4E.Assistant.Helpers.Reactions.Label"}}</div>
+			<div>
+				<select id="reactionsSpecies" value="{{this.species}}" data-tooltip="{{localize 'Species'}}">
+					<option value="Disabled" {{#if (eq this.species "Disabled")}}selected{{/if}}>{{localize 'WFRP4E.Assistant.Helpers.Disable'}}</option>
+					{{#each ../reactions}}
+					<option value="{{this.value}}" {{#if (eq ../this.species this.value)}}selected{{/if}}>{{this.name}}</option>
+					{{/each}}
+				</select>
+				<select id="reactionsSubspecies" value="{{this.subspecies}}" data-tooltip="{{localize 'Subspecies'}}">
+					<option {{#if (eq this.subspecies "Not")}}selected{{/if}} value="Not" data-id="Not">{{localize 'WFRP4E.Assistant.Helpers.Reactions.Not'}}</option>
+					{{#each ../reactions}}
+					{{#each this.subspecies}}
+					<option value="{{this.value}}" data-id="{{../this.value}}" {{#if (eq ../../this.subspecies this.value)}}selected{{/if}}>{{this.name}}</option>
+					{{/each}}
+					{{/each}}
+				</select>
+				<select id="reactionsFrequency" value="{{this.frequency}}" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.Reactions.Frequency.Title'}}">
+					<option value="100" {{#if (eq this.frequency "100")}}selected{{/if}}>{{localize 'WFRP4E.Assistant.Helpers.Reactions.Frequency.Always'}}</option>
+					<option value="75" {{#if (eq this.frequency "75")}}selected{{/if}}>{{localize 'WFRP4E.Assistant.Helpers.Reactions.Frequency.Often'}}</option>
+					<option value="50" {{#if (eq this.frequency "50")}}selected{{/if}}>{{localize 'WFRP4E.Assistant.Helpers.Reactions.Frequency.Usually'}}</option>
+					<option value="25" {{#if (eq this.frequency "25")}}selected{{/if}}>{{localize 'WFRP4E.Assistant.Helpers.Reactions.Frequency.Sometimes'}}</option>
+					<option value="0" {{#if (eq this.frequency "0")}}selected{{/if}}>{{localize 'WFRP4E.Assistant.Helpers.Reactions.Frequency.Never'}}</option>
+				</select>
+			</div>
+		</div>
+	</li>
+	{{/params.reactions}}
+</ul>
