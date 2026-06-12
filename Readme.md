@@ -348,7 +348,7 @@ You can access the Assistant via the **Control Switching"** tab:
 The characteristics are randomized according to the rule described in the Rulebook:
 > If you wish to randomly create Characteristics, subtract –10, then add 2d10. So, a Characteristic of 30 translates to 2d10+20. If a Characteristic starts at 5, roll just 1d10 to randomise it.
 
-#### 4. Random token size
+#### 3. Random token size
 - _Availability: NPCs and Creatures._
 - _Trigger: moving the token onto the scene._
 - _Action: randomize the size of the token ±20%._
