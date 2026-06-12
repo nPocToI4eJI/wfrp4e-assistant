@@ -1,0 +1,136 @@
+.WFRP4eAssistant a.button {
+	--button-size: var(--input-height);
+	text-align: center;
+}
+
+.WFRP4eAssistant-menu {
+	min-width: 750px;
+	max-width: 1000px;
+}
+.WFRP4eAssistant-menu .window-content .body {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    overflow: hidden;
+	gap: 3px;
+}
+.WFRP4eAssistant-menu .window-content .body:not(.items) {
+	height: 30px;
+}
+.WFRP4eAssistant-menu .window-content li:has(> .characteristics) {
+	display: grid;
+	grid-template-rows: 60px auto;
+	grid-template-columns: 95% calc(5% - 5px);
+	gap: 5px;
+	margin-bottom: 5px;
+}
+.WFRP4eAssistant-menu .window-content .characteristics {
+	display: grid;
+	height: 60px;
+	grid-template-columns: repeat(10, 10%);
+	grid-template-rows: repeat(2, 50%);
+	align-items: center;
+	justify-items: center;
+	border: 1px var(--color-shadow-primary) solid;
+	border-radius: 5px;
+}
+.WFRP4eAssistant-menu .window-content .weight {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+	border: 1px var(--color-shadow-highlight) solid;
+	border-radius: 5px;
+}
+.WFRP4eAssistant-menu .window-content .characteristics > label {
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px solid var(--color-shadow-highlight);
+}
+.WFRP4eAssistant-menu .window-content .characteristics > input {
+	width: 90%;
+	height: 90%;
+}
+.WFRP4eAssistant-menu .window-content .items {
+	padding: 3px;
+	border: 1px var(--color-shadow-highlight) solid;
+	border-radius: 5px;
+	min-height: 30px;
+	flex-wrap: wrap;
+	justify-items: center;
+	justify-content: space-evenly;
+}
+.WFRP4eAssistant-menu .window-content .items > a {
+	padding: 2px;
+	border: 1px var(--color-shadow-primary) dotted;
+	border-radius: 5px;
+}
+.WFRP4eAssistant-menu .window-content .body input,
+.WFRP4eAssistant-menu .window-content .body select {
+	text-align: center;
+}
+.WFRP4eAssistant-menu .window-content .body input[type="color"] {
+	cursor: inherit;
+}
+.WFRP4eAssistant-menu .window-content .body > label {
+	display: flex;
+	align-items: center;
+	flex: 1;
+	width: 30%;
+	font-size: 14px;
+    font-weight: bold;
+	white-space: nowrap;
+	cursor: inherit;
+}
+.WFRP4eAssistant-menu .window-content .body > label.isUnique {
+	text-decoration: line-through;
+	color: darkred;
+}
+.WFRP4eAssistant-menu .window-content .body > div.content {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	flex: 2;
+	gap: 1%;
+}
+.WFRP4eAssistant-menu .window-content .body > div.content > input[type="number"] {
+	flex: 1;
+}
+.WFRP4eAssistant-menu .window-content .body > div.content > input[type="text"],
+.WFRP4eAssistant-menu .window-content .body > div.content > select {
+	flex: 2;
+}
+.WFRP4eAssistant-chat-bubble {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: unset;
+}
+
+
+
+.WFRP4eAssistant-debug section.window-content {
+	gap: 3px;
+}
+.WFRP4eAssistant-debug section.window-content > div {
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 3px;
+	padding: 2px;
+	border: 1px dashed black;
+	text-align: center;
+	border-radius: 5px;
+}
+.WFRP4eAssistant-debug h5 {
+    text-align: center;
+}
+
+
+
+.nameGeneratorChat {
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
