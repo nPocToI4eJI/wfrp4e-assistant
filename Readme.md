@@ -12,20 +12,22 @@
   <a href="https://boosty.to/npocto_4eji" rel="nofollow"><img src="https://img.shields.io/badge/Boosty-black?logo=boosty&logoColor=%23F15F2C" alt="Boosty"></a>
 </p>
 
+- [Русский](#ru)
+- [English](#en)
+
+<a name="ru"></a>
 Этот модуль поможет Мастеру проводить игры с комфортом. В него включены исправления ошибок и недоработок системы и официальных модулей, а также собственные и адаптированные инструменты.
-<br>
-<details>
-  <summary>Описание</summary>
-  
+
 ## Содержание
 - [Помощник](#Помощник)
   - [Случайное имя](#1-Случайное-имя)
-  - [Изменение характеристик](#2-Изменение-характеристик)
-  - [Случайные характеристики](#3-Случайные-характеристики)
+  - [Случайные характеристики](#2-Случайные-характеристики)
+  - [Случайный размер токена](#3-Случайный-размер-токена)
   - [Окраска токена при смерти](#4-Окраска-токена-при-смерти)
   - [Случайные заклинания](#5-Случайные-заклинания)
   - [Отношение токена](#6-Отношение-токена)
   - [Реакции](#7-Реакции)
+  - [Наборы](#8-Наборы)
   - [Экспортировать актёра](#Экспортировать-актёра)
 - [Исправления и улучшения](#Исправления-и-улучшения)
   - [Уход в защиту](#Уход-в-защиту)
@@ -50,28 +52,20 @@ _Это универсальный инструмент по индивидуа�
 
 ###### <p align="center">Интерфейс</p>
 
-<p align="center"><img width="600" height="450" alt="Интерфейс Помощника" src="https://github.com/user-attachments/assets/94b5390e-aa91-4b9d-8712-66b142a5bc8d"/></p>
+<p align="center"><img width="1000" height="500" alt="Интерфейс Помощника" src="https://github.com/user-attachments/assets/eb563856-a7cb-4f44-8ddb-7f9bd187d5a2"/></p>
 
 #### 1. Случайное имя
 - _Доступность: НИП и Существа._
 - _Триггер: перенос токена на сцену._
 - _Действие: присвоение случайного имени._
 - _Настройка:_
-  - Установите флажок в соответствующем пункте Помощника.
   - В выпадающем меню Народа выберите один из заготовленных.
   - В поле параметров укажите необходимые, через запятую. Список и краткое описание доступных параметров для выбранного Народа можно увидеть, наведя на поле.
-    - Если указанные параметры недоступны для выбранного Народа, вы увидите уведомление об этом. В случае сохранения настроек, такие параметры сохранены не будут.
+    - Если указанные параметры недоступны для выбранного Народа, вы увидите уведомление об этом. В случае сохранения настроек, такие будут добавляться как часть названия.
 
 О том, как добавить имена и параметры для существующих и своих Народов, Вы сможете узнать в [этой инструкции](https://github.com/nPocToI4eJI/wfrp4e-assistant/wiki/%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8%D0%BC%D1%91%D0%BD-%D0%B8-%D1%80%D0%B5%D0%B0%D0%BA%D1%86%D0%B8%D0%B9#1-%D0%98%D0%BC%D0%B5%D0%BD%D0%B0).
 
-#### 2. Изменение характеристик
-- _Доступность: НИП и Существа._
-- _Триггер: при сохранении настроек Помощника._
-- _Действие: изменение характеристик актёра._
-- _Настройка:_
-  - Укажите в поле ввода значение, на которое Вы хотели бы изменить характеристики актёра.
-
-#### 3. Случайные характеристики
+#### 2. Случайные характеристики
 - _Доступность: НИП и Существа._
 - _Триггер: перенос токена на сцену._
 - _Действие: рандомизация характеристик актёра._
@@ -80,6 +74,13 @@ _Это универсальный инструмент по индивидуа�
 
 Характеристики рандомизируются в соответствии с правилом, описанном в Книге Правил:
 > Чтобы задать случайное значение характеристики, вычти из указанного в бестиарии значения 10 пунктов, а затем прибавь 2d10 пунктов. Таким образом, заданное значение характеристики 30 превратится в случайное, равное 20 + 2d10. Если характеристика равна 5, просто брось 1d10 и запиши полученный результат как новое значение этой характеристики.
+
+#### 3. Случайный размер токена
+- _Доступность: НИП и Существа._
+- _Триггер: перенос токена на сцену._
+- _Действие: рандомизация размеров токена ±20%._
+- _Настройка:_
+  - Установите флажок в соответствующем пункте Помощника.
 
 #### 4. Окраска токена при смерти
 - _Доступность: Персонажи, НИП и Существа._
@@ -131,6 +132,16 @@ _Это универсальный инструмент по индивидуа�
 Если Вы не хотите, чтобы Актёр воспроизводил реакции, всё ещё рекомендуется настроить пункты Народа и Разновидности народа, чтобы другие актёры смогли таргетировать свои реплики по отношению к этому.
 
 Как добавить реакции для существующих или своих Народов, Вы сможете узнать в [этой инструкции](https://github.com/nPocToI4eJI/wfrp4e-assistant/wiki/%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D0%B2%D0%BE%D0%B8%D1%85-%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%D0%BE%D0%B2#2-%D1%80%D0%B5%D0%B0%D0%BA%D1%86%D0%B8%D0%B8).
+
+#### 8. Наборы
+- _Доступность: Персонажи, НИП и Существа._
+- _Триггер: перенос токена на сцену._
+- _Действие: выбор набора снаряжения и характеристик._
+- _Настройка:_
+  - Дабовьте набор, нажатием кнопки **Добавить**.
+  - Впишите необходимые изменения (+ или -) характеристик в соответствующие графы.
+  - Перенесите необходимые для набора предметы в соответствующую графу.
+  - Укажите Вес набора, который определит вероятность его получения.
 
 #### Экспортировать актёра
 _Позволяет сохранить актёра, находящегося на сцене, как отдельный лист._
@@ -238,15 +249,12 @@ _Этот макрос использует метод [generateBookTitle](https
 ## Планы
 _Дальнейшие планы по обновлению модуля._
 
-- [ ] Починить выбор Народа при создании персонажа с таблицей "Archives of the Empire: II".
 - [ ] Починить остальные макросы из "Winds of Magic".
-- [ ] Добавить возможность изменения стандартных шаблонов Помощника.
 - [ ] Свои предложения по улучшению модуля можете присылать [сюда](https://github.com/nPocToI4eJI/wfrp4e-assistant/issues/1).
 
 ## Известные ошибки
 _Тут перечислены баги и недоработки, о которых уже известно._
 
-- [ ] Двойная реакция для ситуации "Встречная проверка: Защитник", если был выбран вариант "Не встречная". Проблема со стороны системы.
 - [ ] Найденные ошибки можете присылать [сюда](https://github.com/nPocToI4eJI/wfrp4e-assistant/issues/2).
 
 ## Информация для разработчиков
@@ -256,23 +264,21 @@ _Тут перечислены баги и недоработки, о котор
 - **Александр** _(kotofeilove)_, за придумывание реакций для гоблинов. Они цепляют прямо за душу.
 - **Bossga**, за тестирование первых версий модулей.
 
-</details>
 <hr>
 
+<a name="en"></a>
 This module will help the Game Master to hold games with comfort. It includes corrections of bugs and shortcomings of the system and official modules, as well as own and adapted tools.
-<br>
-<details>
-  <summary>Description</summary>
- 
+
 ## Contents
 - [Assistant](#Assistant)
   - [Random name](#1-Random-name)
-  - [Change characteristics](#2-Change-characteristics)
-  - [Random characteristics](#3-Random-characteristics)
+  - [Random characteristics](#2-Random-characteristics)
+  - [Random token size](#4-Random-token-size)
   - [Token coloration on death](#4-Token-coloration-on-death)
   - [Random spells](#5-Random-spells)
   - [Token disposition](#6-Token-disposition)
   - [Reactions](#7-Reactions)
+  - [Sets](#8-Sets)
   - [Export actor](#Export-actor)
 - [Fixes and Improvements](#Fixes-and-Improvements)
   - [On The Defensive](#On-The-Defensive)
@@ -297,7 +303,7 @@ You can access the Assistant via the **Control Switching"** tab:
 
 ###### <p align="center">Interface</p>
 
-<p align="center"><img width="600" height="450" alt="Assistant Interface" src="https://github.com/user-attachments/assets/94b5390e-aa91-4b9d-8712-66b142a5bc8d"/></p>
+<p align="center"><img width="1000" height="500" alt="Assistant Interface" src="https://github.com/user-attachments/assets/eb563856-a7cb-4f44-8ddb-7f9bd187d5a2"/></p>
 
 #### 1. Random name
 - _Availability: NPCs and Creatures._
@@ -311,14 +317,7 @@ You can access the Assistant via the **Control Switching"** tab:
 
 You can learn how to add names and parameters for existing and custom Species in [this instruction (ru)](https://github.com/nPocToI4eJI/wfrp4e-assistant/wiki/%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8%D0%BC%D1%91%D0%BD-%D0%B8-%D1%80%D0%B5%D0%B0%D0%BA%D1%86%D0%B8%D0%B9#1-%D0%98%D0%BC%D0%B5%D0%BD%D0%B0).
 
-#### 2. Change characteristics
-- _Availability: NPCs and Creatures._
-- _Trigger: when saving Assistant settings._
-- _Action: modifying the actor’s characteristics._
-- _Setup:_
-  - Enter the value by which you would like to modify the actor’s characteristics in the input field.
-
-#### 3. Random characteristics
+#### 2. Random characteristics
 - _Availability: NPCs and Creatures._
 - _Trigger: moving the token onto the scene._
 - _Action: randomizing the actor’s characteristics._
@@ -327,6 +326,13 @@ You can learn how to add names and parameters for existing and custom Species in
 
 The characteristics are randomized according to the rule described in the Rulebook:
 > If you wish to randomly create Characteristics, subtract –10, then add 2d10. So, a Characteristic of 30 translates to 2d10+20. If a Characteristic starts at 5, roll just 1d10 to randomise it.
+
+#### 4. Random token size
+- _Availability: NPCs and Creatures._
+- _Trigger: moving the token onto the scene._
+- _Action: randomize the size of the token ±20%._
+- _Setup:_
+  - Check the box in the corresponding Assistant item.
 
 #### 4. Token coloration on death
 - _Availability: Characters, NPCs, and Creatures._
@@ -378,6 +384,16 @@ The characteristics are randomized according to the rule described in the Rulebo
 If you do not want the Actor to produce reactions, it is still recommended to configure the Species and Subspecies options so that other actors can target their lines toward this one.
 
 You can learn how to add reactions for existing or custom Species in [this instruction (ru)](https://github.com/nPocToI4eJI/wfrp4e-assistant/wiki/%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D0%B2%D0%BE%D0%B8%D1%85-%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%D0%BE%D0%B2#2-%D1%80%D0%B5%D0%B0%D0%BA%D1%86%D0%B8%D0%B8).
+
+#### 8. Sets
+- _Availability: Characters, NPCs, and Creatures._
+- _Trigger: moving the token onto the scene._
+- _Action: Select a set of items and characteristics._
+- _Setup:_
+  - Add a set by pressing the **Add** button.
+  - Enter the necessary changes (+ or -) of the characteristics in the appropriate columns.
+  - Move the items needed for the set to the appropriate column.
+  - Specify the Weight of the set, which will determine the probability of receiving it.
 
 #### Export actor
 _Allows you to save an actor currently on the scene as a separate sheet._
@@ -485,15 +501,12 @@ Examples:
 ## Plans
 _Upcoming plans for module updates._
 
-- [ ] Fix the selection of Species when creating a character using the "Archives of the Empire: II".
 - [ ] Fix the remaining macros from "Winds of Magic".
-- [ ] Add the ability to modify the Assistant’s default templates.
 - [ ] You can submit your suggestions for improving the module [here](https://github.com/nPocToI4eJI/wfrp4e-assistant/issues/1).
 
 ## Known Issues
 _This section lists bugs and shortcomings that are already known._
 
-- [ ] Double reaction for the "Opposed Test: Defender" situation when the "Not Opposed" option was selected. This is a system‑side issue.
 - [ ] You can report any bugs you find [here](https://github.com/nPocToI4eJI/wfrp4e-assistant/issues/2).
 
 ## Developer Information
@@ -502,5 +515,3 @@ _This section lists bugs and shortcomings that are already known._
 ## Special thanks
 - **Alexander** _(kotofeilove)_ for coming up with the goblins’ reactions. They really touch the heart.
 - **Bossga** for testing the early versions of the modules.
-
-</details>
