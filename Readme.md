@@ -235,7 +235,7 @@ _Этот макрос генерирует оскорбления в фэнте
 - _Вонючий, с рвотой вместо мозгов, проходимец._
 
 #### Название книги
-_Этот макрос использует метод [generateBookTitle](https://github.com/nPocToI4eJI/wfrp4e-assistant/blob/main/For%20developers.md#generateBookTitletype), представляя удобный интерфейс для взаимодействия и выводя результат в чат._
+_Этот макрос использует метод [generateBookTitle](https://github.com/nPocToI4eJI/wfrp4e-assistant/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D1%8B#1-generatebooktitletype), представляя удобный интерфейс для взаимодействия и выводя результат в чат._
 
 Примеры:
 - _Комплексные справки про битву на Перевале Чёрного Огня._
@@ -483,7 +483,7 @@ Examples (ru):
 - _Вонючий, с рвотой вместо мозгов, проходимец._
 
 #### Book Title
-_This macro uses the [generateBookTitle](https://github.com/nPocToI4eJI/wfrp4e-assistant/blob/main/For%20developers.md#generateBookTitletype) method, providing a user‑friendly interface for interaction and outputting the result to the chat._
+_This macro uses the [generateBookTitle](https://github.com/nPocToI4eJI/wfrp4e-assistant/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D1%8B#1-generatebooktitletype) method, providing a user‑friendly interface for interaction and outputting the result to the chat._
 
 Examples:
 - _Finest lessons on the Dwarven Runes in Heraldy._
