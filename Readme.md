@@ -63,8 +63,6 @@ _Это универсальный инструмент по индивидуа�
   - В поле параметров укажите необходимые, через запятую. Список и краткое описание доступных параметров для выбранного Народа можно увидеть, наведя на поле.
     - Если указанные параметры недоступны для выбранного Народа, вы увидите уведомление об этом. В случае сохранения настроек, такие будут добавляться как часть названия.
 
-О том, как добавить имена и параметры для существующих и своих Народов, Вы сможете узнать в [этой инструкции](https://github.com/nPocToI4eJI/wfrp4e-assistant/wiki/%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8%D0%BC%D1%91%D0%BD-%D0%B8-%D1%80%D0%B5%D0%B0%D0%BA%D1%86%D0%B8%D0%B9#1-%D0%98%D0%BC%D0%B5%D0%BD%D0%B0).
-
 #### 2. Случайные характеристики
 - _Доступность: НИП и Существа._
 - _Триггер: перенос токена на сцену._
@@ -130,8 +128,6 @@ _Это универсальный инструмент по индивидуа�
   - В выпадающем меню Шанса выберите, как часто актёр будет реагировать на события.
 
 Если Вы не хотите, чтобы Актёр воспроизводил реакции, всё ещё рекомендуется настроить пункты Народа и Разновидности народа, чтобы другие актёры смогли таргетировать свои реплики по отношению к этому.
-
-Как добавить реакции для существующих или своих Народов, Вы сможете узнать в [этой инструкции](https://github.com/nPocToI4eJI/wfrp4e-assistant/wiki/%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D0%B2%D0%BE%D0%B8%D1%85-%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%D0%BE%D0%B2#2-%D1%80%D0%B5%D0%B0%D0%BA%D1%86%D0%B8%D0%B8).
 
 #### 8. Наборы
 - _Доступность: Персонажи, НИП и Существа._
@@ -315,8 +311,6 @@ You can access the Assistant via the **Control Switching"** tab:
   - In the parameters field, enter the required values separated by commas. You can view a list and brief description of available parameters for the selected Species by hovering over the field.
     - If the specified parameters are not available for the selected Species , you will see a notification about this. If you save the settings, such parameters will not be retained.
 
-You can learn how to add names and parameters for existing and custom Species in [this instruction (ru)](https://github.com/nPocToI4eJI/wfrp4e-assistant/wiki/%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8%D0%BC%D1%91%D0%BD-%D0%B8-%D1%80%D0%B5%D0%B0%D0%BA%D1%86%D0%B8%D0%B9#1-%D0%98%D0%BC%D0%B5%D0%BD%D0%B0).
-
 #### 2. Random characteristics
 - _Availability: NPCs and Creatures._
 - _Trigger: moving the token onto the scene._
@@ -382,8 +376,6 @@ The characteristics are randomized according to the rule described in the Rulebo
   - In the Chance dropdown menu, select how often the actor will react to events.
 
 If you do not want the Actor to produce reactions, it is still recommended to configure the Species and Subspecies options so that other actors can target their lines toward this one.
-
-You can learn how to add reactions for existing or custom Species in [this instruction (ru)](https://github.com/nPocToI4eJI/wfrp4e-assistant/wiki/%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D0%B2%D0%BE%D0%B8%D1%85-%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%D0%BE%D0%B2#2-%D1%80%D0%B5%D0%B0%D0%BA%D1%86%D0%B8%D0%B8).
 
 #### 8. Sets
 - _Availability: Characters, NPCs, and Creatures._
