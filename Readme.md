@@ -39,6 +39,8 @@
 - [Макросы](#Макросы)
   - [Придумать ругательство](#Придумать-ругательство)
   - [Название книги](#Название-книги)
+- [Настройки](#Настройки)
+- [Режим Отладки](#Режим-Отладки)
 - [Планы](#Планы)
 - [Известные ошибки](#Известные-ошибки)
 - [Информация для разработчиков](#Информация-для-разработчиков)
@@ -242,6 +244,29 @@ _Этот макрос использует метод [generateBookTitle](https
 - _Основные лекции о реальных опасностях неизученных трав._
 - _Насущные заметки о чудесах Зоологии._
 
+## Настройки
+_Модуль обладает возможностью гибкой настройки._
+
+###### <p align="center">Интерфейс Настроек</p>
+
+<p align="center"><img width="575" height="600" alt="Интерфейс Настроек" src="https://github.com/user-attachments/assets/f63a21cc-cf00-4ee8-99dc-61a48f1746aa"/></p>
+
+Список настраиваемых параметров:
+- Меню шаблонов. Позволяет создавать и изменять шаблоны настроек Помощника.
+- Помощник. Включить: Включает функционал Помощника.
+- Помощник. Способ отображения реакций: Определяет, каким образом будут отображаться Реакции Помощника (Пузырь чата, Сообщение в чат, Оба варианта).
+- SF. Уход в защиту до начала хода: Если включено, статус Ухода в защиту будет убираться в начале хода Актёра.
+- SF. Навыки для ухода в защиту: Позволяет выбрать, какие Навыки будут предлагаться для Ухода в защиту (Боевые (Уклонение и Рукопашный бой), Все, Определённые пользователем).
+- SF. Переводить данные Актёров при импорте: Если включено, при импорте Актёра из Библиотеки, Вам будет предложено перевести его данные. Требуется наличие модуля [Babele](https://foundryvtt.com/packages/babele).
+- SF. Случайные названия Гримуаров: Если включено, сгенерированным гримуарам будет присвоено случайное название, используя метод [generateBookTitle](https://github.com/nPocToI4eJI/wfrp4e-assistant/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D1%8B#1-generatebooktitletype).
+
+#### Режим Отладки
+_Модуль оборудован режимом отладки, используемым для обнаружения и решения проблем при его использовании._
+
+###### <p align="center">Интерфейс Меню Отладки</p>
+
+<p align="center"><img width="250" height="125" alt="Интерфейс Меню Отладки" src="https://github.com/user-attachments/assets/9d3715a1-1ea9-413b-a5b6-ae4d5fa09db7"/></p>
+
 ## Планы
 _Дальнейшие планы по обновлению модуля._
 
@@ -286,6 +311,8 @@ This module will help the Game Master to hold games with comfort. It includes co
 - [Macros](#Macros)
   - [Invent a Curse](#Invent-a-Curse)
   - [Book Title](#Book-Title)
+- [Settings](#Settings)
+- [Debug Mode](#Debug-Mode)
 - [Plans](#Plans)
 - [Known Issues](#Known-Issues)
 - [Developer Information](#Developer-Information)
@@ -489,6 +516,29 @@ Examples:
 - _Finest lessons on the Dwarven Runes in Heraldy._
 - _Accumulated studies on the Uglu: the Grey Wind of Illusion._
 - _Essential conceptions on the Cross & Skull on Pirate Flags._
+
+## Settings
+_The module offers flexible configuration options._
+
+###### <p align="center">Settings Interface</p>
+
+<p align="center"><img width="575" height="600" alt="Settings Interface" src="https://github.com/user-attachments/assets/f63a21cc-cf00-4ee8-99dc-61a48f1746aa"/></p>
+
+List of configurable parameters:
+- Presets menu. Allows you to create and edit Assistant settings presets.
+- Assistant. Enable: Activates the Assistant functionality.
+- Assistant. The way reactions are displayed: Determines how the Assistant’s Reactions will be displayed (Chat Bubble, Message to the chat, Both options).
+- SF. Remove Defensive Stance at start of turn: If enabled, the Defensive Stance status will be removed at the start of the Actor's turn.
+- SF. Skills for Defensive Stance: Lets you select which Skills will be offered for Defensive Stance (Combat (Dodge and Melee), All, User‑defined).
+- SF. Translate Actor data on import: If enabled, when importing an Actor from the Library, you will be prompted to translate its data. Requires the [Babele](https://foundryvtt.com/packages/babele) module.
+- SF. Random names for Grimoires: If enabled, generated Grimoires will be assigned a random name, using the [generateBookTitle](https://github.com/nPocToI4eJI/wfrp4e-assistant/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D1%8B#1-generatebooktitletype) method.
+
+#### Debug Mode
+_The module includes a debug mode used to detect and resolve issues during its use._
+
+###### <p align="center">Debug Menu Interface</p>
+
+<p align="center"><img width="250" height="125" alt="Debug Menu Interface" src="https://github.com/user-attachments/assets/9d3715a1-1ea9-413b-a5b6-ae4d5fa09db7"/></p>
 
 ## Plans
 _Upcoming plans for module updates._
