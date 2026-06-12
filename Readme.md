@@ -240,13 +240,13 @@ _Этот макрос генерирует оскорбления в фэнте
 #### Название книги
 _Этот макрос использует метод [generateBookTitle](https://github.com/nPocToI4eJI/wfrp4e-assistant/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D1%8B#1-generatebooktitletype), представляя удобный интерфейс для взаимодействия и выводя результат в чат._
 
-#### Случайное имя
-_Этот макрос использует метод [generateName](https://github.com/nPocToI4eJI/wfrp4e-assistant/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D1%8B#3-generatenametype), представляя удобный интерфейс для взаимодействия и выводя результат в чат._
-
 Примеры:
 - _Комплексные справки про битву на Перевале Чёрного Огня._
 - _Основные лекции о реальных опасностях неизученных трав._
 - _Насущные заметки о чудесах Зоологии._
+
+#### Случайное имя
+_Этот макрос использует метод [generateName](https://github.com/nPocToI4eJI/wfrp4e-assistant/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D1%8B#3-generatenametype), представляя удобный интерфейс для взаимодействия и выводя результат в чат._
 
 ## Настройки
 _Модуль обладает возможностью гибкой настройки._
@@ -517,13 +517,13 @@ Examples (ru):
 #### Book Title
 _This macro uses the [generateBookTitle](https://github.com/nPocToI4eJI/wfrp4e-assistant/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D1%8B#1-generatebooktitletype) method, providing a user‑friendly interface for interaction and outputting the result to the chat._
 
-#### Random name
-_This macro uses the [generateName](https://github.com/nPocToI4eJI/wfrp4e-assistant/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D1%8B#3-generatenametype) method, providing a user‑friendly interface for interaction and outputting the result to the chat._
-
 Examples:
 - _Finest lessons on the Dwarven Runes in Heraldy._
 - _Accumulated studies on the Uglu: the Grey Wind of Illusion._
 - _Essential conceptions on the Cross & Skull on Pirate Flags._
+
+#### Random name
+_This macro uses the [generateName](https://github.com/nPocToI4eJI/wfrp4e-assistant/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D1%8B#3-generatenametype) method, providing a user‑friendly interface for interaction and outputting the result to the chat._
 
 ## Settings
 _The module offers flexible configuration options._
