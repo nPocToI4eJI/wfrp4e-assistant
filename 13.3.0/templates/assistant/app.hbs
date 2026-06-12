@@ -1,0 +1,157 @@
+<ul>
+	<li id="presetName"{{#unless actor.isPreset}} hidden{{/unless}}>
+		<div class="body" data-tooltip="{{localize 'Name'}}">
+			<label>{{localize "WFRP4E.Assistant.Helpers.Settings.Presets.ChangeName"}}</label>
+			<div class="content">
+				<input id="presetNameValue" type="text" value="{{actor.name}}">
+			</div>
+		</div>
+	</li>
+	<li id="generateName">
+		<div class="body" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.GenerateName.Hint'}}{{#if isUnique}}<hr>{{localize 'WFRP4E.Assistant.Helpers.Unique.Disabled'}}{{/if}}">
+			<label {{#if isUnique}}class="isUnique"{{/if}}>{{localize "WFRP4E.Assistant.Helpers.GenerateName.Label"}}</label>
+			<div class="content">
+				<select id="generateNameSpecies" value="{{params.generateName.species}}" data-tooltip="{{localize 'Species'}}"{{#if isUnique}} disabled{{/if}}>
+					<option value="disabled" {{#if (eq params.generateName.species "Disabled")}}selected{{/if}}>{{localize 'WFRP4E.Assistant.Helpers.Disable'}}</option>
+					{{#each species}}
+					<option value="{{this.value}}" {{#if (eq ../params.generateName.species this.value)}}selected{{/if}}>{{this.name}}</option>
+					{{/each}}
+				</select>
+				<input id="generateNameKeys" type="text" value="{{params.generateName.keys}}" data-tooltip=""{{#if isUnique}} disabled{{/if}}>
+			</div>
+		</div>
+	</li>
+	<li id="randomCharacteristics">
+		<div class="body" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.RandomCharacteristics.Hint'}}{{#if isUnique}}<hr>{{localize 'WFRP4E.Assistant.Helpers.Unique.Disabled'}}{{/if}}">
+			<label {{#if isUnique}}class="isUnique"{{/if}}>{{localize "WFRP4E.Assistant.Helpers.RandomCharacteristics.Label"}}</label>
+			<div class="content">
+				<input id="randomCharacteristicsStatus" type="checkbox" {{#if params.randomCharacteristics.status}}checked{{/if}}{{#if isUnique}} disabled{{/if}}>
+			</div>
+		</div>
+	</li>
+	<li id="randomTokenSize">
+		<div class="body" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.RandomTokenSize.Hint'}}{{#if isUnique}}<hr>{{localize 'WFRP4E.Assistant.Helpers.Unique.Disabled'}}{{/if}}">
+			<label {{#if isUnique}}class="isUnique"{{/if}}>{{localize "WFRP4E.Assistant.Helpers.RandomTokenSize.Label"}}</label>
+			<div class="content">
+				<input id="randomTokenSizeStatus" type="checkbox" {{#if params.randomTokenSize.status}}checked{{/if}}{{#if isUnique}} disabled{{/if}}>
+			</div>
+		</div>
+	</li>
+	<li id="deathTint">
+		<div class="body" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.DeathTint.Hint'}}">
+			<label>{{localize "WFRP4E.Assistant.Helpers.DeathTint.Label"}}</label>
+			<div class="content">
+				<input id="deathTintValue" type="color" value="{{params.deathTint.color}}">
+			</div>
+		</div>
+	</li>
+	<li id="generateSpells">
+		<div class="body" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.GenerateSpells.Hint'}}{{#if isUnique}}<hr>{{localize 'WFRP4E.Assistant.Helpers.Unique.Disabled'}}{{/if}}">
+			<label {{#if isUnique}}class="isUnique"{{/if}}>{{localize "WFRP4E.Assistant.Helpers.GenerateSpells.Label"}}</label>
+			<div class="content">
+				<select id="generateSpellsLore" value="{{params.generateSpells.lore}}" data-tooltip="{{localize 'Lore'}}"{{#if isUnique}} disabled{{/if}}>
+					<option value="disabled" {{#if (eq params.generateSpells.lore "Disabled")}}selected{{/if}}>{{localize 'WFRP4E.Assistant.Helpers.Disable'}}</option>
+					{{#each lores as |lore|}}
+					<option value="{{lore.value}}" {{#if (eq ../params.generateSpells.lore lore.value)}}selected{{/if}}>{{lore.label}}</option>
+					{{/each}}
+				</select>
+				<input id="generateSpellsCount" type="number" step="1" min="1" value="{{params.generateSpells.count}}" data-tooltip="{{localize 'Quantity'}}"{{#if isUnique}} disabled{{/if}}>
+				<input id="generateSpellsArcane" type="checkbox" {{#if params.generateSpells.arcane}}checked{{/if}} data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.GenerateSpells.Arcane'}}"{{#if isUnique}} disabled{{/if}}>
+			</div>
+		</div>
+	</li>
+	<li id="disposition">
+		<div class="body" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.Disposition.Hint'}}{{#if isUnique}}<hr>{{localize 'WFRP4E.Assistant.Helpers.Unique.Disabled'}}{{/if}}">
+			<label {{#if isUnique}}class="isUnique"{{/if}}>{{localize "WFRP4E.Assistant.Helpers.Disposition.Label"}}</label>
+			<div class="content">
+				<select id="dispositionValue" value="{{params.disposition.value}}"{{#if isUnique}} disabled{{/if}}>
+					<option value="3" {{#if (eq params.disposition.value "3")}}selected{{/if}}>{{localize "WFRP4E.Assistant.Helpers.Disposition.None"}}</option>
+					<option value="4" {{#if (eq params.disposition.value "4")}}selected{{/if}}>{{localize "WFRP4E.Assistant.Helpers.Disposition.Call"}}</option>
+					<option value="0" {{#if (eq params.disposition.value "0")}}selected{{/if}}>{{localize "TOKEN.DISPOSITION.NEUTRAL"}}</option>
+					<option value="1" {{#if (eq params.disposition.value "1")}}selected{{/if}}>{{localize "TOKEN.DISPOSITION.FRIENDLY"}}</option>
+					<option value="-1" {{#if (eq params.disposition.value "-1")}}selected{{/if}}>{{localize "TOKEN.DISPOSITION.HOSTILE"}}</option>
+					<option value="-2" {{#if (eq params.disposition.value "-2")}}selected{{/if}}>{{localize "TOKEN.DISPOSITION.SECRET"}}</option>
+				</select>
+			</div>
+		</div>
+	</li>
+	<li id="reactions">
+		<div class="body" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.Reactions.Hint'}}">
+			<label>{{localize "WFRP4E.Assistant.Helpers.Reactions.Label"}}</label>
+			<div class="content">
+				<select id="reactionsSpecies" value="{{params.reactions.species}}" data-tooltip="{{localize 'Species'}}">
+					<option value="disabled" {{#if (eq params.reactions.species "Disabled")}}selected{{/if}}>{{localize 'WFRP4E.Assistant.Helpers.Disable'}}</option>
+					{{#each reactions}}
+					<option value="{{this.value}}" {{#if (eq ../params.reactions.species this.value)}}selected{{/if}}>{{this.name}}</option>
+					{{/each}}
+				</select>
+				<select id="reactionsSubspecies" value="{{params.reactions.subspecies}}" data-tooltip="{{localize 'Subspecies'}}">
+					<option {{#if (eq params.reactions.subspecies "Not")}}selected{{/if}} value="Not" data-id="Not">{{localize 'WFRP4E.Assistant.Helpers.Reactions.Not'}}</option>
+					{{#each reactions}}
+					{{#each this.subspecies}}
+					<option value="{{this.value}}" data-id="{{../this.value}}" {{#if (eq ../../params.reactions.subspecies this.value)}}selected{{/if}}>{{this.name}}</option>
+					{{/each}}
+					{{/each}}
+				</select>
+				<select id="reactionsFrequency" value="{{this.frequency}}" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.Reactions.Frequency.Title'}}">
+					<option value="100" {{#if (eq params.reactions.frequency "100")}}selected{{/if}}>{{localize 'WFRP4E.Assistant.Helpers.Reactions.Frequency.Always'}}</option>
+					<option value="75" {{#if (eq params.reactions.frequency "75")}}selected{{/if}}>{{localize 'WFRP4E.Assistant.Helpers.Reactions.Frequency.Often'}}</option>
+					<option value="50" {{#if (eq params.reactions.frequency "50")}}selected{{/if}}>{{localize 'WFRP4E.Assistant.Helpers.Reactions.Frequency.Usually'}}</option>
+					<option value="25" {{#if (eq params.reactions.frequency "25")}}selected{{/if}}>{{localize 'WFRP4E.Assistant.Helpers.Reactions.Frequency.Sometimes'}}</option>
+					<option value="0" {{#if (eq params.reactions.frequency "0")}}selected{{/if}}>{{localize 'WFRP4E.Assistant.Helpers.Reactions.Frequency.Never'}}</option>
+				</select>
+			</div>
+		</div>
+	</li>
+	<li id="presets">
+		<div class="body" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.Presets.Hint'}}{{#if isUnique}}<hr>{{localize 'WFRP4E.Assistant.Helpers.Unique.Disabled'}}{{/if}}{{#if actor.isPreset}}<hr>{{localize 'WFRP4E.Assistant.Helpers.Settings.Presets.Disabled'}}{{/if}}">
+			<label {{#if isUnique}}class="isUnique"{{/if}}{{#if actor.isPreset}}class="isUnique"{{/if}}>{{localize "WFRP4E.Assistant.Helpers.Presets.Label"}}</label>
+			<div class="content">
+				<button data-action="addPreset" style="height: 30px; min-height: unset;" data-tooltip="{{localize "WFRP4E.Assistant.Helpers.Presets.Add"}}"{{#if isUnique}} disabled{{/if}}{{#if actor.isPreset}} disabled{{/if}}><i class="fas fa-plus"></i></button>
+			</div>
+		</div>
+		<div class="body items" data-drop="true" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.Presets.Items.Base'}}">
+			{{#each items}}
+			<a class="drag-item" data-uuid="{{this.uuid}}"{{#unless ../isUnique}} data-drag="true"{{/unless}}>{{this.name}}{{#unless (eq this.quantity.value 1)}} ({{this.quantity.value}}){{/unless}}</a>
+			{{/each}}
+		</div>
+		<ul>
+			{{#each params.presets}}
+			<li>
+				<div class="characteristics">
+					<label>{{localize 'CHARAbbrev.WS'}}</label>
+					<label>{{localize 'CHARAbbrev.BS'}}</label>
+					<label>{{localize 'CHARAbbrev.S'}}</label>
+					<label>{{localize 'CHARAbbrev.T'}}</label>
+					<label>{{localize 'CHARAbbrev.I'}}</label>
+					<label>{{localize 'CHARAbbrev.Ag'}}</label>
+					<label>{{localize 'CHARAbbrev.Dex'}}</label>
+					<label>{{localize 'CHARAbbrev.Int'}}</label>
+					<label>{{localize 'CHARAbbrev.WP'}}</label>
+					<label>{{localize 'CHARAbbrev.Fel'}}</label>
+					<input type="number" data-characteristic="ws" value="{{this.characteristics.ws}}">
+					<input type="number" data-characteristic="bs" value="{{this.characteristics.bs}}">
+					<input type="number" data-characteristic="s" value="{{this.characteristics.s}}">
+					<input type="number" data-characteristic="t" value="{{this.characteristics.t}}">
+					<input type="number" data-characteristic="i" value="{{this.characteristics.i}}">
+					<input type="number" data-characteristic="ag" value="{{this.characteristics.ag}}">
+					<input type="number" data-characteristic="dex" value="{{this.characteristics.dex}}">
+					<input type="number" data-characteristic="int" value="{{this.characteristics.int}}">
+					<input type="number" data-characteristic="wp" value="{{this.characteristics.wp}}">
+					<input type="number" data-characteristic="fel" value="{{this.characteristics.fel}}">
+				</div>
+				<div class="weight" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.Presets.Weight.Hint'}}">
+					<label>{{localize 'WFRP4E.Assistant.Helpers.Presets.Weight.Label'}}</label>
+					<input type="number" name="weight" step="1" min="0" value="1">
+				</div>
+				<div class="body items" data-drop="true" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.Presets.Items.Preset'}}">
+					{{#each this.items}}
+					<a class="drag-item" data-uuid="{{this.uuid}}"{{#unless ../../isUnique}} data-drag="true"{{/unless}}>{{this.name}}{{#unless (eq this.quantity.value 1)}} ({{this.quantity.value}}){{/unless}}</a>
+					{{/each}}
+				</div>
+				<a class="button" data-action="removePreset" data-tooltip="{{localize 'WFRP4E.Assistant.Helpers.Presets.Remove'}}"><i class="fas fa-trash"></i></a>
+			</li>
+			{{/each}}
+		</ul>
+	</li>
+</ul>
