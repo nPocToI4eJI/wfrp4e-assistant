@@ -1,0 +1,17 @@
+<div class="debugMode">
+	<h5>{{localize 'WFRP4E.Assistant.Settings.debugMenu.Dialog.DebugMode.Label'}}</h5>
+	<div style="display: flex; justify-content: space-evenly;">
+		<span>{{localize 'WFRP4E.Assistant.Settings.debugMenu.Dialog.DebugMode.Content'}}</span>
+		<span id="debugMode" style="font-style: italic; color: {{#if debug}}green{{else}}red{{/if}};">{{#if debug}}{{localize 'WFRP4E.Assistant.Settings.debugMenu.Dialog.DebugMode.On'}}{{else}}{{localize 'WFRP4E.Assistant.Settings.debugMenu.Dialog.DebugMode.Off'}}{{/if}}</span>
+	</div>
+	<a class="button" data-action="debugMode"><i class='fas fa-gear'></i> {{localize 'WFRP4E.Assistant.Settings.debugMenu.Dialog.DebugMode.Button'}}</a>
+</div>
+<div class="reset">
+	<h5>{{localize 'WFRP4E.Assistant.Settings.debugMenu.Dialog.Reset.Label'}}</h5>
+	<span>{{localize 'WFRP4E.Assistant.Settings.debugMenu.Dialog.Reset.Content'}}</span>
+	<span style="font-style: italic;">{{localize 'WFRP4E.Assistant.Settings.debugMenu.Dialog.Reset.Hint'}}</span>
+	<div style="display: flex; gap: 2px;">
+		<a class="button" data-action="importExportAssistant" style="flex: 1;" data-tooltip="{{localize 'WFRP4E.Assistant.Settings.debugMenu.Dialog.ImportExport.Hint'}}"><i class='fas fa-refresh'></i> {{localize 'WFRP4E.Assistant.Settings.debugMenu.Dialog.ImportExport.Label'}}</a>
+		<a class="button" data-action="resetAssistant" style="flex: 1;"><i class='fas fa-refresh'></i> {{localize 'WFRP4E.Assistant.Settings.debugMenu.Dialog.Reset.Presets'}}</a>
+	</div>
+</div>

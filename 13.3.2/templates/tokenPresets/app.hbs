@@ -1,0 +1,9 @@
+<ul>
+	{{#each list}}
+	<li data-id="{{this.id}}">
+		<input type="checkbox" data-tooltip="{{localize 'WFRP4E.Assistant.TokenPresets.Actions.Select'}}">
+		<input name="name" type="text" value="{{this.name}}" data-tooltip="{{localize 'Name'}}">
+		<a class="button" data-action="delete" data-tooltip="{{localize 'WFRP4E.Assistant.TokenPresets.Actions.Delete'}}"><i class="fas fa-trash"></i></a>
+	</li>
+	{{/each}}
+</ul>

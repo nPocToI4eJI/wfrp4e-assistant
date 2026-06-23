@@ -1,0 +1,70 @@
+{
+	"id": "wfrp4e-assistant",
+    "title": "WFRP4e - Assistant",
+    "description": "<p>Этот модуль поможет Мастеру проводить игры с комфортом. В него включены исправления ошибок и недоработок системы и официальных модулей, а также собственные и адаптированные инструменты.</p>",
+    "version": "13.3.2",
+	"compatibility": {
+		"minimum": "13",
+		"verified": "13.351"
+	},
+	"relationships": {
+		"systems": [
+			{
+				"id": "wfrp4e",
+				"type": "system",
+				"manifest": "https://github.com/moo-man/WFRP4e-FoundryVTT/releases/latest/download/system.json",
+				"compatibility": {
+					"minimum": "9",
+					"verified": "9.3.2"
+				}
+			}
+		]
+	},
+	"socket": true,
+	"authors": [
+		{
+			"name": "nPocTo_4eJI",
+			"url": "https://www.youtube.com/@nPocTo_4eJI",
+			"discord": "npocto_4eji"
+		}
+	],
+	"languages": [
+        {"lang": "en", "name": "English", "path": "lang/en.json"},
+        {"lang": "en", "name": "English", "path": "lang/en_namesList.json"},
+        {"lang": "en", "name": "English", "path": "lang/en_reactions.json"},
+        {"lang": "en", "name": "English", "path": "lang/en_booksTitle.json"},
+        {"lang": "ru", "name": "Русский", "path": "lang/ru.json"},
+        {"lang": "ru", "name": "Русский", "path": "lang/ru_namesList.json"},
+        {"lang": "ru", "name": "Русский", "path": "lang/ru_reactions.json"},
+        {"lang": "ru", "name": "Русский", "path": "lang/ru_booksTitle.json"}
+	],
+	"esmodules": [
+		"assistant.js",
+		"scripts/systemFix.js"
+	],
+    "styles": [
+		"styles/assistant.css",
+		"styles/selectLore.css",
+		"styles/booksTitle.css",
+		"styles/tokenPresets.css"
+	],
+	"packs": [
+		{
+			"name": "macros",
+			"label": "Macros",
+			"system": "wfrp4e",
+			"path": "packs/macros",
+			"type": "Macro"
+		},
+		{
+			"name": "rolltables",
+			"label": "Tables",
+			"system": "wfrp4e",
+			"path": "packs/rolltables",
+			"type": "RollTable"
+		}
+	],
+	"url": "https://github.com/nPocToI4eJI/wfrp4e-assistant",
+	"manifest": "https://github.com/nPocToI4eJI/wfrp4e-assistant/releases/download/13.3.2/module.json",
+	"download": "https://github.com/nPocToI4eJI/wfrp4e-assistant/releases/download/13.3.2/wfrp4e-assistant.zip"
+}

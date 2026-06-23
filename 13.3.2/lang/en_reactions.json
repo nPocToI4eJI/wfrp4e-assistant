@@ -1,0 +1,1851 @@
+{
+	"WFRP4E.Assistant.Helpers.Reactions": {
+		"Species": {
+			"Human": {
+				"Name": "Human",
+				"Subspecies": {
+					"Empire": "Empire"
+				}
+			},
+			"Greenskin": {
+				"Name": "Greenskin",
+				"Subspecies": {
+					"Goblin": "Goblin"
+				}
+			},
+			"Beast": {
+				"Name": "Beast",
+				"Subspecies": {
+					"Wolf": "Wolf"
+				}
+			},
+			"Chaos": {
+				"Name":"Chaos",
+				"Subspecies": {
+					"Beastman": "Beastman"
+				}
+			}
+		},
+		"List": {
+			"Human": {
+				"takeDamage": {
+					"All": {
+						"Base": [
+							"Aaaa!",
+							"Ouch!",
+							"Ow!",
+							"Aaah! That was… painful!",
+							"Ow, that hurts!",
+							"Damn!",
+							"Damn it!",
+							"Shit!",
+							"It hurts, but I’m not dead yet. For now."
+						],
+						"Opponent": {
+							"All": [
+								"Ugh, you bastard!",
+								"You’ll pay for this!",
+								"Bloody scoundrel!",
+								"You’ll get what’s coming to you!",
+								"I’ll repay you!",
+								"Is that really all you’ve got?",
+								"You scratched me? Seriously? Is that really all you can do?",
+								"I’m still breathing — so it’s not over yet!",
+								"Blood again? How many times can this happen!",
+								"Blood! Damn it, that hurts!",
+								"Blood is flowing! I need help!",
+								"Get off me!"
+							],
+							"Human": {
+								"All": [
+									"If only you were human!",
+									"Why?! We’re from the same tribe!",
+									"Not a bad hit, but I’m still standing!",
+									"Why are you doing this to me?!"
+								]
+							},
+							"Greenskin": {
+								"All": [
+									"Even a rat bites harder!",
+									"This vile creature got me?! Unbelievable!",
+									"Aaaa! You… you beast!"
+								],
+								"Goblin": [
+									"You’ll regret this, worm!",
+									"A goblin?! A goblin hurt me?! Ha-ha… what a day!",
+									"Did you spit at me?! Disgusting!"
+								]
+							},
+							"Beast": {
+								"All": [
+									"If I survive, I’ll burn this forest to the ground!"
+								],
+								"Wolf": [
+									"Do you think your pathetic bites can stop me?",
+									"Shut up and die, you stinking monster!"
+								]
+							}
+						},
+						"To": {
+							"Head": {
+								"Base": [
+									"My head…",
+									"Right in the forehead!",
+									"Why did you hit me in the head?!",
+									"My face! You blinded me!"
+								]
+							},
+							"Body": {
+								"Base": [
+									"Ugh! My stomach…",
+									"Breath… knocked out…",
+									"I just ate!",
+									"You broke my rib, you scoundrel!"
+								]
+							},
+							"Arm": {
+								"Base": [
+									"My arm…",
+									"I can’t feel my arm anymore!",
+									"Why hit me on the elbow?!",
+									"My arm… I can’t hold my weapon anymore!"
+								]
+							},
+							"Leg": {
+								"Base": [
+									"My leg…",
+									"Right in the knee!",
+									"I hope my leg is still intact.",
+									"My leg! I can’t walk!",
+									"My leg! I’ll tear you to pieces!"
+								]
+							}
+						}
+					}
+				},
+				"applyDamage": {
+					"All": {
+						"Opponent": {
+							"All": [
+								"Die!",
+								"Here's one for every scar I have!",
+								"May your heart stop!",
+								"Death to enemies!",
+								"Die!",
+								"Here's one for your insolence!",
+								"Take that!",
+								"Have another!",
+								"Does it hurt?!",
+								"This isn't over yet!",
+								"More to come!",
+								"I've got you!",
+								"I'll grind you into dust!",
+								"I'll destroy you!",
+								"And now, another one!",
+								"Take this, big guy!",
+								"Don't die… just yet!",
+								"Today is your last day!",
+								"Looks like your luck has run out.",
+								"I hope your death will be painful.",
+								"Your bones will turn to dust!",
+								"Let your end serve as a lesson to others!",
+								"Your death will cleanse the world!",
+								"Your life is nothing!",
+								"Shut up and die, bastard!",
+								"Oops, looks like I hurt you. Awkward.",
+								"Maybe you should beg for mercy?",
+								"Your life hangs by a thread now!",
+								"Think that hurts? Wait, the real pain is coming!"
+							],
+							"Human": {
+								"All": [
+									"Inside, you're just like me!",
+									"Don't worry, I'll make it quick. Probably.",
+									"Your soul will burn in eternal flame!",
+									"You'll regret being born!",
+									"I'll tear you apart, you bastard!",
+									"Take it, you beast! And another one!",
+									"I'll break every bone in your body!"
+								]
+							},
+							"Greenskin": {
+								"All": [
+									"Get out, vile creature!",
+									"Die, greenskin!",
+									"This is for all those you've killed!"
+								],
+								"Goblin": [
+									"You're nothing but dirt under my boots.",
+									"Not worth the effort to waste my strength on you.",
+									"You're as weak as you are disgusting.",
+									"They said you were scary…",
+									"Here's one for your greed!"
+								]
+							},
+							"Beast": {
+								"All": [
+									"Now you'll think twice before attacking!"
+								],
+								"Wolf": [
+									"Take this, beast!",
+									"This is for everything!",
+									"Blood for blood!"
+								]
+							}
+						},
+						"To": {
+							"Head": {
+								"Base": [
+									"Head off!",
+									"Right in the brain!",
+									"May your eyes be gouged out!",
+									"Your stupid head!",
+									"Smile!",
+									"Your head is useless now!"
+								]
+							},
+							"Body": {
+								"Base": [
+									"Pierced you!",
+									"Right in the side!",
+									"May your insides spill out!",
+									"Your skin won't hold!",
+									"Right in the lungs!",
+									"Guts out!",
+									"Enjoy your meal!"
+								]
+							},
+							"Arm": {
+								"Base": [
+									"I hope you're not too attached to your limbs.",
+									"Weapon out of your hands!",
+									"The arm won't be of any use to you now!",
+									"Lost your grip, huh?",
+									"You won't be able to hold a sword anymore!"
+								]
+							},
+							"Leg": {
+								"Base": [
+									"I hope you're not too attached to your limbs.",
+									"You won't be running anymore!",
+									"Keep your legs!",
+									"Now you're lame!",
+									"May your legs fall off!",
+									"You won't be running anymore!",
+									"Now you'll be crawling!"
+								]
+							}
+						}
+					}
+				},
+				"die": {
+					"All": {
+						"Base": [
+							"My family…",
+							"I didn't want…",
+							"Finally…",
+							"This is the end…",
+							"I'm tired…",
+							"So be it…",
+							"I never thought I'd die from… this.",
+							"Died… like a fool. Like all of us, essentially.",
+							"No one warned me that the end would be like this.",
+							"I wanted more. But got… this.",
+							"So this is what the last minute is like.",
+							"Foolish. So foolish.",
+							"Well, that's it. Everything."
+						],
+						"Opponent": {
+							"All": [
+								"You… you couldn't…",
+								"You'll regret this…",
+								"You'll pay for this!",
+								"Die like a dog!",
+								"One swing — and it's over. Foolish…",
+								"No!",
+								"Why?!",
+								"Damn it…",
+								"Too… quickly…",
+								"Darkness…"
+							],
+							"Human": {
+								"All": [
+									"May your soul rot!",
+									"You took life, but not honor.",
+									"May the gods judge you…",
+									"I'll find you in the afterlife!"
+								]
+							},
+							"Greenskin": {
+								"All": [
+									"Creature!"
+								],
+								"Goblin": [
+									"Even a rat would be ashamed to kill like this.",
+									"Died… at the claws of this vile creature…",
+									"A goblin… killed me. Ha! What a disgrace!",
+									"This is how a hero ends — by a cowardly skinflint's knife.",
+									"I was falling… and he was laughing.",
+									"A goblin brought me down… Madness."
+								]
+							},
+							"Beast": {
+								"All": [
+									"This is how one dies in the wilderness — without glory, without song.",
+									"The forest took its toll."
+								],
+								"Wolf": [
+									"Fangs… and darkness.",
+									"The beast knows no honor. Only hunger.",
+									"I thought it was a wolf. But it's… something else.",
+									"The wild creature… didn't deserve my blood.",
+									"This is how the journey ends — in the monster's jaws.",
+									"No cross, no stone. Only claw marks."
+								]
+							}
+						}
+					},
+					"Empire": {
+						"Opponent": {
+							"Human": {
+								"Empire": [
+									"For what…?",
+									"I'm not your enemy!",
+									"May Sigmar judge you…"
+								]
+							}
+						}
+					}
+				},
+				"kill": {
+					"All": {
+						"Opponent": {
+							"All": [
+								"You don't even know how to die!",
+								"Another shadow vanished into the darkness.",
+								"To the grave!",
+								"Disappear!",
+								"Another one!",
+								"No one will remember you!",
+								"I'm already tired of you!",
+								"For everything you've done!",
+								"I hate all of you!",
+								"You don't deserve to breathe the air of this world.",
+								"Let this serve as a lesson to the rest."
+							],
+							"Human": {
+								"All": [
+									"This is how traitors die.",
+									"Say goodbye to life!",
+									"May your soul find peace… or not!",
+									"You deserved this!",
+									"You'll regret being born!",
+									"This is the end of your adventures.",
+									"I hope you had good final thoughts."
+								]
+							},
+							"Greenskin": {
+								"All": [
+									"The darkness takes another creature…",
+									"The world will be cleaner without you."
+								],
+								"Goblin": [
+									"Death spares not even the vilest.",
+									"Disappear, wretched goblin!",
+									"Disappear, lowly worm!",
+									"Another worm crushed.",
+									"I hate this little thing.",
+									"Shut up, squealer!"
+								]
+							},
+							"Beast": {
+								"All": [
+									"Die, creature!",
+									"Die, beast!",
+									"I'll tear you to pieces!",
+									"Not a bad catch today."
+								],
+								"Wolf": [
+									"Die, monster!",
+									"For those you mutilated!"
+								]
+							}
+						}
+					},
+					"Empire": {
+						"Opponent": {
+							"Human": {
+								"Empire": [
+									"I hope you find peace."
+								]
+							}
+						}
+					}
+				},
+				"opposedDefenderSuccess": {
+					"All": {
+						"Opponent": {
+							"All": [
+								"Away!",
+								"Get out!",
+								"Come on! Show me what you've got!",
+								"Didn't expect that, did you?",
+								"Did you forget how to fight?",
+								"Breathe deeper!",
+								"We'll have to celebrate this!"
+							],
+							"Human": {
+								"All": [
+									"Don't just stand there!",
+									"Looks like you're not very good at fighting.",
+									"Be careful with the blade, or you'll lose your head!",
+									"You fight like a drunken laundress!"
+								]
+							},
+							"Greenskin": {
+								"All": [
+									"Away, vile creature!",
+									"Get out of my sight!"
+								]
+							},
+							"Beast": {
+								"All": [
+									"Away, beast!"
+								]
+							}
+						}
+					},
+					"Empire": {
+						"Opponent": {
+							"All": [
+								"Sigmar protected me!"
+							]
+						}
+					}
+				},
+				"opposedDefenderFailure": {
+					"All": {
+						"Opponent": {
+							"All": [
+								"Damnation!",
+								"Damn!",
+								"Bastard!",
+								"Damn it!",
+								"Shit!",
+								"What a blow!",
+								"I'm still alive, so keep going — we'll see who falls first!",
+								"One more hit like that and I'll get angry!",
+								"Ha! Didn't even stagger me!",
+								"One more hit and I'll get really angry!",
+								"I can't stop him!",
+								"Help! Someone help!"
+							],
+							"Human": {
+								"All": [
+									"You'll pay for this, bastard!"
+								]
+							},
+							"Greenskin": {
+								"Goblin": [
+									"I thought you could only steal, not fight!",
+									"One hit and you're already celebrating? Wait until I get up…",
+									"Don't dare touch me, dirty goblin!"
+								]
+							},
+							"Beast": {
+								"All": [
+									"Someone forgot to mention there were such creatures here!"
+								],
+								"Wolf": [
+									"Damnation! This creature will tear me apart!",
+									"Fangs… and blood. Here we go again!",
+									"Beast! Leave me alone or I'll skin you!",
+									"Aaah! This monster is gnawing at me!",
+									"He's got me! Let go, carrion!",
+									"Oh gods! This monster!"
+								]
+							}
+						}
+					}
+				},
+				"opposedAttackerSuccess": {
+					"All": {
+						"Opponent": {
+							"All": [
+								"Don't waste my time.",
+								"Ah, and I was hoping for a worthy opponent…",
+								"Take that!",
+								"Didn't think it would end like this, did you?",
+								"You won't get mercy!",
+								"Here you go!",
+								"Let this be a lesson to you!",
+								"Just die already!"
+							],
+							"Human": {
+								"All": [
+									"Damnation! Hold on, I'm not finished yet!"
+								]
+							},
+							"Greenskin": {
+								"All": [
+									"Cursed creatures!",
+									"I'll finish you off, you monster!"
+								],
+								"Goblin": [
+									"Get away, vile worm!",
+									"I'll crush you like an insect!"
+								]
+							},
+							"Beast": {
+								"Wolf": [
+									"This is the end for you, beast!"
+								]
+							}
+						}
+					},
+					"Empire": {
+						"Opponent": {
+							"All": [
+								"For the glory of Sigmar!",
+								"Sigmar guided my hand!"
+							]
+						}
+					}
+				},
+				"opposedAttackerFailure": {
+					"All": {
+						"Opponent": {
+							"All": [
+								"Damnation!",
+								"Damn!",
+								"Bastard!",
+								"Damn it!",
+								"Shit!",
+								"Damn it, what a mess!",
+								"Do you think that will stop me?!"
+							],
+							"Human": {
+								"All": [
+									"Do you think that will stop me? Fool!"
+								]
+							},
+							"Greenskin": {
+								"All": [
+									"Ew, how disgusting! You stink!"
+								],
+								"Goblin": [
+									"Now, you skinflint, you'll see what it means to anger a human!",
+									"Ah, you little scum!",
+									"You've angered me, you little bastard!"
+								]
+							},
+							"Beast": {
+								"All": [
+									"What a nimble beast!"
+								]
+							}
+						}
+					}
+				}
+			},
+			"Greenskin": {
+				"takeDamage": {
+					"All": {
+						"Base": [
+							"Aaaa!",
+							"Ouch!",
+							"Ow!",
+							"Aaah! That was… painful!",
+							"Ouch! That hurts!",
+							"Cough… Cough…"
+						],
+						"Opponent": {
+							"All": [
+								"I'll stab you!",
+								"Lads, cut them!",
+								"I'll gouge out your eyes!",
+								"Pray, scumbag!",
+								"Zog, how it hurts!",
+								"I'll give you a taste of Zog!",
+								"You'll pay for this!",
+								"I'll tear off your ears!"
+							],
+							"Human": {
+								"All": [
+									"Surrender, human!",
+									"I'll chop off your fat nose!",
+									"Your fat ears will be my trophy!",
+									"Lads, stab this human!",
+									"Filthy humans!",
+									"I'll stab you slowly, human!",
+									"You'll die slowly, human!"
+								]
+							},
+							"Greenskin": {
+								"All": [
+									"I'll bleed you, garbage-eater!",
+									"We're supposed to be together!",
+									"You'll eat garbage!",
+									"I'll feed you to my wolf!",
+									"Massacre, lads! Massacre!",
+									"You stabbed me?!",
+									"Don't hit me!",
+									"Hit someone else!"
+								],
+								"Goblin": [
+									"Who are you stabbing, runt!",
+									"Stab the runts!",
+									"I'll gut you, short-nosed!",
+									"Your last day, runt!",
+									"Filthy sneak!",
+									"Stinking runt!"
+								]
+							},
+							"Beast": {
+								"All": [
+									"Filthy creature!",
+									"Brainless beast!",
+									"I'll cut you for meat!",
+									"Aah! It bit me!",
+									"Your eyes will go into the soup!",
+									"I'll cut off your tongue!"
+								],
+								"Wolf": [
+									"Ah you dog!",
+									"I'll skin you!",
+									"I'll stab you, beast!",
+									"Aagh, hairy scumbag!"
+								]
+							}
+						},
+						"To": {
+							"Head": {
+								"Base": [
+									"Ouch… Zog…",
+									"Everything is spinning…",
+									"Ugh… Zog, right on the head!",
+									"Ugh… My head is splitting!",
+									"You'll pay for this bump!",
+									"I'm not feeling well…",
+									"Ugh! Right on the head!",
+									"Aaaay… My head!"
+								]
+							},
+							"Body": {
+								"Base": [
+									"Ugh… The mushrooms are coming out.",
+									"I'll show you how to hit the stomach!",
+									"What a big hole…",
+									"Ugh… It hurts inside.",
+									"Yaaagh! You'll pay for this blood, garbage-eater!",
+									"Ugh… My stomach…"
+								]
+							},
+							"Arm": {
+								"Base": [
+									"I'll stab you with one hand, runt!",
+									"Zog… Something seems to have cracked.",
+									"Seems like something broke…",
+									"Arrgh! Right on the arm!",
+									"My arm is going numb."
+								]
+							},
+							"Leg": {
+								"Base": [
+									"Aargh! Stinky runt, right on the leg!",
+									"Ugh… You'll pay for the leg, scumbag!",
+									"Ow-ow-ow! Leg!",
+									"Hurt my favorite leg!",
+									"Rraagh! My leg!",
+									"Ohhh… Zog, that's not good…",
+									"Zog… What's wrong with my leg?!",
+									"Stinky git! I'll show you how to hit legs!"
+								]
+							}
+						}
+					},
+					"Goblin": {
+						"Base": [
+							"Ow-ow-ow!",
+							"Ow-ow-ow! How it hurts!",
+							"Still alive! Still alive! Aahaha!",
+							"Squig's feces, how it hurts!",
+							"Oof"
+						],
+						"Opponent": {
+							"All": [
+								"Get ready, stinker…",
+								"We'll cut you soon!",
+								"We'll cut off your fingers!",
+								"We'll feed you to squigs!",
+								"I'll make another hole in you!",
+								"Filthy scumbag!",
+								"I'll stab you, stinker!",
+								"Get off me!",
+								"Oh-oh, why so hard?"
+							],
+							"Human": {
+								"All": [
+									"Stinky runt!",
+									"I'll bite off your skinny fingers!",
+									"Lads, beat the runts!",
+									"Ow! We'll cut the runt!",
+									"Aagh, you sneak!",
+									"We'll gut you like a squig!",
+									"Filthy Git!"
+								]
+							},
+							"Beast": {
+								"All": [
+									"Don't eat me!"
+								],
+								"Wolf": [
+									"Get off me, hairy stinker!",
+									"Get off! Get off me!"
+								]
+							}
+						},
+						"To": {
+							"Head": {
+								"Base": [
+									"Oww… My little head!",
+									"Stinky git! Ugh… Why hit the head?!",
+									"Ow! Do you realize how crazy this is?… Ugh, seems to have passed."
+								]
+							},
+							"Body": {
+								"Base": [
+									"Ugh… You seem to have broken my ribs!",
+									"Stinker! Why hit the belly?",
+									"Bleh… Oh, that's where I lost that shiny thing."
+								]
+							},
+							"Arm": {
+								"Base": [
+									"Ow-ow-ow, my arm!",
+									"That was my favorite arm!",
+									"No problem, I have a spare!",
+									"Ugh… Hurts to move!",
+									"Stinker, you hit my arm!"
+								]
+							},
+							"Leg": {
+								"Base": [
+									"What's sticking out of my leg?",
+									"It hurts in the leg! Zog, how it hurts! Aaaargh!"
+								]
+							}
+						}
+					}
+				},
+				"applyDamage": {
+					"All": {
+						"Opponent": {
+							"All": [
+								"Get it! AHAHAH!",
+								"Take it! Take it!",
+								"Aha-ha-ha! Take it!",
+								"Got you?! Want another stab?",
+								"Now you'll get it!",
+								"Yes! Yes! Scream louder!",
+								"A-a-a, scream louder — it's fun for me!"
+							],
+							"Human": {
+								"All": [
+									"Ha! Now you're thinner — I took a piece of meat!",
+									"Blood on the ground — pretty, isn't it? Ha-ha!",
+									"Blood is flowing! Ha-ha!",
+									"I scratched you — you're shaking!",
+									"One more time — and you'll fall!",
+									"One more drop of blood — and you're mine!"
+								]
+							},
+							"Greenskin": {
+								"All": [
+									"You asked for it! Shouldn't have come!",
+									"Ha! Now you know who's stronger!",
+									"Don't touch mine! You'll get more!",
+									"You'll remember how to argue with me!",
+									"One more time — and I'll finish you!",
+									"Shouldn't have pushed!",
+									"This is for yesterday!",
+									"You'll remember this hit!"
+								]
+							},
+							"Beast": {
+								"All": [
+									"Felt my strength?",
+									"Get a poke in the face!"
+								],
+								"Wolf": [
+									"You'll make a great hat!",
+									"Growl-growl — now it hurts!",
+									"You're whimpering — I'm happy!",
+									"Your pelt is my prize!"
+								]
+							}
+						},
+						"To": {
+							"Head": {
+								"Base": [
+									"Heheh. How's the ringing? Your last brains flew away.",
+									"Take it in your stinky face!",
+									"Hahahaha! Your head's a great target, runt!",
+									"Seems like your head's a bit broken!",
+									"Now at least your face isn't so ugly. Oh, wait, it is."
+								]
+							},
+							"Body": {
+								"Base": [
+									"Got you in the liver! AHAHAHAHA!",
+									"Stabbed you in the belly!",
+									"How's your belly, does it hurt? AHAHAHAHA!",
+									"How are your bones, do they hurt?",
+									"Uhahaha! Got you right on target!",
+									"That was too easy!"
+								]
+							},
+							"Arm": {
+								"Base": [
+									"Ha-ha! Got you right in the arm!",
+									"You won't be able to swing that stump anymore!",
+									"Ow-ow-ow! Does your arm hurt?",
+									"Say goodbye to your arm!",
+									"Does your arm hurt?",
+									"Go ahead, cry!",
+									"Crippled your claw!",
+									"How hard is it to hold your weapon now?",
+									"Let's see how you stab now!"
+								]
+							},
+							"Leg": {
+								"Base": [
+									"You'll crawl like a worm now!",
+									"Ha-haa! Try moving now!",
+									"Let's get the other one, I'll stab that too!",
+									"Does it hurt? Try jumping now!",
+									"Not so agile now, are you, runt?",
+									"Soft, tasty legs…",
+									"Got you! Got you! Clumsy butt-ugly bug!"
+								]
+							}
+						}
+					},
+					"Goblin": {
+						"Opponent": {
+							"All": [
+								"Here! Take it, stinker!",
+								"How does it taste?!",
+								"I made a hole in you — now you're leaky!",
+								"Ouch-ouch, does it hurt?",
+								"Now it's my turn to laugh!"
+							]
+						},
+						"To": {
+							"Head": {
+								"Base": [
+									"Hee-hee-hee, did it ring in your stupid head?",
+									"Thought I couldn't reach?!",
+									"How's the taste, stinker? Want more?",
+									"Take it in the face, runt!",
+									"Got you! Right in the bullseye! AHAHAHAHA!"
+								]
+							},
+							"Body": {
+								"Base": [
+									"Didn't dodge! Didn't dodge! La-la-la!",
+									"Get stabbed in the gut, stinker!",
+									"Got you in the butt?"
+								]
+							},
+							"Leg": {
+								"Base": [
+									"Get hit in your legs!",
+									"Ha-ha-ha, ran into the stab, stinker!",
+									"Right in your legs, you good-for-nothing!"
+								]
+							}
+						}
+					}
+				},
+				"die": {
+					"All": {
+						"Base": [
+							"How… like this…",
+							"Cough… Cough…",
+							"No… I don't want to die!",
+							"So… painful…",
+							"My… shiny things…",
+							"Argh… I…",
+							"But… I could have become… a boss…",
+							"Want… to live…",
+							"Not like this…"
+						],
+						"Opponent": {
+							"All": [
+								"Got… a bullet…",
+								"Stabbed me… Ohhh…",
+								"Where did this hole come from?",
+								"Got me, git…",
+								"Didn't work out…",
+								"I was going to dodge…",
+								"Stab… one last time…",
+								"Remember me…",
+								"I'm going, Morka…",
+								"Died like a git…",
+								"Good fight…",
+								"My brothers will avenge!",
+								"Zogged bastards…",
+								"Should have taken a bigger stabber…"
+							],
+							"Human": {
+								"All": [
+									"By a human… how?!",
+									"Foul little runt…",
+									"Got me, oh well…",
+									"Stinky… human!",
+									"Human… Go to Zog!",
+									"Zog… Why, human?",
+									"Human… fast."
+								]
+							},
+							"Greenskin": {
+								"All": [
+									"Ah you, vile gobbie…",
+									"Stabbed me well, git.",
+									"Green-butt…",
+									"By your own…",
+									"May squigs devour you…",
+									"You… garbage-eater…",
+									"Stabbing your own…",
+									"Only in the back you can…"
+								],
+								"Goblin": [
+									"Et tu, runt?"
+								]
+							},
+							"Beast": {
+								"All": [
+									"Stinky creature…",
+									"Stupid… animal.",
+									"Cough… may you choke, beast.",
+									"No! Don't eat me! AAAAA!"
+								],
+								"Wolf": [
+									"I just wanted your skin…",
+									"No! Don't eat…",
+									"Those claws…",
+									"Noo! Get your mouth away!"
+								]
+							}
+						}
+					},
+					"Goblin": {
+						"Opponent": {
+							"All": [
+								"Foul… stinker.",
+								"I just wanted to loot…",
+								"Noo… I just wanted…"
+							]
+						}
+					}
+				},
+				"kill": {
+					"All": {
+						"Opponent": {
+							"All": [
+								"Hehe! Meat!",
+								"Blood! Lots of blood!",
+								"We won!",
+								"Ha! Die!",
+								"We'll eat you!",
+								"Ha! Done!",
+								"One more!",
+								"We got you!",
+								"Not moving anymore!",
+								"You're food now!",
+								"You lost — I get to eat!",
+								"I struck first — means I'm right!",
+								"You asked for it, didn't you?",
+								"I scared him — he died!"
+							],
+							"Human": {
+								"All": [
+									"Stupid human!",
+									"Now you're ours!",
+									"Funny human!",
+									"Human… stinky human! We'll eat you, ha-ha!",
+									"Human, you're slow! We're fast — you're dead now!",
+									"We'll catch you — and rip you apart!"
+								]
+							},
+							"Greenskin": {
+								"All": [
+									"Ha! You're weak — I'm strong!",
+									"Won't push anymore!",
+									"I'm in charge now! Got it?",
+									"Didn't steal our food — would still be alive!",
+									"Can't fight! Ha!"
+								]
+							},
+							"Beast": {
+								"All": [
+									"Beast is dead — we're full!",
+									"Doesn't bite anymore!"
+								],
+								"Wolf": [
+									"Big beast — easy prey!",
+									"He growled, I struck!",
+									"Pelt's mine now!",
+									"I'm stronger than the beast! See?",
+									"Won't growl anymore!"
+								]
+							}
+						}
+					}
+				},
+				"opposedDefenderSuccess": {
+					"All": {
+						"Opponent": {
+							"All": [
+								"I beat you! Ha!",
+								"Ha! Didn't reach!",
+								"Missed!",
+								"Won't get me!",
+								"Try again! Ha-ha!",
+								"Missed again, didn't you?",
+								"Won't reach! Ha!",
+								"Won't take me!",
+								"Won't reach, ha-ha!",
+								"Didn't get me! Try again!"
+							],
+							"Human": {
+								"All": [
+									"Do you want to live? We want to eat! Who will win?",
+									"You're slow, human!",
+									"Oh, you swing poorly!",
+									"You're slow like a snail!",
+									"Oh, you swing like a drunk troll!",
+									"Missed again, fool!"
+								]
+							},
+							"Greenskin": {
+								"All": [
+									"Ha! Didn't reach, fool!",
+									"Missed — now it's my turn!",
+									"Try again, weakling!"
+								],
+								"Goblin": [
+									"Gobba won't catch me!"
+								]
+							},
+							"Beast": {
+								"All": [
+									"Ha! Didn't bite!",
+									"Oh, you jump poorly!"
+								],
+								"Wolf": [
+									"Growl-growl, but won't reach!",
+									"You bite, I laugh!",
+									"Missed again, hairy one!"
+								]
+							}
+						}
+					},
+					"Goblin": {
+						"Opponent": {
+							"Human": {
+								"All": [
+									"Won't catch gobbah!"
+								]
+							},
+							"Beast": {
+								"All": [
+									"Beast is stupid — goblin is smart!"
+								]
+							}
+						}
+					}
+				},
+				"opposedDefenderFailure": {
+					"All": {
+						"Opponent": {
+							"All": [
+								"I'll bite your knees off!",
+								"You shouldn't have done that!",
+								"I just got distracted!"
+							],
+							"Human": {
+								"All": [
+									"He's cunning… didn't expect that!",
+									"Ugh, nasty human!",
+									"Next time it'll be me!"
+								]
+							},
+							"Greenskin": {
+								"All": [
+									"That's not fair — you snuck up!",
+									"That was an accident, right?"
+								]
+							},
+							"Beast": {
+								"All": [
+									"The beast is cunning… didn't expect that!"
+								],
+								"Wolf": [
+									"Ugh, hairy scoundrel!",
+									"Didn't see his paw!"
+								]
+							}
+						}
+					},
+					"Goblin": {
+						"Opponent": {
+							"All": [
+								"That's not fair!",
+								"That was an accident!",
+								"I was just tired…",
+								"I'll be smarter next time!",
+								"I almost dodged…",
+								"I just wasn't looking!",
+								"I got distracted, honestly!",
+								"I almost dodged…",
+								"I just got distracted by a bug!",
+								"I'll be smarter next time — I'll hide!"
+							],
+							"Human": {
+								"All": [
+									"He's big — I'm small!",
+									"I didn't see the hit!",
+									"Sneaky human! That's not how you fight!",
+									"He tricked me!"
+								]
+							},
+							"Greenskin": {
+								"Goblin": [
+									"You're cheating! That's not how you fight!",
+									"You're not fighting goblin-style!",
+									"I didn't expect that from my own!",
+									"You're not fighting by the rules, are you?"
+								]
+							},
+							"Beast": {
+								"Wolf": [
+									"Aaaa! Someone, help me against this!",
+									"He's not biting by the rules!",
+									"That's not fair — he's big!",
+									"He tricked me with his growl!"
+								]
+							}
+						}
+					}
+				},
+				"opposedAttackerSuccess": {
+					"All": {
+						"Opponent": {
+							"All": [
+								"Want more? AHAHAHAHA!",
+								"You'll make tasty stew when you're dead! AHAHAHAHA!",
+								"Here's a bullet!",
+								"When you're dead, I'll chop off your fingers!",
+								"More coming!",
+								"Got you, runt?!",
+								"HAHAHAHA! Take that, sneak!",
+								"I'll make a new drum out of you. When you're dead!",
+								"Here you go! AHAHAHAHA!",
+								"Then I'll eat your tasty little fingers.",
+								"Ah… bones crunching!",
+								"That bullet went in well! AHAHAHA!",
+								"HAHAHAHAHA! Must've hurt, right?!",
+								"PHAHA! Useless! AHAHA!",
+								"Don't worry, I won't cut you too badly!",
+								"I want to stab! Again! AGAIN!",
+								"Ahaa… Caught the stabber!",
+								"I got you! Got you!",
+								"Good stabber, specially greased with poop.",
+								"Sharpened the stabber well."
+							],
+							"Human": {
+								"All": [
+									"HA-HA! Take that, stinky human!",
+									"How was it? Did you like it, human?",
+									"I'll feast on human tonight!",
+									"Not so confident now, are you, runt?",
+									"Your head, human, will be my trophy!",
+									"Don't move, human, I'll stab you again.",
+									"I think your soul will soon meet your god. Say hi!",
+									"Filthy stinky human, just die already!",
+									"Weak human! Weak! HAHAAAAA!",
+									"Useless human! PHAHAHA!",
+									"You're a weak human. Even cave butt-slugs are more dangerous!"
+								]
+							},
+							"Greenskin": {
+								"All": [
+									"Take that, cave runt!",
+									"I'll gut you, squig-eating garbage-eater!",
+									"Your stinky remains will be mixed with poop, sneak!",
+									"We'll feed you to wolves alive, sneak!",
+									"Take the stab, sneak!",
+									"I'll cut your green butt into strips!",
+									"You wanted to trick me, git?! No way!",
+									"I'll cut off your nose, garbage-eater!",
+									"Take that, green-butt!",
+									"I'll cut off your head, squig-poop lover!",
+									"Take a bullet, poop-face!",
+									"I'll cut you now, little sneak!"
+								],
+								"Goblin": [
+									"Now I'll show you, short-nose!",
+									"You shouldn't have messed with me, stinky short-nose!"
+								]
+							},
+							"Beast": {
+								"All": [
+									"Take that, animal!",
+									"Stab the beast!",
+									"Take it in the face!",
+									"Cut the animal!",
+									"I'll make a tasty soup out of you.",
+									"Brainless animal!",
+									"Stupid-mouthed creature!",
+									"Stop struggling, stupid animal.",
+									"You're done for, beast!",
+									"Take it in the face, Zog!",
+									"We'll have a tasty meal today.",
+									"Bad luck for you, little animal.",
+									"Foul, stinky animal, die!"
+								],
+								"Wolf": [
+									"Main thing is not to damage the pelt… it's strong.",
+									"Now you'll whimper for me"
+								]
+							}
+						}
+					},
+					"Goblin": {
+						"Opponent": {
+							"All": [
+								"I'll loot your shiny things!",
+								"Got you! You won't last long, runt!",
+								"Loser! Loser! AHAHAHAHA!",
+								"You messed with the wrong gobbah, sneak!",
+								"Not your day, stinky one!",
+								"Gobbas are the best!",
+								"HA-HA-HA, nya-nya-nya!",
+								"Ihihihi, and that stab was deep.",
+								"UHAHAHAHA!",
+								"AAHAHAHA! Didn't work! Didn't defend!"
+							],
+							"Human": {
+								"All": [
+									"You picked the wrong gobbah to mess with, stupid human!"
+								]
+							}
+						}
+					}
+				},
+				"opposedAttackerFailure": {
+					"All": {
+						"Opponent": {
+							"All": [
+								"Vile scoundrel!",
+								"Bastard!",
+								"Next time I'll catch you — I swear!"
+							],
+							"Beast": {
+								"All": [
+									"Wow, fast beast!",
+									"It's jumping like crazy!"
+								]
+							}
+						}
+					},
+					"Goblin": {
+						"Opponent": {
+							"All": [
+								"Oh! Almost got you!",
+								"You stinky one!",
+								"He's slippery like an eel!",
+								"I'll hit you next time!",
+								"The wind is to blame — blew off the hit!",
+								"I was just warming up!",
+								"Oops, my leg twisted…",
+								"That's not a miss, that's… a trick!",
+								"I was aiming at a different spot!",
+								"That was just a test hit!",
+								"I wanted to scare you, not hit you!",
+								"The sun was shining in my eyes!",
+								"That was a test hit — now comes the real one!",
+								"That's not a miss — that's plan B!"
+							],
+							"Human": {
+								"All": [
+									"You're sneaky — don't stand still!",
+									"I was just checking if you're scared!",
+									"Almost got you — I'll finish you tomorrow!",
+									"You're too slippery — that's not fair!",
+									"I was aiming not at you, but at your shadow!",
+									"You confused me with your face!"
+								]
+							},
+							"Greenskin": {
+								"All": [
+									"Hey! You deliberately dodged!",
+									"You're moving like a drunk troll!",
+									"My arm got tired from your stupidity!",
+									"That's not a miss — that's a deception tactic!"
+								]
+							},
+							"Beast": {
+								"All": [
+									"I was just scaring him, not hitting!"
+								],
+								"Wolf": [
+									"I was aiming at the tail, but he ran away!",
+									"The beast confused me with his growl!"
+								]
+							}
+						}
+					}
+				}
+			},
+			"Beast": {
+				"takeDamage": {
+					"Wolf": {
+						"Base": [
+							"I-i-i-i!",
+							"RRRAAAAA!",
+							"Uff… uff…",
+							"Yyyy-rrr!"
+						]
+					}
+				},
+				"applyDamage": {
+					"Wolf": {
+						"Opponent": {
+							"All": [
+								"Gr-r-r… gr-r-r…",
+								"Ryyyy-gr-r!",
+								"Rrr-r-r…",
+								"RRRR-RRRAAA!"
+							]
+						}
+					}
+				},
+				"die": {
+					"Wolf": {
+						"Base": [
+							"Uff… uff…",
+							"Hr-hr-hr…",
+							"Ghh-ghh-ghh…"
+						]
+					}
+				},
+				"kill": {
+					"Wolf": {
+						"Opponent": {
+							"All": [
+								"U-u-u-u-u…",
+								"Ryyyy-gr-r!",
+								"RRRAAAAA!"
+							]
+						}
+					}
+				},
+				"opposedDefenderSuccess": {
+					"Wolf": {
+						"Opponent": {
+							"All": [
+								"U-u-u-u-u…",
+								"Gr-r-r… gr-r-r…",
+								"Ryyyy-gr-r!",
+								"Rrr-r-r…"
+							]
+						}
+					}
+				},
+				"opposedDefenderFailure": {
+					"Wolf": {
+						"Opponent": {
+							"All": [
+								"I-i-i-i!",
+								"Hrr-hr-hr…",
+								"Yyyy-rrr!"
+							]
+						}
+					}
+				},
+				"opposedAttackerSuccess": {
+					"Wolf": {
+						"Opponent": {
+							"All": [
+								"U-u-u-u-u…",
+								"Gr-r-r… gr-r-r…",
+								"Ryyyy-gr-r!",
+								"Rrr-r-r…"
+							]
+						}
+					}
+				},
+				"opposedAttackerFailure": {
+					"Wolf": {
+						"Opponent": {
+							"All": [
+								"I-i-i-i!",
+								"Hrr-hr-hr…",
+								"Yyyy-rrr!"
+							]
+						}
+					}
+				}
+			},
+			"Chaos": {
+				"takeDamage": {
+					"All": {
+						"Base": [
+							"The blood boils!",
+							"Grr… it hurts!",
+							"Darkness, grant me strength!",
+							"Chaos, give me fury!",
+							"My body is betraying me!",
+							"Pain feeds the fury!",
+							"Let pain become a blade!",
+							"I feel every inch of this wound!",
+							"Strength is fading… no!",
+							"A flame of pain burns within!",
+							"Thunder in my chest — I will not fall!",
+							"Pain is my ally!",
+							"My heart beats through the pain!",
+							"Bone cracks… but spirit is strong!",
+							"In the name of the Gods — I stand!",
+							"Every drop of blood is a curse upon the enemy!",
+							"Wounds are my trophies!",
+							"Pain only fuels the fire!",
+							"Chaos, strengthen me!",
+							"Not a step back — even in blood!",
+							"I will become more fearsome with every drop of blood!",
+							"Blood is power!",
+							"Pain has no power over me!",
+							"Blood pounds in my temples!",
+							"I will not fall… I will not fall!",
+							"Pain is but a whisper before the storm!",
+							"I will rise… even if the world collapses!",
+							"The power of Chaos flows within me!",
+							"Each breath — for vengeance!",
+							"I will survive this pain!",
+							"Even in agony, I am dangerous!",
+							"Blood is my armor!",
+							"A wound is but a mark of the victor!",
+							"Pain makes me stronger!",
+							"I will not fall… as long as my heart beats!",
+							"The wound has only kindled the flame!",
+							"Pain is my teacher!",
+							"Blood calls… I march forth!"
+						],
+						"Opponent": {
+							"All": [
+								"You will pay for that cut!",
+								"Cursed blade!",
+								"Blood flows… but fury sings louder!",
+								"Dare not cut me!",
+								"Blood calls for vengeance!",
+								"A wound is but a sign of battle!",
+								"Do not stand in the way of my wrath!",
+								"Each strike is a vow of vengeance!",
+								"I will tear you apart for this wound!",
+								"I will drink your blood for this strike!",
+								"Vengeance will be sharp!",
+								"May darkness consume you!",
+								"My fury is your sentence!",
+								"Blood calls to battle!",
+								"Do not stand before me — you will die!",
+								"Steel has grazed… but not broken me!",
+								"I am a storm, not a victim!",
+								"Let the enemy tremble!",
+								"I will not yield… never!",
+								"My wrath knows no bounds!",
+								"I am the embodiment of fury!",
+								"Enemy, tremble!",
+								"Even wounded, I am a storm!",
+								"May darkness take you!",
+								"Vengeance is my breath!",
+								"I will tear this world apart!"
+							]
+						}
+					},
+					"Beastman": {
+						"Base": [
+							"Aaagh! My hide!",
+							"My bone has cracked!",
+							"Fur is soaked in blood!",
+							"*growls*",
+							"The soul itself roars!",
+							"Teeth clenched — I hold on!",
+							"A roar will drown out the pain!",
+							"A wound will not stop the beast!",
+							"Even wounded — I am dangerous!",
+							"The wound has only enraged the beast!",
+							"Blood boils — time to rend!"
+						],
+						"Opponent": {
+							"All": [
+								"Steel will not break the beast!",
+								"For Chaos… but that hurt!",
+								"This steel bites!",
+								"Blood on the claws — let there be more!",
+								"The horn is barely holding!",
+								"Hide burns from the wounds!",
+								"My claws will find your throat!",
+								"Let the enemy hear my roar!",
+								"My roar is your curse!",
+								"I will rip you to pieces!",
+								"Claws hunger for vengeance!",
+								"Roar tears my chest!",
+								"My fangs will find you!"
+							]
+						}
+					}
+				},
+				"applyDamage": {
+					"All": {
+						"Opponent": {
+							"All": [
+								"Your blood is a gift to the darkness!",
+								"You will fall like a dry leaf!",
+								"The bone cracked — do you hear it?",
+								"My strike is a curse!",
+								"Blood flows — in the name of Chaos!",
+								"You are my prey!",
+								"Feel my full fury!",
+								"Now you are marked!",
+								"I will tear your armor like paper!",
+								"My strength is your doom!",
+								"May darkness swallow your scream!",
+								"A strike you will remember forever!",
+								"You are weak before the storm of Chaos!",
+								"This is the price of your mistake!",
+								"The wound will burn eternally!",
+								"A gift to Chaos — your life!",
+								"My fury has found its target!",
+								"This strike is an oath to Chaos!",
+								"Your weakness has become my strength!",
+								"The flame of Chaos licks your wound!",
+								"Your last breath is near!",
+								"I can feel life leaving your body!",
+								"Chaos demands blood — I deliver it!",
+								"Death whispers your name!",
+								"Darkness rejoices in your pain!",
+								"The power of Chaos has crushed you!",
+								"The wound is a seal of Chaos!",
+								"Your death is my glory!",
+								"You have felt the wrath of Chaos!",
+								"My grip is your doom!",
+								"Steel has found its mark!",
+								"Chaos laughs at your weakness!",
+								"You are but a shadow before the storm!",
+								"My weapon sings of your death!",
+								"I will rip you apart in the name of Chaos!",
+								"Your defense crumbles like ash!",
+								"I see fear in your eyes!",
+								"Pain is the last gift you will receive!",
+								"Your blood fuels my fury!",
+								"Your strength has run dry — only pain remains!",
+								"I am the embodiment of Chaos’s wrath!",
+								"The wound will become your epitaph!",
+								"Darkness accepts your sacrifice!",
+								"My fury is your grave!",
+								"Blood runs — Chaos triumphs!",
+								"I hear your heart weakening!",
+								"Armor won’t save you from the fury of Chaos!",
+								"The shadow of Chaos has covered you!",
+								"The wound burns — Chaos rejoices!",
+								"Steel has ended your story!",
+								"Your soul already calls to darkness!",
+								"I am the hand of Chaos, bearing doom!",
+								"Blood has stained the earth — as Chaos commands!",
+								"My strength has crushed your pride!"
+							]
+						}
+					},
+					"Beastman": {
+						"Opponent": {
+							"All": [
+								"Feel the claws of Chaos!",
+								"This is the roar of the beast’s fury!",
+								"This is a mark of Chaos on your hide!",
+								"Bow before savagery!",
+								"The horn has pierced your armor!",
+								"Blood on my claws!",
+								"Do you hear the crunch of your bones?",
+								"You will fall before the beast!",
+								"No armor can save you from the claws!",
+								"Your armor is just a toy for the beast!",
+								"My claws know the way to the heart!",
+								"Your flesh is the beast’s trophy!",
+								"No one can stand against my roar!",
+								"Blood is the language of the beast!",
+								"Your life is dust beneath my paws!",
+								"The claws have found their way to your soul!",
+								"The shadows of Chaos are already reaching for you with their paws!",
+								"Your fate is sealed by the beast’s strike!",
+								"The beast does not forgive mistakes!",
+								"There is no escape from the claws of Chaos!",
+								"You are the prey, I am the hunter!",
+								"You have fallen before the wild power!",
+								"You are nothing before the storm of the beast!"
+							]
+						}
+					}
+				},
+				"die": {
+					"All": {
+						"Base": [
+							"Let my trail become a curse!",
+							"Darkness calls… I go!",
+							"Not death… but a transition into eternal fury!",
+							"I will not fade… I will become the flame of darkness!",
+							"Let my trail leave a scar on the earth!",
+							"I will not perish… I will become the roar of thunder!",
+							"Let my spirit shatter the walls of worlds!",
+							"Let my trail remain a scar on the world!",
+							"I will not bow… not even before the darkness!",
+							"Blood flows… but fury does not fall silent!",
+							"Darkness embraces me… and carries my fury onward!",
+							"I fall… but I leave a trail of fire!",
+							"My death is a strike whose echo resounds through the ages!",
+							"Blood cools… but the fire in my chest does not extinguish!",
+							"I will not submit… even when darkness closes in!",
+							"I will not submit… not even in the face of death itself!",
+							"Let my trail leave a scar on the fabric of existence!",
+							"Let my trail remain a scar on the soul of the world!",
+							"Let my spirit tear the heavens apart!",
+							"Let my cry shatter the silence of eternity!",
+							"I will not vanish… I will become a roar that shakes the stars!"
+						],
+						"Opponent": {
+							"All": [
+								"I fall, but I do not bow!",
+								"My death is a blade in the enemy’s back!",
+								"I fall… but I call upon the fury of Chaos!",
+								"My death is a strike that even the gods hear!",
+								"Blood on the ground — a seal that cannot be erased!",
+								"Blood cools… but fury boils in the earth!",
+								"I will not submit… not even in death!",
+								"I fall… but I raise the darkness!",
+								"May my spirit torment the dreams of my enemies!",
+								"Blood on the grass — a promise that vengeance will come!",
+								"My death is a thunderclap against my foes!",
+								"May my spirit break the backs of my enemies!",
+								"Blood on the enemy’s blade — my final smile!",
+								"My blood is the seed of vengeance!",
+								"May my cry tear the sky asunder!"
+							]
+						}
+					},
+					"Beastman": {
+						"Base": [
+							"May the spirits take my fury!",
+							"My roar fades… let it become thunder!",
+							"Claws dull… but anger lives on!",
+							"May my bones become the claws of the storm!",
+							"May my spirit tear the heavens!",
+							"May my roar become the echo of ages!",
+							"My death is a cry that the spirits hear!",
+							"May the spirits hear my final roar!",
+							"I will not perish… I will become a roar that swallows worlds!"
+						],
+						"Opponent": {
+							"All": [
+								"My final roar is a curse upon my foes!",
+								"May my spirit become a storm above my enemies’ heads!",
+								"I fall… but the herd will carry on the fight!",
+								"My death is the horn calling all beasts to battle!",
+								"May my roar be the last sound the enemy hears!",
+								"Blood on the grass — a sign that the beast did not surrender!",
+								"Blood on the ground — a mark of my fury!",
+								"My death is the horn calling the herd!",
+								"May my voice become the roar of the storm!",
+								"My death is the fang stuck in the enemy’s throat!",
+								"May my spirit torment the dreams of those who laughed at weak blood!",
+								"Claws dig into the earth — may it remember!",
+								"I will not vanish… I will become a shadow that cuts hearts!",
+								"May my last breath become the strike of a claw!"
+							]
+						}
+					}
+				},
+				"kill": {
+					"All": {
+						"Opponent": {
+							"All": [
+								"I will break you like a dry branch!",
+								"Die, carrion!",
+								"Your fear is as sweet as honey!",
+								"No mercy, no pity!",
+								"You are too weak to live!",
+								"Your life is a spark that fades!",
+								"I will hurl you into the abyss of darkness!",
+								"Your death is my feast!",
+								"You are ashes in the wind!",
+								"I see your fear in your eyes!",
+								"You are not worthy to breathe!",
+								"My strength crushes everything!",
+								"You are a whisper in the thunder of battle!",
+								"May the storm consume your trail!",
+								"Your blood will water the earth!",
+								"May darkness swallow your soul!",
+								"My power knows no bounds!",
+								"I am the storm, you are a splinter!",
+								"You are a shadow on the wall!",
+								"Chaos has claimed your life!",
+								"The final strike of Chaos has found you!",
+								"One last breath — and silence!",
+								"My fury is a flame that burns!",
+								"You are a drop in the ocean of darkness!",
+								"I can smell your fear!",
+								"Your soul is my prey!",
+								"May the earth absorb your blood!",
+								"My fury is your sentence!",
+								"I am a whirlwind that sweeps everything away!",
+								"You are not even worth a breath!",
+								"May darkness take you!",
+								"I know no mercy!",
+								"I feel life leaving your body!",
+								"I will break you like a reed!",
+								"My fury knows no limits!",
+								"Your end is near!",
+								"I am the embodiment of fury!",
+								"Your death will be loud!"
+							]
+						}
+					},
+					"Beastman": {
+						"Opponent": {
+							"All": [
+								"Your flesh is my reward!",
+								"You are the prey, I am the predator!",
+								"My fang thirsts for your blood!",
+								"No one escapes the beast’s claws!",
+								"Let the beasts celebrate my victory!",
+								"May the herd roar in my honor!",
+								"You are just meat on bones!",
+								"I am a beast that knows no mercy!",
+								"Let the beasts roar in honor of my victory!",
+								"I rend and tear!",
+								"Blood on my claws — a mark of victory!",
+								"You are dust beneath my claws!",
+								"I will tear you apart!",
+								"There is no escape from the beast’s wrath!",
+								"Claws will find your throat!",
+								"You are nothing before the wild power!",
+								"Blood and bone — that’s what I love!",
+								"Your life ended with the roar of a beast!",
+								"Your death is a song for the claws!",
+								"You have become food for the ravens!",
+								"You will become food for the crows!",
+								"No blade can stop the beast!"
+							]
+						}
+					}
+				},
+				"opposedDefenderSuccess": {
+					"All": {
+						"Opponent": {
+							"All": [
+							]
+						}
+					},
+					"Beastman": {
+						"Opponent": {
+							"All": [
+								"The herd cannot be broken!",
+								"Horns are my shield, fangs are my sword!",
+								"The horned ones do not surrender!",
+								"The herd will stand!",
+								"Horns protect the strong!",
+								"Horns and fangs cannot be broken!",
+								"The wild fire will not go out!",
+								"My wild roar will scare the enemies!"
+							]
+						}
+					}
+				},
+				"opposedDefenderFailure": {
+					"All": {
+						"Opponent": {
+							"All": [
+							]
+						}
+					},
+					"Beastman": {
+						"Opponent": {
+							"All": [
+								"The beastman's horn cannot be broken!",
+								"The herd's blood will not run dry!",
+								"We're not running — we're regrouping!",
+								"The herd will avenge!",
+								"I'm still alive — I'm still fighting!",
+								"My fangs are already thirsting for vengeance!",
+								"We're alive — we're fighting!",
+								"The wind will heal my wounds!"
+							]
+						}
+					}
+				},
+				"opposedAttackerSuccess": {
+					"All": {
+						"Opponent": {
+							"All": [
+							]
+						}
+					},
+					"Beastman": {
+						"Opponent": {
+							"All": [
+								"Horns pierce armor!",
+								"Fangs tear armor like skin!",
+								"The enemy flinched — finish them off!",
+								"My fangs will sink into your flesh!",
+								"Fangs crave more blood!",
+								"Enemies tremble before me!",
+								"Enemies falter before me!",
+								"Fangs remember the taste of victory!",
+								"Horns gleam with the blood of enemies!",
+								"Fangs tear the flesh of cowards!",
+								"My fangs remember every enemy!",
+								"Fangs remember the taste of vengeance!",
+								"Fangs are still sharp!",
+								"My fangs remember the taste of blood!",
+								"Fangs tear the flesh of enemies!"
+							]
+						}
+					}
+				},
+				"opposedAttackerFailure": {
+					"All": {
+						"Opponent": {
+							"All": [
+							]
+						}
+					},
+					"Beastman": {
+						"Opponent": {
+							"All": [
+								"The herd will not retreat!",
+								"I'm still fighting!",
+								"The enemy won't stop me!",
+								"Blood for blood!",
+								"The herd will avenge!",
+								"My fangs are already thirsting for vengeance!",
+								"Wild blood won't cool down!",
+								"The wild fire will not go out!",
+								"I'm still alive — I'm still fighting!"
+							]
+						}
+					}
+				}
+			}
+		}
+	}
+}
