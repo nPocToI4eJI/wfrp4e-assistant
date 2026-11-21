@@ -1,0 +1,113 @@
+{
+	"id": "wfrp4e-assistant",
+	"title": "WFRP4e - Assistant",
+	"description": "<p>Этот модуль позволит Мастеру разнообразить НИП и их отыгрыш с помощью встроенных инструментов автоматизации.</p>&#10;&#10;<p>This module will allow the Master to diversify NPCs and their interactions using built-in automation tools.</p>",
+	"version": "13.4.0",
+	"compatibility": {
+		"minimum": "13",
+		"verified": "13.351"
+	},
+	"relationships": {
+		"systems": [
+			{
+				"id": "wfrp4e",
+				"type": "system",
+				"manifest": "https://github.com/moo-man/WFRP4e-FoundryVTT/releases/latest/download/system.json",
+				"compatibility": {
+					"minimum": "9",
+					"verified": "9.6.4"
+				}
+			}
+		],
+		"modules": [
+			{
+				"id": "wfrp4e-tools",
+				"type": "module",
+				"manifest": "https://github.com/nPocToI4eJI/wfrp4e-tools/releases/latest/download/module.json",
+				"compatibility": {
+					"minimum": "13.1.0",
+					"verified": "13.1.0"
+				}
+			}
+		]
+	},
+	"authors": [
+		{
+			"name": "nPocTo_4eJI",
+			"url": "https://www.youtube.com/@nPocTo_4eJI",
+			"discord": "npocto_4eji"
+		}
+	],
+	"languages": [
+		{"lang": "en", "name": "English", "path": "lang/en/lang.json"},
+		{"lang": "en", "name": "English", "path": "lang/en/names.json"},
+		{"lang": "en", "name": "English", "path": "lang/en/names/Beast.json"},
+		{"lang": "en", "name": "English", "path": "lang/en/names/Beastman.json"},
+		{"lang": "en", "name": "English", "path": "lang/en/names/Bretonnian.json"},
+		{"lang": "en", "name": "English", "path": "lang/en/names/Chaos.json"},
+		{"lang": "en", "name": "English", "path": "lang/en/names/Daemon.json"},
+		{"lang": "en", "name": "English", "path": "lang/en/names/Dwarf.json"},
+		{"lang": "en", "name": "English", "path": "lang/en/names/Elf.json"},
+		{"lang": "en", "name": "English", "path": "lang/en/names/Empire.json"},
+		{"lang": "en", "name": "English", "path": "lang/en/names/Goblin.json"},
+		{"lang": "en", "name": "English", "path": "lang/en/names/Halfling.json"},
+		{"lang": "en", "name": "English", "path": "lang/en/names/Kislev.json"},
+		{"lang": "en", "name": "English", "path": "lang/en/names/Ogre.json"},
+		{"lang": "en", "name": "English", "path": "lang/en/names/Ork.json"},
+		{"lang": "en", "name": "English", "path": "lang/en/names/Skaven.json"},
+		{"lang": "en", "name": "English", "path": "lang/en/reactions.json"},
+		{"lang": "en", "name": "English", "path": "lang/en/reactions/Beast.json"},
+		{"lang": "en", "name": "English", "path": "lang/en/reactions/Bretonnian.json"},
+		{"lang": "en", "name": "English", "path": "lang/en/reactions/Chaos.json"},
+		{"lang": "en", "name": "English", "path": "lang/en/reactions/Daemons.json"},
+		{"lang": "en", "name": "English", "path": "lang/en/reactions/Dwarf.json"},
+		{"lang": "en", "name": "English", "path": "lang/en/reactions/Elf.json"},
+		{"lang": "en", "name": "English", "path": "lang/en/reactions/Empire.json"},
+		{"lang": "en", "name": "English", "path": "lang/en/reactions/Greenskin.json"},
+		{"lang": "en", "name": "English", "path": "lang/en/reactions/Halfling.json"},
+		{"lang": "en", "name": "English", "path": "lang/en/reactions/Kislev.json"},
+		{"lang": "en", "name": "English", "path": "lang/en/reactions/Ogre.json"},
+		{"lang": "en", "name": "English", "path": "lang/en/reactions/RestlessDead.json"},
+		{"lang": "en", "name": "English", "path": "lang/en/reactions/Skaven.json"},
+		{"lang": "ru", "name": "Русский", "path": "lang/ru/lang.json"},
+		{"lang": "ru", "name": "Русский", "path": "lang/ru/names.json"},
+		{"lang": "ru", "name": "Русский", "path": "lang/ru/names/Beast.json"},
+		{"lang": "ru", "name": "Русский", "path": "lang/ru/names/Beastman.json"},
+		{"lang": "ru", "name": "Русский", "path": "lang/ru/names/Bretonnian.json"},
+		{"lang": "ru", "name": "Русский", "path": "lang/ru/names/Chaos.json"},
+		{"lang": "ru", "name": "Русский", "path": "lang/ru/names/Daemon.json"},
+		{"lang": "ru", "name": "Русский", "path": "lang/ru/names/Dwarf.json"},
+		{"lang": "ru", "name": "Русский", "path": "lang/ru/names/Elf.json"},
+		{"lang": "ru", "name": "Русский", "path": "lang/ru/names/Empire.json"},
+		{"lang": "ru", "name": "Русский", "path": "lang/ru/names/Goblin.json"},
+		{"lang": "ru", "name": "Русский", "path": "lang/ru/names/Halfling.json"},
+		{"lang": "ru", "name": "Русский", "path": "lang/ru/names/Kislev.json"},
+		{"lang": "ru", "name": "Русский", "path": "lang/ru/names/Ogre.json"},
+		{"lang": "ru", "name": "Русский", "path": "lang/ru/names/Ork.json"},
+		{"lang": "ru", "name": "Русский", "path": "lang/ru/names/Skaven.json"},
+		{"lang": "ru", "name": "Русский", "path": "lang/ru/reactions.json"},
+		{"lang": "ru", "name": "Русский", "path": "lang/ru/reactions/Beast.json"},
+		{"lang": "ru", "name": "Русский", "path": "lang/ru/reactions/Bretonnian.json"},
+		{"lang": "ru", "name": "Русский", "path": "lang/ru/reactions/Chaos.json"},
+		{"lang": "ru", "name": "Русский", "path": "lang/ru/reactions/Daemons.json"},
+		{"lang": "ru", "name": "Русский", "path": "lang/ru/reactions/Dwarf.json"},
+		{"lang": "ru", "name": "Русский", "path": "lang/ru/reactions/Elf.json"},
+		{"lang": "ru", "name": "Русский", "path": "lang/ru/reactions/Empire.json"},
+		{"lang": "ru", "name": "Русский", "path": "lang/ru/reactions/Greenskin.json"},
+		{"lang": "ru", "name": "Русский", "path": "lang/ru/reactions/Halfling.json"},
+		{"lang": "ru", "name": "Русский", "path": "lang/ru/reactions/Kislev.json"},
+		{"lang": "ru", "name": "Русский", "path": "lang/ru/reactions/Ogre.json"},
+		{"lang": "ru", "name": "Русский", "path": "lang/ru/reactions/RestlessDead.json"},
+		{"lang": "ru", "name": "Русский", "path": "lang/ru/reactions/Skaven.json"}
+	],
+	"esmodules": [
+		"assistant.js"
+	],
+	"styles": [
+		"styles/assistant.css",
+		"styles/tokenPresets.css"
+	],
+	"url": "https://github.com/nPocToI4eJI/wfrp4e-assistant",
+	"manifest": "https://github.com/nPocToI4eJI/wfrp4e-assistant/releases/download/13.4.0/module.json",
+	"download": "https://github.com/nPocToI4eJI/wfrp4e-assistant/releases/download/13.4.0/wfrp4e-assistant.zip"
+}

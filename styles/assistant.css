@@ -1,0 +1,203 @@
+.wfrp4eAssistant-menu {
+	width: clamp(32rem, 55vw, 62rem);
+	min-width: min(44rem, 92vw);
+	max-width: 95vw;
+	max-height: 88vh;
+}
+.wfrp4eAssistant-menu .window-content {
+	overflow-y: auto;
+}
+.wfrp4eAssistant-menu .window-content .body {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	overflow: hidden;
+	gap: 0.25rem;
+}
+.wfrp4eAssistant-menu .window-content li:not(#generateName) .body:not(.items) {
+	min-height: var(--input-height, 2rem);
+	height: auto;
+}
+.wfrp4eAssistant-menu .window-content li#generateName > .body {
+	min-height: var(--input-height, 2rem);
+	height: auto;
+}
+.wfrp4eAssistant-menu .window-content li:has(> .characteristics) {
+	display: grid;
+	grid-template-rows: minmax(3.75rem, auto) auto;
+	grid-template-columns: minmax(0, 3fr) minmax(0, 6.5fr) minmax(2rem, 0.5fr);
+	gap: 0.35rem;
+	margin-bottom: 0.35rem;
+}
+.wfrp4eAssistant-menu .window-content .characteristics {
+	display: grid;
+	min-height: 3.75rem;
+	height: auto;
+	grid-template-columns: repeat(10, minmax(0, 1fr));
+	grid-template-rows: auto 1fr;
+	align-items: center;
+	justify-items: center;
+	border: 1px var(--color-shadow-primary) solid;
+	border-radius: 0.3rem;
+}
+.wfrp4eAssistant-menu .window-content .replaceTokens,
+.wfrp4eAssistant-menu .window-content .weight {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 3.75rem;
+	height: 100%;
+	border: 1px var(--color-shadow-highlight) solid;
+	border-radius: 0.3rem;
+}
+.wfrp4eAssistant-menu .window-content .characteristics > label {
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px solid var(--color-shadow-highlight);
+}
+.wfrp4eAssistant-menu .window-content .characteristics > input {
+	width: 80%;
+	height: 80%;
+}
+.wfrp4eAssistant-menu .window-content .items {
+	padding: 0.2rem;
+	border: 1px var(--color-shadow-highlight) solid;
+	border-radius: 0.3rem;
+	min-height: var(--input-height, 2rem);
+	flex-wrap: wrap;
+	justify-items: center;
+	justify-content: space-evenly;
+}
+.wfrp4eAssistant-menu .window-content .items > a {
+	padding: 0.15rem 0.25rem;
+	border: 1px var(--color-shadow-primary) dotted;
+	border-radius: 0.3rem;
+}
+.wfrp4eAssistant-menu .window-content .body input,
+.wfrp4eAssistant-menu .window-content .body select,
+.wfrp4eAssistant-menu .window-content .replaceTokens input,
+.wfrp4eAssistant-menu .window-content .replaceKeys input {
+	text-align: center;
+}
+.wfrp4eAssistant-menu .window-content .body input[type="color"] {
+	cursor: inherit;
+}
+.wfrp4eAssistant-menu .window-content .body > label {
+	display: flex;
+	align-items: center;
+	flex: 1 1 30%;
+	min-width: 0;
+	font-size: var(--font-size-14, 0.875rem);
+	font-weight: bold;
+	white-space: normal;
+	cursor: inherit;
+}
+.wfrp4eAssistant-menu .window-content .body > label.isUnique {
+	text-decoration: line-through;
+	color: darkred;
+}
+.wfrp4eAssistant-menu .window-content .body > div.content {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	flex: 2 1 65%;
+	min-width: 0;
+	gap: 0.15rem;
+}
+.wfrp4eAssistant-menu .window-content .body > div.content > div#generateNameKeys,
+.wfrp4eAssistant-menu .window-content div.replaceKeys {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	flex: 7;
+	gap: 0.2rem;
+	padding: 0.2rem;
+	border: 1px var(--color-shadow-highlight) solid;
+	border-radius: 0.3rem;
+	min-height: var(--input-height, 2rem);
+}
+.wfrp4eAssistant-menu .window-content .body > div.content > div#generateNameKeys > a,
+.wfrp4eAssistant-menu .window-content li#presets > .body > div.content > a,
+.wfrp4eAssistant-menu .window-content div.replaceKeys > a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 1.875rem;
+	width: 1.875rem;
+	flex-shrink: 0;
+	border: 1px var(--color-shadow-primary) dotted;
+	border-radius: 50%;
+	padding: 0.3rem;
+}
+.wfrp4eAssistant-menu .window-content .body > div.content > div#generateNameKeys > div,
+.wfrp4eAssistant-menu .window-content div.replaceKeys > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.15rem;
+	border: 1px var(--color-shadow-primary) dotted;
+	border-radius: 0.3rem;
+	height: var(--input-height, 2rem);
+	max-width: 10rem;
+	padding: 0.15rem;
+	position: relative;
+}
+.wfrp4eAssistant-menu .window-content .body > div.content > div#generateNameKeys > div > a,
+.wfrp4eAssistant-menu .window-content div.replaceKeys > div > a {
+	background: var(--color-warm);
+	color: var(--color-cream);
+	border-radius: 50%;
+	text-align: center;
+	width: 1rem;
+	height: 1rem;
+	line-height: 1rem;
+	font-size: 0.7rem;
+	position: absolute;
+	right: -0.35rem;
+	top: -0.35rem;
+}
+.wfrp4eAssistant-menu .window-content .body > div.content > div#generateNameKeys > div > input,
+.wfrp4eAssistant-menu .window-content div.replaceKeys > div > input {
+	height: 100%;
+	padding: unset;
+}
+.wfrp4eAssistant-menu .window-content .body > div.content > div#generateNameKeys > div > input.key,
+.wfrp4eAssistant-menu .window-content div.replaceKeys > div > input.key {
+	flex: 3;
+	max-width: calc(100% - 2.5rem);
+}
+.wfrp4eAssistant-menu .window-content .body > div.content > div#generateNameKeys > div > input.chance,
+.wfrp4eAssistant-menu .window-content div.replaceKeys > div > input.chance {
+	flex: 1;
+	min-width: 2.25rem;
+}
+.wfrp4eAssistant-menu .window-content .body > div.content > input[type="number"] {
+	flex: 1;
+}
+.wfrp4eAssistant-menu .window-content .body > div.content > input[type="text"],
+.wfrp4eAssistant-menu .window-content .body > div.content > select {
+	flex: 2;
+}
+.wfrp4eAssistant-chat-bubble {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: unset;
+}
+
+section[data-category="wfrp4e-assistant"] label::before {
+	font-family: "Font Awesome 6 Pro";
+    font-weight: bold;
+    margin-right: 5px;
+}
+section[data-category="wfrp4e-assistant"] label[for="settings-config-wfrp4e-assistant.enableHelpers"]::before {
+    content: "\f4c4";
+}
+section[data-category="wfrp4e-assistant"] label[for="settings-config-wfrp4e-assistant.reactionsSend"]::before {
+    content: "\f086";
+}
+section[data-category="wfrp4e-assistant"] label[for="settings-config-wfrp4e-assistant.enableInjuries"]::before {
+    content: "\f043";
+}

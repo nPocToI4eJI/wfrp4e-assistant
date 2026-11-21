@@ -1,0 +1,231 @@
+{
+	"WFRP4E.Assistant": {
+		"Name": "Assistant",
+		"Debug": {
+			"Dialog": {
+				"ImportExport": {
+					"Name": "Assistant Templates",
+					"Label": "Import / Export Assistant templates",
+					"Hint": "Allows importing and exporting custom Assistant templates.",
+					"Action": {
+						"Title": "Select action",
+						"Import": "Import",
+						"Export": "Export"
+					},
+					"Replace": {
+						"Title": "Replace",
+						"Content": "Overwrite existing custom Assistant templates?",
+						"Hint": "<b>Yes</b>: existing templates will be deleted.<br><b>No</b>: new templates will be added to the existing ones."
+					},
+					"File": "Select file with custom settings",
+					"Error": "Failed to read the templates file. Make sure you selected a valid export file.",
+					"Complete": "Assistant templates imported successfully."
+				},
+				"Reset": {
+					"Label": "Custom settings",
+					"Content": "Delete custom templates if they cause errors.",
+					"Hint": "It is recommended to save templates by exporting them to a file before deleting.",
+					"Presets": "Delete Assistant templates",
+					"Notify": "Assistant templates deleted.",
+					"Confirm": "Are you sure you want to delete all custom Assistant templates?"
+				}
+			}
+		},
+		"Helpers": {
+			"Unique": {
+				"Disabled": "Disabled for unique actors (Characters and NPCs / Creatures with \"Link Actor Data\" enabled)"
+			},
+			"GenerateName": {
+				"Label": "Random Name",
+				"Hint": "If enabled, a random name will be generated for the actor's token when dropped on the canvas.",
+				"Parameter": "Parameter",
+				"Chance": "Chance",
+				"Add": "Add parameter",
+				"Remove": "Remove",
+				"Keys": {
+					"Value": "Available parameters for the selected species:",
+					"Hint": "To add a specific word or character to the name, simply type it in.<br>To select mutually exclusive parameters, words, or characters, list them separated by the \"|\" symbol.<br>For example: with the parameter \"Male|Female\", only one of them will be randomly selected.",
+					"Error": "These parameters are not available for the selected species or subspecies:"
+				},
+				"Nothing": "nothing"
+			},
+			"RandomCharacteristics": {
+				"Label": "Random Characteristics",
+				"Hint": "If enabled, random characteristics will be generated for the actor's token when dropped on the canvas, according to the Rulebook.<br><br>Sets random characteristic values by subtracting 10 points from the specified value, and then adding 2d10 points. Thus, a specified characteristic value of 30 will turn into a random one equal to 20 + 2d10. If the characteristic is 5, it simply rolls 1d10 and sets the result as the new characteristic value."
+			},
+			"RandomTokenSize": {
+				"Label": "Random Token Size",
+				"Hint": "If enabled, the actor's token size will be randomly changed within ±20% when dropped on the canvas."
+			},
+			"DeathTint": {
+				"Label": "Token Tint",
+				"Hint": "If the actor's wounds are reduced to 0, the token will be tinted with the specified color.",
+				"Evenly": "Evenly tint the token upon taking damage."
+			},
+			"GenerateSpells": {
+				"Label": "Random Spells",
+				"Hint": "If enabled, the specified number of random spells from the selected Magic Lore will be given to the token when dropped on the canvas.",
+				"Arcane": "If enabled, Arcane spells will be added to the search pool."
+			},
+			"Disposition": {
+				"Label": "Token Disposition",
+				"Hint": "Changes the token's disposition when dropped on the canvas.",
+				"Tooltip": "Choose what disposition the dropped token will have.",
+				"None": "Do not change",
+				"Call": "Prompt"
+			},
+			"Reactions": {
+				"Label": "Reactions",
+				"Hint": "If enabled, the actor will react with random phrases to various events.",
+				"Button": {
+					"Title": "Reactions Display",
+					"On": "Reactions are currently displayed",
+					"Off": "Reactions are currently hidden"
+				},
+				"Frequency": {
+					"Title": "Chance for the actor to react to events.",
+					"Always": "Always",
+					"Often": "Often",
+					"Usually": "Usually",
+					"Sometimes": "Sometimes",
+					"Never": "Never"
+				},
+				"Not": "Any"
+			},
+			"Presets": {
+				"Label": "Presets",
+				"Hint": "Allows randomly changing equipment and characteristics presets for the actor when dropped on the canvas.",
+				"Add": "Add",
+				"Remove": "Remove",
+				"ReplaceTokens": {
+					"Label": "Token",
+					"Hint": "Overwrites the Image File values for token generation. Leave blank if it doesn't matter.<hr>Current path to Image File:<br>• \"{path}\"<hr>Current Image File:<br>• \"{file}\"",
+					"IsPreset": "Not available for templates"
+				},
+				"Weight": {
+					"Label": "Weight",
+					"Hint": "The higher the value, the higher the chance of getting this preset."
+				},
+				"ReplaceKeys": "Allows overwriting the generation keys for the selected preset. Leave blank to use the already specified keys.",
+				"Items": {
+					"Base": "Actor Items",
+					"Preset": "Preset Items"
+				}
+			},
+			"Settings": {
+				"enableHelpers": {
+					"Name": "Assistant",
+					"Hint": "If enabled, an Assistant setting will appear in actor sheets to help optimize your actors."
+				},
+				"reactionsSend": {
+					"Name": "Reactions Display Method",
+					"Hint": "Determine how reactions will be displayed.",
+					"Both": "Both options",
+					"Bubble": "Chat Bubble",
+					"Chat": "Chat Message"
+				},
+				"Presets": {
+					"Name": "Templates Menu",
+					"Label": "Open",
+					"Hint": "Tool for creating Assistant templates.",
+					"Title": "Template",
+					"Tooltip": {
+						"Edit": "Select a template to edit",
+						"Insert": "Select a template to insert"
+					},
+					"Create": "Create new",
+					"Delete": "Delete template",
+					"List": "Back",
+					"ChangeName": "Template name",
+					"Add": "Use template",
+					"Names": {
+						"HumanEmpire": "Human (Reiklander)",
+						"HumanBretonnian": "Human (Bretonnian)",
+						"HumanKislev": "Human (Kislevite)",
+						"HumanKislevGospodar": "Human (Kislevite, Gospodar)",
+						"HumanKislevUngol": "Human (Kislevite, Ungol)",
+						"Halfling": "Halfling",
+						"Dwarf": "Dwarf",
+						"Elf": "Elf",
+						"Ogre": "Ogre",
+						"Beast": "Beast",
+						"Ork": "Orc",
+						"Goblin": "Goblin",
+						"Chaos": "Marauder",
+						"Beastman": "Beastman"
+					}
+				}
+			},
+			"Export": "Export Actor",
+			"Disable": "Disable",
+			"Saved": "Assistant settings saved!"
+		},
+		"TokenPresets": {
+			"Title": "Token Placement",
+			"Name": "Template",
+			"Actions": {
+				"Save": {
+					"Title": "Save",
+					"Tooltip": "Saves tokens currently on the scene as a new template.<hr>Characters and actors whose data are linked to the token are not saved."
+				},
+				"Load": {
+					"Title": "Load",
+					"Tooltip": "Loads tokens from the selected template onto the scene.<hr>If multiple templates are selected, one will be determined randomly.<hr>Alt + LMB: existing tokens will be deleted upon loading.",
+					"Dialog": {
+						"Title": "Delete existing tokens",
+						"Tooltip": "Should existing tokens be removed from the scene before adding new ones?<br>Characters and actors whose data are linked to the token will not be deleted.",
+						"Remove": "Delete",
+						"NotRemove": "Do not delete"
+					}
+				},
+				"Remove": {
+					"Title": "Clear",
+					"Tooltip": "Deletes tokens currently on the scene.<hr>Characters and actors whose data are linked to the token are not deleted.",
+					"Dialog": {
+						"Title": "Confirm token deletion",
+						"Tooltip": "This action will delete tokens currently on the scene.<br>Characters and actors whose data are linked to the token will not be deleted.<hr>Do you agree?"
+					}
+				},
+				"Select": "Select template",
+				"Delete": "Delete template"
+			},
+			"Dialog": {
+				"SelectName": "Enter a name for the template"
+			}
+		},
+		"Injuries": {
+			"Description": "Wound inflicted by: <b>{actor}</b>.<br>Weapon: <b>{weapon}</b>.<br>Wounds lost: <b>{wounds}</b>.",
+			"Settings": {
+				"Name": "Injury",
+				"Hint": "When an Actor takes damage, adds an Injury item containing information about the amount of damage, the weapon used, and who inflicted it."
+			}
+		},
+		"spellsFilter": {
+			"Categories": {
+				"All": "All",
+				"Title": "Manage Categories",
+				"Add": "Add Category",
+				"Remove": "Remove Category",
+				"RemoveConfirm": "Are you sure you want to delete the category \"{name}\"?",
+				"Icon": "Font Awesome icon for the category.<br>For example: &quot;fas fa-ellipsis&quot;"
+			},
+			"Description": "Specify which spells will be included in the category \"{name}\":",
+			"Hint": {
+				"LMB": "LMB: toggle.",
+				"RMB1": "RMB: configure categories.",
+				"RMB2": "RMB: specify spells."
+			}
+		},
+		"Macros": {
+			"GenerateName": {
+				"Title": "Random Name",
+				"Hint": "This macro generates a random name.",
+				"Quantity": "Number of rolls",
+				"Preset": "Name template",
+				"Roll": "Generate",
+				"Flavor": "Invented a random name for {target}",
+				"Error": "Name generator settings for {preset} were not found!"
+			}
+		}
+	}
+}

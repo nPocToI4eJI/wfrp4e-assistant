@@ -1,0 +1,102 @@
+{
+	"WFRP4E.Assistant.Helpers.GenerateName": {
+		"Species": {
+			"Empire": "Imperial",
+			"Bretonnian": "Bretonnian",
+			"Kislev": "Kislevite",
+			"Halfling": "Halfling",
+			"Dwarf": "Dwarf",
+			"Elf": "Elf",
+			"Ogre": "Ogre",
+			"Beast": "Beast",
+			"Ork": "Orc",
+			"Goblin": "Goblin",
+			"Chaos": "Marauder",
+			"Beastman": "Beastman",
+			"Skaven": "Skaven",
+			"Daemon": "Daemon"
+		},
+		"Keys": {
+			"Empire": {
+				"Male": "male",
+				"Female": "female",
+				"Surnames": "surnames",
+				"NP": "noble particle"
+			},
+			"Bretonnian": {
+				"Male": "male",
+				"Female": "female",
+				"Surnames": "surnames"
+			},
+			"Kislev": {
+				"Male": "male",
+				"GospodarMale": "male (Gospodar)",
+				"Female": "female",
+				"GospodarFemale": "female (Gospodar)",
+				"Surnames": "surnames",
+				"GospodarSurnames": "surnames (Gospodar)",
+				"Ungol": "Ungol"
+			},
+			"Halfling": {
+				"Male": "male",
+				"Female": "female",
+				"Surnames": "surnames"
+			},
+			"Dwarf": {
+				"Male": "male",
+				"Female": "female",
+				"Surnames": "clan",
+				"Moniker": "moniker"
+			},
+			"Elf": {
+				"Male": "male",
+				"Female": "female",
+				"Surnames": "surnames"
+			},
+			"Ogre": {
+				"Male": "male",
+				"Female": "female",
+				"Moniker": "moniker",
+				"BigName": "Big Name"
+			},
+			"Beast": {
+				"Wolf": "Wolf",
+				"Rat": "Rat",
+				"Spider": "Spider",
+				"Bird": "Bird",
+				"Snake": "Snake",
+				"Boar": "Boar",
+				"Horse": "Horse",
+				"Bear": "Bear",
+				"Dog": "Dog"
+			},
+			"Ork": {
+				"Name": "name",
+				"Moniker": "moniker"
+			},
+			"Goblin": {
+				"Name": "name",
+				"Moniker": "moniker"
+			},
+			"Chaos": {
+				"Male": "male",
+				"Female": "female",
+				"Moniker": "moniker"
+			},
+			"Beastman": {
+				"Name": "name",
+				"Moniker": "moniker",
+				"OffMoniker": "offensive moniker"
+			},
+			"Skaven": {
+				"Name": "name",
+				"Moniker": "moniker",
+				"OffMoniker": "offensive moniker"
+			},
+			"Daemon": {
+				"Name": "name",
+				"Moniker": "title"
+			}
+		}
+	}
+}

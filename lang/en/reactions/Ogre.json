@@ -1,0 +1,920 @@
+{
+	"WFRP4E.Assistant.Helpers.Reactions.List.Ogre": {
+		"takeDamage": {
+			"All": {
+				"Prefix": [
+					"Argh!",
+					"Oogh!",
+					"Hurts!",
+					"My gut!",
+					"Blast it!"
+				],
+				"Phrases": [
+					"Cut my hide.",
+					"Bleeding now.",
+					"Nick'd my meat.",
+					"Little thing bites sharp.",
+					"Hit the bone.",
+					"Went in deep."
+				],
+				"Postfix": [
+					"I'll eat ya!",
+					"Tear ya to bits!",
+					"Crush ya!"
+				],
+				"Opponent": {
+					"Empire": {
+						"Phrases": [
+							"Manling metal bites.",
+							"Puny steel still stings."
+						]
+					},
+					"Bretonnian": {
+						"Phrases": [
+							"Poke-stick jabbed my gut.",
+							"Horse-man hits hard."
+						]
+					},
+					"Kislev": {
+						"Phrases": [
+							"Cold steel cuts.",
+							"Snow-man bites."
+						]
+					},
+					"Halfling": {
+						"Phrases": [
+							"The food bites back!",
+							"Little snack poked my leg."
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"Beard-thing hits hard.",
+							"Hits like a boulder."
+						]
+					},
+					"Elf": {
+						"Phrases": [
+							"Pointy-ear stings like a wasp.",
+							"Skinny blade cuts."
+						]
+					},
+					"Beast": {
+						"Phrases": [
+							"The meat scratches.",
+							"Beast bit through my hide."
+						]
+					},
+					"Monstrous": {
+						"Phrases": [
+							"Big hulk hits hard.",
+							"Heavy wallop."
+						]
+					},
+					"Greenskin": {
+						"Phrases": [
+							"Green stink fights back.",
+							"Orc club hits solid."
+						]
+					},
+					"RestlessDead": {
+						"Phrases": [
+							"Dry bones scratch.",
+							"Dead meat is cold."
+						]
+					},
+					"Chaos": {
+						"Phrases": [
+							"Spiky tin burns.",
+							"Spikes poked my meat."
+						]
+					},
+					"Skaven": {
+						"Phrases": [
+							"Sneaky rat bit me.",
+							"Poison burns my blood."
+						]
+					},
+					"Daemons": {
+						"Phrases": [
+							"Glowy junk burns.",
+							"Fire bites!"
+						]
+					}
+				},
+				"To": {
+					"Head": {
+						"Phrases": [
+							"Head's ringing.",
+							"Noggin's throbbing.",
+							"Smacked right on the brow."
+						]
+					},
+					"Body": {
+						"Phrases": [
+							"Cut on my belly.",
+							"Knocked the wind out.",
+							"Poked my gut."
+						]
+					},
+					"Arm": {
+						"Phrases": [
+							"Dropping my club.",
+							"Hurts to grip my club.",
+							"Hit my arm."
+						]
+					},
+					"Leg": {
+						"Phrases": [
+							"Limping now.",
+							"Hard to stand.",
+							"Sliced my leg."
+						]
+					}
+				}
+			}
+		},
+		"applyDamage": {
+			"All": {
+				"Prefix": [
+					"Crunch!",
+					"Take that!",
+					"Meat!"
+				],
+				"Phrases": [
+					"Nice chunk came right off.",
+					"Bones go crunch.",
+					"Tenderized nice and flat.",
+					"Pounded into the dirt.",
+					"Smashed the tin.",
+					"Hit soft meat."
+				],
+				"Postfix": [
+					"Into the stewpot!",
+					"Grub time!",
+					"Stay flat!"
+				],
+				"Opponent": {
+					"Empire": {
+						"Phrases": [
+							"Crumpled the manling's tin.",
+							"Pounded the tin into mud."
+						]
+					},
+					"Bretonnian": {
+						"Phrases": [
+							"Cracked the tin open.",
+							"Canned meat's dented."
+						]
+					},
+					"Kislev": {
+						"Phrases": [
+							"Meat in the snow.",
+							"Cold blood spilling."
+						]
+					},
+					"Halfling": {
+						"Phrases": [
+							"Squashed the snack.",
+							"Flattened the little bite."
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"Beard-thing's bones crunch.",
+							"Pounded the stuntie into dirt."
+						]
+					},
+					"Elf": {
+						"Phrases": [
+							"Skinny bones snap easy.",
+							"Broke the pointy-ear."
+						]
+					},
+					"Beast": {
+						"Phrases": [
+							"Tenderized beast.",
+							"Fresh game's ready."
+						]
+					},
+					"Monstrous": {
+						"Phrases": [
+							"Smashed that big hunk.",
+							"Lots of meat on that one."
+						]
+					},
+					"Greenskin": {
+						"Phrases": [
+							"Green meat bleeding.",
+							"Sent the orc flying."
+						]
+					},
+					"RestlessDead": {
+						"Phrases": [
+							"Smashed bones to powder.",
+							"Nothing left but bone dust."
+						]
+					},
+					"Chaos": {
+						"Phrases": [
+							"Dented that spiky tin.",
+							"Squashed the mutant flat."
+						]
+					},
+					"Skaven": {
+						"Phrases": [
+							"Flattened the tail-thing.",
+							"Rat pancake."
+						]
+					},
+					"Daemons": {
+						"Phrases": [
+							"Warp-junk popped.",
+							"Crumpled the daemon."
+						]
+					}
+				},
+				"To": {
+					"Head": {
+						"Phrases": [
+							"Skull turned to mush.",
+							"Square on the noggin.",
+							"Head smashed flat."
+						]
+					},
+					"Body": {
+						"Phrases": [
+							"Guts spilled out.",
+							"Punched a big hole in 'em.",
+							"Ribs smashed tender."
+						]
+					},
+					"Arm": {
+						"Phrases": [
+							"Ripped an arm off.",
+							"Knocked their stick away.",
+							"Snapped their bones."
+						]
+					},
+					"Leg": {
+						"Phrases": [
+							"Snapped their legs.",
+							"Ain't running no more.",
+							"Knocked flat."
+						]
+					}
+				}
+			}
+		},
+		"die": {
+			"All": {
+				"Prefix": [
+					"Grr...",
+					"Going dark...",
+					"Ooogh..."
+				],
+				"Phrases": [
+					"No more feasts...",
+					"Gut's done for...",
+					"No strength left.",
+					"Eyes going dark.",
+					"Too heavy to stand."
+				],
+				"Postfix": [
+					"So cold...",
+					"Done for..."
+				],
+				"Opponent": {
+					"Empire": {
+						"Phrases": [
+							"Killed by a manling... shame.",
+							"Imperial iron got me."
+						]
+					},
+					"Bretonnian": {
+						"Phrases": [
+							"Trampled by tin-can.",
+							"Horse-man's lance finished me."
+						]
+					},
+					"Kislev": {
+						"Phrases": [
+							"Cold took my strength.",
+							"Freezing to death."
+						]
+					},
+					"Halfling": {
+						"Phrases": [
+							"Eaten by the food... how...",
+							"Shameful end by a snack."
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"Stuntie's blow finished me.",
+							"Cracked by a hammer."
+						]
+					},
+					"Elf": {
+						"Phrases": [
+							"Puny arrow killed me.",
+							"Pointy-ear got me."
+						]
+					},
+					"Beast": {
+						"Phrases": [
+							"Torn up by claws.",
+							"Became the grub."
+						]
+					},
+					"Monstrous": {
+						"Phrases": [
+							"Crushed by a bigger hulk.",
+							"All my bones are broken."
+						]
+					},
+					"Greenskin": {
+						"Phrases": [
+							"Done in by green stink.",
+							"Killed by an orc."
+						]
+					},
+					"RestlessDead": {
+						"Phrases": [
+							"Bones dragging me down.",
+							"The cold got me."
+						]
+					},
+					"Chaos": {
+						"Phrases": [
+							"Spiky junk burned me dead.",
+							"Taint ate me up."
+						]
+					},
+					"Skaven": {
+						"Phrases": [
+							"Rat poison got me.",
+							"Chewed down by rats."
+						]
+					},
+					"Daemons": {
+						"Phrases": [
+							"Weird fire burned me up.",
+							"Daemon took my life."
+						]
+					}
+				},
+				"To": {
+					"Head": {
+						"Phrases": [
+							"Noggin's cracked.",
+							"Can't see a thing."
+						]
+					},
+					"Body": {
+						"Phrases": [
+							"Gut's punctured.",
+							"Guts spilling out."
+						]
+					},
+					"Arm": {
+						"Phrases": [
+							"Bled out from my arm.",
+							"Can't hold on."
+						]
+					},
+					"Leg": {
+						"Phrases": [
+							"Legs won't hold my bulk.",
+							"Falling in the mud."
+						]
+					}
+				}
+			}
+		},
+		"kill": {
+			"All": {
+				"Prefix": [
+					"Done.",
+					"Stay down."
+				],
+				"Phrases": [
+					"Meat's cooling on the ground.",
+					"Time to eat!",
+					"Smashed into a pancake.",
+					"Squashed the runt.",
+					"Fresh meat's ready."
+				],
+				"Postfix": [
+					"Into the stewpot!",
+					"Dinner!",
+					"Mine!"
+				],
+				"Opponent": {
+					"Empire": {
+						"Phrases": [
+							"Manling's dead.",
+							"Good eatin' now."
+						]
+					},
+					"Bretonnian": {
+						"Phrases": [
+							"Crack the tin and eat the inside.",
+							"Canned grub's ready."
+						]
+					},
+					"Kislev": {
+						"Phrases": [
+							"Frozen meat.",
+							"Cold supper."
+						]
+					},
+					"Halfling": {
+						"Phrases": [
+							"Swallow 'em whole.",
+							"Bite-sized snack."
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"Beard-thing's chewy meat.",
+							"Good for the stewpot."
+						]
+					},
+					"Elf": {
+						"Phrases": [
+							"Too skinny, barely a snack.",
+							"Pointy-ear's dead."
+						]
+					},
+					"Beast": {
+						"Phrases": [
+							"Fine game.",
+							"Fresh meat."
+						]
+					},
+					"Monstrous": {
+						"Phrases": [
+							"Huge slab of meat for supper.",
+							"That'll keep me full for days."
+						]
+					},
+					"Greenskin": {
+						"Phrases": [
+							"Green meat tastes foul, still eats.",
+							"Orc's finished."
+						]
+					},
+					"RestlessDead": {
+						"Phrases": [
+							"Bones are only good for broth.",
+							"Can't eat dust."
+						]
+					},
+					"Chaos": {
+						"Phrases": [
+							"Meat stinks too bad to eat.",
+							"Mutant's finished."
+						]
+					},
+					"Skaven": {
+						"Phrases": [
+							"Rat's a crunchy snack.",
+							"Stomped the tail-thing."
+						]
+					},
+					"Daemons": {
+						"Phrases": [
+							"Glowy junk vanished.",
+							"Daemon smashed to nothing."
+						]
+					}
+				},
+				"To": {
+					"Head": {
+						"Phrases": [
+							"Head flattened.",
+							"Knocked their skull clean off."
+						]
+					},
+					"Body": {
+						"Phrases": [
+							"Guts spilled out.",
+							"Punched clean through."
+						]
+					},
+					"Arm": {
+						"Phrases": [
+							"Tore their arm off for good.",
+							"Bled right out."
+						]
+					},
+					"Leg": {
+						"Phrases": [
+							"Stomped into the dirt.",
+							"Snapped their legs."
+						]
+					}
+				}
+			}
+		},
+		"opposedDefenderSuccess": {
+			"All": {
+				"Prefix": [
+					"Missed.",
+					"Hah!",
+					"Puny."
+				],
+				"Phrases": [
+					"Blade bounced right off my gut.",
+					"Thick hide held.",
+					"Way too weak.",
+					"Guard holds.",
+					"Barely even tickled."
+				],
+				"Postfix": [
+					"Weakling!",
+					"My turn to smash!"
+				],
+				"Opponent": {
+					"Empire": {
+						"Phrases": [
+							"Manling sword bounced off.",
+							"Puny tap."
+						]
+					},
+					"Bretonnian": {
+						"Phrases": [
+							"Horse-man's stick broke.",
+							"Lance went wide."
+						]
+					},
+					"Kislev": {
+						"Phrases": [
+							"Northern axe couldn't cut my gut.",
+							"Cold don't bother me."
+						]
+					},
+					"Halfling": {
+						"Phrases": [
+							"Snack couldn't even reach.",
+							"Too tall for ya."
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"Beard-thing hits too low.",
+							"Hammer bounced off."
+						]
+					},
+					"Elf": {
+						"Phrases": [
+							"Pointy-ear hits like a twig.",
+							"Skinny blade can't cut my hide."
+						]
+					},
+					"Beast": {
+						"Phrases": [
+							"Claws just gave me a scratch.",
+							"Puny beast."
+						]
+					},
+					"Monstrous": {
+						"Phrases": [
+							"Big hulk missed.",
+							"Blind swing."
+						]
+					},
+					"Greenskin": {
+						"Phrases": [
+							"Greenskin missed.",
+							"Orc swings crooked."
+						]
+					},
+					"RestlessDead": {
+						"Phrases": [
+							"Dry bones hit weak.",
+							"Rusty iron won't cut."
+						]
+					},
+					"Chaos": {
+						"Phrases": [
+							"Spiky one couldn't pierce me.",
+							"Magic missed."
+						]
+					},
+					"Skaven": {
+						"Phrases": [
+							"Rat missed.",
+							"Too tiny."
+						]
+					},
+					"Daemons": {
+						"Phrases": [
+							"Warp-fire don't touch me.",
+							"Daemon missed."
+						]
+					}
+				}
+			}
+		},
+		"opposedDefenderFailure": {
+			"All": {
+				"Prefix": [
+					"Argh!",
+					"Hurts!",
+					"Blast!"
+				],
+				"Phrases": [
+					"Broke my guard.",
+					"Steel went in deep.",
+					"Sliced my thick hide.",
+					"Stung bad."
+				],
+				"Postfix": [
+					"I'll eat the little bastard!",
+					"I'll squash ya!"
+				],
+				"Opponent": {
+					"Empire": {
+						"Phrases": [
+							"Manling poked my hide.",
+							"Iron stings."
+						]
+					},
+					"Bretonnian": {
+						"Phrases": [
+							"Tin-can hits hard.",
+							"Lance poked through my fat."
+						]
+					},
+					"Kislev": {
+						"Phrases": [
+							"Ice burns my belly.",
+							"Frosty steel bites."
+						]
+					},
+					"Halfling": {
+						"Phrases": [
+							"The snack bites!",
+							"Little runt poked sharp."
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"Beard-thing hit bone.",
+							"Heavy stuntie hammer."
+						]
+					},
+					"Elf": {
+						"Phrases": [
+							"Skinny thing hits sharp.",
+							"Arrow stuck in my meat."
+						]
+					},
+					"Beast": {
+						"Phrases": [
+							"Beast bit through my hide.",
+							"Claws ripping my gut."
+						]
+					},
+					"Monstrous": {
+						"Phrases": [
+							"Huge bulk crushed my block.",
+							"Big wallop."
+						]
+					},
+					"Greenskin": {
+						"Phrases": [
+							"Green git broke my guard.",
+							"Choppa cuts deep."
+						]
+					},
+					"RestlessDead": {
+						"Phrases": [
+							"Bones scratched me.",
+							"Dead thing broke my skin."
+						]
+					},
+					"Chaos": {
+						"Phrases": [
+							"Magic burns.",
+							"Spikes poked my meat."
+						]
+					},
+					"Skaven": {
+						"Phrases": [
+							"Rat stabbed me.",
+							"Poison burns my blood."
+						]
+					},
+					"Daemons": {
+						"Phrases": [
+							"Warp stings hot.",
+							"Fire bites!"
+						]
+					}
+				}
+			}
+		},
+		"opposedAttackerSuccess": {
+			"All": {
+				"Prefix": [
+					"Hit 'em.",
+					"Got 'em.",
+					"Crunch!"
+				],
+				"Phrases": [
+					"Crushed their guard with my weight.",
+					"Smashed clean through.",
+					"Club buried in meat.",
+					"Nice heavy wallop.",
+					"Softened up their bones."
+				],
+				"Postfix": [
+					"Finishing 'em!",
+					"Stay down!"
+				],
+				"Opponent": {
+					"Empire": {
+						"Phrases": [
+							"Caved in manling plate.",
+							"Tin crushed flat."
+						]
+					},
+					"Bretonnian": {
+						"Phrases": [
+							"Dented the tin can.",
+							"Knight smashed flat."
+						]
+					},
+					"Kislev": {
+						"Phrases": [
+							"Broke the snow-man.",
+							"Smashed through the furs."
+						]
+					},
+					"Halfling": {
+						"Phrases": [
+							"Smeared the little snack.",
+							"Tenderized the runt."
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"Pounded the beard-thing down.",
+							"Dented that gromril."
+						]
+					},
+					"Elf": {
+						"Phrases": [
+							"Snapped the skinny one's bones.",
+							"Crumpled the elf."
+						]
+					},
+					"Beast": {
+						"Phrases": [
+							"Walloped the beast.",
+							"Beast is bleeding."
+						]
+					},
+					"Monstrous": {
+						"Phrases": [
+							"Smashed through thick hide.",
+							"Tenderized that hunk."
+						]
+					},
+					"Greenskin": {
+						"Phrases": [
+							"Sent the green git flying.",
+							"Battered the orc."
+						]
+					},
+					"RestlessDead": {
+						"Phrases": [
+							"Bones to dust.",
+							"Dead thing broke apart."
+						]
+					},
+					"Chaos": {
+						"Phrases": [
+							"Dented the spiky one.",
+							"Crushed the mutant."
+						]
+					},
+					"Skaven": {
+						"Phrases": [
+							"Rat pancake.",
+							"Squashed the tail-thing."
+						]
+					},
+					"Daemons": {
+						"Phrases": [
+							"Warp-junk popped.",
+							"Smashed right through the magic."
+						]
+					}
+				}
+			}
+		},
+		"opposedAttackerFailure": {
+			"All": {
+				"Prefix": [
+					"Ugh.",
+					"Missed.",
+					"Bah."
+				],
+				"Phrases": [
+					"Little thing slipped away.",
+					"Jumped clear too fast.",
+					"Club swung wide.",
+					"Smashed empty air."
+				],
+				"Postfix": [
+					"I'll catch ya!",
+					"Hold still!"
+				],
+				"Opponent": {
+					"Empire": {
+						"Phrases": [
+							"Manling dodged away.",
+							"Little pest hopped back."
+						]
+					},
+					"Bretonnian": {
+						"Phrases": [
+							"Glanced off tin.",
+							"Horse carried 'em away."
+						]
+					},
+					"Kislev": {
+						"Phrases": [
+							"Slipped off to the side.",
+							"Smashed only snow."
+						]
+					},
+					"Halfling": {
+						"Phrases": [
+							"Too tiny to hit.",
+							"Ducked right under my feet."
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"Beard-thing's shield turned it.",
+							"Blocked with a hammer."
+						]
+					},
+					"Elf": {
+						"Phrases": [
+							"Too fast.",
+							"Prancing saved the elf."
+						]
+					},
+					"Beast": {
+						"Phrases": [
+							"Beast dodged.",
+							"Critter leaped clear."
+						]
+					},
+					"Monstrous": {
+						"Phrases": [
+							"Hulk turned the blow.",
+							"Couldn't crack its hide."
+						]
+					},
+					"Greenskin": {
+						"Phrases": [
+							"Orc dodged.",
+							"Greenskin jumped back."
+						]
+					},
+					"RestlessDead": {
+						"Phrases": [
+							"Corpse slipped away.",
+							"Bones slipped past."
+						]
+					},
+					"Chaos": {
+						"Phrases": [
+							"Magic pushed my club aside.",
+							"Mutant dodged."
+						]
+					},
+					"Skaven": {
+						"Phrases": [
+							"Rat scurried into a crack.",
+							"Too slippery."
+						]
+					},
+					"Daemons": {
+						"Phrases": [
+							"Club passed right through.",
+							"Tricked by Warp-stuff."
+						]
+					}
+				}
+			}
+		}
+	}
+}

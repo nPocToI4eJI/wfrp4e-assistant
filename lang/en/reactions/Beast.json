@@ -1,0 +1,1140 @@
+{
+	"WFRP4E.Assistant.Helpers.Reactions.List.Beast": {
+		"takeDamage": {
+			"Wolf": {
+				"Prefix": [
+					"Awooo!",
+					"Yeeelp!",
+					"Yelp-yelp!",
+					"Grrr-ow!"
+				],
+				"Phrases": [
+					"Grr-awooo.",
+					"Yelp-yelp-yelp.",
+					"Grr-yelp.",
+					"Woof-woof."
+				],
+				"Postfix": [
+					"Ow-ow!",
+					"Yeeelp!",
+					"Grr!"
+				]
+			},
+			"Rat": {
+				"Prefix": [
+					"Squeee!",
+					"Hss-ss-ss!",
+					"Squeeeak!"
+				],
+				"Phrases": [
+					"Squeak-squeak-ee.",
+					"H-s-s-s-s.",
+					"Squee-ee-eak.",
+					"Squeee-ee."
+				],
+				"Postfix": [
+					"Squeak-squeak!",
+					"Hsss!",
+					"Squeeak!"
+				]
+			},
+			"Spider": {
+				"Prefix": [
+					"Hsss!"
+				],
+				"Phrases": [
+					"Click-clack.",
+					"Hss-hss.",
+					"Tsss."
+				],
+				"Postfix": [
+					"Tsk-tsk!",
+					"Hsss!"
+				]
+			},
+			"Bird": {
+				"Prefix": [
+					"Caw!",
+					"Krrr!",
+					"Kree!"
+				],
+				"Phrases": [
+					"Caw-caw.",
+					"Krr-krr.",
+					"Fweet."
+				],
+				"Postfix": [
+					"Caw!",
+					"Kree!"
+				]
+			},
+			"Snake": {
+				"Prefix": [
+					"Hssss!",
+					"S-s-s!"
+				],
+				"Phrases": [
+					"H-s-s-s.",
+					"S-s-s-s.",
+					"Hsss-s."
+				],
+				"Postfix": [
+					"Hsss!",
+					"S-s-s!"
+				]
+			},
+			"Boar": {
+				"Prefix": [
+					"Oink!",
+					"Squeeeal!",
+					"Snorrt!"
+				],
+				"Phrases": [
+					"Snort-oink.",
+					"Squee-ee-eal.",
+					"Snort-grr.",
+					"Oink-oink."
+				],
+				"Postfix": [
+					"Oink!",
+					"Squeal!"
+				]
+			},
+			"Horse": {
+				"Prefix": [
+					"Neeeigh!",
+					"Whinny-neigh!",
+					"Pffrrr!",
+					"Brrr-aaah!"
+				],
+				"Phrases": [
+					"Brrr-aaah.",
+					"Neee-eee-eigh.",
+					"Snort-huff.",
+					"Clop-clop."
+				],
+				"Postfix": [
+					"Neeigh!",
+					"Pffr!",
+					"Snorrt!"
+				]
+			},
+			"Bear": {
+				"Prefix": [
+					"Uuuurgh!",
+					"Ooorgh!",
+					"Rrr-aaa-gh!"
+				],
+				"Phrases": [
+					"Uuu-rrr-agh.",
+					"Gr-r-r-o.",
+					"Rr-aa-gh.",
+					"Ooo-rrr."
+				],
+				"Postfix": [
+					"Urgh!",
+					"Rroaaar!",
+					"Grr-aah!"
+				]
+			},
+			"Dog": {
+				"Prefix": [
+					"Bark!",
+					"Grrr!",
+					"Yap!",
+					"Yeeelp!"
+				],
+				"Phrases": [
+					"Bark-bark.",
+					"R-r-r-r.",
+					"Whine-ee.",
+					"Yap-yap."
+				],
+				"Postfix": [
+					"Bark!",
+					"Grrr!"
+				]
+			}
+		},
+		"applyDamage": {
+			"Wolf": {
+				"Prefix": [
+					"Grrrr!",
+					"Grrr!",
+					"Bark!",
+					"Woof!"
+				],
+				"Phrases": [
+					"R-r-r-r.",
+					"Grr-woof.",
+					"Awooo-rr.",
+					"Gr-r-ow."
+				],
+				"Postfix": [
+					"Grrr!",
+					"Woof!",
+					"Bark-bark!"
+				]
+			},
+			"Rat": {
+				"Prefix": [
+					"Hssss!",
+					"Squeak-squeak-squeak!",
+					"Tsk-tsk-tsk!"
+				],
+				"Phrases": [
+					"Squeak-squeak-squeak-squeak.",
+					"H-s-s-s.",
+					"Squee-ee-eak.",
+					"Squeak-squeak-hss."
+				],
+				"Postfix": [
+					"Squeak-squeak!",
+					"Hsss!",
+					"Squeee!"
+				]
+			},
+			"Spider": {
+				"Prefix": [
+					"Tsk-tsk-tsk!"
+				],
+				"Phrases": [
+					"H-s-s.",
+					"Click-click-click.",
+					"Tss-hss."
+				],
+				"Postfix": [
+					"Click!",
+					"Hsss!"
+				]
+			},
+			"Bird": {
+				"Prefix": [
+					"Krrr!"
+				],
+				"Phrases": [
+					"Caw-caw-caw.",
+					"Fweet-fweet.",
+					"Kree-kree."
+				],
+				"Postfix": [
+					"Caw!",
+					"Krr!"
+				]
+			},
+			"Snake": {
+				"Prefix": [
+					"S-s-s!"
+				],
+				"Phrases": [
+					"Hsss-hsss.",
+					"S-s-hss.",
+					"Hsss-s-s."
+				],
+				"Postfix": [
+					"S-s-s!",
+					"Hsss!"
+				]
+			},
+			"Boar": {
+				"Prefix": [
+					"Snorrt!"
+				],
+				"Phrases": [
+					"Oink-oink-oink.",
+					"Squeal-snort.",
+					"Snort-snort-snort."
+				],
+				"Postfix": [
+					"Oink!",
+					"Snort!"
+				]
+			},
+			"Horse": {
+				"Prefix": [
+					"Pffrrrr!",
+					"Snorrt!",
+					"Whinny-neigh!"
+				],
+				"Phrases": [
+					"Neigh-neigh-neigh.",
+					"Brr-brr.",
+					"Neeigh-hah.",
+					"Huff-snort."
+				],
+				"Postfix": [
+					"Pffr!",
+					"Whinny-neigh!",
+					"Brrr!"
+				]
+			},
+			"Bear": {
+				"Prefix": [
+					"Rroaaar!",
+					"Wraaaagh!",
+					"Urrr!"
+				],
+				"Phrases": [
+					"Uuu-r-r-r.",
+					"Gr-r-r-r.",
+					"Ooo-aaa-rgh.",
+					"Wrr-aa-gh."
+				],
+				"Postfix": [
+					"Rroaaar!",
+					"Grrrr!",
+					"Urgh!"
+				]
+			},
+			"Dog": {
+				"Prefix": [
+					"Rrrr!"
+				],
+				"Phrases": [
+					"Bark-bark-bark.",
+					"R-r-r-r.",
+					"Yap-yap.",
+					"Grr-woof."
+				],
+				"Postfix": [
+					"Bark!",
+					"Grrr!"
+				]
+			}
+		},
+		"die": {
+			"Wolf": {
+				"Prefix": [
+					"Awooo-oo...",
+					"Whine-ee...",
+					"Yelp-yelp..."
+				],
+				"Phrases": [
+					"Awoo-oo-oo.",
+					"Whine-whine.",
+					"Aaa-wooo-oo.",
+					"Rrr-ooo."
+				],
+				"Postfix": [
+					"Oooo...",
+					"Whine...",
+					"Awoo..."
+				]
+			},
+			"Rat": {
+				"Prefix": [
+					"Squeak... squeak...",
+					"Squee-ee...",
+					"Hss-s..."
+				],
+				"Phrases": [
+					"Squeee-ee.",
+					"Hss-s-s-s.",
+					"Squeak...",
+					"Squee-ee-eak."
+				],
+				"Postfix": [
+					"Squeak...",
+					"Hsss...",
+					"Squeak-squeak..."
+				]
+			},
+			"Spider": {
+				"Prefix": [
+					"Hsss..."
+				],
+				"Phrases": [
+					"Click-tss...",
+					"Tsk-tsk-tsk...",
+					"Tss..."
+				],
+				"Postfix": [
+					"Hss..."
+				]
+			},
+			"Bird": {
+				"Prefix": [
+					"Krr..."
+				],
+				"Phrases": [
+					"Caw... caw...",
+					"Fweet...",
+					"Kree..."
+				],
+				"Postfix": [
+					"Caw..."
+				]
+			},
+			"Snake": {
+				"Prefix": [
+					"Hsss..."
+				],
+				"Phrases": [
+					"S-s-s...",
+					"Hss-s...",
+					"S-s..."
+				],
+				"Postfix": [
+					"S-s..."
+				]
+			},
+			"Boar": {
+				"Prefix": [
+					"Snort..."
+				],
+				"Phrases": [
+					"Squeal... squeal...",
+					"Oink...",
+					"Snor-rt..."
+				],
+				"Postfix": [
+					"Oink..."
+				]
+			},
+			"Horse": {
+				"Prefix": [
+					"Neee-eigh...",
+					"Huff-f-f...",
+					"Brr-r..."
+				],
+				"Phrases": [
+					"Pffr-r-r-r.",
+					"Nee-ee-eigh.",
+					"Brr-r-r.",
+					"Whinny-yy."
+				],
+				"Postfix": [
+					"Neigh...",
+					"Snort...",
+					"Pffr..."
+				]
+			},
+			"Bear": {
+				"Prefix": [
+					"Uuu-ugh...",
+					"Ooo-oo...",
+					"Gr-r-r-gh..."
+				],
+				"Phrases": [
+					"Ooo-r-r-r.",
+					"Huff-huff-huff.",
+					"Gr-r-r-gh.",
+					"Uuu-aa-gh."
+				],
+				"Postfix": [
+					"Urgh...",
+					"Oooo...",
+					"Rrr..."
+				]
+			},
+			"Dog": {
+				"Prefix": [
+					"Whimper..."
+				],
+				"Phrases": [
+					"Awooo...",
+					"Rrr...",
+					"Yap..."
+				],
+				"Postfix": [
+					"Whine..."
+				]
+			}
+		},
+		"kill": {
+			"Wolf": {
+				"Prefix": [
+					"Awooooo!",
+					"Bark-bark!",
+					"Rrrr!"
+				],
+				"Phrases": [
+					"Awoo-oo-oo-oo.",
+					"R-r-r-r-r.",
+					"Grr-awooo.",
+					"Woof-woof."
+				],
+				"Postfix": [
+					"Awooooo!",
+					"Grrr!",
+					"Bark!"
+				]
+			},
+			"Rat": {
+				"Prefix": [
+					"Squeak-squeak-squeak-squeak!",
+					"H-s-s-s!",
+					"Squeeak!"
+				],
+				"Phrases": [
+					"Squeak-squeak-squeak.",
+					"Squeak-squeak-squeak.",
+					"Hsss-hsss.",
+					"Squeee-ee."
+				],
+				"Postfix": [
+					"Squeak-squeak!",
+					"Squeeak!",
+					"Hsss!"
+				]
+			},
+			"Spider": {
+				"Prefix": [
+					"Hss-chk!"
+				],
+				"Phrases": [
+					"Tsk-tsk-tsk-tsk.",
+					"Click-clack.",
+					"Tss-hsss."
+				],
+				"Postfix": [
+					"Click!"
+				]
+			},
+			"Bird": {
+				"Prefix": [
+					"Caw-caw!"
+				],
+				"Phrases": [
+					"Krrr-krrr.",
+					"Kree-kree-kree.",
+					"Fweet!"
+				],
+				"Postfix": [
+					"Caw!"
+				]
+			},
+			"Snake": {
+				"Prefix": [
+					"Hssss!"
+				],
+				"Phrases": [
+					"S-s-s-s-s.",
+					"Hsss-hsss.",
+					"S-s-hss."
+				],
+				"Postfix": [
+					"S-s-s!"
+				]
+			},
+			"Boar": {
+				"Prefix": [
+					"Oink-oink!"
+				],
+				"Phrases": [
+					"Squeal-squeal.",
+					"Snort-snort.",
+					"Oink-snort."
+				],
+				"Postfix": [
+					"Squeal!"
+				]
+			},
+			"Horse": {
+				"Prefix": [
+					"Neigh-neigh-neigh!",
+					"Neee-ee-ha!",
+					"Snort-huff!"
+				],
+				"Phrases": [
+					"Pffr-pffr-pffr.",
+					"Whinny-neigh.",
+					"Brr-snort.",
+					"Nee-eigh."
+				],
+				"Postfix": [
+					"Whinny-neigh!",
+					"Pffrrr!",
+					"Snorrt!"
+				]
+			},
+			"Bear": {
+				"Prefix": [
+					"Wrr-aaa-gh!",
+					"Rrroooaaar!",
+					"Gr-r-aa!"
+				],
+				"Phrases": [
+					"Uuu-r-r-oo.",
+					"Gr-r-r-aa.",
+					"Ooo-uuu-rr.",
+					"Wrr-oo-aa."
+				],
+				"Postfix": [
+					"Rroaaar!",
+					"Urgh!",
+					"Grrrr!"
+				]
+			},
+			"Dog": {
+				"Prefix": [
+					"Bark-bark!"
+				],
+				"Phrases": [
+					"Rrrr-rrrr.",
+					"Yap-yap-yap.",
+					"Bark-grrr."
+				],
+				"Postfix": [
+					"Bark!"
+				]
+			}
+		},
+		"opposedDefenderSuccess": {
+			"Wolf": {
+				"Prefix": [
+					"Grr!",
+					"Woof!",
+					"G-r-r!"
+				],
+				"Phrases": [
+					"G-r-r.",
+					"Grr-ow.",
+					"Yelp-ow.",
+					"Woof-grr."
+				],
+				"Postfix": [
+					"Grr!",
+					"Bark!",
+					"Woof!"
+				]
+			},
+			"Rat": {
+				"Prefix": [
+					"Squeak-squeak!",
+					"Hsss!",
+					"Squee!"
+				],
+				"Phrases": [
+					"Squeak-squeak.",
+					"Squeak.",
+					"Hss-s.",
+					"Squeak-hss."
+				],
+				"Postfix": [
+					"Squeak!",
+					"Squeak!",
+					"Hsss!"
+				]
+			},
+			"Spider": {
+				"Prefix": [
+					"Hss!"
+				],
+				"Phrases": [
+					"Click-hss.",
+					"Tsk-tsk-tsk.",
+					"Tss."
+				],
+				"Postfix": [
+					"Tsk-tsk!"
+				]
+			},
+			"Bird": {
+				"Prefix": [
+					"Krr!"
+				],
+				"Phrases": [
+					"Caw-caw.",
+					"Fweet.",
+					"Kree."
+				],
+				"Postfix": [
+					"Caw!"
+				]
+			},
+			"Snake": {
+				"Prefix": [
+					"S-s!"
+				],
+				"Phrases": [
+					"Hss-hss.",
+					"S-s-s.",
+					"Hss-s."
+				],
+				"Postfix": [
+					"Hsss!"
+				]
+			},
+			"Boar": {
+				"Prefix": [
+					"Snort!"
+				],
+				"Phrases": [
+					"Oink-oink.",
+					"Squeal-ee.",
+					"Snort-snort."
+				],
+				"Postfix": [
+					"Oink!"
+				]
+			},
+			"Horse": {
+				"Prefix": [
+					"Pffr!",
+					"Brrr!",
+					"Snort!"
+				],
+				"Phrases": [
+					"Pffr-pffr.",
+					"Nee-eigh.",
+					"Snort-snort.",
+					"Brr-pffr."
+				],
+				"Postfix": [
+					"Pffr!",
+					"Whinny-neigh!",
+					"Brrr!"
+				]
+			},
+			"Bear": {
+				"Prefix": [
+					"Urrr!",
+					"Grr!",
+					"Ugh!"
+				],
+				"Phrases": [
+					"Oo-o-o.",
+					"Huff-huff.",
+					"G-r-r.",
+					"Gr-r-r."
+				],
+				"Postfix": [
+					"Urr!",
+					"Grr!",
+					"Ooo!"
+				]
+			},
+			"Dog": {
+				"Prefix": [
+					"Grrr!"
+				],
+				"Phrases": [
+					"Bark-bark.",
+					"Whine.",
+					"Yap."
+				],
+				"Postfix": [
+					"Bark!"
+				]
+			}
+		},
+		"opposedDefenderFailure": {
+			"Wolf": {
+				"Prefix": [
+					"Yip!",
+					"Yelp-yelp!",
+					"Ow!"
+				],
+				"Phrases": [
+					"Rr-yip.",
+					"Whine-ee.",
+					"Yip-yip-yip.",
+					"Grr-yip."
+				],
+				"Postfix": [
+					"Yeeelp!",
+					"Grr!",
+					"Ow-ow!"
+				]
+			},
+			"Rat": {
+				"Prefix": [
+					"Squee!",
+					"Hsss!",
+					"Squee-eak!"
+				],
+				"Phrases": [
+					"Squee-ee-eak.",
+					"Squeak-ee.",
+					"H-s-s.",
+					"Squee-ee."
+				],
+				"Postfix": [
+					"Squee!",
+					"Squeeak!",
+					"Hsss!"
+				]
+			},
+			"Spider": {
+				"Prefix": [
+					"Tsk-tsk!"
+				],
+				"Phrases": [
+					"H-s-s.",
+					"Click-clack.",
+					"Tss-tss."
+				],
+				"Postfix": [
+					"Click!"
+				]
+			},
+			"Bird": {
+				"Prefix": [
+					"Caw!"
+				],
+				"Phrases": [
+					"Krr-krr.",
+					"Fweet-fweet.",
+					"Kree-kree."
+				],
+				"Postfix": [
+					"Krr!"
+				]
+			},
+			"Snake": {
+				"Prefix": [
+					"Hsss!"
+				],
+				"Phrases": [
+					"S-s-s-s.",
+					"Hsss-hsss.",
+					"S-s-hss."
+				],
+				"Postfix": [
+					"S-s-s!"
+				]
+			},
+			"Boar": {
+				"Prefix": [
+					"Squeal!"
+				],
+				"Phrases": [
+					"Snort-oink.",
+					"Squeal-squeal.",
+					"Snort-grr."
+				],
+				"Postfix": [
+					"Oink!"
+				]
+			},
+			"Horse": {
+				"Prefix": [
+					"Neigh!",
+					"Pffr-aah!",
+					"Brr-neigh!"
+				],
+				"Phrases": [
+					"Nee-ee-eigh.",
+					"Brr-aa.",
+					"Snort-neigh.",
+					"Whinny-yy."
+				],
+				"Postfix": [
+					"Neigh!",
+					"Pffr!",
+					"Snort!"
+				]
+			},
+			"Bear": {
+				"Prefix": [
+					"Urgh!",
+					"Ooo!",
+					"Aa-rgh!"
+				],
+				"Phrases": [
+					"Gr-r-gh.",
+					"Uuu-r-r.",
+					"Rr-agh.",
+					"Ooo-hh."
+				],
+				"Postfix": [
+					"Urgh!",
+					"Ooo!",
+					"Grr!"
+				]
+			},
+			"Dog": {
+				"Prefix": [
+					"Yeeelp!"
+				],
+				"Phrases": [
+					"Bark-bark.",
+					"G-r-r.",
+					"Yap-yap."
+				],
+				"Postfix": [
+					"Awoo!"
+				]
+			}
+		},
+		"opposedAttackerSuccess": {
+			"Wolf": {
+				"Prefix": [
+					"Rrrrr!",
+					"Gr-r-r!",
+					"Woof-woof!"
+				],
+				"Phrases": [
+					"Grr-woof.",
+					"R-r-r-ow.",
+					"Bark-bark.",
+					"Rr-r-r-r."
+				],
+				"Postfix": [
+					"Grrr!",
+					"Woof!",
+					"Awooo!"
+				]
+			},
+			"Rat": {
+				"Prefix": [
+					"Hss-ss-ss!",
+					"Squeak-squeak!",
+					"Squeeak!"
+				],
+				"Phrases": [
+					"Squeak-squeak-squeak.",
+					"Squeak-squeak.",
+					"Hsss-hsss.",
+					"Squeak-squeak-hss."
+				],
+				"Postfix": [
+					"Squeak-squeak!",
+					"Hsss!",
+					"Squee!"
+				]
+			},
+			"Spider": {
+				"Prefix": [
+					"Hss-hss!"
+				],
+				"Phrases": [
+					"Click-click-click.",
+					"Tsk-tsk-tsk-tsk.",
+					"Tss-hss."
+				],
+				"Postfix": [
+					"Tsk-tsk-tsk!"
+				]
+			},
+			"Bird": {
+				"Prefix": [
+					"Krrr!"
+				],
+				"Phrases": [
+					"Caw-caw-caw.",
+					"Kree-kree.",
+					"Fweet-fweet."
+				],
+				"Postfix": [
+					"Caw!"
+				]
+			},
+			"Snake": {
+				"Prefix": [
+					"S-s-s!"
+				],
+				"Phrases": [
+					"Hsss-hsss.",
+					"S-s-s-s.",
+					"Hsss-s-s."
+				],
+				"Postfix": [
+					"Hsss!"
+				]
+			},
+			"Boar": {
+				"Prefix": [
+					"Oink-oink!"
+				],
+				"Phrases": [
+					"Squeal-snort.",
+					"Snort-snort.",
+					"Oink-snort."
+				],
+				"Postfix": [
+					"Squeal!"
+				]
+			},
+			"Horse": {
+				"Prefix": [
+					"Whinny-neigh!",
+					"Pffrrr!",
+					"Neeeigh-ha!"
+				],
+				"Phrases": [
+					"Snort-snort.",
+					"Brr-neigh.",
+					"Pffr-pffr-pffr.",
+					"Whinny-neigh."
+				],
+				"Postfix": [
+					"Whinny-neigh!",
+					"Pffr!",
+					"Snorrt!"
+				]
+			},
+			"Bear": {
+				"Prefix": [
+					"Rroaaar!",
+					"Grr-aa!",
+					"Wraaaagh!"
+				],
+				"Phrases": [
+					"Uuu-r-r-r.",
+					"Ooo-r-r.",
+					"Wraa-gh.",
+					"Rr-oo-aa."
+				],
+				"Postfix": [
+					"Rroaaar!",
+					"Grrrr!",
+					"Urgh!"
+				]
+			},
+			"Dog": {
+				"Prefix": [
+					"Bark-bark!"
+				],
+				"Phrases": [
+					"Rrrr-rrrr.",
+					"Yap-yap.",
+					"Bark-grrr."
+				],
+				"Postfix": [
+					"Grrr!"
+				]
+			}
+		},
+		"opposedAttackerFailure": {
+			"Wolf": {
+				"Prefix": [
+					"Grr...",
+					"Woof-woof...",
+					"Whine..."
+				],
+				"Phrases": [
+					"R-r-r-r...",
+					"Grr-awoo...",
+					"Whine-grr...",
+					"Woof-grr..."
+				],
+				"Postfix": [
+					"Grr!",
+					"Awooo...",
+					"Woof..."
+				]
+			},
+			"Rat": {
+				"Prefix": [
+					"Hsss...",
+					"Squeak...",
+					"Squeak..."
+				],
+				"Phrases": [
+					"Squeak-squeak...",
+					"Squeak-squeak...",
+					"Hss-s...",
+					"Squeak-hss..."
+				],
+				"Postfix": [
+					"Hsss...",
+					"Squeak...",
+					"Squeak..."
+				]
+			},
+			"Spider": {
+				"Prefix": [
+					"Tsk-tsk..."
+				],
+				"Phrases": [
+					"Hsss-s.",
+					"Click-clack...",
+					"Tss-s..."
+				],
+				"Postfix": [
+					"Click..."
+				]
+			},
+			"Bird": {
+				"Prefix": [
+					"Krr..."
+				],
+				"Phrases": [
+					"Caw-caw...",
+					"Fweet...",
+					"Kree..."
+				],
+				"Postfix": [
+					"Caw..."
+				]
+			},
+			"Snake": {
+				"Prefix": [
+					"Hsss..."
+				],
+				"Phrases": [
+					"S-s-s...",
+					"Hss-hss...",
+					"S-s-hss..."
+				],
+				"Postfix": [
+					"S-s..."
+				]
+			},
+			"Boar": {
+				"Prefix": [
+					"Snort..."
+				],
+				"Phrases": [
+					"Oink-oink...",
+					"Squeal-ee...",
+					"Snort-snort..."
+				],
+				"Postfix": [
+					"Oink..."
+				]
+			},
+			"Horse": {
+				"Prefix": [
+					"Pffr...",
+					"Brr...",
+					"Snort..."
+				],
+				"Phrases": [
+					"Nee-eigh...",
+					"Snort-snort...",
+					"Pffr-aa...",
+					"Brr-pffr..."
+				],
+				"Postfix": [
+					"Pffr...",
+					"Brr...",
+					"Snort..."
+				]
+			},
+			"Bear": {
+				"Prefix": [
+					"Ugh...",
+					"Grr-r...",
+					"Oooo..."
+				],
+				"Phrases": [
+					"Oo-o...",
+					"Uuu-r-r...",
+					"Rr-hh...",
+					"Gr-r-gh..."
+				],
+				"Postfix": [
+					"Ugh...",
+					"Grr...",
+					"Oooo..."
+				]
+			},
+			"Dog": {
+				"Prefix": [
+					"Rrr..."
+				],
+				"Phrases": [
+					"Bark-bark...",
+					"Whimper...",
+					"Yap..."
+				],
+				"Postfix": [
+					"Bark..."
+				]
+			}
+		}
+	}
+}

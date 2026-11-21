@@ -1,0 +1,1163 @@
+{
+	"WFRP4E.Assistant.Helpers.Reactions.List.Elf": {
+		"takeDamage": {
+			"All": {
+				"Prefix": [
+					"Ah!",
+					"Khaine!",
+					"Curse you!",
+					"Pain!",
+					"Foul wretch!"
+				],
+				"Phrases": [
+					"The strike was quicker.",
+					"Blood is drawn.",
+					"My guard is pierced.",
+					"Pain sears through me.",
+					"Grazed the bone."
+				],
+				"Postfix": [
+					"Death upon you!",
+					"I shall have vengeance!",
+					"You will pay dearly!"
+				],
+				"Opponent": {
+					"Prefix": [
+						"Insignificant worm!",
+						"Vile filth!"
+					],
+					"Postfix": [
+						"Your end is nigh!",
+						"I will end you!"
+					],
+					"Empire": {
+						"Phrases": [
+							"A human landed a hit.",
+							"Crude steel wounds me.",
+							"The Imperial pierced my mail."
+						]
+					},
+					"Bretonnian": {
+						"Phrases": [
+							"Struck by a hoof.",
+							"The knight hits hard.",
+							"A heavy lance."
+						]
+					},
+					"Kislev": {
+						"Phrases": [
+							"A cold thrust from the north.",
+							"Icy steel."
+						]
+					},
+					"Halfling": {
+						"Phrases": [
+							"The little creature bites.",
+							"A jab from below."
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"The dwarf breached my armour.",
+							"A heavy hammer.",
+							"Crude as stone, yet it hurts."
+						]
+					},
+					"Elf": {
+						"Phrases": [
+							"A blow from kin.",
+							"A swift blade.",
+							"A graceful thrust."
+						]
+					},
+					"Beast": {
+						"Phrases": [
+							"Claws sink into flesh.",
+							"Bitten by a beast."
+						]
+					},
+					"Monstrous": {
+						"Phrases": [
+							"Crushed by sheer bulk.",
+							"A forceful blow."
+						]
+					},
+					"Greenskin": {
+						"Phrases": [
+							"The orc smashed my guard.",
+							"That crude choppa hits hard.",
+							"Orcish brutality."
+						]
+					},
+					"RestlessDead": {
+						"Phrases": [
+							"Chill of the grave.",
+							"The corpse clipped me."
+						]
+					},
+					"Chaos": {
+						"Phrases": [
+							"The taint burns.",
+							"The mutant landed a blow."
+						]
+					},
+					"Skaven": {
+						"Phrases": [
+							"The rat stabbed me.",
+							"Venom in my blood."
+						]
+					},
+					"Daemons": {
+						"Phrases": [
+							"The Warp sears.",
+							"Sorcery broke through."
+						]
+					},
+					"Ogre": {
+						"Phrases": [
+							"The ogre crushed my defence.",
+							"That glutton's heavy club."
+						]
+					}
+				},
+				"To": {
+					"Head": {
+						"Prefix": [
+							"Across the face!",
+							"Ah!"
+						],
+						"Phrases": [
+							"My vision darkens.",
+							"Ringing in my ears.",
+							"Cut my brow."
+						],
+						"Postfix": [
+							"Blinding me!"
+						]
+					},
+					"Body": {
+						"Prefix": [
+							"To the chest!",
+							"Ugh!"
+						],
+						"Phrases": [
+							"Breath knocked out.",
+							"Belly wound bleeding.",
+							"Blow to the torso."
+						],
+						"Postfix": [
+							"I endure!"
+						]
+					},
+					"Arm": {
+						"Prefix": [
+							"My hands!",
+							"Curse you!"
+						],
+						"Phrases": [
+							"My weapon slips.",
+							"My arm grows numb.",
+							"My speed falters."
+						],
+						"Postfix": [
+							"My blade holds fast!"
+						]
+					},
+					"Leg": {
+						"Prefix": [
+							"My legs!",
+							"From below!"
+						],
+						"Phrases": [
+							"My leg was swept.",
+							"Limping.",
+							"Lost my footing."
+						],
+						"Postfix": [
+							"I still stand!"
+						]
+					}
+				}
+			},
+			"High": {
+				"Prefix": [
+					"Mayfly!",
+					"Insignificant worm!"
+				],
+				"Phrases": [
+					"Blood upon fine silk.",
+					"Asur pride is stung.",
+					"My spirit rejects this wound."
+				],
+				"Postfix": [
+					"For Ulthuan!"
+				]
+			},
+			"Wood": {
+				"Prefix": [
+					"Isha!",
+					"By the Forest!"
+				],
+				"Phrases": [
+					"Nature will mend this.",
+					"Feral pain.",
+					"The hunter is wounded."
+				],
+				"Postfix": [
+					"For Athel Loren!"
+				]
+			}
+		},
+		"applyDamage": {
+			"All": {
+				"Prefix": [
+					"Graceful!",
+					"Blood!",
+					"Precise!"
+				],
+				"Phrases": [
+					"A clean cut.",
+					"A deep wound.",
+					"An exact thrust.",
+					"Blade sinks into flesh."
+				],
+				"Postfix": [
+					"Your time is up!",
+					"Die!"
+				],
+				"Opponent": {
+					"Prefix": [
+						"Weakling!",
+						"Mere meat!"
+					],
+					"Postfix": [
+						"Suffer!",
+						"The end."
+					],
+					"Empire": {
+						"Phrases": [
+							"The human bleeds.",
+							"Broke the Imperial.",
+							"Armour pierced."
+						]
+					},
+					"Bretonnian": {
+						"Phrases": [
+							"Pierced the knight.",
+							"The rider bleeds."
+						]
+					},
+					"Kislev": {
+						"Phrases": [
+							"Cut through the furs.",
+							"The northerner bleeds."
+						]
+					},
+					"Halfling": {
+						"Phrases": [
+							"Struck the little wretch.",
+							"The shortling squeals."
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"Found a seam in gromril.",
+							"The dwarf bleeds.",
+							"A fine strike against stone."
+						]
+					},
+					"Elf": {
+						"Phrases": [
+							"Kin is wounded.",
+							"Graceful and keen.",
+							"Struck my own kin."
+						]
+					},
+					"Beast": {
+						"Phrases": [
+							"Slit the beast's hide.",
+							"The beast whimpers."
+						]
+					},
+					"Monstrous": {
+						"Phrases": [
+							"Pierced thick scales.",
+							"The hulk bleeds."
+						]
+					},
+					"Greenskin": {
+						"Phrases": [
+							"The orc is wounded.",
+							"Skewered the greenskin."
+						]
+					},
+					"RestlessDead": {
+						"Phrases": [
+							"Bones splintered.",
+							"The dead crumbles."
+						]
+					},
+					"Chaos": {
+						"Phrases": [
+							"Struck the mutant.",
+							"Taint is purged."
+						]
+					},
+					"Skaven": {
+						"Phrases": [
+							"Caught the rat.",
+							"Squeal, vermin."
+						]
+					},
+					"Daemons": {
+						"Phrases": [
+							"The daemon weakens.",
+							"Its shell is breached."
+						]
+					},
+					"Ogre": {
+						"Phrases": [
+							"Pierced that gut.",
+							"Blubber couldn't save the ogre."
+						]
+					}
+				},
+				"To": {
+					"Head": {
+						"Prefix": [
+							"To the head!"
+						],
+						"Phrases": [
+							"Right between the eyes.",
+							"A thrust to the face."
+						],
+						"Postfix": [
+							"Fall!"
+						]
+					},
+					"Body": {
+						"Prefix": [
+							"To the chest!"
+						],
+						"Phrases": [
+							"Straight to the heart.",
+							"Steel buried in flesh."
+						],
+						"Postfix": [
+							"Blood!"
+						]
+					},
+					"Arm": {
+						"Prefix": [
+							"My hands!"
+						],
+						"Phrases": [
+							"Sinew severed.",
+							"Arm hangs useless."
+						],
+						"Postfix": [
+							"Disarmed!"
+						]
+					},
+					"Leg": {
+						"Prefix": [
+							"My legs!"
+						],
+						"Phrases": [
+							"Hamstrung.",
+							"Driven to their knees."
+						],
+						"Postfix": [
+							"Cut down!"
+						]
+					}
+				}
+			},
+			"High": {
+				"Phrases": [
+					"Ulthuan precision.",
+					"A flawless thrust.",
+					"Centuries of discipline."
+				],
+				"Postfix": [
+					"Kneel!"
+				]
+			},
+			"Wood": {
+				"Phrases": [
+					"The forest stings.",
+					"True as an arrow.",
+					"Wild fury."
+				],
+				"Postfix": [
+					"The forest claims its own!"
+				]
+			}
+		},
+		"die": {
+			"All": {
+				"Prefix": [
+					"So cold...",
+					"Darkness...",
+					"Khaine..."
+				],
+				"Phrases": [
+					"My strength fails.",
+					"The light fades.",
+					"My blood drains away.",
+					"Death."
+				],
+				"Postfix": [
+					"Farewell...",
+					"..."
+				],
+				"Opponent": {
+					"Empire": {
+						"Phrases": [
+							"Slain by a human.",
+							"Crude steel ends my centuries."
+						]
+					},
+					"Bretonnian": {
+						"Phrases": [
+							"Trampled by a steed.",
+							"Slain by a knight."
+						]
+					},
+					"Kislev": {
+						"Phrases": [
+							"Freezing to death.",
+							"Felled by a northerner."
+						]
+					},
+					"Halfling": {
+						"Phrases": [
+							"Slain by a halfling.",
+							"A fatal blade from below."
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"Felled by a dwarf hammer.",
+							"Stone proved harder."
+						]
+					},
+					"Elf": {
+						"Phrases": [
+							"Slain by my own kin.",
+							"An arrow through my heart."
+						]
+					},
+					"Beast": {
+						"Phrases": [
+							"Mauled to death.",
+							"Torn by beast claws."
+						]
+					},
+					"Monstrous": {
+						"Phrases": [
+							"Crushed by brute bulk.",
+							"Slain by a monster."
+						]
+					},
+					"Greenskin": {
+						"Phrases": [
+							"Hacked down by an orc.",
+							"Death by a crude choppa."
+						]
+					},
+					"RestlessDead": {
+						"Phrases": [
+							"The grave calls.",
+							"Claimed by the dead."
+						]
+					},
+					"Chaos": {
+						"Phrases": [
+							"Consumed by corruption.",
+							"Slain by a mutant."
+						]
+					},
+					"Skaven": {
+						"Phrases": [
+							"Rat venom.",
+							"A blade in the back."
+						]
+					},
+					"Daemons": {
+						"Phrases": [
+							"The Warp swallows me.",
+							"Burned by dark sorcery."
+						]
+					},
+					"Ogre": {
+						"Phrases": [
+							"Crushed by an ogre.",
+							"Pounded into the dirt by that glutton."
+						]
+					}
+				},
+				"To": {
+					"Head": {
+						"Phrases": [
+							"Darkness fills my eyes.",
+							"My skull is shattered."
+						]
+					},
+					"Body": {
+						"Phrases": [
+							"My breath ceases.",
+							"My heart is pierced."
+						]
+					},
+					"Arm": {
+						"Phrases": [
+							"The bleeding will not cease.",
+							"My blade falls."
+						]
+					},
+					"Leg": {
+						"Phrases": [
+							"I fall to rise no more.",
+							"Dying in the dirt."
+						]
+					}
+				}
+			},
+			"High": {
+				"Phrases": [
+					"Asuryan...",
+					"Ulthuan...",
+					"The end..."
+				]
+			},
+			"Wood": {
+				"Phrases": [
+					"The forest reclaims me...",
+					"Kurnous...",
+					"The roots call..."
+				]
+			}
+		},
+		"kill": {
+			"All": {
+				"Prefix": [
+					"It is done.",
+					"The end."
+				],
+				"Phrases": [
+					"The foe lies dead.",
+					"Swift and clean.",
+					"One less.",
+					"Growing cold on the earth."
+				],
+				"Postfix": [
+					"Next!",
+					"Victory!"
+				],
+				"Opponent": {
+					"Prefix": [
+						"Fragile mortal!"
+					],
+					"Empire": {
+						"Phrases": [
+							"The human is dead.",
+							"Such a brief life."
+						]
+					},
+					"Bretonnian": {
+						"Phrases": [
+							"The knight is finished.",
+							"Cracked open the tin."
+						]
+					},
+					"Kislev": {
+						"Phrases": [
+							"The northerner goes cold.",
+							"The ice melts."
+						]
+					},
+					"Halfling": {
+						"Phrases": [
+							"Trampled the runt.",
+							"The shortling falls."
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"The dwarf is slain.",
+							"Stone shattered."
+						]
+					},
+					"Elf": {
+						"Phrases": [
+							"An elf falls.",
+							"Death of a kinsman."
+						]
+					},
+					"Beast": {
+						"Phrases": [
+							"The beast is slain.",
+							"Carcass in the dirt."
+						]
+					},
+					"Monstrous": {
+						"Phrases": [
+							"The monster is vanquished.",
+							"A felled mountain of meat."
+						]
+					},
+					"Greenskin": {
+						"Phrases": [
+							"The orc is dead.",
+							"Greenskin slain."
+						]
+					},
+					"RestlessDead": {
+						"Phrases": [
+							"The dead crumbles.",
+							"Returned to dust."
+						]
+					},
+					"Chaos": {
+						"Phrases": [
+							"The mutant perishes.",
+							"Corruption purged."
+						]
+					},
+					"Skaven": {
+						"Phrases": [
+							"The rat is dead.",
+							"Silent at last."
+						]
+					},
+					"Daemons": {
+						"Phrases": [
+							"Daemon banished.",
+							"The Warp fades."
+						]
+					},
+					"Ogre": {
+						"Phrases": [
+							"The ogre falls.",
+							"That mound of lard toppled."
+						]
+					}
+				},
+				"To": {
+					"Head": {
+						"Phrases": [
+							"Decapitated.",
+							"Skull pierced."
+						]
+					},
+					"Body": {
+						"Phrases": [
+							"Through the heart.",
+							"Deep into the chest."
+						]
+					},
+					"Arm": {
+						"Phrases": [
+							"Useless without a sword arm.",
+							"Bled dry."
+						]
+					},
+					"Leg": {
+						"Phrases": [
+							"Finished on the ground.",
+							"No escape."
+						]
+					}
+				}
+			},
+			"High": {
+				"Phrases": [
+					"A flawless kill.",
+					"As it should be.",
+					"Clean work."
+				]
+			},
+			"Wood": {
+				"Phrases": [
+					"The hunt is ended.",
+					"The quarry lies dead.",
+					"The forest is cleansed."
+				]
+			}
+		},
+		"opposedDefenderSuccess": {
+			"All": {
+				"Prefix": [
+					"Too slow!",
+					"Missed!",
+					"Hah!"
+				],
+				"Phrases": [
+					"Evaded.",
+					"The sword passed harmlessly.",
+					"Blade turned aside.",
+					"Far too predictable."
+				],
+				"Postfix": [
+					"My turn!",
+					"A miss!"
+				],
+				"Opponent": {
+					"Prefix": [
+						"Fragile mortal!"
+					],
+					"Empire": {
+						"Phrases": [
+							"The human misses.",
+							"A clumsy swing."
+						]
+					},
+					"Bretonnian": {
+						"Phrases": [
+							"The lance went wide.",
+							"The knight is too slow."
+						]
+					},
+					"Kislev": {
+						"Phrases": [
+							"Northern axe hit only air.",
+							"Turned the frost aside."
+						]
+					},
+					"Halfling": {
+						"Phrases": [
+							"Shortling couldn't reach.",
+							"Arms far too short."
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"A dwarf hammer is heavy and slow.",
+							"Slipped past the blow."
+						]
+					},
+					"Elf": {
+						"Phrases": [
+							"I dance better.",
+							"Even kin missed."
+						]
+					},
+					"Beast": {
+						"Phrases": [
+							"The beast leaped wide.",
+							"Claws swiped thin air."
+						]
+					},
+					"Monstrous": {
+						"Phrases": [
+							"Too sluggish.",
+							"Huge paw sailed past."
+						]
+					},
+					"Greenskin": {
+						"Phrases": [
+							"The orc flails at air.",
+							"Club went wide."
+						]
+					},
+					"RestlessDead": {
+						"Phrases": [
+							"The dead are far too slow.",
+							"Rusted iron missed me."
+						]
+					},
+					"Chaos": {
+						"Phrases": [
+							"The mutant misses.",
+							"Corruption repelled."
+						]
+					},
+					"Skaven": {
+						"Phrases": [
+							"The rat missed.",
+							"Too small a reach."
+						]
+					},
+					"Daemons": {
+						"Phrases": [
+							"Daemon turned aside.",
+							"Sorcery dispersed."
+						]
+					},
+					"Ogre": {
+						"Phrases": [
+							"The ogre is far too clumsy.",
+							"The club whistled past."
+						]
+					}
+				}
+			},
+			"High": {
+				"Phrases": [
+					"A pathetic attempt.",
+					"Grace keeps me untouched.",
+					"Flawless reflexes."
+				]
+			},
+			"Wood": {
+				"Phrases": [
+					"A leaf on the wind.",
+					"Slipped like a shadow.",
+					"Evaded the strike."
+				]
+			}
+		},
+		"opposedDefenderFailure": {
+			"All": {
+				"Prefix": [
+					"Ah!",
+					"Curse you!",
+					"Clipped me!"
+				],
+				"Phrases": [
+					"My speed failed me.",
+					"Armour pierced.",
+					"Pain sears through me.",
+					"Got past my parry."
+				],
+				"Postfix": [
+					"I shall have vengeance!",
+					"Blood!"
+				],
+				"Opponent": {
+					"Empire": {
+						"Phrases": [
+							"The human proved quicker.",
+							"Steel pierced through."
+						]
+					},
+					"Bretonnian": {
+						"Phrases": [
+							"The lance connected.",
+							"The knight broke through."
+						]
+					},
+					"Kislev": {
+						"Phrases": [
+							"Frost bit deep.",
+							"The northerner got through."
+						]
+					},
+					"Halfling": {
+						"Phrases": [
+							"The runt pricked me.",
+							"A scratch from below."
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"The dwarf connected.",
+							"The hammer smashed my guard."
+						]
+					},
+					"Elf": {
+						"Phrases": [
+							"Kin pierced my guard.",
+							"A swift thrust."
+						]
+					},
+					"Beast": {
+						"Phrases": [
+							"Claws tore my mail.",
+							"The beast bit through."
+						]
+					},
+					"Monstrous": {
+						"Phrases": [
+							"Bulk crushed my parry.",
+							"A forceful blow."
+						]
+					},
+					"Greenskin": {
+						"Phrases": [
+							"The orc broke through.",
+							"The club battered my guard."
+						]
+					},
+					"RestlessDead": {
+						"Phrases": [
+							"The corpse struck home.",
+							"Bony fingers caught me."
+						]
+					},
+					"Chaos": {
+						"Phrases": [
+							"The taint burns.",
+							"The mutant broke through."
+						]
+					},
+					"Skaven": {
+						"Phrases": [
+							"The rat stabbed me.",
+							"Poison in the cut."
+						]
+					},
+					"Daemons": {
+						"Phrases": [
+							"Sorcery burned through.",
+							"The daemon struck home."
+						]
+					},
+					"Ogre": {
+						"Phrases": [
+							"The ogre crumpled my guard.",
+							"The club smashed through my defence."
+						]
+					}
+				}
+			},
+			"High": {
+				"Phrases": [
+					"A mistake.",
+					"My pride is bruised."
+				]
+			},
+			"Wood": {
+				"Phrases": [
+					"Nature did not shield me.",
+					"The strike landed."
+				]
+			}
+		},
+		"opposedAttackerSuccess": {
+			"All": {
+				"Prefix": [
+					"On the mark!",
+					"Precise!",
+					"Struck home!"
+				],
+				"Phrases": [
+					"Guard bypassed.",
+					"A flawless strike.",
+					"Steel in flesh.",
+					"A deep wound."
+				],
+				"Postfix": [
+					"Yield!",
+					"Blood!"
+				],
+				"Opponent": {
+					"Empire": {
+						"Phrases": [
+							"Pierced the Imperial.",
+							"Human armour is weak."
+						]
+					},
+					"Bretonnian": {
+						"Phrases": [
+							"The knight is wounded.",
+							"Armour breached."
+						]
+					},
+					"Kislev": {
+						"Phrases": [
+							"The savage bleeds.",
+							"Cut through thick furs."
+						]
+					},
+					"Halfling": {
+						"Phrases": [
+							"Struck the little wretch.",
+							"Skewered the shortling."
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"Breached the gromril.",
+							"The dwarf bleeds."
+						]
+					},
+					"Elf": {
+						"Phrases": [
+							"Even kin couldn't dodge.",
+							"Pierced my kinsman."
+						]
+					},
+					"Beast": {
+						"Phrases": [
+							"Split the beast's hide.",
+							"Run through."
+						]
+					},
+					"Monstrous": {
+						"Phrases": [
+							"Pierced thick scales.",
+							"The hulk bleeds."
+						]
+					},
+					"Greenskin": {
+						"Phrases": [
+							"Struck the orc.",
+							"Skewered the greenskin."
+						]
+					},
+					"RestlessDead": {
+						"Phrases": [
+							"Bones crumble.",
+							"Cleaved the corpse."
+						]
+					},
+					"Chaos": {
+						"Phrases": [
+							"The mutant is wounded.",
+							"Taint cleansed."
+						]
+					},
+					"Skaven": {
+						"Phrases": [
+							"Caught the rat.",
+							"A clean strike behind the guard."
+						]
+					},
+					"Daemons": {
+						"Phrases": [
+							"The daemon weakens.",
+							"Its shell is breached."
+						]
+					},
+					"Ogre": {
+						"Phrases": [
+							"Found a gap in the ogre's fat.",
+							"Pierced that gut."
+						]
+					}
+				}
+			},
+			"High": {
+				"Phrases": [
+					"A flawless thrust.",
+					"The art of the Asur."
+				]
+			},
+			"Wood": {
+				"Phrases": [
+					"Strike of the woodland.",
+					"The predator strikes home."
+				]
+			}
+		},
+		"opposedAttackerFailure": {
+			"All": {
+				"Prefix": [
+					"Missed!",
+					"Curse you!",
+					"Like shadow!"
+				],
+				"Phrases": [
+					"My blade met empty air.",
+					"Strike parried.",
+					"The quarry slipped away.",
+					"Glanced off."
+				],
+				"Postfix": [
+					"You cannot flee!",
+					"Stand still!"
+				],
+				"Opponent": {
+					"Empire": {
+						"Phrases": [
+							"The human jumped back.",
+							"Turned by a shield."
+						]
+					},
+					"Bretonnian": {
+						"Phrases": [
+							"The steed carried them clear.",
+							"Their armour held."
+						]
+					},
+					"Kislev": {
+						"Phrases": [
+							"Glanced off frost.",
+							"The northerner slipped clear."
+						]
+					},
+					"Halfling": {
+						"Phrases": [
+							"The runt ducked away.",
+							"Missed."
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"Gromril turned the blade.",
+							"Hidden behind a dwarf shield."
+						]
+					},
+					"Elf": {
+						"Phrases": [
+							"Kin dances clear.",
+							"Too quick."
+						]
+					},
+					"Beast": {
+						"Phrases": [
+							"The beast sprang away.",
+							"Wild instincts."
+						]
+					},
+					"Monstrous": {
+						"Phrases": [
+							"Glanced off that bulk.",
+							"Hide too thick."
+						]
+					},
+					"Greenskin": {
+						"Phrases": [
+							"The orc parried it.",
+							"Missed."
+						]
+					},
+					"RestlessDead": {
+						"Phrases": [
+							"The wraith faded past.",
+							"Slid off bare bone."
+						]
+					},
+					"Chaos": {
+						"Phrases": [
+							"The mutant dodged.",
+							"Their armour held."
+						]
+					},
+					"Skaven": {
+						"Phrases": [
+							"The rat darted into shadow.",
+							"Too slippery."
+						]
+					},
+					"Daemons": {
+						"Phrases": [
+							"The Warp deflected it.",
+							"Deflected."
+						]
+					},
+					"Ogre": {
+						"Phrases": [
+							"The ogre swatted it aside.",
+							"Blubber turned my blade."
+						]
+					}
+				}
+			},
+			"High": {
+				"Phrases": [
+					"A slip.",
+					"Too slow."
+				]
+			},
+			"Wood": {
+				"Phrases": [
+					"The wind carried it wide.",
+					"The quarry escaped."
+				]
+			}
+		}
+	}
+}

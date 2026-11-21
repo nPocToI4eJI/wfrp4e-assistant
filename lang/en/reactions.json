@@ -1,0 +1,106 @@
+{
+	"WFRP4E.Assistant.Helpers.Reactions.Species": {
+		"Empire": {
+			"Name": "Imperial",
+			"Subspecies": {
+				"Reiklander": "Reiklander",
+				"Southlander": "Southlander"
+			}
+		},
+		"Bretonnian": {
+			"Name": "Bretonnian",
+			"Subspecies": {
+				"Noble": "Noble",
+				"Peasant": "Peasant"
+			}
+		},
+		"Kislev": {
+			"Name": "Kislevite",
+			"Subspecies": {
+				"Gospodar": "Gospodar",
+				"Ungol": "Ungol"
+			}
+		},
+		"Halfling": {
+			"Name": "Halfling",
+			"Subspecies": {}
+		},
+		"Dwarf": {
+			"Name": "Dwarf",
+			"Subspecies": {
+				"Empire": "Imperial",
+				"Slayers": "Slayer"
+			}
+		},
+		"Elf": {
+			"Name": "Elf",
+			"Subspecies": {
+				"High": "High",
+				"Wood": "Wood"
+			}
+		},
+		"Ogre": {
+			"Name": "Ogre",
+			"Subspecies": {}
+		},
+		"Beast": {
+			"Name": "Beast",
+			"Subspecies": {
+				"Wolf": "Wolf",
+				"Rat": "Rat",
+				"Spider": "Spider",
+				"Bird": "Bird",
+				"Snake": "Snake",
+				"Boar": "Boar",
+				"Horse": "Horse",
+				"Bear": "Bear",
+				"Dog": "Dog"
+			}
+		},
+		"Monstrous": {
+			"Name": "Monstrous",
+			"Subspecies": {}
+		},
+		"Greenskin": {
+			"Name": "Greenskin",
+			"Subspecies": {
+				"Goblin": "Goblin",
+				"Ork": "Orc"
+			}
+		},
+		"RestlessDead": {
+			"Name": "Restless Dead",
+			"Subspecies": {
+				"Skeleton": "Skeleton",
+				"Zombie": "Zombie",
+				"Ghost": "Ghost",
+				"Vampire": "Vampire"
+			}
+		},
+		"Chaos": {
+			"Name": "Chaos",
+			"Subspecies": {
+				"Marauders": "Marauder",
+				"Beastman": "Beastman"
+			}
+		},
+		"Skaven": {
+			"Name": "Skaven",
+			"Subspecies": {
+				"Moulder": "Clan Moulder",
+				"Skryre": "Clan Skryre",
+				"Pestilens": "Clan Pestilens",
+				"Eshin": "Clan Eshin"
+			}
+		},
+		"Daemons": {
+			"Name": "Daemons",
+			"Subspecies": {
+				"Khorne": "Khorne",
+				"Tzeentch": "Tzeentch",
+				"Slaanesh": "Slaanesh",
+				"Nurgle": "Nurgle"
+			}
+		}
+	}
+}

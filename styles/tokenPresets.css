@@ -1,0 +1,38 @@
+.wfrp4eAssistant-tokenPresets {
+	width: clamp(20rem, 28vw, 32rem);
+	max-width: 90vw;
+	max-height: 85vh;
+}
+.wfrp4eAssistant-tokenPresets .window-content {
+	overflow-y: auto;
+}
+.wfrp4eAssistant-tokenPresets .window-content ul {
+	border: 1px var(--color-shadow-highlight) solid;
+	border-radius: 0.3rem;
+	min-height: var(--input-height, 2rem);
+	padding: 0.2rem;
+}
+.wfrp4eAssistant-tokenPresets .window-content li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	overflow: hidden;
+	gap: 0.25rem;
+	min-height: var(--input-height, 2rem);
+	height: auto;
+}
+.wfrp4eAssistant-tokenPresets .window-content li > input[type="text"] {
+	height: auto;
+	flex: 1;
+}
+.wfrp4eAssistant-tokenPresets .window-content li > input[type="checkbox"] {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.wfrp4eAssistant-tokenPresets .window-content li > a {
+	max-height: 100%;
+	height: 100%;
+	max-width: 100%;
+	min-width: unset;
+}

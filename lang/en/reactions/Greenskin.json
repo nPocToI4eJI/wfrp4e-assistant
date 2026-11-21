@@ -1,0 +1,1208 @@
+{
+	"WFRP4E.Assistant.Helpers.Reactions.List.Greenskin": {
+		"takeDamage": {
+			"All": {
+				"Prefix": [
+					"Aaaargh!",
+					"Ow!",
+					"Zog!"
+				],
+				"Phrases": [
+					"I'll krump ya good!",
+					"Poked me 'ide!",
+					"I'll rip yer ears off!",
+					"Bleedin' now."
+				],
+				"Postfix": [
+					"I'll stab ya!",
+					"Chop 'em up!",
+					"Argh!"
+				],
+				"Opponent": {
+					"Prefix": [
+						"Oi, you!",
+						"Sneaky git!",
+						"Ya git!"
+					],
+					"Postfix": [
+						"I'll stab ya!",
+						"I'll krump ya!"
+					],
+					"Human": {
+						"Prefix": [
+							"Give up, 'umie!",
+							"'Umie!"
+						],
+						"Phrases": [
+							"Gonna poke ya!",
+							"'Umie fights back."
+						],
+						"Postfix": [
+							"Stab da 'umie!"
+						],
+						"Empire": {
+							"Phrases": [
+								"Tin-can bites.",
+								"Soft 'umie hits."
+							]
+						},
+						"Bretonnian": {
+							"Phrases": [
+								"Tin-can's sharp!",
+								"Long stick got me."
+							]
+						},
+						"Kislev": {
+							"Phrases": [
+								"Cold 'umie hits 'ard.",
+								"Frosty blade cuts."
+							]
+						}
+					},
+					"Halfling": {
+						"Prefix": [
+							"Little git!"
+						],
+						"Phrases": [
+							"Runt bites!",
+							"Shorty got me."
+						],
+						"Postfix": [
+							"Meat!"
+						]
+					},
+					"Dwarf": {
+						"Prefix": [
+							"Stuntie!"
+						],
+						"Phrases": [
+							"Stuntie hits like a rock.",
+							"Hammer smashed through."
+						],
+						"Postfix": [
+							"I'll shave yer beard!"
+						]
+					},
+					"Elf": {
+						"Prefix": [
+							"Pointy-ear!"
+						],
+						"Phrases": [
+							"Skinny blade stings.",
+							"Toothpick bites!"
+						],
+						"Postfix": [
+							"Rip yer pointy ears off!"
+						]
+					},
+					"Beast": {
+						"Prefix": [
+							"Beastie!"
+						],
+						"Phrases": [
+							"Beastie bites!",
+							"Claws rippin' me!"
+						],
+						"Postfix": [
+							"Turn ya into squig-meat!"
+						]
+					},
+					"Monstrous": {
+						"Prefix": [
+							"Big ugly git!"
+						],
+						"Phrases": [
+							"Big beastie hits 'ard.",
+							"Nearly squashed me."
+						],
+						"Postfix": [
+							"Chop ya to bits!"
+						]
+					},
+					"Greenskin": {
+						"Prefix": [
+							"Dung-eater!"
+						],
+						"Phrases": [
+							"Oi, same side!",
+							"Stab someone else, ya git!"
+						],
+						"Postfix": [
+							"Slaughtaaah!"
+						]
+					},
+					"RestlessDead": {
+						"Prefix": [
+							"Bone-bag!"
+						],
+						"Phrases": [
+							"Dead git scratches.",
+							"Cold like a tomb."
+						],
+						"Postfix": [
+							"Smash ya to dust!"
+						]
+					},
+					"Chaos": {
+						"Prefix": [
+							"Spiky git!"
+						],
+						"Phrases": [
+							"Spikes burn!",
+							"Mutie hits 'ard."
+						],
+						"Postfix": [
+							"I'll krump ya!"
+						]
+					},
+					"Skaven": {
+						"Prefix": [
+							"Rat-thing!"
+						],
+						"Phrases": [
+							"Rat-thing poked me.",
+							"Poison burns!"
+						],
+						"Postfix": [
+							"I'll squash ya!"
+						]
+					},
+					"Daemons": {
+						"Prefix": [
+							"Weird glowy git!"
+						],
+						"Phrases": [
+							"Fire burns!",
+							"Glowy thing hurts!"
+						],
+						"Postfix": [
+							"Smash ya flat!"
+						]
+					},
+					"Ogre": {
+						"Phrases": [
+							"Fat git hits dead 'ard.",
+							"Big belly's squashin' me."
+						]
+					}
+				},
+				"To": {
+					"Head": {
+						"Prefix": [
+							"Oogh... zog...",
+							"Right in da 'ead!"
+						],
+						"Phrases": [
+							"Me 'ead's splittin'.",
+							"Everyfin's spinnin'."
+						],
+						"Postfix": [
+							"Zog!"
+						]
+					},
+					"Body": {
+						"Prefix": [
+							"Uuughh...",
+							"Me gut..."
+						],
+						"Phrases": [
+							"Big 'ole in me.",
+							"Got me right in da belly."
+						],
+						"Postfix": [
+							"Ya'll pay for dat!"
+						]
+					},
+					"Arm": {
+						"Prefix": [
+							"Zog...",
+							"Me arm!"
+						],
+						"Phrases": [
+							"Sumfin' went crunch.",
+							"Arm's gone numb."
+						],
+						"Postfix": [
+							"Sneaky git!"
+						]
+					},
+					"Leg": {
+						"Prefix": [
+							"Aaargh!",
+							"Me leg!"
+						],
+						"Phrases": [
+							"Got me in da leg.",
+							"Messed up me leg."
+						],
+						"Postfix": [
+							"I'll take yer legs for dat!"
+						]
+					}
+				}
+			},
+			"Goblin": {
+				"Prefix": [
+					"Ow-ow-ow!",
+					"It huuuurts!"
+				],
+				"Phrases": [
+					"Still kickin'.",
+					"Time ta leg it."
+				],
+				"Postfix": [
+					"Ahahaha!"
+				],
+				"Opponent": {
+					"Human": {
+						"Phrases": [
+							"'Umie clipped me.",
+							"Sharp iron pokes."
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"Stinky stuntie hit me.",
+							"Can't catch me!"
+						]
+					},
+					"Greenskin": {
+						"Phrases": [
+							"Watch who yer pokin'!",
+							"Oi, I'm on yer side!"
+						]
+					}
+				}
+			},
+			"Ork": {
+				"Prefix": [
+					"WAAAGH!",
+					"Zog!"
+				],
+				"Phrases": [
+					"Me 'ide's tougher dan dat.",
+					"Now I'm gonna bash ya.",
+					"Now ya made me mad."
+				],
+				"Postfix": [
+					"WAAAGH!"
+				],
+				"Opponent": {
+					"Human": {
+						"Phrases": [
+							"Yer tin won't save ya.",
+							"'Umies are soft."
+						]
+					},
+					"Greenskin": {
+						"Phrases": [
+							"I'm da Boss 'ere, not you!",
+							"Puny tap."
+						]
+					}
+				}
+			}
+		},
+		"applyDamage": {
+			"All": {
+				"Prefix": [
+					"Take dat!",
+					"Cop dat!"
+				],
+				"Phrases": [
+					"Choppa in da meat!",
+					"Gotcha!",
+					"Bleedin' now."
+				],
+				"Postfix": [
+					"Ahah-ha-ha!"
+				],
+				"Opponent": {
+					"Prefix": [
+						"Hah!"
+					],
+					"Phrases": [
+						"Dat'll leave a mark.",
+						"Good solid krump."
+					],
+					"Postfix": [
+						"Want some more?!"
+					],
+					"Human": {
+						"Phrases": [
+							"'Umie blood in da dirt.",
+							"Crumpled yer tin."
+						]
+					},
+					"Halfling": {
+						"Phrases": [
+							"Squashed da little runt.",
+							"Makes a funny crunch."
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"Cracked da stuntie.",
+							"Popped da tin-can."
+						]
+					},
+					"Elf": {
+						"Phrases": [
+							"Skinny bones snap easy.",
+							"Popped da pointy-ear."
+						]
+					},
+					"Beast": {
+						"Phrases": [
+							"Beastie's bleedin'.",
+							"Chopped da critter."
+						]
+					},
+					"Monstrous": {
+						"Phrases": [
+							"Stuck da big hunk.",
+							"Big slab o' meat."
+						]
+					},
+					"Greenskin": {
+						"Phrases": [
+							"I'm da Boss!",
+							"Asked for it, git."
+						]
+					},
+					"RestlessDead": {
+						"Phrases": [
+							"Bones go crunch.",
+							"Smashed ta dust."
+						]
+					},
+					"Chaos": {
+						"Phrases": [
+							"Mutie's bleedin'.",
+							"Smashed yer spiky tin."
+						]
+					},
+					"Skaven": {
+						"Phrases": [
+							"Chopped da rat.",
+							"Stinker's bleedin'."
+						]
+					},
+					"Daemons": {
+						"Phrases": [
+							"Popped da glowy git.",
+							"Knocked da weirdness out."
+						]
+					},
+					"Ogre": {
+						"Phrases": [
+							"Poked da big belly.",
+							"Lard's spillin' out."
+						]
+					}
+				},
+				"To": {
+					"Head": {
+						"Prefix": [
+							"Right in da gob!"
+						],
+						"Phrases": [
+							"Brains went splat!",
+							"Cracked yer noggin."
+						],
+						"Postfix": [
+							"Haha!"
+						]
+					},
+					"Body": {
+						"Prefix": [
+							"Right in da guts!"
+						],
+						"Phrases": [
+							"Poked a 'ole in yer belly.",
+							"Right on target."
+						],
+						"Postfix": [
+							"Bwahaha!"
+						]
+					},
+					"Arm": {
+						"Prefix": [
+							"Ha-ha!"
+						],
+						"Phrases": [
+							"Got yer arm!",
+							"Shortened yer paw."
+						],
+						"Postfix": [
+							"Cry about it!"
+						]
+					},
+					"Leg": {
+						"Prefix": [
+							"Chop da legs!"
+						],
+						"Phrases": [
+							"Crawl now, git!",
+							"Not so nippy now, eh?"
+						],
+						"Postfix": [
+							"Little bug!"
+						]
+					}
+				}
+			},
+			"Goblin": {
+				"Prefix": [
+					"Cop dat!"
+				],
+				"Phrases": [
+					"Take dat, stinker.",
+					"Made a nice 'ole."
+				],
+				"Postfix": [
+					"Hee-hee!"
+				]
+			},
+			"Ork": {
+				"Prefix": [
+					"WAAAGH!"
+				],
+				"Phrases": [
+					"I'm da biggest an' strongest!",
+					"Yer tin's crackin'."
+				],
+				"Postfix": [
+					"I'm da Boss 'ere!"
+				]
+			}
+		},
+		"die": {
+			"All": {
+				"Prefix": [
+					"Khaa...",
+					"Nooo...",
+					"Argh..."
+				],
+				"Phrases": [
+					"All outta blood.",
+					"No fight left.",
+					"Goin' dark."
+				],
+				"Postfix": [
+					"Zog..."
+				],
+				"Opponent": {
+					"Prefix": [
+						"Eeegh..."
+					],
+					"Phrases": [
+						"Took a bad 'un...",
+						"Got me good."
+					],
+					"Postfix": [
+						"Da boyz'll get ya!"
+					],
+					"Human": {
+						"Phrases": [
+							"Done in by an 'umie...",
+							"Zog... bloody 'umie."
+						]
+					},
+					"Halfling": {
+						"Phrases": [
+							"Stabbed by a runt...",
+							"Done in by a titch..."
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"Stuntie got me.",
+							"Bashed by a beardy..."
+						]
+					},
+					"Elf": {
+						"Phrases": [
+							"Pointy-ear got me.",
+							"Arrow in me gut."
+						]
+					},
+					"Beast": {
+						"Phrases": [
+							"Chewed up by a beastie.",
+							"Damned critter..."
+						]
+					},
+					"Monstrous": {
+						"Phrases": [
+							"Squashed flat.",
+							"Way too big..."
+						]
+					},
+					"Greenskin": {
+						"Phrases": [
+							"Krumped by me own mob...",
+							"Ya sneaky little gobbo..."
+						]
+					},
+					"RestlessDead": {
+						"Phrases": [
+							"Done in by a dead 'un.",
+							"Krumped by bones..."
+						]
+					},
+					"Chaos": {
+						"Phrases": [
+							"Taint burns...",
+							"Spiky git stuck me."
+						]
+					},
+					"Skaven": {
+						"Phrases": [
+							"Rat got me.",
+							"Poison in me gut."
+						]
+					},
+					"Daemons": {
+						"Phrases": [
+							"Weird fire burned me.",
+							"Glowy git..."
+						]
+					},
+					"Ogre": {
+						"Phrases": [
+							"Squashed by da fat git.",
+							"Smashed flat."
+						]
+					}
+				},
+				"To": {
+					"Head": {
+						"Phrases": [
+							"Me 'ead's cracked.",
+							"Can't see nuffin'."
+						]
+					},
+					"Body": {
+						"Phrases": [
+							"Me insides hurt.",
+							"Me guts are out."
+						]
+					},
+					"Arm": {
+						"Phrases": [
+							"Won't stop bleedin'.",
+							"Can't 'old me choppa."
+						]
+					},
+					"Leg": {
+						"Phrases": [
+							"Me legs gave out.",
+							"Dyin' in da mud."
+						]
+					}
+				}
+			},
+			"Goblin": {
+				"Prefix": [
+					"Nooo..."
+				],
+				"Phrases": [
+					"I ain't even looted yet...",
+					"Wanna live..."
+				]
+			},
+			"Ork": {
+				"Prefix": [
+					"Waaagh..."
+				],
+				"Phrases": [
+					"Gork an' Mork callin'...",
+					"Thought I wuz da biggest..."
+				]
+			}
+		},
+		"kill": {
+			"All": {
+				"Prefix": [
+					"Heh-heh!",
+					"Hah! Krumped!"
+				],
+				"Phrases": [
+					"Dead.",
+					"Grub.",
+					"Chopped 'em good."
+				],
+				"Postfix": [
+					"Stay dead!",
+					"Meat!"
+				],
+				"Opponent": {
+					"Human": {
+						"Phrases": [
+							"'Umie's done.",
+							"Dead 'umie."
+						]
+					},
+					"Halfling": {
+						"Phrases": [
+							"Squashed da titch.",
+							"Bite-sized grub."
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"Stuntie's dead.",
+							"Chewy meat."
+						]
+					},
+					"Elf": {
+						"Phrases": [
+							"Skinny git snapped.",
+							"Pointy-ear's dead."
+						]
+					},
+					"Beast": {
+						"Phrases": [
+							"Beastie's dead.",
+							"Dat pelt's mine."
+						]
+					},
+					"Monstrous": {
+						"Phrases": [
+							"Dropped da big 'un.",
+							"Loads o' meat!"
+						]
+					},
+					"Greenskin": {
+						"Phrases": [
+							"I'm da Boss!",
+							"Weak git dropped."
+						]
+					},
+					"RestlessDead": {
+						"Phrases": [
+							"Bones fell apart.",
+							"Dead 'un's dead again."
+						]
+					},
+					"Chaos": {
+						"Phrases": [
+							"Mutie's dead.",
+							"Spiky git's krumped."
+						]
+					},
+					"Skaven": {
+						"Phrases": [
+							"Stomped da rat.",
+							"Stinker's dead."
+						]
+					},
+					"Daemons": {
+						"Phrases": [
+							"Popped da glowy git.",
+							"Glowy git went poof."
+						]
+					},
+					"Ogre": {
+						"Phrases": [
+							"Big pile o' meat.",
+							"Fat git dropped."
+						]
+					}
+				},
+				"To": {
+					"Head": {
+						"Phrases": [
+							"Smashed yer 'ead in.",
+							"Took yer noggin off."
+						]
+					},
+					"Body": {
+						"Phrases": [
+							"Loads o' guts.",
+							"Croaked in a puddle."
+						]
+					},
+					"Arm": {
+						"Phrases": [
+							"Bled right out.",
+							"Choppa took it clean off."
+						]
+					},
+					"Leg": {
+						"Phrases": [
+							"Krumped 'em in da dirt.",
+							"No legs left."
+						]
+					}
+				}
+			},
+			"Goblin": {
+				"Prefix": [
+					"Hee-hee!"
+				],
+				"Phrases": [
+					"Outsmarted da dumb git!",
+					"I'm nickin' dem boots!"
+				]
+			},
+			"Ork": {
+				"Prefix": [
+					"WAAAGH!"
+				],
+				"Phrases": [
+					"I'm da Boss!",
+					"Me choppa did da job."
+				]
+			}
+		},
+		"opposedDefenderSuccess": {
+			"All": {
+				"Prefix": [
+					"Hah!",
+					"Missed me!"
+				],
+				"Phrases": [
+					"Wide!",
+					"Hopped clear.",
+					"Missed again, ya git!"
+				],
+				"Postfix": [
+					"Ha-ha!"
+				],
+				"Opponent": {
+					"Human": {
+						"Phrases": [
+							"'Umie can't aim.",
+							"Too slow, 'umie."
+						]
+					},
+					"Halfling": {
+						"Phrases": [
+							"Arms too short!",
+							"Little sneak missed."
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"Stuntie's too slow.",
+							"Beardy missed."
+						]
+					},
+					"Elf": {
+						"Phrases": [
+							"Twig went wide.",
+							"Keep prancin', pointy-ear."
+						]
+					},
+					"Beast": {
+						"Phrases": [
+							"Beastie missed.",
+							"Can't touch me!"
+						]
+					},
+					"Monstrous": {
+						"Phrases": [
+							"Big lug missed.",
+							"Too big an' clumsy."
+						]
+					},
+					"Greenskin": {
+						"Phrases": [
+							"Puny tap.",
+							"Missed!"
+						]
+					},
+					"RestlessDead": {
+						"Phrases": [
+							"Bone-bag barely moves.",
+							"Dumb corpse."
+						]
+					},
+					"Chaos": {
+						"Phrases": [
+							"Spiky swing went wide.",
+							"Spiky git missed."
+						]
+					},
+					"Skaven": {
+						"Phrases": [
+							"Rat missed.",
+							"I sees ya!"
+						]
+					},
+					"Daemons": {
+						"Phrases": [
+							"Glowy git missed.",
+							"Weird magic ain't workin'."
+						]
+					},
+					"Ogre": {
+						"Phrases": [
+							"Fat git's too slow.",
+							"Belly's gettin' in yer way."
+						]
+					}
+				}
+			},
+			"Goblin": {
+				"Prefix": [
+					"Heh-heh!"
+				],
+				"Phrases": [
+					"Can't catch a gobbo!",
+					"Too nippy for ya!"
+				]
+			},
+			"Ork": {
+				"Prefix": [
+					"Weakling!"
+				],
+				"Phrases": [
+					"Bounced right off me!",
+					"Rubbish swing."
+				],
+				"Postfix": [
+					"WAAAGH!"
+				]
+			}
+		},
+		"opposedDefenderFailure": {
+			"All": {
+				"Prefix": [
+					"Ya shouldn'ta done dat!",
+					"Oi!"
+				],
+				"Phrases": [
+					"Got through.",
+					"Clipped me.",
+					"Lucky shot!"
+				],
+				"Postfix": [
+					"Big mistake!"
+				],
+				"Opponent": {
+					"Human": {
+						"Phrases": [
+							"'Umie landed one.",
+							"Tricky 'umie."
+						]
+					},
+					"Halfling": {
+						"Phrases": [
+							"Runt poked me.",
+							"Sneaky little git."
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"Stuntie hits 'ard.",
+							"Heavy lump o' iron."
+						]
+					},
+					"Elf": {
+						"Phrases": [
+							"Needle stings!",
+							"Pointy-ear's quick."
+						]
+					},
+					"Beast": {
+						"Phrases": [
+							"Beastie got me.",
+							"Didn't see dat paw."
+						]
+					},
+					"Monstrous": {
+						"Phrases": [
+							"Smashed me.",
+							"Dead 'eavy wallop."
+						]
+					},
+					"Greenskin": {
+						"Phrases": [
+							"Oi, friendly fire!",
+							"Dat ain't fair!"
+						]
+					},
+					"RestlessDead": {
+						"Phrases": [
+							"Dead git scratches.",
+							"Cold bony git."
+						]
+					},
+					"Chaos": {
+						"Phrases": [
+							"Warp burns!",
+							"Mutie smashed me guard."
+						]
+					},
+					"Skaven": {
+						"Phrases": [
+							"Stinker poked me.",
+							"Rat bit me."
+						]
+					},
+					"Daemons": {
+						"Phrases": [
+							"Magic went right through.",
+							"Glowy stuff burns!"
+						]
+					},
+					"Ogre": {
+						"Phrases": [
+							"Squashed by da fat git.",
+							"Bashed by a gut."
+						]
+					}
+				}
+			},
+			"Goblin": {
+				"Prefix": [
+					"Dat ain't fair!"
+				],
+				"Phrases": [
+					"Nearly dodged it.",
+					"Just gettin' tired."
+				]
+			},
+			"Ork": {
+				"Prefix": [
+					"Zog!"
+				],
+				"Phrases": [
+					"Cut me 'ide.",
+					"Now ya got me proper mad!"
+				],
+				"Postfix": [
+					"WAAAGH!"
+				]
+			}
+		},
+		"opposedAttackerSuccess": {
+			"All": {
+				"Prefix": [
+					"Cop a load o' dis!",
+					"Ave some o' dat!"
+				],
+				"Phrases": [
+					"Right in da meat.",
+					"Bleedin' nice.",
+					"Good stabbin'!"
+				],
+				"Postfix": [
+					"Ha-ha!"
+				],
+				"Opponent": {
+					"Human": {
+						"Phrases": [
+							"'Umie's bleedin'.",
+							"Not so cocky now, eh?"
+						]
+					},
+					"Halfling": {
+						"Phrases": [
+							"Skewered da runt.",
+							"Got da little 'un."
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"Dented yer fancy tin.",
+							"Popped da tin-can."
+						]
+					},
+					"Elf": {
+						"Phrases": [
+							"Skinny git's hurt.",
+							"Pointy-ear didn't dodge dat!"
+						]
+					},
+					"Beast": {
+						"Phrases": [
+							"Beastie's bleedin'.",
+							"Yelp, beastie!"
+						]
+					},
+					"Monstrous": {
+						"Phrases": [
+							"Chopped right through thick 'ide.",
+							"Stuck da big lug."
+						]
+					},
+					"Greenskin": {
+						"Phrases": [
+							"Bashed da git.",
+							"Chop yer nose off!"
+						]
+					},
+					"RestlessDead": {
+						"Phrases": [
+							"Chopped da dead 'un.",
+							"Bones went flyin'."
+						]
+					},
+					"Chaos": {
+						"Phrases": [
+							"Spiky git's bleedin'.",
+							"Got da mutie."
+						]
+					},
+					"Skaven": {
+						"Phrases": [
+							"Stinker's squealin'.",
+							"Caught da rat."
+						]
+					},
+					"Daemons": {
+						"Phrases": [
+							"Smashed da glowy thing.",
+							"Yer magic didn't save ya."
+						]
+					},
+					"Ogre": {
+						"Phrases": [
+							"Stabbed da lard.",
+							"Fat git's bleedin'."
+						]
+					}
+				}
+			},
+			"Goblin": {
+				"Prefix": [
+					"Hee-hee!"
+				],
+				"Phrases": [
+					"Stabbed 'em deep!",
+					"Picked da wrong git!"
+				]
+			},
+			"Ork": {
+				"Prefix": [
+					"WAAAGH!"
+				],
+				"Phrases": [
+					"Me choppa cuts deep.",
+					"Smashed yer guard!"
+				],
+				"Postfix": [
+					"Da Boss is happy!"
+				]
+			}
+		},
+		"opposedAttackerFailure": {
+			"All": {
+				"Prefix": [
+					"Filthy little git!",
+					"Sneaky git!"
+				],
+				"Phrases": [
+					"Wide!",
+					"Dodged it.",
+					"Next time, git!"
+				],
+				"Postfix": [
+					"I swear on me teef!"
+				],
+				"Opponent": {
+					"Human": {
+						"Phrases": [
+							"'Umie jumped back.",
+							"Hold still, ya git!"
+						]
+					},
+					"Halfling": {
+						"Phrases": [
+							"Missed da little bug.",
+							"Too tiny!"
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"Bounced off yer tin.",
+							"Hidin' behind a shield."
+						]
+					},
+					"Elf": {
+						"Phrases": [
+							"Slippery git.",
+							"Stop prancin'!"
+						]
+					},
+					"Beast": {
+						"Phrases": [
+							"Beastie jumped clear.",
+							"Fast little critter."
+						]
+					},
+					"Monstrous": {
+						"Phrases": [
+							"Choppa bounced off.",
+							"Tough 'ide."
+						]
+					},
+					"Greenskin": {
+						"Phrases": [
+							"Git ducked it.",
+							"Sneaky tricks."
+						]
+					},
+					"RestlessDead": {
+						"Phrases": [
+							"Dead 'un slipped past.",
+							"Missed da bones."
+						]
+					},
+					"Chaos": {
+						"Phrases": [
+							"Spiky tin got in da way.",
+							"Mutie jumped clear."
+						]
+					},
+					"Skaven": {
+						"Phrases": [
+							"Rat ducked away.",
+							"Stinker's too nippy."
+						]
+					},
+					"Daemons": {
+						"Phrases": [
+							"Missed da glowy bit.",
+							"Glowy git blinked away."
+						]
+					},
+					"Ogre": {
+						"Phrases": [
+							"Bounced off dat belly.",
+							"Fat git shifted clear."
+						]
+					}
+				}
+			},
+			"Goblin": {
+				"Prefix": [
+					"Gah!"
+				],
+				"Phrases": [
+					"Slippery as an eel.",
+					"Wind blew it wide."
+				],
+				"Postfix": [
+					"Time for Plan B!"
+				]
+			},
+			"Ork": {
+				"Prefix": [
+					"Stand still, ya git!"
+				],
+				"Phrases": [
+					"Quit dodgin'!",
+					"Me choppa'll find ya anyway."
+				],
+				"Postfix": [
+					"Coward!"
+				]
+			}
+		}
+	}
+}

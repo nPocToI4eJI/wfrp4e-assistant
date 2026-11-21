@@ -1,0 +1,800 @@
+{
+	"WFRP4E.Assistant.Helpers.Reactions.List.ExampleSpecies": {
+		"takeDamage": {
+			"All": {
+				"Prefix": [],
+				"Phrases": [],
+				"Postfix": [],
+				"Opponent": {
+					"Prefix": [],
+					"Phrases": [],
+					"Postfix": [],
+					"Species": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Subspecies": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": []
+						}
+					}
+				},
+				"To": {
+					"Head": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Species": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": [],
+							"Subspecies": {
+								"Prefix": [],
+								"Phrases": [],
+								"Postfix": []
+							}
+						}
+					},
+					"Body": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Species": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": [],
+							"Subspecies": {
+								"Prefix": [],
+								"Phrases": [],
+								"Postfix": []
+							}
+						}
+					},
+					"Arm": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Species": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": [],
+							"Subspecies": {
+								"Prefix": [],
+								"Phrases": [],
+								"Postfix": []
+							}
+						}
+					},
+					"Leg": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Species": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": [],
+							"Subspecies": {
+								"Prefix": [],
+								"Phrases": [],
+								"Postfix": []
+							}
+						}
+					}
+				}
+			},
+			"ExampleSubspecies": {
+				"Prefix": [],
+				"Phrases": [],
+				"Postfix": [],
+				"Opponent": {
+					"Prefix": [],
+					"Phrases": [],
+					"Postfix": [],
+					"Species": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Subspecies": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": []
+						}
+					}
+				},
+				"To": {
+					"Head": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Species": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": [],
+							"Subspecies": {
+								"Prefix": [],
+								"Phrases": [],
+								"Postfix": []
+							}
+						}
+					},
+					"Body": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Species": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": [],
+							"Subspecies": {
+								"Prefix": [],
+								"Phrases": [],
+								"Postfix": []
+							}
+						}
+					},
+					"Arm": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Species": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": [],
+							"Subspecies": {
+								"Prefix": [],
+								"Phrases": [],
+								"Postfix": []
+							}
+						}
+					},
+					"Leg": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Species": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": [],
+							"Subspecies": {
+								"Prefix": [],
+								"Phrases": [],
+								"Postfix": []
+							}
+						}
+					}
+				}
+			}
+		},
+		"applyDamage": {
+			"All": {
+				"Opponent": {
+					"Prefix": [],
+					"Phrases": [],
+					"Postfix": [],
+					"Species": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Subspecies": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": []
+						}
+					}
+				},
+				"To": {
+					"Head": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Species": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": [],
+							"Subspecies": {
+								"Prefix": [],
+								"Phrases": [],
+								"Postfix": []
+							}
+						}
+					},
+					"Body": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Species": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": [],
+							"Subspecies": {
+								"Prefix": [],
+								"Phrases": [],
+								"Postfix": []
+							}
+						}
+					},
+					"Arm": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Species": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": [],
+							"Subspecies": {
+								"Prefix": [],
+								"Phrases": [],
+								"Postfix": []
+							}
+						}
+					},
+					"Leg": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Species": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": [],
+							"Subspecies": {
+								"Prefix": [],
+								"Phrases": [],
+								"Postfix": []
+							}
+						}
+					}
+				}
+			},
+			"ExampleSubspecies": {
+				"Opponent": {
+					"Prefix": [],
+					"Phrases": [],
+					"Postfix": [],
+					"Species": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Subspecies": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": []
+						}
+					}
+				},
+				"To": {
+					"Head": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Species": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": [],
+							"Subspecies": {
+								"Prefix": [],
+								"Phrases": [],
+								"Postfix": []
+							}
+						}
+					},
+					"Body": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Species": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": [],
+							"Subspecies": {
+								"Prefix": [],
+								"Phrases": [],
+								"Postfix": []
+							}
+						}
+					},
+					"Arm": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Species": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": [],
+							"Subspecies": {
+								"Prefix": [],
+								"Phrases": [],
+								"Postfix": []
+							}
+						}
+					},
+					"Leg": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Species": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": [],
+							"Subspecies": {
+								"Prefix": [],
+								"Phrases": [],
+								"Postfix": []
+							}
+						}
+					}
+				}
+			}
+		},
+		"die": {
+			"All": {
+				"Prefix": [],
+				"Phrases": [],
+				"Postfix": [],
+				"Opponent": {
+					"Prefix": [],
+					"Phrases": [],
+					"Postfix": [],
+					"Species": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Subspecies": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": []
+						}
+					}
+				},
+				"To": {
+					"Head": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Species": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": [],
+							"Subspecies": {
+								"Prefix": [],
+								"Phrases": [],
+								"Postfix": []
+							}
+						}
+					},
+					"Body": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Species": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": [],
+							"Subspecies": {
+								"Prefix": [],
+								"Phrases": [],
+								"Postfix": []
+							}
+						}
+					},
+					"Arm": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Species": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": [],
+							"Subspecies": {
+								"Prefix": [],
+								"Phrases": [],
+								"Postfix": []
+							}
+						}
+					},
+					"Leg": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Species": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": [],
+							"Subspecies": {
+								"Prefix": [],
+								"Phrases": [],
+								"Postfix": []
+							}
+						}
+					}
+				}
+			},
+			"ExampleSubspecies": {
+				"Prefix": [],
+				"Phrases": [],
+				"Postfix": [],
+				"Opponent": {
+					"Prefix": [],
+					"Phrases": [],
+					"Postfix": [],
+					"Species": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Subspecies": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": []
+						}
+					}
+				},
+				"To": {
+					"Head": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Species": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": [],
+							"Subspecies": {
+								"Prefix": [],
+								"Phrases": [],
+								"Postfix": []
+							}
+						}
+					},
+					"Body": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Species": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": [],
+							"Subspecies": {
+								"Prefix": [],
+								"Phrases": [],
+								"Postfix": []
+							}
+						}
+					},
+					"Arm": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Species": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": [],
+							"Subspecies": {
+								"Prefix": [],
+								"Phrases": [],
+								"Postfix": []
+							}
+						}
+					},
+					"Leg": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Species": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": [],
+							"Subspecies": {
+								"Prefix": [],
+								"Phrases": [],
+								"Postfix": []
+							}
+						}
+					}
+				}
+			}
+		},
+		"kill": {
+			"All": {
+				"Opponent": {
+					"Prefix": [],
+					"Phrases": [],
+					"Postfix": [],
+					"Species": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Subspecies": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": []
+						}
+					}
+				},
+				"To": {
+					"Head": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Species": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": [],
+							"Subspecies": {
+								"Prefix": [],
+								"Phrases": [],
+								"Postfix": []
+							}
+						}
+					},
+					"Body": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Species": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": [],
+							"Subspecies": {
+								"Prefix": [],
+								"Phrases": [],
+								"Postfix": []
+							}
+						}
+					},
+					"Arm": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Species": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": [],
+							"Subspecies": {
+								"Prefix": [],
+								"Phrases": [],
+								"Postfix": []
+							}
+						}
+					},
+					"Leg": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Species": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": [],
+							"Subspecies": {
+								"Prefix": [],
+								"Phrases": [],
+								"Postfix": []
+							}
+						}
+					}
+				}
+			},
+			"ExampleSubspecies": {
+				"Opponent": {
+					"Prefix": [],
+					"Phrases": [],
+					"Postfix": [],
+					"Species": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Subspecies": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": []
+						}
+					}
+				},
+				"To": {
+					"Head": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Species": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": [],
+							"Subspecies": {
+								"Prefix": [],
+								"Phrases": [],
+								"Postfix": []
+							}
+						}
+					},
+					"Body": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Species": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": [],
+							"Subspecies": {
+								"Prefix": [],
+								"Phrases": [],
+								"Postfix": []
+							}
+						}
+					},
+					"Arm": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Species": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": [],
+							"Subspecies": {
+								"Prefix": [],
+								"Phrases": [],
+								"Postfix": []
+							}
+						}
+					},
+					"Leg": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Species": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": [],
+							"Subspecies": {
+								"Prefix": [],
+								"Phrases": [],
+								"Postfix": []
+							}
+						}
+					}
+				}
+			}
+		},
+		"opposedDefenderSuccess": {
+			"All": {
+				"Opponent": {
+					"Prefix": [],
+					"Phrases": [],
+					"Postfix": [],
+					"Species": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Subspecies": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": []
+						}
+					}
+				}
+			},
+			"ExampleSubspecies": {
+				"Opponent": {
+					"Prefix": [],
+					"Phrases": [],
+					"Postfix": [],
+					"Species": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Subspecies": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": []
+						}
+					}
+				}
+			}
+		},
+		"opposedDefenderFailure": {
+			"All": {
+				"Opponent": {
+					"Prefix": [],
+					"Phrases": [],
+					"Postfix": [],
+					"Species": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Subspecies": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": []
+						}
+					}
+				}
+			},
+			"ExampleSubspecies": {
+				"Opponent": {
+					"Prefix": [],
+					"Phrases": [],
+					"Postfix": [],
+					"Species": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Subspecies": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": []
+						}
+					}
+				}
+			}
+		},
+		"opposedAttackerSuccess": {
+			"All": {
+				"Opponent": {
+					"Prefix": [],
+					"Phrases": [],
+					"Postfix": [],
+					"Species": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Subspecies": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": []
+						}
+					}
+				}
+			},
+			"ExampleSubspecies": {
+				"Opponent": {
+					"Prefix": [],
+					"Phrases": [],
+					"Postfix": [],
+					"Species": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Subspecies": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": []
+						}
+					}
+				}
+			}
+		},
+		"opposedAttackerFailure": {
+			"All": {
+				"Opponent": {
+					"Prefix": [],
+					"Phrases": [],
+					"Postfix": [],
+					"Species": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Subspecies": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": []
+						}
+					}
+				}
+			},
+			"ExampleSubspecies": {
+				"Opponent": {
+					"Prefix": [],
+					"Phrases": [],
+					"Postfix": [],
+					"Species": {
+						"Prefix": [],
+						"Phrases": [],
+						"Postfix": [],
+						"Subspecies": {
+							"Prefix": [],
+							"Phrases": [],
+							"Postfix": []
+						}
+					}
+				}
+			}
+		}
+	}
+}

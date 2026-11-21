@@ -1,0 +1,1279 @@
+{
+	"WFRP4E.Assistant.Helpers.Reactions.List.Skaven": {
+		"takeDamage": {
+			"All": {
+				"Prefix": [
+					"Squeee!",
+					"Squeeak!",
+					"Pain-pain!",
+					"Treachery-betrayal!",
+					"Eek-eek!"
+				],
+				"Phrases": [
+					"Cursed thing cuts my fur-hide.",
+					"Blood drips-flows.",
+					"Fur-pelt is bleeding.",
+					"Blow broke guard-block.",
+					"Right in meat-flesh."
+				],
+				"Postfix": [
+					"Die-die!",
+					"Kill-kill!",
+					"Gnaw-chew you!"
+				],
+				"Opponent": {
+					"Prefix": [
+						"Stupid-dumb thing!",
+						"Vile-foul thing!"
+					],
+					"Postfix": [
+						"Rip-tear you!",
+						"Feed you to the swarm!"
+					],
+					"Empire": {
+						"Phrases": [
+							"Man-thing hits hard-painful.",
+							"Feeble steel pierced fur."
+						]
+					},
+					"Bretonnian": {
+						"Phrases": [
+							"Tin-thing kicks with hooves.",
+							"Long-stick poked fur-hide."
+						]
+					},
+					"Kislev": {
+						"Phrases": [
+							"Cold-thing bites sharp.",
+							"Ice-steel cuts deep-painful."
+						]
+					},
+					"Halfling": {
+						"Phrases": [
+							"Tiny food-thing bites back!",
+							"Small-thing aims for paws."
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"Dwarf-thing strikes heavy-hard.",
+							"Heavy stone-thing cracks bones."
+						]
+					},
+					"Elf": {
+						"Phrases": [
+							"Elf-thing is too fast-quick.",
+							"Thin needle-blade stings deep."
+						]
+					},
+					"Beast": {
+						"Phrases": [
+							"Dumb beast-thing tears fur.",
+							"Beast fangs sank into flesh."
+						]
+					},
+					"Monstrous": {
+						"Phrases": [
+							"Huge monster-thing will squash us!",
+							"Heavy smash breaks ribs."
+						]
+					},
+					"Greenskin": {
+						"Phrases": [
+							"Green-thing hits dumb and hard.",
+							"Stinky choppa tears hide."
+						]
+					},
+					"RestlessDead": {
+						"Phrases": [
+							"Dead-thing should not bite-snap!",
+							"Rotted steel breaks guard."
+						]
+					},
+					"Chaos": {
+						"Phrases": [
+							"Chaos-thing burns with warp-magic.",
+							"Taint melts fur-skin."
+						]
+					},
+					"Skaven": {
+						"Phrases": [
+							"Treachery-betrayal!",
+							"Own kin stabs in back-back!",
+							"Blow from rival-traitor."
+						]
+					},
+					"Daemons": {
+						"Phrases": [
+							"Warp-fire burns-sears.",
+							"Glow-thing burns painful."
+						]
+					},
+					"Ogre": {
+						"Phrases": [
+							"Fat ogre-thing squashes.",
+							"Big belly slams hard."
+						]
+					}
+				},
+				"To": {
+					"Head": {
+						"Prefix": [
+							"Right in skull!"
+						],
+						"Phrases": [
+							"Ears ring-buzz.",
+							"Head-brain spinning."
+						],
+						"Postfix": [
+							"Going dark-dim!"
+						]
+					},
+					"Body": {
+						"Prefix": [
+							"Right in gut-belly!"
+						],
+						"Phrases": [
+							"Breath knocked clean-out.",
+							"Blood flows from cut."
+						],
+						"Postfix": [
+							"Hurts-hurts!"
+						]
+					},
+					"Arm": {
+						"Prefix": [
+							"My paw-hand!"
+						],
+						"Phrases": [
+							"Blade slipping-falling.",
+							"Claws losing grip."
+						],
+						"Postfix": [
+							"Broken-snapped!"
+						]
+					},
+					"Leg": {
+						"Prefix": [
+							"My hind-paws!"
+						],
+						"Phrases": [
+							"Harder to limp-flee now.",
+							"Blow knocks into mud-filth."
+						],
+						"Postfix": [
+							"Falling-tumbling!"
+						]
+					}
+				}
+			},
+			"Moulder": {
+				"Prefix": [
+					"My flesh-meat!"
+				],
+				"Phrases": [
+					"Stitches tearing open!",
+					"Moulder will not forgive ruined flesh."
+				],
+				"Postfix": [
+					"To the flesh-pits with you!"
+				]
+			},
+			"Skryre": {
+				"Prefix": [
+					"Warp-sparks!"
+				],
+				"Phrases": [
+					"Contraption-machine damaged!",
+					"Casing breached, warp-lightning shocks!"
+				],
+				"Postfix": [
+					"Going to blow-burn!"
+				]
+			},
+			"Pestilens": {
+				"Prefix": [
+					"Boils popping-bursting!"
+				],
+				"Phrases": [
+					"Sacred pus leaks on the dirt.",
+					"Joy to the Great Corruptor."
+				],
+				"Postfix": [
+					"Infect-blight you!"
+				]
+			},
+			"Eshin": {
+				"Prefix": [
+					"Shadow-cloak broken!"
+				],
+				"Phrases": [
+					"Garb torn open.",
+					"Stealth ruined-spoiled."
+				],
+				"Postfix": [
+					"Flee-scurry!"
+				]
+			}
+		},
+		"applyDamage": {
+			"All": {
+				"Prefix": [
+					"Crunch-crunch!",
+					"Yes-yes!",
+					"Blood-blood!"
+				],
+				"Phrases": [
+					"Blade strikes true-true.",
+					"Foe bleeds-leaks.",
+					"Meat-flesh yields.",
+					"Skaven sees-knows."
+				],
+				"Postfix": [
+					"Die-die!",
+					"Meat-food!"
+				],
+				"Opponent": {
+					"Prefix": [
+						"Weak-soft thing!"
+					],
+					"Postfix": [
+						"Die-die!"
+					],
+					"Empire": {
+						"Phrases": [
+							"Man-things are too slow-clumsy.",
+							"Armour cracks easy-fast."
+						]
+					},
+					"Bretonnian": {
+						"Phrases": [
+							"Tin man-thing bleeds.",
+							"Knocked off horse-beast."
+						]
+					},
+					"Kislev": {
+						"Phrases": [
+							"Cold man-thing will die-die.",
+							"Cut straight through thick fur."
+						]
+					},
+					"Halfling": {
+						"Phrases": [
+							"Small-thing makes fine supper.",
+							"Tasty meat-food!"
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"Warpstone pierces dwarf-thing plate.",
+							"Beard-thing bleeds!"
+						]
+					},
+					"Elf": {
+						"Phrases": [
+							"Caught the elf-thing!",
+							"Too little armour-shell."
+						]
+					},
+					"Beast": {
+						"Phrases": [
+							"Dumb beast-thing yelps.",
+							"Beast pelt will be mine-mine."
+						]
+					},
+					"Monstrous": {
+						"Phrases": [
+							"Big monster-thing bleeds!",
+							"Much meat-food for the pack."
+						]
+					},
+					"Greenskin": {
+						"Phrases": [
+							"Green-thing is dumb-dumb.",
+							"Orc-thing leaks foul blood."
+						]
+					},
+					"RestlessDead": {
+						"Phrases": [
+							"Dead-thing falls apart-apart.",
+							"Bones snap good-good."
+						]
+					},
+					"Chaos": {
+						"Phrases": [
+							"Chaos-thing bleeds.",
+							"Pierced the mutant-thing."
+						]
+					},
+					"Skaven": {
+						"Phrases": [
+							"Rival-traitor is wounded!",
+							"My pack is stronger-better!"
+						]
+					},
+					"Daemons": {
+						"Phrases": [
+							"Warp-thing writhes.",
+							"Skaven fear no warp-fire!"
+						]
+					},
+					"Ogre": {
+						"Phrases": [
+							"Stabbed the fat ogre-thing.",
+							"So much meat-food bleeding."
+						]
+					}
+				},
+				"To": {
+					"Head": {
+						"Prefix": [
+							"Right in skull!"
+						],
+						"Phrases": [
+							"Strike right between the eyes.",
+							"Cracked head-skull."
+						],
+						"Postfix": [
+							"Brains leaking out!"
+						]
+					},
+					"Body": {
+						"Prefix": [
+							"Into soft belly-gut!"
+						],
+						"Phrases": [
+							"Guts spilling out-out.",
+							"Blade went deep-deep."
+						],
+						"Postfix": [
+							"Blood-blood!"
+						]
+					},
+					"Arm": {
+						"Prefix": [
+							"Slash the paws!"
+						],
+						"Phrases": [
+							"Arm hangs limp-useless.",
+							"Bones cracked-snapped."
+						],
+						"Postfix": [
+							"Drop steel-blade!"
+						]
+					},
+					"Leg": {
+						"Prefix": [
+							"Cut the legs!"
+						],
+						"Phrases": [
+							"Sliced tendons-sinews.",
+							"Foe tumbles into filth."
+						],
+						"Postfix": [
+							"Crawl-grovel!"
+						]
+					}
+				}
+			},
+			"Moulder": {
+				"Prefix": [
+					"Prime specimen-meat!"
+				],
+				"Phrases": [
+					"Whip lashes true-true.",
+					"Tore off a chunk of flesh."
+				],
+				"Postfix": [
+					"Into the breeding pits!"
+				]
+			},
+			"Skryre": {
+				"Prefix": [
+					"Warp-lightning blast!"
+				],
+				"Phrases": [
+					"Green flame melts through plate.",
+					"Device-machine works, yes-yes!"
+				],
+				"Postfix": [
+					"Burn-melt!"
+				]
+			},
+			"Pestilens": {
+				"Prefix": [
+					"Rot and plague!"
+				],
+				"Phrases": [
+					"Censer struck true-true.",
+					"Blight seeps into the cut."
+				],
+				"Postfix": [
+					"Rot-fester alive!"
+				]
+			},
+			"Eshin": {
+				"Prefix": [
+					"From the shadows!"
+				],
+				"Phrases": [
+					"Blade slid in silent-quiet.",
+					"Venom already burns in veins."
+				],
+				"Postfix": [
+					"Die quiet-silent!"
+				]
+			}
+		},
+		"die": {
+			"All": {
+				"Prefix": [
+					"Squeeak...",
+					"Horned Rat...",
+					"No-no..."
+				],
+				"Phrases": [
+					"Strength draining-fading.",
+					"Darkness takes me.",
+					"Betrayal-death.",
+					"Great Horned Rat calls."
+				],
+				"Postfix": [
+					"Squeee...",
+					"Corpse-meat...",
+					"Will remember-avenge..."
+				],
+				"Opponent": {
+					"Empire": {
+						"Phrases": [
+							"Slain by man-thing...",
+							"Smooth-skin killed me."
+						]
+					},
+					"Bretonnian": {
+						"Phrases": [
+							"Crushed by tin-thing.",
+							"Lance skewered me clean."
+						]
+					},
+					"Kislev": {
+						"Phrases": [
+							"Freezing-dying...",
+							"Cold-steel chills my blood."
+						]
+					},
+					"Halfling": {
+						"Phrases": [
+							"Shame-death by tiny food-thing.",
+							"Small-thing killed me."
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"Dwarf-thing crushed my skull.",
+							"Stone-thing too heavy."
+						]
+					},
+					"Elf": {
+						"Phrases": [
+							"Elf-thing never misses.",
+							"Blade too quick-fast."
+						]
+					},
+					"Beast": {
+						"Phrases": [
+							"Eaten by wild beast-thing.",
+							"Claws ripped my throat."
+						]
+					},
+					"Monstrous": {
+						"Phrases": [
+							"Squashed like a bug.",
+							"Big hulk flattened my bones."
+						]
+					},
+					"Greenskin": {
+						"Phrases": [
+							"Slain by green-thing.",
+							"Orc choppa in my back."
+						]
+					},
+					"RestlessDead": {
+						"Phrases": [
+							"Dead-things drag me down.",
+							"The grave pulls me."
+						]
+					},
+					"Chaos": {
+						"Phrases": [
+							"Taint burned my vessel.",
+							"Chaos-thing killed me."
+						]
+					},
+					"Skaven": {
+						"Phrases": [
+							"Betrayal...",
+							"Slain by own kin..."
+						]
+					},
+					"Daemons": {
+						"Phrases": [
+							"Warp-fire devours soul.",
+							"Daemon-things rip me apart."
+						]
+					},
+					"Ogre": {
+						"Phrases": [
+							"Flattened by fat ogre-thing.",
+							"Will eat-devour me..."
+						]
+					}
+				},
+				"To": {
+					"Head": {
+						"Phrases": [
+							"Skull popped-cracked.",
+							"Dark-dark."
+						]
+					},
+					"Body": {
+						"Phrases": [
+							"Guts spilled out.",
+							"Heart stopped beating."
+						]
+					},
+					"Arm": {
+						"Phrases": [
+							"Dropped blade, blood gone.",
+							"Bled dry-empty."
+						]
+					},
+					"Leg": {
+						"Phrases": [
+							"Dying in filth.",
+							"Paws won't scurry."
+						]
+					}
+				}
+			},
+			"Moulder": {
+				"Phrases": [
+					"Flesh-grafts failed.",
+					"Mutations couldn't save me."
+				]
+			},
+			"Skryre": {
+				"Phrases": [
+					"Machines failed-broke.",
+					"Warp-cell ran dry."
+				]
+			},
+			"Pestilens": {
+				"Phrases": [
+					"Plague claims its servant.",
+					"Rot has claimed me."
+				]
+			},
+			"Eshin": {
+				"Phrases": [
+					"Shadow faded away.",
+					"Death of an assassin."
+				]
+			}
+		},
+		"kill": {
+			"All": {
+				"Prefix": [
+					"Thing is dead-dead!",
+					"Victory-victory!"
+				],
+				"Phrases": [
+					"Meat lies on the ground.",
+					"Foe slain-stabbed.",
+					"Prey is dead."
+				],
+				"Postfix": [
+					"Loot-loot!",
+					"Mine-mine!",
+					"Eat-devour!"
+				],
+				"Opponent": {
+					"Empire": {
+						"Phrases": [
+							"Man-thing felled!",
+							"Weak armour didn't save it."
+						]
+					},
+					"Bretonnian": {
+						"Phrases": [
+							"Horse-thing in the mud.",
+							"Tin man-thing is dead."
+						]
+					},
+					"Kislev": {
+						"Phrases": [
+							"Cold-thing went stiff.",
+							"Furs soaked in blood."
+						]
+					},
+					"Halfling": {
+						"Phrases": [
+							"Tiny food-thing is ready!",
+							"Tasty supper from small-thing."
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"Dwarf-thing broken!",
+							"Pierced its shiny plate."
+						]
+					},
+					"Elf": {
+						"Phrases": [
+							"Elf-thing bled dry.",
+							"Soft-thing croaked."
+						]
+					},
+					"Beast": {
+						"Phrases": [
+							"Dumb beast-thing slain.",
+							"Pelt is mine-mine."
+						]
+					},
+					"Monstrous": {
+						"Phrases": [
+							"Brought the giant-thing down!",
+							"Much meat-food for the pack."
+						]
+					},
+					"Greenskin": {
+						"Phrases": [
+							"Green-thing chopped up.",
+							"Orc-stench fades."
+						]
+					},
+					"RestlessDead": {
+						"Phrases": [
+							"Dead-thing stays dead.",
+							"Bones crushed to powder."
+						]
+					},
+					"Chaos": {
+						"Phrases": [
+							"Chaos-thing croaked.",
+							"Burned taint with warp-fire."
+						]
+					},
+					"Skaven": {
+						"Phrases": [
+							"Rival slain-stabbed!",
+							"All loot belongs to me-me!"
+						]
+					},
+					"Daemons": {
+						"Phrases": [
+							"Warp-thing banished!",
+							"Daemon dissolved away."
+						]
+					},
+					"Ogre": {
+						"Phrases": [
+							"Mountain of meat is ours-ours!",
+							"Dropped the fat ogre-thing!"
+						]
+					}
+				},
+				"To": {
+					"Head": {
+						"Phrases": [
+							"Took off head-skull.",
+							"Brains splashed on stone."
+						]
+					},
+					"Body": {
+						"Phrases": [
+							"Slit from belly to throat.",
+							"Gutted the thing clean."
+						]
+					},
+					"Arm": {
+						"Phrases": [
+							"Lopped off a paw.",
+							"Bled right out."
+						]
+					},
+					"Leg": {
+						"Phrases": [
+							"Finished on the dirt.",
+							"Thing won't scurry away."
+						]
+					}
+				}
+			},
+			"Moulder": {
+				"Prefix": [
+					"Fresh flesh-stock ready!"
+				],
+				"Phrases": [
+					"Drag the parts to the pits.",
+					"Fine specimen, yes-yes."
+				],
+				"Postfix": [
+					"To the flesh-vats!"
+				]
+			},
+			"Skryre": {
+				"Prefix": [
+					"Incinerated-fried!"
+				],
+				"Phrases": [
+					"Weapon worked flawless, yes-yes!",
+					"Only ash-dust left."
+				],
+				"Postfix": [
+					"Science-genius!"
+				]
+			},
+			"Pestilens": {
+				"Prefix": [
+					"Plague triumphs!"
+				],
+				"Phrases": [
+					"Rot consumed the foe.",
+					"Blight is stronger."
+				],
+				"Postfix": [
+					"Glory to Decay!"
+				]
+			},
+			"Eshin": {
+				"Prefix": [
+					"Silent-quiet..."
+				],
+				"Phrases": [
+					"Poison did its work.",
+					"Shadow kills clean."
+				],
+				"Postfix": [
+					"Vanishing-fading."
+				]
+			}
+		},
+		"opposedDefenderSuccess": {
+			"All": {
+				"Prefix": [
+					"Missed-missed!",
+					"He-he!"
+				],
+				"Phrases": [
+					"Quick paws keep me safe.",
+					"Swing hit empty air.",
+					"Dodge-leap!"
+				],
+				"Postfix": [
+					"Too slow-clumsy!",
+					"Squeeak!"
+				],
+				"Opponent": {
+					"Prefix": [
+						"Dumb-stupid thing!"
+					],
+					"Postfix": [
+						"Can't catch me!"
+					],
+					"Empire": {
+						"Phrases": [
+							"Man-things are clumsy-slow.",
+							"Sword sliced thin air."
+						]
+					},
+					"Bretonnian": {
+						"Phrases": [
+							"Tin plate makes you slow.",
+							"Long-stick flew wide."
+						]
+					},
+					"Kislev": {
+						"Phrases": [
+							"Cold-thing swings at air.",
+							"Turned the ice-axe aside."
+						]
+					},
+					"Halfling": {
+						"Phrases": [
+							"Small-thing is too weak.",
+							"Leaped right over tiny-thing."
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"Dwarf-thing is too slow.",
+							"Hammer smashed only dirt."
+						]
+					},
+					"Elf": {
+						"Phrases": [
+							"Elf-thing couldn't reach.",
+							"Elf misses quick skaven!"
+						]
+					},
+					"Beast": {
+						"Phrases": [
+							"Beast-thing missed.",
+							"Clean leap-dodge."
+						]
+					},
+					"Monstrous": {
+						"Phrases": [
+							"Big hulk is too sluggish.",
+							"Darted right under its paw."
+						]
+					},
+					"Greenskin": {
+						"Phrases": [
+							"Green-thing swings crooked.",
+							"Club whistled past."
+						]
+					},
+					"RestlessDead": {
+						"Phrases": [
+							"Dead-things are mindless.",
+							"Rusty blade can't touch me."
+						]
+					},
+					"Chaos": {
+						"Phrases": [
+							"Chaos-thing swings at nothing.",
+							"Turned taint aside."
+						]
+					},
+					"Skaven": {
+						"Phrases": [
+							"Rival missed, yes-yes!",
+							"I am faster-quicker!"
+						]
+					},
+					"Daemons": {
+						"Phrases": [
+							"Warp-magic glanced off.",
+							"Daemon-thing missed."
+						]
+					},
+					"Ogre": {
+						"Phrases": [
+							"Too fat-slow!",
+							"Blubber can't catch me."
+						]
+					}
+				}
+			},
+			"Moulder": {
+				"Phrases": [
+					"My flesh-grafts are too tough.",
+					"Blow bounced off thick muscle."
+				]
+			},
+			"Skryre": {
+				"Phrases": [
+					"Warp-shield held!",
+					"Skryre plate holds firm."
+				]
+			},
+			"Pestilens": {
+				"Phrases": [
+					"Aura of rot turned the blade.",
+					"Plague shields its chosen."
+				]
+			},
+			"Eshin": {
+				"Phrases": [
+					"Shadow slipped clear.",
+					"Flawless roll-dodge."
+				]
+			}
+		},
+		"opposedDefenderFailure": {
+			"All": {
+				"Prefix": [
+					"Pain-pain!",
+					"Eek-eek!"
+				],
+				"Phrases": [
+					"Guard broken-smashed!",
+					"Foe cut my fur.",
+					"Blood flowing.",
+					"Dodge failed-failed!"
+				],
+				"Postfix": [
+					"I'll stab-avenge!",
+					"Kill-kill!"
+				],
+				"Opponent": {
+					"Empire": {
+						"Phrases": [
+							"Man-thing was quicker!",
+							"Steel pierced flesh."
+						]
+					},
+					"Bretonnian": {
+						"Phrases": [
+							"Tin-thing's lance hit home.",
+							"Trampled by hooves."
+						]
+					},
+					"Kislev": {
+						"Phrases": [
+							"Frost burns the cut.",
+							"Cold-thing broke my guard."
+						]
+					},
+					"Halfling": {
+						"Phrases": [
+							"Tiny-thing struck low-sneaky.",
+							"Small-thing's knife went deep."
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"Dwarf-thing cracked my bones.",
+							"Stone-thing aimed true."
+						]
+					},
+					"Elf": {
+						"Phrases": [
+							"Elf-thing is too fast-quick.",
+							"Needle-blade pierced my fur."
+						]
+					},
+					"Beast": {
+						"Phrases": [
+							"Beast teeth snapped shut.",
+							"Claws shredded my pelt."
+						]
+					},
+					"Monstrous": {
+						"Phrases": [
+							"Huge bulk bore down.",
+							"Shield splintered!"
+						]
+					},
+					"Greenskin": {
+						"Phrases": [
+							"Blunt club caved in ribs.",
+							"Green-thing hits too hard."
+						]
+					},
+					"RestlessDead": {
+						"Phrases": [
+							"Dead grip latched on.",
+							"Rotted steel cut flesh."
+						]
+					},
+					"Chaos": {
+						"Phrases": [
+							"Taint scorched my skin.",
+							"Chaos-thing smashed my guard."
+						]
+					},
+					"Skaven": {
+						"Phrases": [
+							"Treacherous blow!",
+							"Venom burns my veins."
+						]
+					},
+					"Daemons": {
+						"Phrases": [
+							"Warp-fire melts my guard.",
+							"Daemon tore through my block."
+						]
+					},
+					"Ogre": {
+						"Phrases": [
+							"Fat ogre-thing crushed my guard.",
+							"Giant belly squashing me."
+						]
+					}
+				}
+			},
+			"Moulder": {
+				"Phrases": [
+					"Flesh-grafts torn!",
+					"Meat ripped open."
+				]
+			},
+			"Skryre": {
+				"Phrases": [
+					"Sparks pouring from armour!",
+					"Contraption damaged!"
+				]
+			},
+			"Pestilens": {
+				"Phrases": [
+					"Boils punctured!",
+					"Pus spraying everywhere."
+				]
+			},
+			"Eshin": {
+				"Phrases": [
+					"Couldn't stay hidden.",
+					"Cover blown!"
+				]
+			}
+		},
+		"opposedAttackerSuccess": {
+			"All": {
+				"Prefix": [
+					"Direct hit-hit!",
+					"Got it!"
+				],
+				"Phrases": [
+					"Guard torn open.",
+					"Blade buried deep.",
+					"Blood sprays!",
+					"Stab found its mark."
+				],
+				"Postfix": [
+					"Die-die!",
+					"Skaven are supreme!"
+				],
+				"Opponent": {
+					"Empire": {
+						"Phrases": [
+							"Man-thing bleeds!",
+							"Man-thing armour is weak."
+						]
+					},
+					"Bretonnian": {
+						"Phrases": [
+							"Cracked the tin-can.",
+							"Knight-thing bleeds."
+						]
+					},
+					"Kislev": {
+						"Phrases": [
+							"Sliced through northern furs.",
+							"Cold-thing bleeds."
+						]
+					},
+					"Halfling": {
+						"Phrases": [
+							"Skewered the tiny food-thing.",
+							"Small-thing squeals!"
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"Found a gap in plate.",
+							"Warpstone pierced gromril!"
+						]
+					},
+					"Elf": {
+						"Phrases": [
+							"Elf-thing was too slow.",
+							"Speed didn't save it."
+						]
+					},
+					"Beast": {
+						"Phrases": [
+							"Split its hide.",
+							"Beast-thing whimpers."
+						]
+					},
+					"Monstrous": {
+						"Phrases": [
+							"Struck a soft spot!",
+							"Monster-thing bleeds."
+						]
+					},
+					"Greenskin": {
+						"Phrases": [
+							"Tore open green hide.",
+							"Gave orc-thing a poisoned stab."
+						]
+					},
+					"RestlessDead": {
+						"Phrases": [
+							"Dead bones scatter.",
+							"Dead-thing crumbles."
+						]
+					},
+					"Chaos": {
+						"Phrases": [
+							"Chaos-thing bleeds.",
+							"Carved taint with warp-steel."
+						]
+					},
+					"Skaven": {
+						"Phrases": [
+							"Stabbed the wretch!",
+							"Caught rival slipping!"
+						]
+					},
+					"Daemons": {
+						"Phrases": [
+							"Daemon-thing weakens.",
+							"Blade bites Warp-flesh."
+						]
+					},
+					"Ogre": {
+						"Phrases": [
+							"Found soft blubber.",
+							"Stuck that giant belly."
+						]
+					}
+				}
+			},
+			"Moulder": {
+				"Phrases": [
+					"Whip flays the hide.",
+					"Blow snaps bone."
+				]
+			},
+			"Skryre": {
+				"Phrases": [
+					"Warp-bolt blasted clean through!",
+					"Precise calculation, yes-yes!"
+				]
+			},
+			"Pestilens": {
+				"Phrases": [
+					"Plague in their veins.",
+					"Blighted blade drew blood."
+				]
+			},
+			"Eshin": {
+				"Phrases": [
+					"Blade slid in silent-quiet.",
+					"Poison already racing through."
+				]
+			}
+		},
+		"opposedAttackerFailure": {
+			"All": {
+				"Prefix": [
+					"Missed-missed!",
+					"Squeak!"
+				],
+				"Phrases": [
+					"Prey slips away!",
+					"Blade knocked aside.",
+					"Shield got in the way."
+				],
+				"Postfix": [
+					"I'll get-kill you!",
+					"Hold still-still!"
+				],
+				"Opponent": {
+					"Empire": {
+						"Phrases": [
+							"Man-thing dodged.",
+							"Man-thing shield blocked it."
+						]
+					},
+					"Bretonnian": {
+						"Phrases": [
+							"Tin-thing plate is too thick.",
+							"Horse-beast carried it clear."
+						]
+					},
+					"Kislev": {
+						"Phrases": [
+							"Axe turned my thrust.",
+							"Cold-thing dodged."
+						]
+					},
+					"Halfling": {
+						"Phrases": [
+							"Tiny food-thing is too quick.",
+							"Small-thing rolled away."
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"Dwarf-steel held.",
+							"Blade stuck on heavy plate."
+						]
+					},
+					"Elf": {
+						"Phrases": [
+							"Elf-thing is too fast-quick.",
+							"Prancing saved elf-thing."
+						]
+					},
+					"Beast": {
+						"Phrases": [
+							"Beast-thing hopped back.",
+							"Beast was quicker."
+						]
+					},
+					"Monstrous": {
+						"Phrases": [
+							"Bounced off thick scales.",
+							"Couldn't pierce that bulk."
+						]
+					},
+					"Greenskin": {
+						"Phrases": [
+							"Orc-thing blocked it.",
+							"Thick green hide saved it."
+						]
+					},
+					"RestlessDead": {
+						"Phrases": [
+							"Slipped past bare bones.",
+							"Dead-thing dodged."
+						]
+					},
+					"Chaos": {
+						"Phrases": [
+							"Mutation turned the blade.",
+							"Taint deflected steel."
+						]
+					},
+					"Skaven": {
+						"Phrases": [
+							"Traitor slipped into shadow.",
+							"Slippery rival ducked clear."
+						]
+					},
+					"Daemons": {
+						"Phrases": [
+							"Sliced empty air.",
+							"Aura bounced steel off."
+						]
+					},
+					"Ogre": {
+						"Phrases": [
+							"Blubber is too thick.",
+							"Couldn't poke through fat-belly."
+						]
+					}
+				}
+			},
+			"Moulder": {
+				"Phrases": [
+					"Whip snagged!",
+					"Test failed-failed!"
+				]
+			},
+			"Skryre": {
+				"Phrases": [
+					"Machine misfired!",
+					"Warp-sparks fizzled out."
+				]
+			},
+			"Pestilens": {
+				"Phrases": [
+					"Censer swung wide.",
+					"Foe dodged the blight."
+				]
+			},
+			"Eshin": {
+				"Phrases": [
+					"Shadow missed.",
+					"Strike failed."
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,106 @@
+{
+	"WFRP4E.Assistant.Helpers.Reactions.Species": {
+		"Empire": {
+			"Name": "Имперец",
+			"Subspecies": {
+				"Reiklander": "Рейкландец",
+				"Southlander": "Южанин"
+			}
+		},
+		"Bretonnian": {
+			"Name": "Бретонец",
+			"Subspecies": {
+				"Noble": "Знатный",
+				"Peasant": "Крестьянин"
+			}
+		},
+		"Kislev": {
+			"Name": "Кислевит",
+			"Subspecies": {
+				"Gospodar": "Господарин",
+				"Ungol": "Унгол"
+			}
+		},
+		"Halfling": {
+			"Name": "Полурослик",
+			"Subspecies": {}
+		},
+		"Dwarf": {
+			"Name": "Гном",
+			"Subspecies": {
+				"Empire": "Имперский",
+				"Slayers": "Убийца"
+			}
+		},
+		"Elf": {
+			"Name": "Эльф",
+			"Subspecies": {
+				"High": "Высший",
+				"Wood": "Лесной"
+			}
+		},
+		"Ogre": {
+			"Name": "Огр",
+			"Subspecies": {}
+		},
+		"Beast": {
+			"Name": "Зверь",
+			"Subspecies": {
+				"Wolf": "Волк",
+				"Rat": "Крыса",
+				"Spider": "Паук",
+				"Bird": "Птица",
+				"Snake": "Змея",
+				"Boar": "Кабан",
+				"Horse": "Лошадь",
+				"Bear": "Медведь",
+				"Dog": "Собака"
+			}
+		},
+		"Monstrous": {
+			"Name": "Чудовище",
+			"Subspecies": {}
+		},
+		"Greenskin": {
+			"Name": "Зеленокожий",
+			"Subspecies": {
+				"Goblin": "Гоблин",
+				"Ork": "Орк"
+			}
+		},
+		"RestlessDead": {
+			"Name": "Мертвец",
+			"Subspecies": {
+				"Skeleton": "Скелет",
+				"Zombie": "Зомби",
+				"Ghost": "Призрак",
+				"Vampire": "Упырь"
+			}
+		},
+		"Chaos": {
+			"Name": "Хаосит",
+			"Subspecies": {
+				"Marauders": "Мародёр",
+				"Beastman": "Зверолюд"
+			}
+		},
+		"Skaven": {
+			"Name": "Скавен",
+			"Subspecies": {
+				"Moulder": "Клан Творцов",
+				"Skryre": "Клан Скрайр",
+				"Pestilens": "Клан Чумы",
+				"Eshin": "Клан Эшин"
+			}
+		},
+		"Daemons": {
+			"Name": "Демоны",
+			"Subspecies": {
+				"Khorne": "Кхорн",
+				"Tzeentch": "Тзинч",
+				"Slaanesh": "Слаанеш",
+				"Nurgle": "Нургл"
+			}
+		}
+	}
+}

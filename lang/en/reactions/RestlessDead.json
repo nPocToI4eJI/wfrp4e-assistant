@@ -1,0 +1,774 @@
+{
+	"WFRP4E.Assistant.Helpers.Reactions.List.RestlessDead": {
+		"takeDamage": {
+			"All": {
+				"Prefix": [
+					"Hsss...",
+					"Khss..."
+				],
+				"Phrases": [
+					"Hss-hss.",
+					"Khss-khss."
+				],
+				"Postfix": [
+					"..."
+				]
+			},
+			"Skeleton": {
+				"Prefix": [
+					"Clack!",
+					"Crack!"
+				],
+				"Phrases": [
+					"Skrr-skrr.",
+					"Clack-clack.",
+					"Crack-hss."
+				],
+				"Postfix": [
+					"Skrrr!"
+				]
+			},
+			"Zombie": {
+				"Prefix": [
+					"Uuuugh...",
+					"Grrr..."
+				],
+				"Phrases": [
+					"Hrr-rr.",
+					"Uuu-aaah.",
+					"Grr-rgh."
+				],
+				"Postfix": [
+					"Mmm..."
+				]
+			},
+			"Ghost": {
+				"Prefix": [
+					"Cold...",
+					"Death..."
+				],
+				"Phrases": [
+					"My form wavers.",
+					"The Aethyr tears.",
+					"It burns."
+				],
+				"Postfix": [
+					"Into the gloom..."
+				],
+				"Opponent": {
+					"Prefix": [
+						"Living flesh..."
+					],
+					"Phrases": [
+						"Life burns me.",
+						"I will claim your warmth."
+					],
+					"Postfix": [
+						"Death draws near!"
+					],
+					"Human": {
+						"Phrases": [
+							"Faith sears.",
+							"Iron rends the Aethyr."
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"Runes scorch."
+						]
+					},
+					"Elf": {
+						"Phrases": [
+							"Sorcery cuts deep."
+						]
+					},
+					"Daemons": {
+						"Phrases": [
+							"The Warp unravels me."
+						]
+					},
+					"Chaos": {
+						"Phrases": [
+							"Taint sears."
+						]
+					},
+					"Ogre": {
+						"Phrases": [
+							"Sheer bulk disperses my mist.",
+							"A heavy blow tears the mist."
+						]
+					}
+				},
+				"To": {
+					"Head": {
+						"Phrases": [
+							"Mindless, yet it burns."
+						]
+					},
+					"Body": {
+						"Phrases": [
+							"My core is struck."
+						]
+					}
+				}
+			},
+			"Vampire": {
+				"Prefix": [
+					"Argh!",
+					"Curse you!"
+				],
+				"Phrases": [
+					"The wound knits shut.",
+					"My blood boils.",
+					"You tore my garments."
+				],
+				"Postfix": [
+					"I will drain you dry!"
+				],
+				"Opponent": {
+					"Prefix": [
+						"Mortal!"
+					],
+					"Phrases": [
+						"My flesh will mend.",
+						"You cannot kill me."
+					],
+					"Postfix": [
+						"Blood is eternal!"
+					],
+					"Empire": {
+						"Phrases": [
+							"A scratch from an Imperial."
+						]
+					},
+					"Bretonnian": {
+						"Phrases": [
+							"Iron bites."
+						]
+					},
+					"Kislev": {
+						"Phrases": [
+							"Frost stings."
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"A heavy hammer."
+						]
+					},
+					"Elf": {
+						"Phrases": [
+							"A swift blade."
+						]
+					},
+					"Ogre": {
+						"Phrases": [
+							"The ogre cracked my bones.",
+							"That club hits hard."
+						]
+					}
+				},
+				"To": {
+					"Head": {
+						"Phrases": [
+							"Across my face.",
+							"Darkness clouds my sight."
+						]
+					},
+					"Body": {
+						"Phrases": [
+							"Pierced near the heart.",
+							"The wound knits shut."
+						]
+					},
+					"Arm": {
+						"Phrases": [
+							"My arm hangs limp."
+						]
+					},
+					"Leg": {
+						"Phrases": [
+							"Swept from my feet."
+						]
+					}
+				}
+			}
+		},
+		"applyDamage": {
+			"All": {
+				"Prefix": [
+					"Hsss!",
+					"Khss!"
+				],
+				"Phrases": [
+					"Hss-hss.",
+					"Khss-s."
+				],
+				"Postfix": [
+					"Hss!"
+				]
+			},
+			"Skeleton": {
+				"Prefix": [
+					"Skrr-clack!"
+				],
+				"Phrases": [
+					"Clack-clack.",
+					"Crack-hss."
+				],
+				"Postfix": [
+					"Clack!"
+				]
+			},
+			"Zombie": {
+				"Prefix": [
+					"Grr-mmm!"
+				],
+				"Phrases": [
+					"Uuu-rrr.",
+					"Grr-aa.",
+					"Hrr-mm."
+				],
+				"Postfix": [
+					"Uuuugh!"
+				]
+			},
+			"Ghost": {
+				"Prefix": [
+					"Frost!",
+					"Death!"
+				],
+				"Phrases": [
+					"Cold.",
+					"Life drains away.",
+					"Bitter chill."
+				],
+				"Postfix": [
+					"Die!"
+				],
+				"Opponent": {
+					"Prefix": [
+						"Shadow!"
+					],
+					"Phrases": [
+						"Your warmth fades.",
+						"Chilled to the bone."
+					],
+					"Postfix": [
+						"Freeze!"
+					],
+					"Human": {
+						"Phrases": [
+							"Cold claims the mortal.",
+							"The human shivers."
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"The dwarf grows cold."
+						]
+					},
+					"Elf": {
+						"Phrases": [
+							"The elf chills."
+						]
+					},
+					"Ogre": {
+						"Phrases": [
+							"Frost pierces that fat.",
+							"Even that hulk freezes."
+						]
+					}
+				},
+				"To": {
+					"Head": {
+						"Phrases": [
+							"Terror breaks the mind."
+						]
+					},
+					"Body": {
+						"Phrases": [
+							"Ice in the heart."
+						]
+					}
+				}
+			},
+			"Vampire": {
+				"Prefix": [
+					"Exquisite!",
+					"Blood!"
+				],
+				"Phrases": [
+					"Claws sink into flesh.",
+					"Crimson flows.",
+					"Opened a vein."
+				],
+				"Postfix": [
+					"Submit!"
+				],
+				"Opponent": {
+					"Prefix": [
+						"The predator strikes!"
+					],
+					"Phrases": [
+						"None shall escape.",
+						"Mere prey."
+					],
+					"Postfix": [
+						"A feast!"
+					],
+					"Human": {
+						"Phrases": [
+							"Sweet blood.",
+							"Claimed the mortal."
+						]
+					},
+					"Bretonnian": {
+						"Phrases": [
+							"Cracked the tin open."
+						]
+					},
+					"Dwarf": {
+						"Phrases": [
+							"Bitter blood.",
+							"Pierced the dwarf."
+						]
+					},
+					"Elf": {
+						"Phrases": [
+							"The elf bleeds."
+						]
+					},
+					"Greenskin": {
+						"Phrases": [
+							"Foul blood."
+						]
+					},
+					"Chaos": {
+						"Phrases": [
+							"Rotten blood."
+						]
+					},
+					"Ogre": {
+						"Phrases": [
+							"Pierced the glutton.",
+							"So much blood."
+						]
+					}
+				},
+				"To": {
+					"Head": {
+						"Phrases": [
+							"Straight for the throat."
+						]
+					},
+					"Body": {
+						"Phrases": [
+							"Ripped open the chest."
+						]
+					},
+					"Arm": {
+						"Phrases": [
+							"Severed the arm."
+						]
+					},
+					"Leg": {
+						"Phrases": [
+							"On your knees."
+						]
+					}
+				}
+			}
+		},
+		"die": {
+			"All": {
+				"Prefix": [
+					"Hsss..."
+				],
+				"Phrases": [
+					"Hss-hss.",
+					"Khss..."
+				],
+				"Postfix": [
+					"..."
+				]
+			},
+			"Skeleton": {
+				"Prefix": [
+					"Clack-crack..."
+				],
+				"Phrases": [
+					"Skrrr...",
+					"Hss-hss.",
+					"Clack..."
+				],
+				"Postfix": [
+					"Crack..."
+				]
+			},
+			"Zombie": {
+				"Prefix": [
+					"Grr-rgh..."
+				],
+				"Phrases": [
+					"Uuuugh...",
+					"Mmm-mm.",
+					"Hrr..."
+				],
+				"Postfix": [
+					"Hrr..."
+				]
+			},
+			"Ghost": {
+				"Prefix": [
+					"The void...",
+					"Darkness..."
+				],
+				"Phrases": [
+					"The binding breaks.",
+					"The Aethyr scatters.",
+					"The mist fades."
+				],
+				"Postfix": [
+					"Into the dark..."
+				]
+			},
+			"Vampire": {
+				"Prefix": [
+					"Blood...",
+					"Darkness..."
+				],
+				"Phrases": [
+					"To dust.",
+					"My blood congeals.",
+					"My vessel crumbles."
+				],
+				"Postfix": [
+					"The end..."
+				]
+			}
+		},
+		"kill": {
+			"All": {
+				"Prefix": [
+					"Hsss!"
+				],
+				"Phrases": [
+					"Khss-hss.",
+					"Hss-s."
+				],
+				"Postfix": [
+					"Hss!"
+				]
+			},
+			"Skeleton": {
+				"Prefix": [
+					"Clack!"
+				],
+				"Phrases": [
+					"Clack-clack-clack.",
+					"Crack-hss."
+				],
+				"Postfix": [
+					"Clack!"
+				]
+			},
+			"Zombie": {
+				"Prefix": [
+					"Uuuu..."
+				],
+				"Phrases": [
+					"Grr-mmm.",
+					"Uuu-rrr."
+				],
+				"Postfix": [
+					"Mmm!"
+				]
+			},
+			"Ghost": {
+				"Prefix": [
+					"Perished...",
+					"Cold..."
+				],
+				"Phrases": [
+					"Another corpse.",
+					"Soul lost to darkness.",
+					"Dead."
+				],
+				"Postfix": [
+					"Darkness..."
+				]
+			},
+			"Vampire": {
+				"Prefix": [
+					"A corpse!",
+					"Blood!"
+				],
+				"Phrases": [
+					"The body cools.",
+					"Dead.",
+					"Your blood is mine."
+				],
+				"Postfix": [
+					"Exquisite!"
+				]
+			}
+		},
+		"opposedDefenderSuccess": {
+			"All": {
+				"Prefix": [
+					"Hsss!"
+				],
+				"Phrases": [
+					"Khss-hss."
+				],
+				"Postfix": [
+					"Hss!"
+				]
+			},
+			"Skeleton": {
+				"Prefix": [
+					"Skrr!"
+				],
+				"Phrases": [
+					"Clack-clack.",
+					"Crack."
+				],
+				"Postfix": [
+					"Clack!"
+				]
+			},
+			"Zombie": {
+				"Prefix": [
+					"Uuuugh!"
+				],
+				"Phrases": [
+					"Grr-mmm.",
+					"Hrr-rr."
+				],
+				"Postfix": [
+					"Mmm!"
+				]
+			},
+			"Ghost": {
+				"Prefix": [
+					"Shadow!",
+					"Missed!"
+				],
+				"Phrases": [
+					"Straight through the mist.",
+					"Incorporeal grace."
+				],
+				"Postfix": [
+					"Cold!"
+				]
+			},
+			"Vampire": {
+				"Prefix": [
+					"Too slow!",
+					"Ha!"
+				],
+				"Phrases": [
+					"Far too slow.",
+					"Missed.",
+					"Failed to pierce."
+				],
+				"Postfix": [
+					"Pathetic!"
+				]
+			}
+		},
+		"opposedDefenderFailure": {
+			"All": {
+				"Prefix": [
+					"Khss!"
+				],
+				"Phrases": [
+					"Hss-hss."
+				],
+				"Postfix": [
+					"Hss!"
+				]
+			},
+			"Skeleton": {
+				"Prefix": [
+					"Crack!"
+				],
+				"Phrases": [
+					"Skrr-hss.",
+					"Clack-crack."
+				],
+				"Postfix": [
+					"Clack..."
+				]
+			},
+			"Zombie": {
+				"Prefix": [
+					"Grr-agh!"
+				],
+				"Phrases": [
+					"Uuu-rr.",
+					"Mmm-hh."
+				],
+				"Postfix": [
+					"Uuuugh..."
+				]
+			},
+			"Ghost": {
+				"Prefix": [
+					"Light!",
+					"Ah!"
+				],
+				"Phrases": [
+					"Sorcery burns the Aethyr.",
+					"My essence is torn."
+				],
+				"Postfix": [
+					"Darkness!"
+				]
+			},
+			"Vampire": {
+				"Prefix": [
+					"Argh!",
+					"Breached!"
+				],
+				"Phrases": [
+					"Pain in dead flesh.",
+					"Clipped me.",
+					"Broke my guard."
+				],
+				"Postfix": [
+					"Blood!"
+				]
+			}
+		},
+		"opposedAttackerSuccess": {
+			"All": {
+				"Prefix": [
+					"Hsss!"
+				],
+				"Phrases": [
+					"Khss-hss."
+				],
+				"Postfix": [
+					"Hss!"
+				]
+			},
+			"Skeleton": {
+				"Prefix": [
+					"Clack-clack!"
+				],
+				"Phrases": [
+					"Crack-hss.",
+					"Skrrr."
+				],
+				"Postfix": [
+					"Clack!"
+				]
+			},
+			"Zombie": {
+				"Prefix": [
+					"Mmm!"
+				],
+				"Phrases": [
+					"Uuu-aaah.",
+					"Grr-rr."
+				],
+				"Postfix": [
+					"Uuuugh!"
+				]
+			},
+			"Ghost": {
+				"Prefix": [
+					"Cold!",
+					"Right on target!"
+				],
+				"Phrases": [
+					"Caught you.",
+					"Ice in the heart."
+				],
+				"Postfix": [
+					"Die!"
+				]
+			},
+			"Vampire": {
+				"Prefix": [
+					"Blood!",
+					"Precise!"
+				],
+				"Phrases": [
+					"Guard torn open.",
+					"Fangs sink into flesh.",
+					"A flawless strike."
+				],
+				"Postfix": [
+					"Down!"
+				]
+			}
+		},
+		"opposedAttackerFailure": {
+			"All": {
+				"Prefix": [
+					"Hsss..."
+				],
+				"Phrases": [
+					"Khss-hss."
+				],
+				"Postfix": [
+					"Hss..."
+				]
+			},
+			"Skeleton": {
+				"Prefix": [
+					"Skrr..."
+				],
+				"Phrases": [
+					"Clack-clack.",
+					"Crack-hss."
+				],
+				"Postfix": [
+					"Clack..."
+				]
+			},
+			"Zombie": {
+				"Prefix": [
+					"Uuuugh..."
+				],
+				"Phrases": [
+					"Grr-mmm.",
+					"Hrr-rr."
+				],
+				"Postfix": [
+					"Mmm..."
+				]
+			},
+			"Ghost": {
+				"Prefix": [
+					"Shadow...",
+					"Missed!"
+				],
+				"Phrases": [
+					"Cut empty air.",
+					"The living escaped."
+				],
+				"Postfix": [
+					"Cold..."
+				]
+			},
+			"Vampire": {
+				"Prefix": [
+					"Missed!",
+					"Shield!"
+				],
+				"Phrases": [
+					"Strike turned aside.",
+					"Evaded.",
+					"Their guard held."
+				],
+				"Postfix": [
+					"You cannot outrun the night!"
+				]
+			}
+		}
+	}
+}

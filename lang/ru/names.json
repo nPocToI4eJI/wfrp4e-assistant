@@ -1,0 +1,102 @@
+{
+	"WFRP4E.Assistant.Helpers.GenerateName": {
+		"Species": {
+			"Empire": "Имперец",
+			"Bretonnian": "Бретонец",
+			"Kislev": "Кислевит",
+			"Halfling": "Полурослик",
+			"Dwarf": "Гном",
+			"Elf": "Эльф",
+			"Ogre": "Огр",
+			"Beast": "Зверь",
+			"Ork": "Орк",
+			"Goblin": "Гоблин",
+			"Chaos": "Мародёр",
+			"Beastman": "Зверолюд",
+			"Skaven": "Скавен",
+			"Daemon": "Демон"
+		},
+		"Keys": {
+			"Empire": {
+				"Male": "мужские",
+				"Female": "женские",
+				"Surnames": "фамилии",
+				"NP": "дворянская частица"
+			},
+			"Bretonnian": {
+				"Male": "мужские",
+				"Female": "женские",
+				"Surnames": "фамилии"
+			},
+			"Kislev": {
+				"Male": "мужские",
+				"GospodarMale": "мужские (господари)",
+				"Female": "женские",
+				"GospodarFemale": "женские (господари)",
+				"Surnames": "фамилии",
+				"GospodarSurnames": "фамилии (господари)",
+				"Ungol": "унгольские"
+			},
+			"Halfling": {
+				"Male": "мужские",
+				"Female": "женские",
+				"Surnames": "фамилии"
+			},
+			"Dwarf": {
+				"Male": "мужские",
+				"Female": "женские",
+				"Surnames": "род",
+				"Moniker": "прозвище"
+			},
+			"Elf": {
+				"Male": "мужские",
+				"Female": "женские",
+				"Surnames": "фамилии"
+			},
+			"Ogre": {
+				"Male": "мужские",
+				"Female": "женские",
+				"Moniker": "прозвище",
+				"BigName": "Титул"
+			},
+			"Beast": {
+				"Wolf": "Волк",
+				"Rat": "Крыса",
+				"Spider": "Паук",
+				"Bird": "Птица",
+				"Snake": "Змея",
+				"Boar": "Кабан",
+				"Horse": "Лошадь",
+				"Bear": "Медведь",
+				"Dog": "Собака"
+			},
+			"Ork": {
+				"Name": "имя",
+				"Moniker": "прозвище"
+			},
+			"Goblin": {
+				"Name": "имя",
+				"Moniker": "прозвище"
+			},
+			"Chaos": {
+				"Male": "мужские",
+				"Female": "женские",
+				"Moniker": "прозвище"
+			},
+			"Beastman": {
+				"Name": "имя",
+				"Moniker": "прозвище",
+				"OffMoniker": "обидное прозвище"
+			},
+			"Skaven": {
+				"Name": "имя",
+				"Moniker": "прозвище",
+				"OffMoniker": "обидное прозвище"
+			},
+			"Daemon": {
+				"Name": "имя",
+				"Moniker": "Титул"
+			}
+		}
+	}
+}
