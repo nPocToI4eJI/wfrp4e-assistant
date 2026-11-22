@@ -1519,7 +1519,7 @@ function normalizeTokenPresets(preset) {
 		preset.list?.forEach(p => {
 			let elem = {
 				name: typeof p.name === "string" ? p.name : game.i18n.localize("WFRP4E.Assistant.TokenPresets.Name"),
-				id: "custom-" + i,
+				id: typeof p.id === "string" && p.id ? p.id : foundry.utils.randomID(),
 				tokens: []
 			};
 			if (Array.isArray(p.tokens)) {
@@ -2168,7 +2168,7 @@ Hooks.once("init", async () => {
 							let file = false;
 							await foundry.applications.api.DialogV2.prompt({
 								window: {title: game.i18n.localize("WFRP4E.Assistant.Debug.Dialog.ImportExport.File")},
-								content: `<input name="file" type="file" accept="text/plain" autofocus>`,
+								content: `<input name="file" type="file" accept=".txt,.json,text/plain,application/json" autofocus>`,
 								ok: {
 									label: game.i18n.localize("Submit"),
 									callback: (event, button, dialog) => {file = button.form.elements.file.files[0]}
@@ -2187,17 +2187,19 @@ Hooks.once("init", async () => {
 								};
 								let replace = game.settings.get("wfrp4e-assistant", "assistantPresets").length ? await foundry.applications.api.DialogV2.confirm({
 									window: {title: game.i18n.localize("WFRP4E.Assistant.Debug.Dialog.ImportExport.Replace.Title")},
-									content: `${game.i18n.localize("WFRP4E.Assistant.Debug.Dialog.ImportExport.Replace.Content")}<span style="font-size: 12px; font-style: italic;">${game.i18n.localize("WFRP4E.Assistant.Debug.Dialog.ImportExport.Replace.Hint")}</span>`
+									content: `${game.i18n.localize("WFRP4E.Assistant.Debug.Dialog.ImportExport.Replace.Content")}<span style="font-size: 0.8rem; font-style: italic;">${game.i18n.localize("WFRP4E.Assistant.Debug.Dialog.ImportExport.Replace.Hint")}</span>`
 								}) : true;
 								if (replace === null) {return};
 								if (replace) {await game.settings.set("wfrp4e-assistant", "assistantPresets", parsed)}
 								else {
-									let items = parsed.concat(game.settings.get("wfrp4e-assistant", "assistantPresets"));
-									items.forEach((p, i) => {
-										p.id = "custom-" + (i + 1);
-										p.uuid = p.id;
+									let existing = game.settings.get("wfrp4e-assistant", "assistantPresets");
+									let items = parsed.map(p => {
+										let copy = foundry.utils.deepClone(p);
+										copy.id = foundry.utils.randomID();
+										copy.uuid = copy.id;
+										return copy;
 									});
-									await game.settings.set("wfrp4e-assistant", "assistantPresets", items.sort((a, b) => a.id.localeCompare(b.id)));
+									await game.settings.set("wfrp4e-assistant", "assistantPresets", existing.concat(items));
 								};
 								game.wfrp4e.tools.newNotification({text: game.i18n.localize("WFRP4E.Assistant.Debug.Dialog.ImportExport.Complete")}, {color: "green"});
 							};
@@ -2248,12 +2250,6 @@ Hooks.once("init", async () => {
 		},
 		type: Object
 	});
-	game.settings.register("wfrp4e-assistant", "socketData", {
-		scope: "world",
-		config: false,
-		default: [],
-		type: Array
-	});
 	game.settings.register("wfrp4e-assistant", "controlButtons", {
 		scope: "world",
 		config: false,
@@ -2288,6 +2284,7 @@ Hooks.once("init", async () => {
 });
 
 Hooks.once("wfrp4e:toolsReady", () => {
+	game.wfrp4e.tools.registerModule("wfrp4e-assistant");
 	game.wfrp4e.tools.generateName = AssistantUtility.generateName;
 	game.wfrp4e.tools.getReaction = AssistantUtility.getReaction;
 	game.wfrp4e.tools.AssistantMenu = AssistantMenu;
