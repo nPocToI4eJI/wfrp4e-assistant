@@ -2140,10 +2140,64 @@ Hooks.once("init", async () => {
 		type: Boolean
 	});
 	//Настройки для интеграции с WFRP4e Tools
-	game.settings.register("wfrp4e-assistant", "debugData", {
+	game.settings.register("wfrp4e-assistant", "macrosData", {
+		scope: "world",
+		config: false,
+		default: {
+			create: [],
+			help: [
+				{
+					id: "GenerateName",
+					name: "WFRP4E.Assistant.Macros.GenerateName.Title",
+					icon: "fas fa-dice",
+					tooltip: "WFRP4E.Assistant.Macros.GenerateName.Hint",
+					visible: true,
+					func: "(await import('/modules/wfrp4e-assistant/scripts/GenerateName.js')).default",
+					module: {
+						id: "wfrp4e-assistant",
+						name: "WFRP4e - Assistant"
+					}
+				}
+			]
+		},
+		type: Object
+	});
+	game.settings.register("wfrp4e-assistant", "controlButtons", {
 		scope: "world",
 		config: false,
 		default: [
+			{
+				name: "toggleReactions",
+				title: "WFRP4E.Assistant.Helpers.Reactions.Button.Title",
+				showToolclip: true,
+				toolclip: {
+					heading: "WFRP4E.Assistant.Helpers.Reactions.Button.Title",
+					items: [
+						{paragraph: "WFRP4E.Assistant.Helpers.Reactions.Button.On"}
+					]
+				},
+				icon: "fas fa-thought-bubble",
+				visible: "gmOnly",
+				active: true,
+				toggle: true,
+				onChange: "game.wfrp4e.tools.updateToggleReactions(event, active)"
+			},
+			{
+				name: "tokenPresets",
+				title: "WFRP4E.Assistant.TokenPresets.Title",
+				icon: "fas fa-users",
+				visible: "gmOnly",
+				button: true,
+				onChange: "game.wfrp4e.tools.TokenPresets.create()"
+			},
+		],
+		type: Array
+	});
+});
+
+Hooks.once("wfrp4e:toolsReady", () => {
+	game.wfrp4e.tools.registerModule("wfrp4e-assistant", {
+		debug: [
 			{
 				form: {id: "importExport", template: "modules/wfrp4e-assistant/templates/debug/importExport.hbs"},
 				listener: {
@@ -2225,66 +2279,8 @@ Hooks.once("init", async () => {
 					}
 				}
 			}
-		],
-		type: Array
+		]
 	});
-	game.settings.register("wfrp4e-assistant", "macrosData", {
-		scope: "world",
-		config: false,
-		default: {
-			create: [],
-			help: [
-				{
-					id: "GenerateName",
-					name: "WFRP4E.Assistant.Macros.GenerateName.Title",
-					icon: "fas fa-dice",
-					tooltip: "WFRP4E.Assistant.Macros.GenerateName.Hint",
-					visible: true,
-					func: "(await import('/modules/wfrp4e-assistant/scripts/GenerateName.js')).default",
-					module: {
-						id: "wfrp4e-assistant",
-						name: "WFRP4e - Assistant"
-					}
-				}
-			]
-		},
-		type: Object
-	});
-	game.settings.register("wfrp4e-assistant", "controlButtons", {
-		scope: "world",
-		config: false,
-		default: [
-			{
-				name: "toggleReactions",
-				title: "WFRP4E.Assistant.Helpers.Reactions.Button.Title",
-				showToolclip: true,
-				toolclip: {
-					heading: "WFRP4E.Assistant.Helpers.Reactions.Button.Title",
-					items: [
-						{paragraph: "WFRP4E.Assistant.Helpers.Reactions.Button.On"}
-					]
-				},
-				icon: "fas fa-thought-bubble",
-				visible: "gmOnly",
-				active: true,
-				toggle: true,
-				onChange: "game.wfrp4e.tools.updateToggleReactions(event, active)"
-			},
-			{
-				name: "tokenPresets",
-				title: "WFRP4E.Assistant.TokenPresets.Title",
-				icon: "fas fa-users",
-				visible: "gmOnly",
-				button: true,
-				onChange: "game.wfrp4e.tools.TokenPresets.create()"
-			},
-		],
-		type: Array
-	});
-});
-
-Hooks.once("wfrp4e:toolsReady", () => {
-	game.wfrp4e.tools.registerModule("wfrp4e-assistant");
 	game.wfrp4e.tools.generateName = AssistantUtility.generateName;
 	game.wfrp4e.tools.getReaction = AssistantUtility.getReaction;
 	game.wfrp4e.tools.AssistantMenu = AssistantMenu;
